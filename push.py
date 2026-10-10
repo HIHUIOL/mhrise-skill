@@ -49,6 +49,7 @@ INCLUDE = [
     "render.js",
     "skillData.js",
     "skill_data.js",
+    "decoration.js",
     "sw.js",
     "icon-192.png",
     "icon-512.png",
