@@ -2901,13 +2901,10 @@
       }
 
       // ---- 分组数据 ----
-      // 按部位：{ 部位: [行...] }
-      const byPart = {};
       // 按状态：{ 状态: [行...] }
       const byState = {};
       hz.forEach(function (r) {
-        const p = r[0], s = r[1];
-        (byPart[p] = byPart[p] || []).push(r);
+        const s = r[1];
         (byState[s] = byState[s] || []).push(r);
       });
 
@@ -2933,32 +2930,28 @@
         const tbody = document.createElement('tbody');
 
         if (mode === 'part') {
-          // 按部位分组：部位名 cell 只在第一行显示，后续行留空（视觉合并）
-          Object.keys(byPart).forEach(function (p) {
-            const rows = byPart[p];
-            rows.forEach(function (r, i) {
-              const tr = document.createElement('tr');
-              const td0 = document.createElement('td');
-              td0.className = 'hit-part hit-part-group';
-              if (i === 0) {
-                td0.appendChild(makePartName(p));
-              }
-              if (hasStates) {
-                const sp = document.createElement('span');
-                sp.className = 'hit-state' + ((!r[1] || r[1] === '0') ? ' hit-state-normal' : '');
-                sp.textContent = stateLabel(r[1]);
-                td0.appendChild(sp);
-              }
-              tr.appendChild(td0);
-              COLS.forEach(function (c) {
-                const td = document.createElement('td');
-                const v = r[c.i];
-                td.className = cellColor(v);
-                td.textContent = v;
-                tr.appendChild(td);
-              });
-              tbody.appendChild(tr);
+          // 按部位分组：完全按网站原顺序，每行都显示部位名（不合并）
+          const stateCol = hz.some(function (r) { return String(r[1]) !== '0'; });
+          hz.forEach(function (r) {
+            const tr = document.createElement('tr');
+            const td0 = document.createElement('td');
+            td0.className = 'hit-part';
+            td0.appendChild(makePartName(r[0]));
+            if (stateCol) {
+              const sp = document.createElement('span');
+              sp.className = 'hit-state' + ((!r[1] || r[1] === '0') ? ' hit-state-normal' : '');
+              sp.textContent = stateLabel(r[1]);
+              td0.appendChild(sp);
+            }
+            tr.appendChild(td0);
+            COLS.forEach(function (c) {
+              const td = document.createElement('td');
+              const v = r[c.i];
+              td.className = cellColor(v);
+              td.textContent = v;
+              tr.appendChild(td);
             });
+            tbody.appendChild(tr);
           });
         } else {
           // 按状态分组：状态名 cell 只在第一行显示
