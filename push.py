@@ -59,6 +59,10 @@ INCLUDE = [
     "push.py",
     "scrape_decorations.py",
     "scrape_ramdeco.py",
+    "scrape_items.py",
+    "scrape_monsters.py",
+    "scrape_items.sh",
+    "scrape_monsters.sh",
 ]
 
 # 不参与同步的目录名 / 文件名

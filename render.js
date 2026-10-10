@@ -75,6 +75,42 @@
   let _openSkillModal = null;
   // 同理：百龙珠详情弹窗（供 buildRamDecoSection 顶层调用）
   let _openRamDecoModal = null;
+  // 怪物详情弹窗（供素材行点击调用）
+  let _openMonsterModal = null;
+
+  // ========================================================
+  // items.js:     { "道具名": { desc, obtain:[{quest,type,count,rate}] } }
+  // monsters.js:  { "怪物名": { materials:[{item,rank,way,part,count,rate}],
+  //                            hitzones:[[...]], ailments:[[...]], quests:[[...]] } }
+  // ========================================================
+  const ITEMS = window.item_data || {};
+  const MONSTERS = window.monster_data || {};
+
+  // 素材名 → [怪物名, ...]（按怪物→素材反向建索引）
+  const monsterByMaterial = {};
+  Object.keys(MONSTERS).forEach(function (monName) {
+    (MONSTERS[monName].materials || []).forEach(function (m) {
+      if (!m.item) return;
+      if (!monsterByMaterial[m.item]) monsterByMaterial[m.item] = [];
+      if (monsterByMaterial[m.item].indexOf(monName) < 0) {
+        monsterByMaterial[m.item].push(monName);
+      }
+    });
+  });
+
+  // 查某素材来自哪些怪物
+  function monstersForMaterial(itemName) {
+    return monsterByMaterial[itemName] || [];
+  }
+
+  // 查某怪物某素材的掉落明细（下位/上位/大师）
+  function dropRows(monName, itemName) {
+    const mon = MONSTERS[monName];
+    if (!mon) return [];
+    return (mon.materials || []).filter(function (m) {
+      return m.item === itemName;
+    });
+  }
 
   // 取某技能（十进制ID）可用的珠子列表
   function decosForSkill(decId) {
@@ -974,6 +1010,63 @@
   }
 
   // ========================================================
+  // 渲染怪物卡片（monsters.js）
+  //   monName 怪物名, mon 数据
+  // ========================================================
+  function renderMonsterCard(monName, mon) {
+    const card = document.createElement('div');
+    card.className = 'skill-card monster-card';
+
+    const mats = mon.materials || [];
+    const itemNames = [];
+    const seen = {};
+    mats.forEach(function (m) {
+      if (m.item && !seen[m.item]) { seen[m.item] = 1; itemNames.push(m.item); }
+    });
+
+    // 等级统计
+    const rankCount = { '下位': 0, '上位': 0, '大师等级': 0 };
+    mats.forEach(function (m) { if (rankCount[m.rank] != null) rankCount[m.rank]++; });
+
+    const titleEl = document.createElement('div');
+    titleEl.className = 'skill-name';
+    titleEl.innerHTML =
+      '<span class="deco-title-text">' + escapeHtml(monName) + '</span>' +
+      '<span class="skill-title-right">' +
+        '<span class="deco-slot-badge">' + itemNames.length + ' 素材</span>' +
+      '</span>';
+    card.appendChild(titleEl);
+
+    // 等级标记
+    const rankRow = document.createElement('div');
+    rankRow.className = 'mon-card-ranks';
+    ['下位', '上位', '大师等级'].forEach(function (r) {
+      if (!rankCount[r]) return;
+      const s = document.createElement('span');
+      s.className = 'mon-rank-tag rank-' +
+        (r === '下位' ? 'low' : r === '上位' ? 'high' : 'master');
+      s.textContent = r + ' ' + rankCount[r];
+      rankRow.appendChild(s);
+    });
+    card.appendChild(rankRow);
+
+    // 素材预览（前 6 个）
+    const pv = document.createElement('div');
+    pv.className = 'mon-card-mats';
+    pv.textContent = itemNames.slice(0, 6).join('、') +
+      (itemNames.length > 6 ? ' …' : '');
+    card.appendChild(pv);
+
+    card._search = (monName + ' ' + itemNames.join(' ')).toLowerCase();
+
+    card.addEventListener('click', function () {
+      if (_openMonsterModal) _openMonsterModal(monName);
+    });
+
+    return card;
+  }
+
+  // ========================================================
   // 通用：区块折叠
   // titleId/containerId/hintId + 状态对象
   // ========================================================
@@ -1150,8 +1243,17 @@
       entry.material.forEach((m) => {
         const li = document.createElement('li');
         li.className = 'deco-mat-item';
-        li.innerHTML = '<span class="deco-mat-name">' + escapeHtml(m.item) + '</span>' +
+        const mons = monstersForMaterial(m.item);
+        const linkable = mons.length > 0;
+        li.innerHTML = '<span class="deco-mat-name">' + escapeHtml(m.item) +
+          (linkable ? '<span class="mat-go">▸</span>' : '') + '</span>' +
           '<span class="deco-mat-count">×' + m.count + '</span>';
+        if (linkable) {
+          li.classList.add('deco-mat-link');
+          li.addEventListener('click', function () {
+            if (_openMonsterModal) _openMonsterModal(mons[0], m.item);
+          });
+        }
         ul.appendChild(li);
       });
       bodyEl.appendChild(ul);
@@ -1245,6 +1347,16 @@
       return { id: 'ramdeco' + i, el, search: el._search || '' };
     });
 
+    // --------------------------------------------------------
+    // 怪物卡片（monsters.js）
+    // --------------------------------------------------------
+    const monsterContainer = document.getElementById('monsterContainer');
+    const monNames = Object.keys(MONSTERS).sort();
+    const monsterCards = monNames.map((nm) => {
+      const el = renderMonsterCard(nm, MONSTERS[nm]);
+      return { id: 'mon_' + nm, el, search: el._search || '' };
+    });
+
     // 合并所有「普通技能」卡片，并按技能 ID 统一排序（详述版与仅原文版混排）
     const allSkillCards = skillCards.concat(gameOnlyCards)
       .sort((a, b) => Number(a.id) - Number(b.id));
@@ -1254,6 +1366,7 @@
     rampageCards.forEach((it) => rampageContainer.appendChild(it.el));
     if (decoContainer) decoCards.forEach((it) => decoContainer.appendChild(it.el));
     if (ramDecoContainer) ramDecoCards.forEach((it) => ramDecoContainer.appendChild(it.el));
+    if (monsterContainer) monsterCards.forEach((it) => monsterContainer.appendChild(it.el));
 
     // --------------------------------------------------------
     // 四个区块折叠（统一逻辑）
@@ -1266,6 +1379,7 @@
     const ramCollapse = setupSectionCollapse('ram', 'ramSectionTitle', 'rampageContainer', 'ramSectionHint', false, EX, CO);
     const decoCollapse = setupSectionCollapse('deco', 'decoSectionTitle', 'decoContainer', 'decoSectionHint', true, EX, CO);
     const ramDecoCollapse = setupSectionCollapse('ramdeco', 'ramDecoSectionTitle', 'ramDecoContainer', 'ramDecoSectionHint', true, EX, CO);
+    const monsterCollapse = setupSectionCollapse('monster', 'monsterSectionTitle', 'monsterContainer', 'monsterSectionHint', true, EX, CO);
 
     // --------------------------------------------------------
     // 技能一览（按分类分组的目录）
@@ -1352,6 +1466,66 @@
         catalog.classList.toggle('collapsed');
       });
       // 默认展开，小屏（手机）默认折叠
+      if (window.innerWidth < 600) catalog.classList.add('collapsed');
+    })();
+
+    // --------------------------------------------------------
+    // 怪物一览（目录）
+    // --------------------------------------------------------
+    (function buildMonsterCatalog() {
+      const body = document.getElementById('monsterCatalogBody');
+      const head = document.getElementById('monsterCatalogHead');
+      const catalog = document.getElementById('monsterCatalog');
+      if (!body || !head || !catalog) return;
+      if (!monNames.length) return;
+
+      // 按类别分组（霸主 / 大型 / 小型）
+      const groups = {};
+      monNames.forEach((nm) => {
+        let c;
+        if (nm.indexOf('霸主') === 0) {
+          c = '霸主';
+        } else {
+          const mats = (MONSTERS[nm].materials || []).length;
+          // 小型怪素材行数通常很少（< 15），大型怪较多
+          c = mats >= 15 ? '大型怪物' : '小型怪物';
+        }
+        if (!groups[c]) groups[c] = [];
+        groups[c].push(nm);
+      });
+
+      const CAT_ORDER = ['霸主', '大型怪物', '小型怪物'];
+      const finalOrder = CAT_ORDER.filter((c) => groups[c])
+        .concat(Object.keys(groups).filter((c) => CAT_ORDER.indexOf(c) < 0));
+
+      finalOrder.forEach((c) => {
+        const list = groups[c].sort();
+        const groupEl = document.createElement('div');
+        groupEl.className = 'catalog-group';
+
+        const catEl = document.createElement('div');
+        catEl.className = 'catalog-cat';
+        catEl.innerHTML = escapeHtml(c) + ' <span class="cat-count">' + list.length + '</span>';
+        groupEl.appendChild(catEl);
+
+        const itemsEl = document.createElement('div');
+        itemsEl.className = 'catalog-items';
+        list.forEach((nm) => {
+          const b = document.createElement('button');
+          b.className = 'catalog-item';
+          b.textContent = nm;
+          b.addEventListener('click', () => {
+            if (_openMonsterModal) _openMonsterModal(nm);
+          });
+          itemsEl.appendChild(b);
+        });
+        groupEl.appendChild(itemsEl);
+        body.appendChild(groupEl);
+      });
+
+      head.addEventListener('click', () => {
+        catalog.classList.toggle('collapsed');
+      });
       if (window.innerWidth < 600) catalog.classList.add('collapsed');
     })();
 
@@ -1532,6 +1706,7 @@
       let rampageHits = 0;
       let decoHits = 0;
       let ramDecoHits = 0;
+      let monHits = 0;
 
       allSkillCards.forEach((item) => {
         const hit = !kw || item.search.includes(kw);
@@ -1553,8 +1728,13 @@
         item.el.style.display = hit ? '' : 'none';
         if (hit) ramDecoHits++;
       });
+      monsterCards.forEach((item) => {
+        const hit = !kw || item.search.includes(kw);
+        item.el.style.display = hit ? '' : 'none';
+        if (hit) monHits++;
+      });
 
-      // 搜索时自动展开对应区块；清空时恢复默认（珠子/百龙珠默认折叠）
+      // 搜索时自动展开对应区块；清空时恢复默认（珠子/百龙珠/怪物默认折叠）
       if (decoCollapse) {
         decoCollapse.state.collapsed = kw ? (decoHits === 0) : true;
         decoCollapse.apply();
@@ -1563,12 +1743,16 @@
         ramDecoCollapse.state.collapsed = kw ? (ramDecoHits === 0) : true;
         ramDecoCollapse.apply();
       }
+      if (monsterCollapse) {
+        monsterCollapse.state.collapsed = kw ? (monHits === 0) : true;
+        monsterCollapse.apply();
+      }
 
       if (!kw) {
         searchCount.textContent = '';
       } else {
         searchCount.textContent =
-          `普通 ${skillHits} · 百龙 ${rampageHits} · 珠子 ${decoHits} · 百龙珠 ${ramDecoHits}`;
+          `普通 ${skillHits} · 百龙 ${rampageHits} · 珠子 ${decoHits} · 百龙珠 ${ramDecoHits} · 怪物 ${monHits}`;
       }
 
       document.querySelectorAll('.skill-section').forEach((sec) => {
@@ -1721,6 +1905,162 @@
 
     // 桥接给顶层 buildRamDecoSection 使用
     _openRamDecoModal = openRamDecoModal;
+
+    // ========================================================
+    // 怪物详情弹窗
+    //   monName  怪物名
+    //   focusItem 可选：高亮的素材名（从素材点进来时）
+    // ========================================================
+    function openMonsterModal(monName, focusItem) {
+      const mon = MONSTERS[monName];
+      if (!mon) return;
+
+      const overlay = document.getElementById('skillModal');
+      const titleEl = document.getElementById('modalTitle');
+      const bodyEl = document.getElementById('modalBody');
+      if (!overlay || !titleEl || !bodyEl) return;
+
+      titleEl.innerHTML =
+        '<span class="modal-title-icon">👹</span>' +
+        escapeHtml(monName);
+
+      bodyEl.innerHTML = '';
+
+      // ---- 只用该怪物的素材，聚焦某个素材时优先 ----
+      const allMats = mon.materials || [];
+
+      // ① 优先：本次点进来的素材（含上下位/大师明细）
+      if (focusItem) {
+        const rows = dropRows(monName, focusItem).slice();
+        if (rows.length) {
+          bodyEl.appendChild(buildMatDetail(monName, focusItem, rows, true));
+        }
+      }
+
+      // ② 该怪物其他可用素材（可按等级折叠）
+      const otherItems = [];
+      const seen2 = {};
+      allMats.forEach(function (m) {
+        if (m.item === focusItem) return;
+        if (seen2[m.item]) return;
+        seen2[m.item] = 1;
+        otherItems.push(m.item);
+      });
+
+      if (otherItems.length) {
+        const head = document.createElement('div');
+        head.className = 'mon-section-head';
+        head.textContent = '素材一览（' + otherItems.length + ' 种）';
+        bodyEl.appendChild(head);
+
+        const box = document.createElement('div');
+        box.className = 'mon-mat-cloud';
+        otherItems.forEach(function (it) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'mon-mat-chip';
+          btn.textContent = it;
+          btn.addEventListener('click', function () {
+            openMonsterModal(monName, it);   // 切到该素材
+          });
+          box.appendChild(btn);
+        });
+        bodyEl.appendChild(box);
+      }
+
+      // ③ 部位肉质（简要）
+      if (mon.hitzones && mon.hitzones.length) {
+        bodyEl.appendChild(buildHitzoneBlock(mon.hitzones));
+      }
+
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // 素材掉落明细（按 下位/上位/大师 分组）
+    function buildMatDetail(monName, itemName, rows, highlight) {
+      const wrap = document.createElement('div');
+      wrap.className = 'mon-mat-detail' + (highlight ? ' highlight' : '');
+
+      // 素材名 + 说明
+      const nm = document.createElement('div');
+      nm.className = 'mon-mat-title';
+      nm.textContent = itemName;
+      wrap.appendChild(nm);
+
+      const info = ITEMS[itemName];
+      if (info && info.desc) {
+        const d = document.createElement('div');
+        d.className = 'mon-mat-desc';
+        d.textContent = info.desc;
+        wrap.appendChild(d);
+      }
+
+      // 按等级分组
+      const order = ['下位', '上位', '大师等级'];
+      order.forEach(function (rank) {
+        const sub = rows.filter(function (r) { return r.rank === rank; });
+        if (!sub.length) return;
+
+        const grp = document.createElement('div');
+        grp.className = 'mon-rank-group rank-' +
+          (rank === '下位' ? 'low' : rank === '上位' ? 'high' : 'master');
+
+        const h = document.createElement('div');
+        h.className = 'mon-rank-head';
+        h.textContent = '【' + rank + '】';
+        grp.appendChild(h);
+
+        sub.forEach(function (r) {
+          const line = document.createElement('div');
+          line.className = 'mon-drop-row';
+          line.innerHTML =
+            '<span class="drop-way">' + escapeHtml(r.way) + '</span>' +
+            (r.part ? '<span class="drop-part">' + escapeHtml(prettyPart(r.part)) + '</span>' : '') +
+            '<span class="drop-count">' + escapeHtml(r.count) + '</span>' +
+            '<span class="drop-rate">' + escapeHtml(r.rate) + '</span>';
+          grp.appendChild(line);
+        });
+        wrap.appendChild(grp);
+      });
+
+      return wrap;
+    }
+
+    // 部位破坏的 BodyPart N → 中文（粗略映射，取不到就原样）
+    function prettyPart(p) {
+      var m = /^BodyPart\s+(\d+)$/.exec(p);
+      if (!m) return p;
+      return '部位' + m[1];
+    }
+
+    // 部位肉质表
+    function buildHitzoneBlock(hz) {
+      const wrap = document.createElement('div');
+      wrap.className = 'mon-hit';
+
+      const head = document.createElement('div');
+      head.className = 'mon-section-head';
+      head.textContent = '部位肉质';
+      wrap.appendChild(head);
+
+      const tbl = document.createElement('table');
+      tbl.className = 'mon-hit-table';
+      hz.slice(0, 12).forEach(function (row) {
+        const tr = document.createElement('tr');
+        row.slice(0, 6).forEach(function (cell) {
+          const td = document.createElement('td');
+          td.textContent = cell;
+          tr.appendChild(td);
+        });
+        tbl.appendChild(tr);
+      });
+      wrap.appendChild(tbl);
+      return wrap;
+    }
+
+    // 桥接给顶层
+    _openMonsterModal = openMonsterModal;
 
     // 打开百龙技能详情弹窗
     function openRampageModal(id) {

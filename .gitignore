@@ -31,6 +31,10 @@ __pycache__/
 
 # 爬虫缓存 / 本地核对文件（不上传）
 .deco_cache.json
+.item_cache.json
+.item_index.json
+.monster_cache.json
+.monster_index.json
 珠子素材核对清单.md
 珠子素材_纯文本.txt
 

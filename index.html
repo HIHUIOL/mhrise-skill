@@ -897,6 +897,199 @@
     /* 弹窗里的素材列表稍大一点 */
     .deco-modal-skill ~ .deco-mat-list .deco-mat-item { font-size: 0.88rem; }
 
+    /* ---------- 素材可点击（跳怪物） ---------- */
+    .deco-mat-link {
+      cursor: pointer;
+      border-radius: 4px;
+      transition: background 0.12s;
+    }
+
+    .deco-mat-link:hover {
+      background: rgba(184, 208, 154, 0.12);
+    }
+
+    .deco-mat-link .deco-mat-name {
+      color: #b8d09a;
+    }
+
+    .mat-go {
+      font-size: 0.7em;
+      margin-left: 0.3rem;
+      opacity: 0.7;
+    }
+
+    /* ---------- 怪物弹窗 ---------- */
+    .mon-section-head {
+      margin: 0.7rem 0 0.35rem;
+      font-size: 0.8rem;
+      color: #8fa6bb;
+      border-bottom: 1px solid #2c3a4a;
+      padding-bottom: 0.2rem;
+    }
+
+    .mon-mat-detail {
+      background: #1c2530;
+      border: 1px solid #2c3a4a;
+      border-radius: 8px;
+      padding: 0.6rem 0.7rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .mon-mat-detail.highlight {
+      border-color: #4e6b3c;
+    }
+
+    .mon-mat-title {
+      font-weight: 600;
+      color: #e9eef2;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .mon-mat-desc {
+      font-size: 0.78rem;
+      color: #8fa6bb;
+      margin-bottom: 0.5rem;
+      line-height: 1.5;
+    }
+
+    .mon-rank-group {
+      margin-top: 0.45rem;
+    }
+
+    .mon-rank-head {
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .rank-low .mon-rank-head { color: #7fb3d5; }
+    .rank-high .mon-rank-head { color: #e0a458; }
+    .rank-master .mon-rank-head { color: #c08fd0; }
+
+    .mon-drop-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.78rem;
+      padding: 0.18rem 0.35rem;
+      border-radius: 4px;
+    }
+
+    .mon-drop-row:nth-child(even) {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .drop-way {
+      color: #b8c4d0;
+      flex: 0 0 auto;
+    }
+
+    .drop-part {
+      color: #7f8c99;
+      font-size: 0.92em;
+      flex: 0 0 auto;
+    }
+
+    .drop-count {
+      color: #b8d09a;
+      flex: 0 0 auto;
+    }
+
+    .drop-rate {
+      margin-left: auto;
+      color: #c9a86c;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* 素材云（怪物弹窗里切换素材） */
+    .mon-mat-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .mon-mat-chip {
+      font-family: inherit;
+      font-size: 0.75rem;
+      color: #c9d5e0;
+      background: #232f3b;
+      border: 1px solid #33414f;
+      border-radius: 12px;
+      padding: 0.18rem 0.6rem;
+      cursor: pointer;
+      transition: all 0.12s;
+    }
+
+    .mon-mat-chip:hover {
+      background: #2d3b49;
+      border-color: #6f8fa7;
+      color: #e9eef2;
+    }
+
+    /* 怪物肉质表 */
+    .mon-hit-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.72rem;
+    }
+
+    /* 怪物卡片 */
+    .monster-card {
+      cursor: pointer;
+    }
+
+    .mon-card-ranks {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin: 0.25rem 0;
+    }
+
+    .mon-rank-tag {
+      font-size: 0.68rem;
+      padding: 0.05rem 0.4rem;
+      border-radius: 8px;
+      border: 1px solid transparent;
+    }
+
+    .mon-rank-tag.rank-low {
+      color: #7fb3d5;
+      background: rgba(127, 179, 213, 0.1);
+      border-color: rgba(127, 179, 213, 0.35);
+    }
+
+    .mon-rank-tag.rank-high {
+      color: #e0a458;
+      background: rgba(224, 164, 88, 0.1);
+      border-color: rgba(224, 164, 88, 0.35);
+    }
+
+    .mon-rank-tag.rank-master {
+      color: #c08fd0;
+      background: rgba(192, 143, 208, 0.1);
+      border-color: rgba(192, 143, 208, 0.35);
+    }
+
+    .mon-card-mats {
+      font-size: 0.72rem;
+      color: #7f8c99;
+      line-height: 1.5;
+      margin-top: 0.15rem;
+    }
+
+    .mon-hit-table td {
+      padding: 0.15rem 0.3rem;
+      border-bottom: 1px solid #253240;
+      color: #b8c4d0;
+    }
+
+    .mon-hit-table td:first-child {
+      color: #e9eef2;
+      font-weight: 600;
+    }
+
     @media (max-width: 600px) {
       h1 { font-size: 1.8rem; }
       .skill-grid { grid-template-columns: 1fr; }
@@ -910,7 +1103,7 @@
     <div class="title-bar">
       <h1>🌅 曙光技能图鉴</h1>
       <button class="version-badge" id="versionBadge" title="点击检查更新">
-        <span class="ver-icon">🏷️</span><span id="versionText">v1.03</span>
+        <span class="ver-icon">🏷️</span><span id="versionText">v1.04</span>
       </button>
     </div>
     <div class="subhead">怪物猎人崛起：曙光 · 技能效果一览 · mhrise-skill</div>
@@ -1019,6 +1212,26 @@
       <div id="ramDecoContainer" class="skill-grid"></div>
     </div>
 
+    <!-- 怪物一览（目录） -->
+    <div class="catalog" id="monsterCatalog">
+      <div class="catalog-head" id="monsterCatalogHead">
+        <span class="catalog-title">👹 怪物一览</span>
+        <span class="catalog-arrow">▼</span>
+      </div>
+      <div class="catalog-body" id="monsterCatalogBody">
+        <!-- 由 render.js 动态生成 -->
+      </div>
+    </div>
+
+    <!-- 怪物（素材表） -->
+    <div class="skill-section" id="monsterSection">
+      <div class="section-title section-toggle" id="monsterSectionTitle">
+        👹 怪物素材
+        <span class="section-toggle-hint" id="monsterSectionHint">（点击展开 ▼）</span>
+      </div>
+      <div id="monsterContainer" class="skill-grid"></div>
+    </div>
+
     <footer>
       数据来源：Nexus Mods 模组《Skill Descriptions》（
       <a href="https://www.nexusmods.com/monsterhunterrise/mods/3872" target="_blank" rel="noopener noreferrer">mods/3872</a>
@@ -1046,12 +1259,14 @@
   <script src="skill_data.js"></script>
   <script src="decoration.js"></script>
   <script src="rampage_decorations.js"></script>
+  <script src="items.js"></script>
+  <script src="monsters.js"></script>
   <script src="render.js"></script>
   <script>
     // ========================================================
     // 应用版本号（修改此值即可让"点击版本号"提示有新版本）
     // ========================================================
-    window.APP_VERSION = 'v1.03';
+    window.APP_VERSION = 'v1.04';
 
     // 显示版本号
     (function () {

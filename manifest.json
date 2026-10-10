@@ -1,7 +1,7 @@
 {
   "name": "曙光技能图鉴 · mhrise-skill",
   "short_name": "曙光技能图鉴",
-  "version": "1.03",
+  "version": "1.04",
   "description": "怪物猎人崛起：曙光 技能与百龙技能效果一览。数据来源于 Nexus Mods 模组《Skill Descriptions》。",
   "lang": "zh-CN",
   "start_url": "./index.html",
