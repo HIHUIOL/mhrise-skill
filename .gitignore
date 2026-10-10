@@ -29,5 +29,10 @@ token.txt
 __pycache__/
 *.pyc
 
+# 爬虫缓存 / 本地核对文件（不上传）
+.deco_cache.json
+珠子素材核对清单.md
+珠子素材_纯文本.txt
+
 # push 脚本（按需保留，默认不上传也行）
 # push.sh

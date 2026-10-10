@@ -28,9 +28,94 @@
     12: '操虫棍',
     13: '弓'
   };
-
   // 远程武器 ID（对照 lua RANGED_WEAPONS = {3,4,13}）
   const RANGED_WEAPONS = { 3: true, 4: true, 13: true };
+
+  // ========================================================
+  // 珠子（装饰品）数据关联层
+  // decoration.js：{ "id": { hex, slot, lv, dname, skip?, material:[{item,count}] } }
+  // hex = 对应技能ID → 可用「技能 decId ↔ 珠子」双向关联
+  // ========================================================
+  const DECO = window.decoration_data || {};
+  // hex(技能ID,大写2位) → [珠子条目, ...]
+  const decoBySkillHex = {};
+  // 珠子名 → 珠子条目
+  const decoByName = {};
+  Object.keys(DECO).forEach(function (id) {
+    const d = DECO[id];
+    if (!d || !d.dname) return;
+    const entry = {
+      id: Number(id),
+      hex: d.hex,
+      slot: d.slot,
+      lv: d.lv || 1,
+      dname: d.dname,
+      skip: !!d.skip,
+      material: Array.isArray(d.material) ? d.material : []
+    };
+    decoByName[d.dname] = entry;
+    if (d.hex) {
+      if (!decoBySkillHex[d.hex]) decoBySkillHex[d.hex] = [];
+      decoBySkillHex[d.hex].push(entry);
+    }
+  });
+  // 每个技能桶内按「等级 lv → 孔位 slot」排序
+  Object.keys(decoBySkillHex).forEach(function (h) {
+    decoBySkillHex[h].sort(function (a, b) {
+      if (a.lv !== b.lv) return a.lv - b.lv;
+      return a.slot - b.slot;
+    });
+  });
+
+  // 罗马数字（珠子档位显示用）
+  const ROMAN = { 1: '', 2: 'Ⅱ', 3: 'Ⅲ', 4: 'Ⅳ', 5: 'Ⅴ' };
+
+  // 弹窗函数桥接：openSkillModal 定义在 DOMContentLoaded 内，
+  // 这里放一个顶层引用，供 openDecoModal（顶层）调用。
+  let _openSkillModal = null;
+
+  // 取某技能（十进制ID）可用的珠子列表
+  function decosForSkill(decId) {
+    const hex = decToHex(decId);
+    return (hex && decoBySkillHex[hex]) ? decoBySkillHex[hex] : [];
+  }
+
+  // 构造「可用珠子」区块 DOM
+  // opts.compact=true 时仅列名字；否则带孔位/等级
+  function buildDecoSection(decId, opts) {
+    opts = opts || {};
+    const list = decosForSkill(decId);
+    if (!list.length) return null;
+
+    const wrap = document.createElement('div');
+    wrap.className = 'deco-section';
+
+    const head = document.createElement('div');
+    head.className = 'deco-head';
+    head.innerHTML = '<span class="deco-icon">🔮</span>可用珠子 ' +
+      '<span class="deco-count">' + list.length + '</span>';
+    wrap.appendChild(head);
+
+    const items = document.createElement('div');
+    items.className = 'deco-items';
+    list.forEach(function (d) {
+      const chip = document.createElement('button');
+      chip.className = 'deco-chip';
+      chip.setAttribute('data-deco-name', d.dname);
+      let label = d.dname;
+      // 名称已含【孔位】；附加 Lv 标记（若 lv>1）
+      chip.innerHTML = escapeHtml(label) +
+        (d.lv > 1 ? '<span class="deco-lv">Lv' + d.lv + '</span>' : '');
+      chip.addEventListener('click', function (e) {
+        e.stopPropagation();
+        openDecoModal(d.id);
+      });
+      items.appendChild(chip);
+    });
+    wrap.appendChild(items);
+    return wrap;
+  }
+
 
   // 武器标签高亮色（对照 lua WEAPON_LABEL_COLOR）
   const WEAPON_LABEL_COLOR = 'FFC000';
@@ -551,7 +636,10 @@
       const gameContent = buildGameContent(gameEntry);
       gameContent.classList.add('src-game');
       card.appendChild(gameContent);
-      card._search = buildGameSearchText(id, gameEntry);
+      // 可用珠子（挂在卡片最下方，不属于某版内容）
+      const decoEl = buildDecoSection(id);
+      if (decoEl) card.appendChild(decoEl);
+      card._search = buildGameSearchText(id, gameEntry) + ' ' + buildDecoSearchText(id);
       return card;
     }
 
@@ -569,7 +657,11 @@
     }
 
     // 记录卡片搜索文本
-    card._search = buildSearchText(id, skill) + (hasGame ? ' ' + buildGameSearchText(id, gameEntry) : '');
+    card._search = buildSearchText(id, skill) + (hasGame ? ' ' + buildGameSearchText(id, gameEntry) : '') + ' ' + buildDecoSearchText(id);
+
+    // 可用珠子（挂在卡片最下方）
+    const decoEl2 = buildDecoSection(id);
+    if (decoEl2) card.appendChild(decoEl2);
 
     // 绑定卡片内切换（仅两版都有时）
     if (both) {
@@ -717,6 +809,64 @@
   }
 
   // ========================================================
+  // 渲染珠子卡片
+  // ========================================================
+  function renderDecoCard(d) {
+    const card = document.createElement('div');
+    card.className = 'skill-card deco-card';
+    card.setAttribute('data-deco-id', String(d.id));
+
+    // 标题行：珠子名 + 孔位/等级标记
+    const titleEl = document.createElement('div');
+    titleEl.className = 'skill-name';
+    titleEl.innerHTML =
+      '<span class="deco-title-text">' + escapeHtml(d.dname) + '</span>' +
+      '<span class="skill-title-right">' +
+        '<span class="deco-slot-badge">' + d.slot + '孔</span>' +
+        (d.lv > 1 ? '<span class="deco-lv-badge">Lv' + d.lv + '</span>' : '') +
+      '</span>';
+    card.appendChild(titleEl);
+
+    // 提供技能
+    const gmeta = window.GAME_SKILL_DATA || {};
+    const skEntry = d.hex ? gmeta[d.hex] : null;
+    if (skEntry && skEntry.sname) {
+      const skRow = document.createElement('div');
+      skRow.className = 'deco-provide';
+      skRow.innerHTML = '提供技能：<b>' + escapeHtml(skEntry.sname) + '</b>';
+      card.appendChild(skRow);
+    }
+
+    // 必要素材
+    if (d.material && d.material.length) {
+      const matWrap = document.createElement('div');
+      matWrap.className = 'deco-materials';
+      const head = document.createElement('div');
+      head.className = 'deco-mat-head';
+      head.textContent = '必要素材';
+      matWrap.appendChild(head);
+      const ul = document.createElement('ul');
+      ul.className = 'deco-mat-list';
+      d.material.forEach((m) => {
+        const li = document.createElement('li');
+        li.className = 'deco-mat-item';
+        li.innerHTML = '<span class="deco-mat-name">' + escapeHtml(m.item) + '</span>' +
+          '<span class="deco-mat-count">×' + m.count + '</span>';
+        ul.appendChild(li);
+      });
+      matWrap.appendChild(ul);
+      card.appendChild(matWrap);
+    }
+
+    card._search = buildSingleDecoSearchText(d);
+
+    // 点击卡片 → 打开珠子弹窗
+    card.addEventListener('click', function () { openDecoModal(d.id); });
+
+    return card;
+  }
+
+  // ========================================================
   // 搜索索引
   // ========================================================
   function buildSearchText(id, skill) {
@@ -792,6 +942,101 @@
   }
 
   // ========================================================
+  // 珠子相关：搜索文本 + 弹窗
+  // ========================================================
+
+  // 某技能可用的珠子 → 搜索文本（珠子名 + 素材名 + 孔位/等级）
+  function buildDecoSearchText(decId) {
+    const list = decosForSkill(decId);
+    const parts = [];
+    list.forEach((d) => {
+      parts.push(d.dname);
+      parts.push(String(d.slot) + '孔');
+      parts.push('Lv' + d.lv);
+      (d.material || []).forEach((m) => parts.push(m.item));
+    });
+    return parts.join(' ').toLowerCase();
+  }
+
+  // 单颗珠子的搜索文本
+  function buildSingleDecoSearchText(d) {
+    const parts = [String(d.id), d.dname, String(d.slot) + '孔', 'Lv' + d.lv];
+    (d.material || []).forEach((m) => parts.push(m.item));
+    return parts.join(' ').toLowerCase();
+  }
+
+  // 打开珠子详情弹窗：显示孔位 / 等级 / 提供技能 / 必要素材
+  function openDecoModal(decoId) {
+    const d = DECO[decoId];
+    if (!d) return;
+    const entry = decoByName[d.dname] || {
+      id: Number(decoId), hex: d.hex, slot: d.slot, lv: d.lv || 1,
+      dname: d.dname, skip: !!d.skip, material: Array.isArray(d.material) ? d.material : []
+    };
+
+    const overlay = document.getElementById('skillModal'); // 复用同一个弹窗容器
+    const titleEl = document.getElementById('modalTitle');
+    const bodyEl = document.getElementById('modalBody');
+    if (!overlay || !titleEl || !bodyEl) return;
+
+    titleEl.innerHTML = escapeHtml(entry.dname) +
+      '<span class="skill-id">🔮</span>';
+    bodyEl.innerHTML = '';
+
+    // 基本信息行
+    const info = document.createElement('div');
+    info.className = 'deco-modal-info';
+    info.innerHTML =
+      '<span class="deco-tag">孔位 ' + entry.slot + '</span>' +
+      '<span class="deco-tag">等级 Lv' + entry.lv + '</span>';
+    bodyEl.appendChild(info);
+
+    // 提供的技能（hex → 技能名）—— 可点击跳转到技能详情
+    const gmeta = window.GAME_SKILL_DATA || {};
+    const skEntry = entry.hex ? gmeta[entry.hex] : null;
+    if (skEntry) {
+      const decId = parseInt(entry.hex, 16); // hex → 十进制技能ID
+      const skRow = document.createElement('button');
+      skRow.type = 'button';
+      skRow.className = 'deco-modal-skill deco-skill-link';
+      skRow.innerHTML = '提供技能：<b>' + escapeHtml(skEntry.sname || '') + '</b>' +
+        ' <span class="deco-lv">Lv' + entry.lv + '</span>' +
+        '<span class="deco-skill-go">查看技能 ▸</span>';
+      skRow.addEventListener('click', function () {
+        if (!isNaN(decId) && _openSkillModal) _openSkillModal(decId);
+      });
+      bodyEl.appendChild(skRow);
+    }
+
+    // 必要素材
+    const matHead = document.createElement('div');
+    matHead.className = 'deco-mat-head';
+    matHead.textContent = '必要素材';
+    bodyEl.appendChild(matHead);
+
+    if (entry.material && entry.material.length) {
+      const ul = document.createElement('ul');
+      ul.className = 'deco-mat-list';
+      entry.material.forEach((m) => {
+        const li = document.createElement('li');
+        li.className = 'deco-mat-item';
+        li.innerHTML = '<span class="deco-mat-name">' + escapeHtml(m.item) + '</span>' +
+          '<span class="deco-mat-count">×' + m.count + '</span>';
+        ul.appendChild(li);
+      });
+      bodyEl.appendChild(ul);
+    } else {
+      const empty = document.createElement('div');
+      empty.className = 'level-item';
+      empty.textContent = '（暂无素材数据）';
+      bodyEl.appendChild(empty);
+    }
+
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  // ========================================================
   // 启动
   // ========================================================
   window.addEventListener('DOMContentLoaded', function () {
@@ -849,6 +1094,18 @@
       search: buildSearchText(id, rampage[id])
     }));
 
+    // --------------------------------------------------------
+    // 珠子卡片（decoration.js）
+    // --------------------------------------------------------
+    const decoContainer = document.getElementById('decoContainer');
+    const decoIds = Object.keys(DECO).sort((a, b) => Number(a) - Number(b));
+    const decoCards = decoIds.map((id) => {
+      const d = decoByName[DECO[id].dname] || null;
+      if (!d) return null;
+      const el = renderDecoCard(d);
+      return { id: String(id), el, search: el._search || '' };
+    }).filter(Boolean);
+
     // 合并所有「普通技能」卡片，并按技能 ID 统一排序（详述版与仅原文版混排）
     const allSkillCards = skillCards.concat(gameOnlyCards)
       .sort((a, b) => Number(a.id) - Number(b.id));
@@ -856,6 +1113,28 @@
     // 挂到 DOM
     allSkillCards.forEach((it) => skillsContainer.appendChild(it.el));
     rampageCards.forEach((it) => rampageContainer.appendChild(it.el));
+    if (decoContainer) decoCards.forEach((it) => decoContainer.appendChild(it.el));
+
+    // --------------------------------------------------------
+    // 珠子区块折叠（默认折叠，避免页面过长）
+    // --------------------------------------------------------
+    const decoCollapseState = { collapsed: true };
+    (function setupDecoCollapse() {
+      const titleEl = document.getElementById('decoSectionTitle');
+      const contEl = document.getElementById('decoContainer');
+      const toggleEl = document.getElementById('decoSectionToggle');
+      if (!titleEl || !contEl) return;
+      function apply() {
+        contEl.style.display = decoCollapseState.collapsed ? 'none' : '';
+        if (toggleEl) toggleEl.textContent = decoCollapseState.collapsed ? '（点击展开 ▼）' : '（点击收起 ▲）';
+      }
+      titleEl.addEventListener('click', function () {
+        decoCollapseState.collapsed = !decoCollapseState.collapsed;
+        apply();
+      });
+      window.__applyDecoCollapse = apply;
+      apply();
+    })();
 
     // --------------------------------------------------------
     // 技能一览（按分类分组的目录）
@@ -1009,6 +1288,59 @@
     })();
 
     // --------------------------------------------------------
+    // 珠子一览（按孔位分组的目录）
+    // --------------------------------------------------------
+    (function buildDecoCatalog() {
+      const body = document.getElementById('decoCatalogBody');
+      const head = document.getElementById('decoCatalogHead');
+      const catalog = document.getElementById('decoCatalog');
+      if (!body || !head || !catalog) return;
+
+      const SLOT_ORDER = [1, 2, 3, 4];
+      const groups = {};
+      decoCards.forEach((it) => {
+        const d = decoByName[DECO[it.id] && DECO[it.id].dname];
+        if (!d) return;
+        const c = d.slot + '孔';
+        if (!groups[c]) groups[c] = [];
+        groups[c].push({ id: d.id, name: d.dname, lv: d.lv });
+      });
+
+      SLOT_ORDER.forEach((slot) => {
+        const key = slot + '孔';
+        const list = groups[key];
+        if (!list) return;
+        list.sort((a, b) => (a.lv - b.lv) || (a.id - b.id));
+
+        const groupEl = document.createElement('div');
+        groupEl.className = 'catalog-group';
+
+        const catEl = document.createElement('div');
+        catEl.className = 'catalog-cat';
+        catEl.innerHTML = `${escapeHtml(key)} <span class="cat-count">${list.length}</span>`;
+        groupEl.appendChild(catEl);
+
+        const itemsEl = document.createElement('div');
+        itemsEl.className = 'catalog-items';
+        list.forEach((item) => {
+          const b = document.createElement('button');
+          b.className = 'catalog-item';
+          b.textContent = item.name;
+          b.setAttribute('data-deco-target', String(item.id));
+          b.addEventListener('click', () => openDecoModal(item.id));
+          itemsEl.appendChild(b);
+        });
+        groupEl.appendChild(itemsEl);
+        body.appendChild(groupEl);
+      });
+
+      head.addEventListener('click', () => {
+        catalog.classList.toggle('collapsed');
+      });
+      if (window.innerWidth < 600) catalog.classList.add('collapsed');
+    })();
+
+    // --------------------------------------------------------
     // 搜索
     // --------------------------------------------------------
     const searchInput = document.getElementById('searchInput');
@@ -1018,6 +1350,7 @@
       const kw = (keyword || '').trim().toLowerCase();
       let skillHits = 0;
       let rampageHits = 0;
+      let decoHits = 0;
 
       allSkillCards.forEach((item) => {
         const hit = !kw || item.search.includes(kw);
@@ -1029,14 +1362,29 @@
         item.el.style.display = hit ? '' : 'none';
         if (hit) rampageHits++;
       });
+      decoCards.forEach((item) => {
+        const hit = !kw || item.search.includes(kw);
+        item.el.style.display = hit ? '' : 'none';
+        if (hit) decoHits++;
+      });
+
+      // 搜索珠子时，自动展开珠子区块（方便看到结果）；清空时恢复折叠状态
+      if (kw && decoHits > 0) {
+        decoCollapseState.collapsed = false;
+        if (window.__applyDecoCollapse) window.__applyDecoCollapse();
+      } else if (!kw) {
+        // 清空搜索 → 恢复默认折叠
+        decoCollapseState.collapsed = true;
+        if (window.__applyDecoCollapse) window.__applyDecoCollapse();
+      }
 
       if (!kw) {
         searchCount.textContent = '';
       } else {
-        searchCount.textContent = `普通 ${skillHits} · 百龙 ${rampageHits}`;
+        searchCount.textContent = `普通 ${skillHits} · 百龙 ${rampageHits} · 珠子 ${decoHits}`;
       }
 
-       document.querySelectorAll('.skill-section').forEach((sec) => {
+      document.querySelectorAll('.skill-section').forEach((sec) => {
         const hasVisible = sec.querySelector('.skill-card:not([style*="display: none"])');
         sec.style.display = hasVisible ? '' : 'none';
       });
@@ -1114,9 +1462,16 @@
         bodyEl.appendChild(empty);
       }
 
+      // 可用珠子（弹窗底部，独立于详细版/原文版内容）
+      const decoSec = buildDecoSection(id);
+      if (decoSec) bodyEl.appendChild(decoSec);
+
       overlay.classList.add('open');
       document.body.style.overflow = 'hidden'; // 防止背景滚动
     }
+
+    // 桥接给顶层 openDecoModal 使用（珠子→技能跳转）
+    _openSkillModal = openSkillModal;
 
     function closeSkillModal() {
       const overlay = document.getElementById('skillModal');
