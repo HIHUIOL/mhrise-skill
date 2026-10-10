@@ -1798,18 +1798,13 @@
         catEl.innerHTML = escapeHtml(c) + ' <span class="cat-count">' + list.length + '</span>';
         groupEl.appendChild(catEl);
 
-        const itemsEl = document.createElement('div');
-        itemsEl.className = 'catalog-items';
+        // 和上面「怪物」区块一样的图标网格
+        const gridEl = document.createElement('div');
+        gridEl.className = 'monster-grid catalog-mon-grid';
         list.forEach((nm) => {
-          const b = document.createElement('button');
-          b.className = 'catalog-item';
-          b.textContent = nm;
-          b.addEventListener('click', () => {
-            if (_openMonsterModal) _openMonsterModal(nm);
-          });
-          itemsEl.appendChild(b);
+          gridEl.appendChild(renderMonsterCard(nm, MONSTERS[nm]));
         });
-        groupEl.appendChild(itemsEl);
+        groupEl.appendChild(gridEl);
         body.appendChild(groupEl);
       });
 

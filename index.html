@@ -466,7 +466,7 @@
     .catalog.collapsed .catalog-body { display: none; }
 
     .catalog-body {
-      padding: 0.75rem 1rem 1rem;
+      padding: 0.75rem 0.6rem 1rem;
       display: flex;
       flex-direction: column;
       gap: 0.75rem;
@@ -500,6 +500,24 @@
       flex-wrap: wrap;
       gap: 0.35rem;
       padding-left: 0.5rem;
+    }
+
+    /* 「怪物一览」里的图标网格（和怪物区块一样的卡片） */
+    .catalog-mon-grid {
+      width: 100%;
+      margin-top: 0.1rem;
+    }
+    /* 目录里卡片更紧凑一点 */
+    .catalog-mon-grid .mon-icon-card {
+      padding: 0.3rem 0.15rem 0.25rem;
+    }
+    .catalog-mon-grid .mon-icon-img {
+      width: 40px;
+      height: 40px;
+    }
+    .catalog-mon-grid .mon-icon-name {
+      font-size: 0.66rem;
+      margin-top: 0.2rem;
     }
 
     .catalog-item {
