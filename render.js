@@ -1072,54 +1072,36 @@
   // ========================================================
   function renderMonsterCard(monName, mon) {
     const card = document.createElement('div');
-    card.className = 'skill-card monster-card';
+    card.className = 'skill-card monster-card mon-icon-card';
 
-    const mats = mon.materials || [];
-    const itemNames = [];
-    const seen = {};
-    mats.forEach(function (m) {
-      if (m.item && !seen[m.item]) { seen[m.item] = 1; itemNames.push(m.item); }
-    });
+    // 图标（monster-icons/ 下的 64×64 png；由 monster_icons.js 提供映射）
+    const iconMap = (typeof window !== 'undefined' && window.MONSTER_ICONS) || {};
+    const iconFile = iconMap[monName];
 
-    // 等级统计：该难度下的「素材种数」（去重）
-    // 例：同一素材的 目标报酬 / 剥取 / 破坏 只算 1 种
-    const rankSet = { '下位': {}, '上位': {}, '大师等级': {} };
-    mats.forEach(function (m) {
-      if (!m.item || !m.rank) return;
-      if (rankSet[m.rank]) rankSet[m.rank][m.item] = true;
-    });
+    if (iconFile) {
+      const im = document.createElement('img');
+      im.className = 'mon-icon-img';
+      im.loading = 'lazy';
+      im.decoding = 'async';
+      im.alt = monName;
+      im.src = 'monster-icons/' + iconFile;
+      card.appendChild(im);
+    } else {
+      // 没有图标时的兜底占位
+      const ph = document.createElement('div');
+      ph.className = 'mon-icon-img mon-icon-ph';
+      ph.textContent = '?';
+      card.appendChild(ph);
+    }
 
+    // 名字
     const titleEl = document.createElement('div');
-    titleEl.className = 'skill-name';
-    titleEl.innerHTML =
-      '<span class="deco-title-text">' + escapeHtml(monName) + '</span>' +
-      '<span class="skill-title-right">' +
-        '<span class="deco-slot-badge">' + itemNames.length + ' 素材</span>' +
-      '</span>';
+    titleEl.className = 'mon-icon-name';
+    titleEl.innerHTML = '<span class="deco-title-text">' + escapeHtml(monName) + '</span>';
+    titleEl.title = monName;
     card.appendChild(titleEl);
 
-    // 等级标记（该难度可获得的素材种数）
-    const rankRow = document.createElement('div');
-    rankRow.className = 'mon-card-ranks';
-    ['下位', '上位', '大师等级'].forEach(function (r) {
-      const n = Object.keys(rankSet[r]).length;
-      if (!n) return;
-      const s = document.createElement('span');
-      s.className = 'mon-rank-tag rank-' +
-        (r === '下位' ? 'low' : r === '上位' ? 'high' : 'master');
-      s.textContent = r + ' ' + n;
-      rankRow.appendChild(s);
-    });
-    card.appendChild(rankRow);
-
-    // 素材预览（前 6 个）
-    const pv = document.createElement('div');
-    pv.className = 'mon-card-mats';
-    pv.textContent = itemNames.slice(0, 6).join('、') +
-      (itemNames.length > 6 ? ' …' : '');
-    card.appendChild(pv);
-
-    card._search = (monName + ' ' + itemNames.join(' ')).toLowerCase();
+    card._search = monName.toLowerCase();
 
     card.addEventListener('click', function () {
       if (_openMonsterModal) _openMonsterModal(monName);
