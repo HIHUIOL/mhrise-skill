@@ -2915,11 +2915,26 @@
       let mode = 'part';   // 'part' | 'state'
 
       // 部位名展示（和 Kiranico 网站保持一致，空就空着）
+      // 名字过长时：本格内部可左右滑动（不影响其他列、不影响整页）
       function makePartName(name) {
         const el = document.createElement('span');
         el.className = 'hit-part-name';
         el.textContent = name || '';
         return el;
+      }
+
+      // 把部位名 + 状态 包成「本格可横滑」的容器
+      function makePartCell(name, stateText, stateCls) {
+        const scroll = document.createElement('div');
+        scroll.className = 'hit-part-scroll';
+        scroll.appendChild(makePartName(name));
+        if (stateText !== null && stateText !== undefined) {
+          const sp = document.createElement('span');
+          sp.className = 'hit-state' + (stateCls || '');
+          sp.textContent = stateText;
+          scroll.appendChild(sp);
+        }
+        return scroll;
       }
 
       function renderTable() {
@@ -2940,15 +2955,17 @@
             // 和上一行同名 → 不重复显示部位名（靠 border 连成一组）
             const sameAsPrev = idx > 0 && hz[idx - 1][0] === r[0];
             if (!sameAsPrev) {
-              td0.appendChild(makePartName(r[0]));
+              td0.appendChild(makePartCell(r[0],
+                stateCol ? stateLabel(r[1]) : null,
+                (!r[1] || r[1] === '0') ? ' hit-state-normal' : ''));
             } else {
               td0.className += ' hit-part-cont';
-            }
-            if (stateCol) {
-              const sp = document.createElement('span');
-              sp.className = 'hit-state' + ((!r[1] || r[1] === '0') ? ' hit-state-normal' : '');
-              sp.textContent = stateLabel(r[1]);
-              td0.appendChild(sp);
+              if (stateCol) {
+                const sp = document.createElement('span');
+                sp.className = 'hit-state' + ((!r[1] || r[1] === '0') ? ' hit-state-normal' : '');
+                sp.textContent = stateLabel(r[1]);
+                td0.appendChild(sp);
+              }
             }
             tr.appendChild(td0);
             COLS.forEach(function (c) {
@@ -2961,23 +2978,26 @@
             tbody.appendChild(tr);
           });
         } else {
-          // 按状态分组：状态名 cell 只在第一行显示
+          // 按状态分组：状态名 cell 只在第一行显示；部位名放本格可横滑容器里
           stateIds.forEach(function (s) {
             const rows = byState[s];
             rows.forEach(function (r, i) {
               const tr = document.createElement('tr');
               const td0 = document.createElement('td');
               td0.className = 'hit-part hit-part-group';
+              const scroll = document.createElement('div');
+              scroll.className = 'hit-part-scroll hit-part-scroll-state';
               if (i === 0) {
                 const nm = document.createElement('span');
                 nm.className = 'hit-part-name hit-state-name';
                 nm.textContent = stateLabel(s);
-                td0.appendChild(nm);
+                scroll.appendChild(nm);
               }
               const sp = document.createElement('span');
               sp.className = 'hit-state hit-state-part';
               sp.textContent = r[0] || '';
-              td0.appendChild(sp);
+              scroll.appendChild(sp);
+              td0.appendChild(scroll);
               tr.appendChild(td0);
               COLS.forEach(function (c) {
                 const td = document.createElement('td');

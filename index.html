@@ -1592,9 +1592,26 @@
       color: #e9eef2;
       font-weight: 600;
       white-space: nowrap;
+      /* 限宽：超过就由内部的 .hit-part-scroll 横滑 */
+      max-width: 5.6rem;
+      width: 5.6rem;
       overflow: hidden;
-      text-overflow: ellipsis;
     }
+
+    /* 部位名那一格的内部滚动容器（只有这里能左右滑） */
+    .hit-part-scroll {
+      overflow-x: auto;
+      overflow-y: hidden;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      display: block;
+    }
+    .hit-part-scroll::-webkit-scrollbar { display: none; }
+    .hit-part-scroll > * { display: inline-block; }
+    /* 「按状态」模式下同一格里有 状态名 + 部位名，水平排列 */
+    .hit-part-scroll-state .hit-part-name { margin-bottom: 0; }
+    .hit-part-scroll-state .hit-part-name + .hit-state { margin-left: 0.25rem; }
 
     /* 连续同名部位的后续行（视觉上跟首行连成一组） */
     .mon-hit-table td.hit-part-cont {
