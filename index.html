@@ -55,9 +55,10 @@
     /* ---------- 搜索框 ---------- */
     .search-box {
       display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin: 0 auto 2rem;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.4rem;
+      margin: 0 auto 1.5rem;
       max-width: 640px;
       width: 100%;
     }
@@ -80,7 +81,13 @@
     #searchCount {
       font-size: 0.85rem;
       color: #7d8f9f;
-      white-space: nowrap;
+      line-height: 1.5;
+      padding-left: 0.2rem;
+      word-break: break-word;
+    }
+
+    #searchCount:empty {
+      display: none;
     }
 
     /* ---------- 区块 ---------- */
@@ -304,6 +311,11 @@
       font-size: 0.9rem;
       color: #b0c4d9;
       line-height: 1.6;
+    }
+
+    /* 移到底部后的样式：上间距大、下间距小 */
+    .data-source-bottom {
+      margin: 2.5rem auto 1rem;
     }
 
     .data-source b { color: #f5e2b5; font-weight: 600; }
@@ -912,6 +924,20 @@
       color: #b8d09a;
     }
 
+    /* 无怪物掉落、但有道具数据的素材（点开看来源） */
+    .deco-mat-item-link .deco-mat-name {
+      color: #a9c4d8;
+    }
+
+    /* 素材卡片 */
+    .material-card .mon-badge {
+      color: #8fc0ea;
+    }
+
+    .mat-go-item {
+      color: #8fa6bb;
+    }
+
     .mat-go {
       font-size: 0.7em;
       margin-left: 0.3rem;
@@ -1079,6 +1105,255 @@
       margin-top: 0.15rem;
     }
 
+    /* ---------- 分类筛选 ---------- */
+    .cat-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 0.6rem 0 1rem;
+    }
+
+    .cat-btn {
+      font: inherit;
+      font-size: 0.82rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 16px;
+      border: 1px solid #2f3d4b;
+      background: #1c2732;
+      color: #b8c4d0;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+
+    .cat-btn:active {
+      background: #24323f;
+    }
+
+    .cat-btn.active {
+      background: #3a5d7a;
+      border-color: #6fa8d8;
+      color: #ffffff;
+      font-weight: 600;
+    }
+
+    /* 分类筛选时隐藏不相关区块 */
+    .cat-hidden {
+      display: none !important;
+    }
+
+    /* ---------- 搜索态：页面紧凑 ---------- */
+    /* 搜索态下区块标题缩小 */
+    body.searching .section-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.7rem;
+      padding-left: 0.4rem;
+      border-left-width: 4px;
+    }
+
+    /* ---------- 回到顶部按钮 ---------- */
+    #backTop {
+      position: fixed;
+      right: 1rem;
+      bottom: 1.2rem;
+      z-index: 60;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid #3a5d7a;
+      background: #23313d;
+      color: #cfe0ee;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    #backTop.show {
+      display: flex;
+    }
+
+    #backTop:active {
+      background: #2e4152;
+    }
+
+    /* ---------- 素材等级标签（珠子/怪物弹窗通用） ---------- */
+    .mon-mat-rank-tags,
+    .mat-rank-tags {
+      display: inline-flex;
+      gap: 0.2rem;
+      margin-left: 0.35rem;
+      vertical-align: middle;
+    }
+
+    .mat-rank-tag {
+      display: inline-block;
+      font-size: 0.62rem;
+      line-height: 1;
+      padding: 0.15rem 0.28rem;
+      border-radius: 3px;
+      border: 1px solid transparent;
+      white-space: nowrap;
+    }
+
+    .mat-rank-tag.rank-low {
+      background: #24405a;
+      color: #8fc0ea;
+      border-color: #35597a;
+    }
+
+    .mat-rank-tag.rank-high {
+      background: #2b4a2a;
+      color: #a6dd8b;
+      border-color: #3d6b3c;
+    }
+
+    .mat-rank-tag.rank-master {
+      background: #4a3a20;
+      color: #e8c46a;
+      border-color: #6b552f;
+    }
+
+    /* ---------- 素材一览：按等级分组 ---------- */
+    .mon-mat-group {
+      margin: 0.35rem 0 0.5rem;
+    }
+
+    .mon-mat-group-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      padding: 0.1rem 0.45rem;
+      border-radius: 4px;
+      border-left: 3px solid #6f8093;
+      background: #1a2430;
+      color: #b8c4d0;
+    }
+
+    .mon-mat-group.rank-low .mon-mat-group-label {
+      border-left-color: #4d8fc7;
+      color: #8fc0ea;
+    }
+
+    .mon-mat-group.rank-high .mon-mat-group-label {
+      border-left-color: #5aa04f;
+      color: #a6dd8b;
+    }
+
+    .mon-mat-group.rank-master .mon-mat-group-label {
+      border-left-color: #c69a3e;
+      color: #e8c46a;
+    }
+
+    /* ---------- 素材 chip ---------- */
+    .mon-mat-chip {
+      font: inherit;
+      font-size: 0.72rem;
+      line-height: 1.2;
+      padding: 0.28rem 0.55rem;
+      border-radius: 14px;
+      border: 1px solid #2f3d4b;
+      background: #1c2732;
+      color: #c3ced9;
+      cursor: pointer;
+    }
+
+    .mon-mat-chip:active {
+      background: #24323f;
+    }
+
+    /* 当前选中的素材 chip */
+    .mon-mat-chip.active {
+      background: #3a5d7a;
+      border-color: #6fa8d8;
+      color: #ffffff;
+      font-weight: 600;
+      box-shadow: 0 0 0 1px #6fa8d8 inset;
+    }
+
+    /* ---------- 素材明细（顶部选中块） ---------- */
+    .mon-mat-detail.highlight {
+      border: 1px solid #3a5d7a;
+      background: #16202b;
+      border-radius: 6px;
+      padding: 0.5rem 0.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .mon-mat-detail.highlight .mon-mat-title {
+      color: #ffffff;
+    }
+
+    .mon-mat-none {
+      font-size: 0.74rem;
+      color: #7f8c99;
+      padding: 0.25rem 0;
+    }
+
+    /* ---------- 其他获得途径 ---------- */
+    .mon-obtain-head {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #8fa6bb;
+      margin-top: 0.5rem;
+      padding: 0.3rem 0.4rem;
+      background: #1a2430;
+      border-radius: 4px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mon-obtain-toggle {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .mon-obtain-arrow {
+      font-size: 0.7em;
+      color: #8fa6bb;
+    }
+
+    .mon-obtain-list.collapsed {
+      display: none;
+    }
+
+    .mon-obtain-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.6rem;
+      align-items: baseline;
+      padding: 0.3rem 0.4rem;
+      border-bottom: 1px solid #1f2a35;
+      font-size: 0.74rem;
+    }
+
+    .mon-obtain-row:last-child {
+      border-bottom: none;
+    }
+
+    .obtain-quest {
+      color: #c3ced9;
+      flex: 1 1 100%;
+      word-break: break-all;
+    }
+
+    .obtain-type {
+      color: #8fa6bb;
+    }
+
+    .obtain-count {
+      color: #b8c4d0;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .obtain-rate {
+      color: #e8c46a;
+      font-variant-numeric: tabular-nums;
+    }
+
     /* ---------- 怪物弹窗：任务列表 ---------- */
     .mon-quest-toggle {
       cursor: pointer;
@@ -1162,28 +1437,89 @@
     <div class="title-bar">
       <h1>🌅 曙光技能图鉴</h1>
       <button class="version-badge" id="versionBadge" title="点击检查更新">
-        <span class="ver-icon">🏷️</span><span id="versionText">v1.04</span>
+        <span class="ver-icon">🏷️</span><span id="versionText">v1.05</span>
       </button>
     </div>
     <div class="subhead">怪物猎人崛起：曙光 · 技能效果一览 · mhrise-skill</div>
 
-    <!-- 数据来源说明 -->
-    <div class="data-source">
-      📖 <b>数据来源：</b>技能卡牌提供两套文本，点击卡片右上角按钮即可切换：
-      <br>
-      📘 <b>详细版：</b>整理自 Nexus Mods 模组 <b>《Skill Descriptions》</b>（Monster Hunter Rise: Sunbreak），
-      含武器差分、瓶类型等细节。
-      <a href="https://www.nexusmods.com/monsterhunterrise/mods/3872" target="_blank" rel="noopener noreferrer">
-        查看原模组 ↗
-      </a>
-      <br>
-      🎮 <b>原文版：</b>游戏内技能说明原始文本（含各等级效果）。
-      <br>
-      <span style="color:#7d8f9f;font-size:0.82rem;">
-        技能名称统一采用详细版名称。本页面仅作游戏技能查阅展示用途，模组及其文本版权归原作者所有；
-        《怪物猎人崛起：曙光》为 CAPCOM 版权作品，本页面与 CAPCOM 及 Nexus Mods 无隶属关系。
-      </span>
+    <!-- 搜索框 + 分类筛选 -->
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索技能名 / ID / 效果 / 珠子 / 素材…">
+      <span id="searchCount"></span>
     </div>
+
+    <!-- 分类筛选（全部 / 技能 / 百龙技能 / 珠子 / 百龙珠 / 怪物） -->
+    <div class="cat-filter" id="catFilter">
+      <button class="cat-btn active" data-cat="all">全部</button>
+      <button class="cat-btn" data-cat="skill">技能</button>
+      <button class="cat-btn" data-cat="ram">百龙技能</button>
+      <button class="cat-btn" data-cat="deco">珠子</button>
+      <button class="cat-btn" data-cat="ramdeco">百龙珠</button>
+      <button class="cat-btn" data-cat="monster">怪物</button>
+      <button class="cat-btn" data-cat="material">素材</button>
+    </div>
+
+    <!-- ================= 五个区块（数据容器） =================
+         平时隐藏；点上方分类筛选或搜索时才会显示 -->
+    <div class="section-area" id="sectionArea">
+
+      <!-- 普通技能 -->
+      <div class="skill-section cat-hidden" id="skillSection">
+        <div class="section-title section-toggle" id="skillSectionTitle">
+          ⚔️ 普通技能
+          <span class="section-toggle-hint" id="skillSectionHint">（点击展开 ▼）</span>
+        </div>
+        <div id="skillsContainer" class="skill-grid"></div>
+      </div>
+
+      <!-- 百龙技能 -->
+      <div class="skill-section cat-hidden" id="ramSection">
+        <div class="section-title section-toggle" id="ramSectionTitle">
+          🐉 百龙技能
+          <span class="section-toggle-hint" id="ramSectionHint">（点击展开 ▼）</span>
+        </div>
+        <div id="rampageContainer" class="skill-grid"></div>
+      </div>
+
+      <!-- 珠子（装饰品） -->
+      <div class="skill-section cat-hidden" id="decoSection">
+        <div class="section-title section-toggle" id="decoSectionTitle">
+          🔮 珠子（装饰品）
+          <span class="section-toggle-hint" id="decoSectionHint">（点击展开 ▼）</span>
+        </div>
+        <div id="decoContainer" class="skill-grid"></div>
+      </div>
+
+      <!-- 百龙珠 -->
+      <div class="skill-section cat-hidden" id="ramDecoSection">
+        <div class="section-title section-toggle" id="ramDecoSectionTitle">
+          🈶 百龙珠
+          <span class="section-toggle-hint" id="ramDecoSectionHint">（点击展开 ▼）</span>
+        </div>
+        <div id="ramDecoContainer" class="skill-grid"></div>
+      </div>
+
+      <!-- 怪物（素材表） -->
+      <div class="skill-section cat-hidden" id="monsterSection">
+        <div class="section-title section-toggle" id="monsterSectionTitle">
+          👹 怪物素材
+          <span class="section-toggle-hint" id="monsterSectionHint">（点击展开 ▼）</span>
+        </div>
+        <div id="monsterContainer" class="skill-grid"></div>
+      </div>
+
+      <!-- 素材（道具） -->
+      <div class="skill-section cat-hidden" id="materialSection">
+        <div class="section-title section-toggle" id="materialSectionTitle">
+          📦 全部素材
+          <span class="section-toggle-hint" id="materialSectionHint">（点击展开 ▼）</span>
+        </div>
+        <div id="materialContainer" class="skill-grid"></div>
+      </div>
+
+    </div>
+
+    <!-- ================= 一览目录 ================= -->
 
     <!-- 技能一览（目录） -->
     <div class="catalog" id="catalog">
@@ -1229,48 +1565,6 @@
       </div>
     </div>
 
-    <!-- 搜索框 -->
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="搜索技能名 / ID / 效果 / 珠子 / 素材…">
-      <span id="searchCount"></span>
-    </div>
-
-    <!-- 普通技能 -->
-    <div class="skill-section" id="skillSection">
-      <div class="section-title section-toggle" id="skillSectionTitle">
-        ⚔️ 普通技能
-        <span class="section-toggle-hint" id="skillSectionHint">（点击收起 ▲）</span>
-      </div>
-      <div id="skillsContainer" class="skill-grid"></div>
-    </div>
-
-    <!-- 百龙技能 -->
-    <div class="skill-section" id="ramSection">
-      <div class="section-title section-toggle" id="ramSectionTitle">
-        🐉 百龙技能
-        <span class="section-toggle-hint" id="ramSectionHint">（点击收起 ▲）</span>
-      </div>
-      <div id="rampageContainer" class="skill-grid"></div>
-    </div>
-
-    <!-- 珠子（装饰品） -->
-    <div class="skill-section" id="decoSection">
-      <div class="section-title section-toggle" id="decoSectionTitle">
-        🔮 珠子（装饰品）
-        <span class="section-toggle-hint" id="decoSectionHint">（点击展开 ▼）</span>
-      </div>
-      <div id="decoContainer" class="skill-grid"></div>
-    </div>
-
-    <!-- 百龙珠 -->
-    <div class="skill-section" id="ramDecoSection">
-      <div class="section-title section-toggle" id="ramDecoSectionTitle">
-        🈶 百龙珠
-        <span class="section-toggle-hint" id="ramDecoSectionHint">（点击展开 ▼）</span>
-      </div>
-      <div id="ramDecoContainer" class="skill-grid"></div>
-    </div>
-
     <!-- 怪物一览（目录） -->
     <div class="catalog" id="monsterCatalog">
       <div class="catalog-head" id="monsterCatalogHead">
@@ -1282,13 +1576,33 @@
       </div>
     </div>
 
-    <!-- 怪物（素材表） -->
-    <div class="skill-section" id="monsterSection">
-      <div class="section-title section-toggle" id="monsterSectionTitle">
-        👹 怪物素材
-        <span class="section-toggle-hint" id="monsterSectionHint">（点击展开 ▼）</span>
+    <!-- 素材一览（目录） -->
+    <div class="catalog" id="materialCatalog">
+      <div class="catalog-head" id="materialCatalogHead">
+        <span class="catalog-title">📦 素材一览</span>
+        <span class="catalog-arrow">▼</span>
       </div>
-      <div id="monsterContainer" class="skill-grid"></div>
+      <div class="catalog-body" id="materialCatalogBody">
+        <!-- 由 render.js 动态生成 -->
+      </div>
+    </div>
+
+    <!-- 数据来源说明（移到底部） -->
+    <div class="data-source data-source-bottom">
+      📖 <b>数据来源：</b>技能卡牌提供两套文本，点击卡片右上角按钮即可切换：
+      <br>
+      📘 <b>详细版：</b>整理自 Nexus Mods 模组 <b>《Skill Descriptions》</b>（Monster Hunter Rise: Sunbreak），
+      含武器差分、瓶类型等细节。
+      <a href="https://www.nexusmods.com/monsterhunterrise/mods/3872" target="_blank" rel="noopener noreferrer">
+        查看原模组 ↗
+      </a>
+      <br>
+      🎮 <b>原文版：</b>游戏内技能说明原始文本（含各等级效果）。
+      <br>
+      <span style="color:#7d8f9f;font-size:0.82rem;">
+        技能名称统一采用详细版名称。本页面仅作游戏技能查阅展示用途，模组及其文本版权归原作者所有；
+        《怪物猎人崛起：曙光》为 CAPCOM 版权作品，本页面与 CAPCOM 及 Nexus Mods 无隶属关系。
+      </span>
     </div>
 
     <footer>
@@ -1298,6 +1612,9 @@
       <span style="font-size:0.78rem;">怪物猎人崛起：曙光 为 CAPCOM 商标，本页面与官方无关</span>
     </footer>
   </div>
+
+  <!-- 回到顶部 -->
+  <button id="backTop" title="回到顶部" aria-label="回到顶部">↑</button>
 
   <!-- 技能详情弹窗 -->
   <div class="modal-overlay" id="skillModal">
@@ -1325,7 +1642,7 @@
     // ========================================================
     // 应用版本号（修改此值即可让"点击版本号"提示有新版本）
     // ========================================================
-    window.APP_VERSION = 'v1.04';
+    window.APP_VERSION = 'v1.05';
 
     // 显示版本号
     (function () {
