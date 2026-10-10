@@ -1079,6 +1079,65 @@
       margin-top: 0.15rem;
     }
 
+    /* ---------- 怪物弹窗：任务列表 ---------- */
+    .mon-quest-toggle {
+      cursor: pointer;
+      user-select: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .mon-quest-arrow {
+      font-size: 0.7em;
+      color: #8fa6bb;
+    }
+
+    .mon-quest-list.collapsed {
+      display: none;
+    }
+
+    .mon-quest-row {
+      padding: 0.35rem 0.4rem;
+      border-bottom: 1px solid #253240;
+    }
+
+    .mon-quest-row:last-child {
+      border-bottom: none;
+    }
+
+    .mon-quest-name {
+      font-size: 0.78rem;
+      color: #e9eef2;
+      line-height: 1.4;
+      word-break: break-all;
+    }
+
+    .mon-quest-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem 0.7rem;
+      margin-top: 0.2rem;
+    }
+
+    .mon-quest-meta .qmeta {
+      font-size: 0.7rem;
+      color: #b8c4d0;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .mon-quest-meta .qmeta i {
+      font-style: normal;
+      color: #6f8093;
+      margin-right: 0.2rem;
+    }
+
+    /* 大段 HP 单独占行 */
+    .mon-quest-meta .qmeta:has(i:only-child),
+    .mon-quest-meta .qmeta {
+      max-width: 100%;
+    }
+
     .mon-hit-table td {
       padding: 0.15rem 0.3rem;
       border-bottom: 1px solid #253240;

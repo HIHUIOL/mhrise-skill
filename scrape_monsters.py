@@ -52,6 +52,20 @@ OUT = os.path.join(HERE, "monsters.js")
 RETRY = 3
 TIMEOUT = 40
 
+# 任务表「英文表头 → 中文键」映射
+QUEST_FIELD = {
+    "Quest": "quest",
+    "Players": "players",
+    "HP": "hp",
+    "Attack": "attack",
+    "Parts": "parts",
+    "Defense": "defense",
+    "Ailment": "ailment",
+    "Stun": "stun",
+    "Stamina": "stamina",
+    "Mount": "mount",
+}
+
 
 # ------------------------------------------------------------
 def fetch(url):
@@ -158,13 +172,22 @@ def parse_monster(html):
                 ails.append(c)
     out["ailments"] = ails
 
-    # 任务列表
+    # 任务列表（表头: Quest/Players/HP/Attack/Parts/Defense/Ailment/Stun/Stamina/Mount）
     quests = []
     for t in tables:
+        # 先取表头
+        ths = [strip(x) for x in re.findall(r"<th[^>]*>(.*?)</th>", t, re.S)]
+        is_quest_tbl = any("Quest" in x or "任务" in x for x in ths)
         for r in rows_of(t):
             c = cells(r)
             if len(c) >= 3 and "★" in c[0]:
-                quests.append(c)
+                if is_quest_tbl and len(ths) == len(c):
+                    obj = {}
+                    for i, k in enumerate(ths):
+                        obj[QUEST_FIELD.get(k, k)] = c[i]
+                    quests.append(obj)
+                else:
+                    quests.append(c)
     out["quests"] = quests
 
     return out

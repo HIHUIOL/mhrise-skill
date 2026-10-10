@@ -51,6 +51,8 @@ INCLUDE = [
     "skill_data.js",
     "decoration.js",
     "rampage_decorations.js",
+    "items.js",
+    "monsters.js",
     "sw.js",
     "icon-192.png",
     "icon-512.png",

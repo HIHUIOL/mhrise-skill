@@ -1968,13 +1968,92 @@
         bodyEl.appendChild(box);
       }
 
-      // ③ 部位肉质（简要）
+      // ③ 任务列表（可折叠，避免太长）
+      if (mon.quests && mon.quests.length) {
+        bodyEl.appendChild(buildQuestBlock(mon.quests));
+      }
+
+      // ④ 部位肉质（简要）
       if (mon.hitzones && mon.hitzones.length) {
         bodyEl.appendChild(buildHitzoneBlock(mon.hitzones));
       }
 
       overlay.classList.add('open');
       document.body.style.overflow = 'hidden';
+    }
+
+    // 任务列表块（默认折叠，点标题展开）
+    function buildQuestBlock(quests) {
+      const wrap = document.createElement('div');
+      wrap.className = 'mon-quest';
+
+      const head = document.createElement('div');
+      head.className = 'mon-section-head mon-quest-toggle';
+      head.innerHTML = '任务列表（' + quests.length + '）' +
+        '<span class="mon-quest-arrow">▼</span>';
+      wrap.appendChild(head);
+
+      const listEl = document.createElement('div');
+      listEl.className = 'mon-quest-list collapsed';
+
+      // 常见字段：quest/players/hp/attack/parts/defense/ailment/stun/stamina/mount
+      const FIELD_LABEL = {
+        players: '人数', hp: 'HP', attack: '攻击', parts: '部位',
+        defense: '防御', ailment: '异常', stun: '晕眩',
+        stamina: '耐力', mount: '骑乘',
+      };
+      const FIELD_ORDER = ['players', 'hp', 'attack', 'parts', 'defense',
+        'ailment', 'stun', 'stamina', 'mount'];
+
+      quests.forEach(function (q) {
+        // 兼容旧格式（数组）
+        let questName, fields;
+        if (Array.isArray(q)) {
+          questName = q[0];
+          fields = q.slice(1);
+          fields = FIELD_ORDER.map(function (k, i) {
+            return { key: k, val: fields[i] };
+          }).filter(function (x) { return x.val; });
+        } else {
+          questName = q.quest || '';
+          fields = FIELD_ORDER
+            .filter(function (k) { return q[k]; })
+            .map(function (k) { return { key: k, val: q[k] }; });
+        }
+
+        const row = document.createElement('div');
+        row.className = 'mon-quest-row';
+
+        const nm = document.createElement('div');
+        nm.className = 'mon-quest-name';
+        nm.textContent = questName;
+        row.appendChild(nm);
+
+        const meta = document.createElement('div');
+        meta.className = 'mon-quest-meta';
+        fields.forEach(function (f) {
+          const s = document.createElement('span');
+          s.className = 'qmeta';
+          // HP 太长单独占一行处理
+          s.innerHTML = '<i>' + (FIELD_LABEL[f.key] || f.key) + '</i>' +
+            escapeHtml(String(f.val));
+          meta.appendChild(s);
+        });
+        row.appendChild(meta);
+
+        listEl.appendChild(row);
+      });
+
+      wrap.appendChild(listEl);
+
+      head.addEventListener('click', function () {
+        listEl.classList.toggle('collapsed');
+        const arrow = head.querySelector('.mon-quest-arrow');
+        if (arrow) arrow.textContent =
+          listEl.classList.contains('collapsed') ? '▼' : '▲';
+      });
+
+      return wrap;
     }
 
     // 素材掉落明细（按 下位/上位/大师 分组）
