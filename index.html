@@ -581,6 +581,16 @@
     .modal-title .skill-id { flex-shrink: 0; }
     .modal-title .modal-title-icon { font-size: 1.05em; }
 
+    /* 弹窗标题里的怪物图标 */
+    .modal-title .modal-title-mon-img {
+      width: 26px;
+      height: 26px;
+      object-fit: contain;
+      vertical-align: -6px;
+      margin-right: 0.3rem;
+      border-radius: 4px;
+    }
+
     .modal-close {
       background: #2d3843;
       color: #b0c4d9;
@@ -771,6 +781,7 @@
     .section-title.section-toggle:hover .section-toggle-hint { color: #a8bfd4; }
 
     .skill-grid.collapsed { display: none; }
+    .monster-grid.collapsed { display: none; }
 
     /* ========================================================
        珠子（装饰品）相关样式
@@ -1198,6 +1209,20 @@
       grid-template-columns: repeat(4, 1fr);
       gap: 0.45rem;
     }
+
+    /* 分组小标题（大型怪物 / 小型怪物）—— 跨整行 */
+    .mon-grid-group-title {
+      grid-column: 1 / -1;
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: #8fa8bf;
+      margin: 0.5rem 0 0.1rem;
+      padding-left: 0.15rem;
+      border-left: 3px solid #4a6a88;
+      padding-top: 0.1rem;
+      padding-bottom: 0.1rem;
+    }
+    .mon-grid-group-title:first-child { margin-top: 0; }
 
     .mon-icon-card {
       display: flex;

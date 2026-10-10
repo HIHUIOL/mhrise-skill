@@ -1514,13 +1514,23 @@
 
     // --------------------------------------------------------
     // 怪物卡片（monsters.js）
+    // 排序：大型怪物（图标 em***）在前，小型怪物（ems***）在后
     // --------------------------------------------------------
     const monsterContainer = document.getElementById('monsterContainer');
-    const monNames = Object.keys(MONSTERS).sort();
-    const monsterCards = monNames.map((nm) => {
+    const _iconMap = (typeof window !== 'undefined' && window.MONSTER_ICONS) || {};
+    function _isSmallMonster(nm) {
+      return /^ems/i.test(_iconMap[nm] || '');
+    }
+    const _allMonNames = Object.keys(MONSTERS);
+    const bigMonNames = _allMonNames.filter(function (n) { return !_isSmallMonster(n); }).sort();
+    const smallMonNames = _allMonNames.filter(function (n) { return _isSmallMonster(n); }).sort();
+    const monsterCards = bigMonNames.concat(smallMonNames).map((nm) => {
       const el = renderMonsterCard(nm, MONSTERS[nm]);
       return { id: 'mon_' + nm, el, search: el._search || '' };
     });
+    // 名字 → 卡片对象（挂 DOM 时复用，保证搜索筛选作用于真实 DOM 元素）
+    const _monCardMap = {};
+    monsterCards.forEach(function (it) { _monCardMap[it.el.querySelector('.deco-title-text').textContent] = it; });
 
     // --------------------------------------------------------
     // 素材卡片（items.js，1764 条）
@@ -1541,7 +1551,24 @@
     rampageCards.forEach((it) => rampageContainer.appendChild(it.el));
     if (decoContainer) decoCards.forEach((it) => decoContainer.appendChild(it.el));
     if (ramDecoContainer) ramDecoCards.forEach((it) => ramDecoContainer.appendChild(it.el));
-    if (monsterContainer) monsterCards.forEach((it) => monsterContainer.appendChild(it.el));
+    if (monsterContainer) {
+      // 大型怪物 / 小型怪物 分组标题（复用 monsterCards 里的真实 DOM 元素）
+      const grpBig = document.createElement('div');
+      grpBig.className = 'mon-grid-group-title';
+      grpBig.textContent = '大型怪物（' + bigMonNames.length + '）';
+      monsterContainer.appendChild(grpBig);
+      bigMonNames.forEach(function (nm) {
+        if (_monCardMap[nm]) monsterContainer.appendChild(_monCardMap[nm].el);
+      });
+
+      const grpSmall = document.createElement('div');
+      grpSmall.className = 'mon-grid-group-title';
+      grpSmall.textContent = '小型怪物（' + smallMonNames.length + '）';
+      monsterContainer.appendChild(grpSmall);
+      smallMonNames.forEach(function (nm) {
+        if (_monCardMap[nm]) monsterContainer.appendChild(_monCardMap[nm].el);
+      });
+    }
     if (materialContainer) materialCards.forEach((it) => materialContainer.appendChild(it.el));
 
     // --------------------------------------------------------
@@ -1741,18 +1768,17 @@
       const head = document.getElementById('monsterCatalogHead');
       const catalog = document.getElementById('monsterCatalog');
       if (!body || !head || !catalog) return;
-      if (!monNames.length) return;
+      if (!_allMonNames.length) return;
 
-      // 按类别分组（霸主 / 大型 / 小型）
+      // 按类别分组（霸主 / 大型怪物 / 小型怪物）
+      // 判定：图标 ems*** = 小型；名字以「霸主」开头 → 霸主
       const groups = {};
-      monNames.forEach((nm) => {
+      _allMonNames.forEach((nm) => {
         let c;
         if (nm.indexOf('霸主') === 0) {
           c = '霸主';
         } else {
-          const mats = (MONSTERS[nm].materials || []).length;
-          // 小型怪素材行数通常很少（< 15），大型怪较多
-          c = mats >= 15 ? '大型怪物' : '小型怪物';
+          c = _isSmallMonster(nm) ? '小型怪物' : '大型怪物';
         }
         if (!groups[c]) groups[c] = [];
         groups[c].push(nm);
@@ -2059,10 +2085,29 @@
         if (hit) monHits++;
       });
       materialCards.forEach((item) => {
-        const hit = inScope('material') && (!kw || item.search.includes(kw));
+const hit = inScope('material') && (!kw || item.search.includes(kw));
         item.el.style.display = hit ? '' : 'none';
         if (hit) matHits++;
       });
+
+      // 怪物分组标题：某一组没有命中就隐藏标题
+      (function syncMonGroupTitles() {
+        if (!monsterContainer) return;
+        const titles = monsterContainer.querySelectorAll('.mon-grid-group-title');
+        if (titles.length < 2) return;
+        function anyVisible(sel) {
+          const start = titles[sel === 'big' ? 0 : 1];
+          const end = titles[sel === 'big' ? 1 : null];
+          let n = start.nextElementSibling;
+          while (n && n !== end) {
+            if (n.className.indexOf('mon-icon-card') >= 0 && n.style.display !== 'none') return true;
+            n = n.nextElementSibling;
+          }
+          return false;
+        }
+        titles[0].style.display = anyVisible('big') ? '' : 'none';
+        titles[1].style.display = anyVisible('small') ? '' : 'none';
+      })();
 
       // 搜索时自动展开对应区块；清空时恢复默认（珠子/百龙珠/怪物默认折叠）
       if (decoCollapse) {
@@ -2357,9 +2402,12 @@
       const bodyEl = document.getElementById('modalBody');
       if (!overlay || !titleEl || !bodyEl) return;
 
-      titleEl.innerHTML =
-        '<span class="modal-title-icon">👹</span>' +
-        escapeHtml(monName);
+      // 标题：有怪物图标就用图标，没有则退回 👹
+      const _mi = (typeof window !== 'undefined' && window.MONSTER_ICONS) || {};
+      const _mf = _mi[monName];
+      titleEl.innerHTML = _mf
+        ? '<img class="modal-title-mon-img" src="monster-icons/' + _mf + '" alt="">' + escapeHtml(monName)
+        : '<span class="modal-title-icon">👹</span>' + escapeHtml(monName);
 
       bodyEl.innerHTML = '';
 
