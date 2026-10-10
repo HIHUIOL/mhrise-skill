@@ -65,6 +65,7 @@ INCLUDE = [
     "scrape_monsters.py",
     "scrape_items.sh",
     "scrape_monsters.sh",
+    "risesb动作值（施工中：更新動作值到15.0.0）.xlsx",
 ]
 
 # 不参与同步的目录名 / 文件名

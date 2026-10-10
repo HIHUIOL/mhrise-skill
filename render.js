@@ -1374,9 +1374,9 @@
     const expandTxt = '（点击展开 ▼）';
     const collapseTxt = '（点击收起 ▲）';
     const EX = expandTxt, CO = collapseTxt;
-    // 普通技能 / 百龙技能：默认展开；珠子 / 百龙珠：默认折叠
-    const skillCollapse = setupSectionCollapse('skill', 'skillSectionTitle', 'skillsContainer', 'skillSectionHint', false, EX, CO);
-    const ramCollapse = setupSectionCollapse('ram', 'ramSectionTitle', 'rampageContainer', 'ramSectionHint', false, EX, CO);
+    // 五个区块全部默认折叠
+    const skillCollapse = setupSectionCollapse('skill', 'skillSectionTitle', 'skillsContainer', 'skillSectionHint', true, EX, CO);
+    const ramCollapse = setupSectionCollapse('ram', 'ramSectionTitle', 'rampageContainer', 'ramSectionHint', true, EX, CO);
     const decoCollapse = setupSectionCollapse('deco', 'decoSectionTitle', 'decoContainer', 'decoSectionHint', true, EX, CO);
     const ramDecoCollapse = setupSectionCollapse('ramdeco', 'ramDecoSectionTitle', 'ramDecoContainer', 'ramDecoSectionHint', true, EX, CO);
     const monsterCollapse = setupSectionCollapse('monster', 'monsterSectionTitle', 'monsterContainer', 'monsterSectionHint', true, EX, CO);
