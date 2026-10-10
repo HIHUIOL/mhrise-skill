@@ -1,0 +1,14 @@
+# 依赖 / 构建产物
+node_modules/
+dist/
+*.log
+
+# 系统 / 编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 临时文件
+*.tmp
+*.bak

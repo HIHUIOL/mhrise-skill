@@ -1,0 +1,33 @@
+{
+  "name": "曙光技能图鉴 · mhrise-skill",
+  "short_name": "曙光技能图鉴",
+  "description": "怪物猎人崛起：曙光 技能与百龙技能效果一览。数据来源于 Nexus Mods 模组《Skill Descriptions》。",
+  "lang": "zh-CN",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1a1e24",
+  "theme_color": "#1a1e24",
+  "categories": ["games", "utilities", "reference"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
