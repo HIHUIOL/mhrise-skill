@@ -495,6 +495,24 @@
 
     .catalog-cat:hover { color: #f5e2b5; }
 
+    /* 素材一览：可折叠的分类标题 */
+    .catalog-cat-toggle {
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .catalog-cat-toggle .catalog-cat-arrow {
+      font-size: 0.6rem;
+      color: #7d8f9f;
+      margin-right: 0.1rem;
+      display: inline-block;
+      width: 0.7em;
+    }
+    /* 折叠时隐藏该类的项目 */
+    .catalog-group.cat-collapsed .catalog-items {
+      display: none;
+    }
+
     .catalog-items {
       display: flex;
       flex-wrap: wrap;
@@ -1987,6 +2005,7 @@
   <script src="decoration.js"></script>
   <script src="rampage_decorations.js"></script>
   <script src="items.js"></script>
+  <script src="item_categories.js"></script>
   <script src="monsters.js"></script>
   <script src="monster_icons.js"></script>
   <script src="render.js"></script>

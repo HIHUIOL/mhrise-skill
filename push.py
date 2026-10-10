@@ -52,6 +52,7 @@ INCLUDE = [
     "decoration.js",
     "rampage_decorations.js",
     "items.js",
+    "item_categories.js",
     "monsters.js",
     "monster_icons.js",
     "monster-icons",

@@ -1823,24 +1823,31 @@
       const catalog = document.getElementById('materialCatalog');
       if (!body || !head || !catalog) return;
 
-      // 按用途分类（粗分：怪物素材 / 采集·其他）
+      // 按 Kiranico 网站分类（item_categories.js）
+      //   回复/辅助 / 素材 / 余料 / 弹药·瓶 / 交纳委托 / 变更房屋的设计
+      const CATS = (typeof window !== 'undefined' && window.ITEM_CATEGORIES) || {};
+      const ORDER = ['回复/辅助', '素材', '余料', '弹药/瓶', '交纳委托', '变更房屋的设计'];
       const groups = {};
       matNames.forEach((nm) => {
-        const isMonMat = monstersForMaterial(nm).length > 0;
-        const c = isMonMat ? '怪物素材' : '采集 / 其他';
+        const c = CATS[nm] || '其他';
         if (!groups[c]) groups[c] = [];
         groups[c].push(nm);
       });
 
-      const ORDER = ['怪物素材', '采集 / 其他'];
-      ORDER.filter((c) => groups[c]).forEach((c) => {
+      const finalOrder = ORDER.filter((c) => groups[c])
+        .concat(Object.keys(groups).filter((c) => ORDER.indexOf(c) < 0));
+
+      finalOrder.forEach((c) => {
         const list = groups[c].sort();
         const groupEl = document.createElement('div');
         groupEl.className = 'catalog-group';
 
+        // 分类标题（可点击折叠）
         const catEl = document.createElement('div');
-        catEl.className = 'catalog-cat';
-        catEl.innerHTML = escapeHtml(c) +
+        catEl.className = 'catalog-cat catalog-cat-toggle';
+        catEl.innerHTML =
+          '<span class="catalog-cat-arrow">▼</span>' +
+          escapeHtml(c) +
           ' <span class="cat-count">' + list.length + '</span>';
         groupEl.appendChild(catEl);
 
@@ -1861,6 +1868,13 @@
           itemsEl.appendChild(b);
         });
         groupEl.appendChild(itemsEl);
+
+        // 点击标题 → 折叠 / 展开该分类
+        catEl.addEventListener('click', () => {
+          const collapsed = groupEl.classList.toggle('cat-collapsed');
+          catEl.querySelector('.catalog-cat-arrow').textContent = collapsed ? '▶' : '▼';
+        });
+
         body.appendChild(groupEl);
       });
 
