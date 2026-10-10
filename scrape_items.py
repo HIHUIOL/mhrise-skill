@@ -123,7 +123,18 @@ def parse_item(html):
         for r in re.findall(r"<tr[^>]*>(.*?)</tr>", t, re.S):
             tds = [strip(x) for x in
                    re.findall(r"<td[^>]*>(.*?)</td>", r, re.S)]
-            if len(tds) >= 4:
+            # 只保留「获得途径」表（≥4 列；3 列及以下是 武器/防具/珠子 用途表）
+            if len(tds) == 5:
+                # 5 列：怪物 | 难度 | 方式 | 数量 | 概率
+                obt.append({
+                    "quest": tds[0],   # 怪物名（或采集点）
+                    "rank": tds[1],    # 难度：下位/上位/大师等级
+                    "type": tds[2],    # 获得方式：目标报酬 / 剥取素材 …
+                    "count": tds[3],   # 数量：x1
+                    "rate": tds[4],    # 概率：4%
+                })
+            elif len(tds) == 4:
+                # 4 列：任务名 | 方式 | 数量 | 概率
                 obt.append({
                     "quest": tds[0],
                     "type": tds[1],

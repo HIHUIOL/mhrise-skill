@@ -152,13 +152,20 @@ def parse_monster(html):
     out["materials"] = mats
 
     # 部位与肉质
+    # Kiranico 页面里「部位与肉质」表固定是：11 列、首列=部位名
+    # （旧版用部位名词白名单过滤，会漏掉「躯干/前肢/后肢/尾巴尖」等，已废弃）
+    # 个别怪（如炽妃蜘蛛）某行首列为空 —— 网站本身就是空的，原样保留
     hitzones = []
-    parts = ("头部", "颈部", "背部", "腹部", "前脚", "后脚", "左腿", "右腿",
-             "尾巴", "翼", "本体", "尾", "脚", "头", "身", "甲壳", "壳")
+    seen_hz = set()
     for t in tables:
         for r in rows_of(t):
             c = cells(r)
-            if len(c) >= 5 and c[0] in parts:
+            # 11 列、第 2 列是 State(0/1/2/3)
+            if len(c) == 11 and c[1].isdigit():
+                key = tuple(c)
+                if key in seen_hz:
+                    continue
+                seen_hz.add(key)
                 hitzones.append(c)
     out["hitzones"] = hitzones
 

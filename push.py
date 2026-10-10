@@ -65,6 +65,7 @@ INCLUDE = [
     "scrape_monsters.py",
     "scrape_items.sh",
     "scrape_monsters.sh",
+    "hit-icons",
     "risesb动作值（施工中：更新動作值到15.0.0）.xlsx",
 ]
 
