@@ -50,12 +50,15 @@ INCLUDE = [
     "skillData.js",
     "skill_data.js",
     "decoration.js",
+    "rampage_decorations.js",
     "sw.js",
     "icon-192.png",
     "icon-512.png",
     "icon.svg",
     "push.sh",
     "push.py",
+    "scrape_decorations.py",
+    "scrape_ramdeco.py",
 ]
 
 # 不参与同步的目录名 / 文件名

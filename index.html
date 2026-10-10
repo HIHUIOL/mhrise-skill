@@ -617,6 +617,27 @@
 
     .back-top:active { background: #c9a86c; color: #1a1e24; }
 
+    /* ---------- 区块折叠（通用） ---------- */
+    .section-title.section-toggle {
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .section-toggle-hint {
+      font-size: 0.8rem;
+      color: #7d8f9f;
+      font-weight: 400;
+    }
+
+    .section-title.section-toggle:hover .section-toggle-hint { color: #a8bfd4; }
+
+    .skill-grid.collapsed { display: none; }
+
     /* ========================================================
        珠子（装饰品）相关样式
        ======================================================== */
@@ -682,6 +703,54 @@
       background: #3a3325;
       border-radius: 8px;
       padding: 0 0.35rem;
+    }
+
+    /* 百龙珠样式（绿色系，与普通珠子区分） */
+    .deco-section.ram-deco-section {
+      border-top-color: #3a5240;
+    }
+
+    .ram-deco-section .deco-head { color: #b8d09a; }
+
+    .ram-deco-section .deco-count {
+      background: #1f2a24;
+      color: #9ac97a;
+    }
+
+    .ram-deco-chip {
+      background: #1f2a24;
+      color: #b8d09a;
+      border-color: #3a5240;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .ram-deco-chip:hover {
+      background: #26352a;
+      border-color: #6f9a52;
+      color: #d4e6b0;
+    }
+
+    .ram-deco-chip:active {
+      background: #2f4430;
+      border-color: #b8d09a;
+    }
+
+    /* 说明为模板套用（非游戏原文）的提示 */
+    .tpl-mark {
+      font-size: 0.75em;
+      margin-right: 0.3rem;
+      opacity: 0.85;
+    }
+
+    .desc-tpl-note {
+      margin-top: 0.45rem;
+      font-size: 0.72rem;
+      color: #c9a86c;
+      background: rgba(201, 168, 108, 0.08);
+      border-left: 2px solid #8a6d3b;
+      border-radius: 4px;
+      padding: 0.3rem 0.5rem;
     }
 
     /* ---- 珠子卡片 ---- */
@@ -841,7 +910,7 @@
     <div class="title-bar">
       <h1>🌅 曙光技能图鉴</h1>
       <button class="version-badge" id="versionBadge" title="点击检查更新">
-        <span class="ver-icon">🏷️</span><span id="versionText">v1.02</span>
+        <span class="ver-icon">🏷️</span><span id="versionText">v1.03</span>
       </button>
     </div>
     <div class="subhead">怪物猎人崛起：曙光 · 技能效果一览 · mhrise-skill</div>
@@ -897,6 +966,17 @@
       </div>
     </div>
 
+    <!-- 百龙珠一览（目录） -->
+    <div class="catalog" id="ramDecoCatalog">
+      <div class="catalog-head" id="ramDecoCatalogHead">
+        <span class="catalog-title">🈶 百龙珠一览</span>
+        <span class="catalog-arrow">▼</span>
+      </div>
+      <div class="catalog-body" id="ramDecoCatalogBody">
+        <!-- 由 render.js 动态生成 -->
+      </div>
+    </div>
+
     <!-- 搜索框 -->
     <div class="search-box">
       <input type="text" id="searchInput" placeholder="搜索技能名 / ID / 效果 / 珠子 / 素材…">
@@ -904,24 +984,39 @@
     </div>
 
     <!-- 普通技能 -->
-    <div class="skill-section">
-      <div class="section-title">⚔️ 普通技能</div>
+    <div class="skill-section" id="skillSection">
+      <div class="section-title section-toggle" id="skillSectionTitle">
+        ⚔️ 普通技能
+        <span class="section-toggle-hint" id="skillSectionHint">（点击收起 ▲）</span>
+      </div>
       <div id="skillsContainer" class="skill-grid"></div>
     </div>
 
     <!-- 百龙技能 -->
-    <div class="skill-section">
-      <div class="section-title">🐉 百龙技能</div>
+    <div class="skill-section" id="ramSection">
+      <div class="section-title section-toggle" id="ramSectionTitle">
+        🐉 百龙技能
+        <span class="section-toggle-hint" id="ramSectionHint">（点击收起 ▲）</span>
+      </div>
       <div id="rampageContainer" class="skill-grid"></div>
     </div>
 
     <!-- 珠子（装饰品） -->
     <div class="skill-section" id="decoSection">
-      <div class="section-title" id="decoSectionTitle" style="cursor:pointer;user-select:none;">
+      <div class="section-title section-toggle" id="decoSectionTitle">
         🔮 珠子（装饰品）
-        <span id="decoSectionToggle" style="font-size:0.8rem;color:#7d8f9f;font-weight:400;">（点击展开 ▼）</span>
+        <span class="section-toggle-hint" id="decoSectionHint">（点击展开 ▼）</span>
       </div>
       <div id="decoContainer" class="skill-grid"></div>
+    </div>
+
+    <!-- 百龙珠 -->
+    <div class="skill-section" id="ramDecoSection">
+      <div class="section-title section-toggle" id="ramDecoSectionTitle">
+        🈶 百龙珠
+        <span class="section-toggle-hint" id="ramDecoSectionHint">（点击展开 ▼）</span>
+      </div>
+      <div id="ramDecoContainer" class="skill-grid"></div>
     </div>
 
     <footer>
@@ -950,12 +1045,13 @@
   <script src="skillData.js"></script>
   <script src="skill_data.js"></script>
   <script src="decoration.js"></script>
+  <script src="rampage_decorations.js"></script>
   <script src="render.js"></script>
   <script>
     // ========================================================
     // 应用版本号（修改此值即可让"点击版本号"提示有新版本）
     // ========================================================
-    window.APP_VERSION = 'v1.02';
+    window.APP_VERSION = 'v1.03';
 
     // 显示版本号
     (function () {

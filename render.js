@@ -73,11 +73,69 @@
   // 弹窗函数桥接：openSkillModal 定义在 DOMContentLoaded 内，
   // 这里放一个顶层引用，供 openDecoModal（顶层）调用。
   let _openSkillModal = null;
+  // 同理：百龙珠详情弹窗（供 buildRamDecoSection 顶层调用）
+  let _openRamDecoModal = null;
 
   // 取某技能（十进制ID）可用的珠子列表
   function decosForSkill(decId) {
     const hex = decToHex(decId);
     return (hex && decoBySkillHex[hex]) ? decoBySkillHex[hex] : [];
+  }
+
+  // ========================================================
+  // 百龙装饰品（百龙珠）关联层
+  // rampage_decorations.js: [ { name, skill, slot, desc }, ... ]
+  // 通过「百龙技能名」关联（无 ID 体系）
+  // ========================================================
+  const RAM_DECO = window.rampage_decorations || [];
+  // 百龙技能名 → [百龙珠, ...]
+  const ramDecoBySkill = {};
+  RAM_DECO.forEach(function (d) {
+    if (!d || !d.skill) return;
+    if (!ramDecoBySkill[d.skill]) ramDecoBySkill[d.skill] = [];
+    ramDecoBySkill[d.skill].push(d);
+  });
+
+  // 取某百龙技能名可用的百龙珠
+  function ramDecosForSkill(skillName) {
+    return (skillName && ramDecoBySkill[skillName]) ? ramDecoBySkill[skillName] : [];
+  }
+
+  // 构造「可用百龙珠」区块 DOM
+  function buildRamDecoSection(skillName) {
+    const list = ramDecosForSkill(skillName);
+    if (!list.length) return null;
+
+    const wrap = document.createElement('div');
+    wrap.className = 'deco-section ram-deco-section';
+
+    const head = document.createElement('div');
+    head.className = 'deco-head';
+    head.innerHTML = '<span class="deco-icon">🈶</span>可用百龙珠 ' +
+      '<span class="deco-count">' + list.length + '</span>';
+    wrap.appendChild(head);
+
+    const items = document.createElement('div');
+    items.className = 'deco-items';
+    list.forEach(function (d) {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'deco-chip ram-deco-chip';
+      chip.textContent = d.name;
+      chip.addEventListener('click', function (e) {
+        e.stopPropagation();
+        if (_openRamDecoModal) _openRamDecoModal(d.name);
+      });
+      items.appendChild(chip);
+    });
+    wrap.appendChild(items);
+    return wrap;
+  }
+
+  // 百龙珠的搜索文本
+  function buildRamDecoSearchText(skillName) {
+    const list = ramDecosForSkill(skillName);
+    return list.map(function (d) { return d.name + ' ' + d.slot + '孔'; }).join(' ').toLowerCase();
   }
 
   // 构造「可用珠子」区块 DOM
@@ -805,6 +863,12 @@
 
     card.appendChild(buildRampageContent(skill));
     card._search = buildSearchText(id, skill);
+
+    // 可用百龙珠（挂在卡片最下方）
+    const ramDecoEl = buildRamDecoSection(displayName);
+    if (ramDecoEl) card.appendChild(ramDecoEl);
+    card._search += ' ' + buildRamDecoSearchText(displayName);
+
     return card;
   }
 
@@ -864,6 +928,72 @@
     card.addEventListener('click', function () { openDecoModal(d.id); });
 
     return card;
+  }
+
+  // ========================================================
+  // 渲染百龙珠卡片
+  // ========================================================
+  function renderRamDecoCard(d) {
+    const card = document.createElement('div');
+    card.className = 'skill-card rampage-card ram-deco-card';
+
+    const titleEl = document.createElement('div');
+    titleEl.className = 'skill-name';
+    titleEl.innerHTML =
+      '<span class="deco-title-text">' + escapeHtml(d.name) + '</span>' +
+      '<span class="skill-title-right">' +
+        (d.descTpl ? '<span class="tpl-mark" title="说明为格式套用，非游戏原文">⚠️</span>' : '') +
+        '<span class="deco-slot-badge">' + d.slot + '孔</span>' +
+      '</span>';
+    card.appendChild(titleEl);
+
+    // 提供技能
+    if (d.skill) {
+      const skRow = document.createElement('div');
+      skRow.className = 'deco-provide';
+      skRow.innerHTML = '提供技能：<b>' + escapeHtml(d.skill) + '</b>';
+      card.appendChild(skRow);
+    }
+
+    // 说明
+    if (d.desc) {
+      const descEl = document.createElement('div');
+      descEl.className = 'skill-desc ram-deco-desc';
+      descEl.textContent = d.desc;
+      card.appendChild(descEl);
+    }
+
+    card._search = (d.name + ' ' + (d.skill || '') + ' ' + d.slot + '孔 ' + (d.desc || '')).toLowerCase();
+
+    // 点击卡片 → 打开百龙珠详情弹窗
+    card.addEventListener('click', function () {
+      if (_openRamDecoModal) _openRamDecoModal(d.name);
+    });
+
+    return card;
+  }
+
+  // ========================================================
+  // 通用：区块折叠
+  // titleId/containerId/hintId + 状态对象
+  // ========================================================
+  function setupSectionCollapse(stateKey, titleId, containerId, hintId, defaultCollapsed, expandText, collapseText) {
+    const titleEl = document.getElementById(titleId);
+    const contEl = document.getElementById(containerId);
+    const hintEl = document.getElementById(hintId);
+    if (!titleEl || !contEl) return null;
+
+    const state = { collapsed: !!defaultCollapsed };
+    function apply() {
+      contEl.classList.toggle('collapsed', state.collapsed);
+      if (hintEl) hintEl.textContent = state.collapsed ? expandText : collapseText;
+    }
+    titleEl.addEventListener('click', function () {
+      state.collapsed = !state.collapsed;
+      apply();
+    });
+    apply();
+    return { state: state, apply: apply };
   }
 
   // ========================================================
@@ -1106,6 +1236,15 @@
       return { id: String(id), el, search: el._search || '' };
     }).filter(Boolean);
 
+    // --------------------------------------------------------
+    // 百龙珠卡片（rampage_decorations.js）
+    // --------------------------------------------------------
+    const ramDecoContainer = document.getElementById('ramDecoContainer');
+    const ramDecoCards = RAM_DECO.map((d, i) => {
+      const el = renderRamDecoCard(d);
+      return { id: 'ramdeco' + i, el, search: el._search || '' };
+    });
+
     // 合并所有「普通技能」卡片，并按技能 ID 统一排序（详述版与仅原文版混排）
     const allSkillCards = skillCards.concat(gameOnlyCards)
       .sort((a, b) => Number(a.id) - Number(b.id));
@@ -1114,27 +1253,19 @@
     allSkillCards.forEach((it) => skillsContainer.appendChild(it.el));
     rampageCards.forEach((it) => rampageContainer.appendChild(it.el));
     if (decoContainer) decoCards.forEach((it) => decoContainer.appendChild(it.el));
+    if (ramDecoContainer) ramDecoCards.forEach((it) => ramDecoContainer.appendChild(it.el));
 
     // --------------------------------------------------------
-    // 珠子区块折叠（默认折叠，避免页面过长）
+    // 四个区块折叠（统一逻辑）
     // --------------------------------------------------------
-    const decoCollapseState = { collapsed: true };
-    (function setupDecoCollapse() {
-      const titleEl = document.getElementById('decoSectionTitle');
-      const contEl = document.getElementById('decoContainer');
-      const toggleEl = document.getElementById('decoSectionToggle');
-      if (!titleEl || !contEl) return;
-      function apply() {
-        contEl.style.display = decoCollapseState.collapsed ? 'none' : '';
-        if (toggleEl) toggleEl.textContent = decoCollapseState.collapsed ? '（点击展开 ▼）' : '（点击收起 ▲）';
-      }
-      titleEl.addEventListener('click', function () {
-        decoCollapseState.collapsed = !decoCollapseState.collapsed;
-        apply();
-      });
-      window.__applyDecoCollapse = apply;
-      apply();
-    })();
+    const expandTxt = '（点击展开 ▼）';
+    const collapseTxt = '（点击收起 ▲）';
+    const EX = expandTxt, CO = collapseTxt;
+    // 普通技能 / 百龙技能：默认展开；珠子 / 百龙珠：默认折叠
+    const skillCollapse = setupSectionCollapse('skill', 'skillSectionTitle', 'skillsContainer', 'skillSectionHint', false, EX, CO);
+    const ramCollapse = setupSectionCollapse('ram', 'ramSectionTitle', 'rampageContainer', 'ramSectionHint', false, EX, CO);
+    const decoCollapse = setupSectionCollapse('deco', 'decoSectionTitle', 'decoContainer', 'decoSectionHint', true, EX, CO);
+    const ramDecoCollapse = setupSectionCollapse('ramdeco', 'ramDecoSectionTitle', 'ramDecoContainer', 'ramDecoSectionHint', true, EX, CO);
 
     // --------------------------------------------------------
     // 技能一览（按分类分组的目录）
@@ -1341,6 +1472,55 @@
     })();
 
     // --------------------------------------------------------
+    // 百龙珠一览（按孔位分组的目录）
+    // --------------------------------------------------------
+    (function buildRamDecoCatalog() {
+      const body = document.getElementById('ramDecoCatalogBody');
+      const head = document.getElementById('ramDecoCatalogHead');
+      const catalog = document.getElementById('ramDecoCatalog');
+      if (!body || !head || !catalog) return;
+
+      const SLOT_ORDER = [1, 2, 3];
+      const groups = {};
+      RAM_DECO.forEach((d) => {
+        const key = d.slot + '孔';
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(d);
+      });
+
+      SLOT_ORDER.forEach((slot) => {
+        const key = slot + '孔';
+        const list = groups[key];
+        if (!list) return;
+
+        const groupEl = document.createElement('div');
+        groupEl.className = 'catalog-group';
+
+        const catEl = document.createElement('div');
+        catEl.className = 'catalog-cat';
+        catEl.innerHTML = `${escapeHtml(key)} <span class="cat-count">${list.length}</span>`;
+        groupEl.appendChild(catEl);
+
+        const itemsEl = document.createElement('div');
+        itemsEl.className = 'catalog-items';
+        list.forEach((d) => {
+          const b = document.createElement('button');
+          b.className = 'catalog-item ram-deco-cat-item';
+          b.textContent = d.name;
+          b.addEventListener('click', () => openRamDecoModal(d.name));
+          itemsEl.appendChild(b);
+        });
+        groupEl.appendChild(itemsEl);
+        body.appendChild(groupEl);
+      });
+
+      head.addEventListener('click', () => {
+        catalog.classList.toggle('collapsed');
+      });
+      if (window.innerWidth < 600) catalog.classList.add('collapsed');
+    })();
+
+    // --------------------------------------------------------
     // 搜索
     // --------------------------------------------------------
     const searchInput = document.getElementById('searchInput');
@@ -1351,6 +1531,7 @@
       let skillHits = 0;
       let rampageHits = 0;
       let decoHits = 0;
+      let ramDecoHits = 0;
 
       allSkillCards.forEach((item) => {
         const hit = !kw || item.search.includes(kw);
@@ -1367,21 +1548,27 @@
         item.el.style.display = hit ? '' : 'none';
         if (hit) decoHits++;
       });
+      ramDecoCards.forEach((item) => {
+        const hit = !kw || item.search.includes(kw);
+        item.el.style.display = hit ? '' : 'none';
+        if (hit) ramDecoHits++;
+      });
 
-      // 搜索珠子时，自动展开珠子区块（方便看到结果）；清空时恢复折叠状态
-      if (kw && decoHits > 0) {
-        decoCollapseState.collapsed = false;
-        if (window.__applyDecoCollapse) window.__applyDecoCollapse();
-      } else if (!kw) {
-        // 清空搜索 → 恢复默认折叠
-        decoCollapseState.collapsed = true;
-        if (window.__applyDecoCollapse) window.__applyDecoCollapse();
+      // 搜索时自动展开对应区块；清空时恢复默认（珠子/百龙珠默认折叠）
+      if (decoCollapse) {
+        decoCollapse.state.collapsed = kw ? (decoHits === 0) : true;
+        decoCollapse.apply();
+      }
+      if (ramDecoCollapse) {
+        ramDecoCollapse.state.collapsed = kw ? (ramDecoHits === 0) : true;
+        ramDecoCollapse.apply();
       }
 
       if (!kw) {
         searchCount.textContent = '';
       } else {
-        searchCount.textContent = `普通 ${skillHits} · 百龙 ${rampageHits} · 珠子 ${decoHits}`;
+        searchCount.textContent =
+          `普通 ${skillHits} · 百龙 ${rampageHits} · 珠子 ${decoHits} · 百龙珠 ${ramDecoHits}`;
       }
 
       document.querySelectorAll('.skill-section').forEach((sec) => {
@@ -1479,6 +1666,62 @@
       document.body.style.overflow = '';
     }
 
+    // 打开百龙珠详情弹窗
+    function openRamDecoModal(name) {
+      const d = RAM_DECO.find(function (x) { return x.name === name; });
+      if (!d) return;
+      const overlay = document.getElementById('skillModal');
+      const titleEl = document.getElementById('modalTitle');
+      const bodyEl = document.getElementById('modalBody');
+      if (!overlay || !titleEl || !bodyEl) return;
+
+      titleEl.innerHTML =
+        '<span class="modal-title-icon">🈶</span>' +
+        escapeHtml(d.name) +
+        '<span class="deco-slot-badge" style="margin-left:0.4rem;">' + d.slot + '孔</span>';
+      bodyEl.innerHTML = '';
+
+      if (d.skill) {
+        const skRow = document.createElement('div');
+        skRow.className = 'deco-modal-skill deco-skill-link';
+        skRow.innerHTML = '提供技能：<b>' + escapeHtml(d.skill) + '</b>' +
+          '<span class="deco-skill-go">查看技能 ▸</span>';
+        skRow.addEventListener('click', function () {
+          // 找百龙技能 ID
+          let foundId = null;
+          Object.keys(rampage).forEach(function (id) {
+            const s = rampage[id];
+            const n = s.name_override || s.title || s.display_name || s.name;
+            if (n === d.skill) foundId = id;
+          });
+          if (foundId != null) openRampageModal(foundId);
+        });
+        bodyEl.appendChild(skRow);
+      }
+
+      if (d.desc) {
+        const descEl = document.createElement('div');
+        descEl.className = 'skill-desc';
+        descEl.style.marginTop = '0.5rem';
+        descEl.textContent = d.desc;
+        bodyEl.appendChild(descEl);
+      }
+
+      // 说明为模板套用（非游戏原文）时给出提示
+      if (d.descTpl) {
+        const tplEl = document.createElement('div');
+        tplEl.className = 'desc-tpl-note';
+        tplEl.textContent = '⚠️ 本条说明为格式套用，非游戏原文，待补充';
+        bodyEl.appendChild(tplEl);
+      }
+
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // 桥接给顶层 buildRamDecoSection 使用
+    _openRamDecoModal = openRamDecoModal;
+
     // 打开百龙技能详情弹窗
     function openRampageModal(id) {
       const overlay = document.getElementById('skillModal');
@@ -1496,6 +1739,10 @@
 
       bodyEl.innerHTML = '';
       bodyEl.appendChild(buildRampageContent(skill));
+
+      // 可用百龙珠
+      const ramDecoEl = buildRamDecoSection(name);
+      if (ramDecoEl) bodyEl.appendChild(ramDecoEl);
 
       overlay.classList.add('open');
       document.body.style.overflow = 'hidden';
