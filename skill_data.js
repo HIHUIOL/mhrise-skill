@@ -38,7 +38,7 @@ var skill_data = {
     "16": { "tag": [Attr.sharp], "hex": "16", "sname": "匠", "cost": 12, "max": 5, "lvType": "S", "p1Max": 4, "p2Max": 3, },
     "17": { "tag": [Attr.sharp], "hex": "17", "sname": "利刃", "cost": 15, "max": 3, "lvType": "A", "p1Max": 3, "p2Max": 2, },
     "18": { "tag": [Attr.gun], "hex": "18", "sname": "弹丸节约", "cost": 15, "max": 3, "lvType": "A", "p1Max": 3, "p2Max": 2, },
-    "19": { "tag": [Attr.sharp], "hex": "19", "sname": "钢刃研磨", "cost": 9, "max": 3, "lvType": "A", "p1Max": 3, "p2Max": 2, },
+    "19": { "tag": [Attr.sharp], "hex": "19", "sname": "刚刃打磨", "cost": 9, "max": 3, "lvType": "A", "p1Max": 3, "p2Max": 2, },
     "1A": { "tag": [Attr.sharp], "hex": "1A", "sname": "心眼", "cost": 9, "max": 3, "lvType": "S", "p1Max": 3, "p2Max": 2, },
     "1B": { "tag": [Attr.gun], "hex": "1B", "sname": "弹道强化", "cost": 9, "max": 3, "lvType": "A", "p1Max": 3, "p2Max": 2, },
     "1C": { "tag": [Attr.sharp], "hex": "1C", "sname": "钝器能手", "cost": -99, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 2, },
@@ -54,16 +54,16 @@ var skill_data = {
     "26": { "tag": [Attr.sd], "hex": "26", "sname": "拔刀术【技】", "cost": 9, "max": 3, "lvType": "S", "p1Max": 3, "p2Max": 2, },
     "27": { "tag": [Attr.sd], "hex": "27", "sname": "拔刀术【力】", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 2, },
     "28": { "tag": [Attr.sd], "hex": "28", "sname": "纳刀术", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 2, },
-    "29": { "tag": [Attr.atk], "hex": "29", "sname": "KO术", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 2, },
+    "29": { "tag": [Attr.atk], "hex": "29", "sname": "击晕术", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 2, },
     "2A": { "tag": [Attr.atk], "hex": "2A", "sname": "耐力夺取", "cost": 3, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
     "2B": { "tag": [Attr.atk], "hex": "2B", "sname": "滑走强化", "cost": 3, "max": 1, "lvType": "C", "p1Max": 0, "p2Max": 0, },
     "2C": { "tag": [Attr.body], "hex": "2C", "sname": "吹笛名人", "cost": 3, "max": 1, "lvType": "C", "p1Max": 0, "p2Max": 0, },
     "2D": { "tag": [Attr.gun], "hex": "2D", "sname": "炮术", "cost": 12, "max": 3, "lvType": "S", "p1Max": 3, "p2Max": 2, },
     "2E": { "tag": [Attr.gun], "hex": "2E", "sname": "炮弹装填", "cost": 6, "max": 2, "lvType": "A", "p1Max": 2, "p2Max": 1, },
     "2F": { "tag": [Attr.gun], "hex": "2F", "sname": "特殊射击强化", "cost": 6, "max": 2, "lvType": "A", "p1Max": 2, "p2Max": 1, },
-    "30": { "tag": [Attr.gun], "hex": "30", "sname": "通常弹·连射箭强化", "cost": 15, "max": 3, "lvType": "A", "p1Max": 3, "p2Max": 2, },
-    "31": { "tag": [Attr.gun], "hex": "31", "sname": "贯通弹·贯通箭强化", "cost": 15, "max": 3, "lvType": "S", "p1Max": 3, "p2Max": 2, },
-    "32": { "tag": [Attr.gun], "hex": "32", "sname": "散弹·扩散箭强化", "cost": 15, "max": 3, "lvType": "S", "p1Max": 3, "p2Max": 2, },
+    "30": { "tag": [Attr.gun], "hex": "30", "sname": "通常弹・连射箭强化", "cost": 15, "max": 3, "lvType": "A", "p1Max": 3, "p2Max": 2, },
+    "31": { "tag": [Attr.gun], "hex": "31", "sname": "贯穿弹・贯穿箭强化", "cost": 15, "max": 3, "lvType": "S", "p1Max": 3, "p2Max": 2, },
+    "32": { "tag": [Attr.gun], "hex": "32", "sname": "散弹・扩散箭强化", "cost": 15, "max": 3, "lvType": "S", "p1Max": 3, "p2Max": 2, },
     "33": { "tag": [Attr.gun], "hex": "33", "sname": "装填扩充", "cost": 15, "max": 3, "lvType": "S", "p1Max": 3, "p2Max": 2, },
     "34": { "tag": [Attr.gun], "hex": "34", "sname": "装填速度", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 2, },
     "35": { "tag": [Attr.gun], "hex": "35", "sname": "减轻后坐力", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 2, },
@@ -71,15 +71,15 @@ var skill_data = {
     "37": { "tag": [Attr.gun], "hex": "37", "sname": "速射强化", "cost": 15, "max": 3, "lvType": "S", "p1Max": 3, "p2Max": 2, },
     "38": { "tag": [Attr.def], "hex": "38", "sname": "防御", "cost": 3, "max": 7, "lvType": "B", "p1Max": 7, "p2Max": 6, },
     "39": { "tag": [Attr.def], "hex": "39", "sname": "精灵加护", "cost": 3, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 3, },
-    "3A": { "tag": [Attr.heal], "hex": "3A", "sname": "体力回复量UP", "cost": 3, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
+    "3A": { "tag": [Attr.heal], "hex": "3A", "sname": "体力回复量提升", "cost": 3, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
     "3B": { "tag": [Attr.heal], "hex": "3B", "sname": "回复速度", "cost": 3, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
     "3C": { "tag": [Attr.body], "hex": "3C", "sname": "快吃", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 3, },
-    "3D": { "tag": [Attr.def], "hex": "3D", "sname": "耳栓", "cost": 9, "max": 5, "lvType": "B", "p1Max": 5, "p2Max": 4, },
+    "3D": { "tag": [Attr.def], "hex": "3D", "sname": "耳塞", "cost": 9, "max": 5, "lvType": "B", "p1Max": 5, "p2Max": 4, },
     "3E": { "tag": [Attr.def], "hex": "3E", "sname": "风压耐性", "cost": 3, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 3, },
     "3F": { "tag": [Attr.def], "hex": "3F", "sname": "耐震", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 3, },
     "40": { "tag": [Attr.body], "hex": "40", "sname": "泡沫之舞", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 3, },
     "41": { "tag": [Attr.def], "hex": "41", "sname": "回避性能", "cost": 6, "max": 5, "lvType": "B", "p1Max": 5, "p2Max": 4, },
-    "42": { "tag": [Attr.def], "hex": "42", "sname": "回避距离UP", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 2, },
+    "42": { "tag": [Attr.def], "hex": "42", "sname": "回避距离提升", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 2, },
     "43": { "tag": [Attr.body], "hex": "43", "sname": "火耐性", "cost": -99, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
     "44": { "tag": [Attr.body], "hex": "44", "sname": "水耐性", "cost": -99, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
     "45": { "tag": [Attr.body], "hex": "45", "sname": "冰耐性", "cost": -99, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
@@ -89,9 +89,9 @@ var skill_data = {
     "49": { "tag": [Attr.body], "hex": "49", "sname": "毒耐性", "cost": 3, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
     "4A": { "tag": [Attr.body], "hex": "4A", "sname": "麻痹耐性", "cost": 3, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
     "4B": { "tag": [Attr.body], "hex": "4B", "sname": "睡眠耐性", "cost": 3, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
-    "4C": { "tag": [Attr.body], "hex": "4C", "sname": "气绝耐性", "cost": 3, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 3, },
+    "4C": { "tag": [Attr.body], "hex": "4C", "sname": "昏厥耐性", "cost": 3, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 3, },
     "4D": { "tag": [Attr.body], "hex": "4D", "sname": "泥雪耐性", "cost": 3, "max": 3, "lvType": "C", "p1Max": 2, "p2Max": 2, },
-    "4E": { "tag": [Attr.body], "hex": "4E", "sname": "爆破耐性", "cost": 3, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
+    "4E": { "tag": [Attr.body], "hex": "4E", "sname": "爆破异常状态的耐性", "cost": 3, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
     "4F": { "tag": [Attr.body], "hex": "4F", "sname": "植生学", "cost": -99, "max": 3, "lvType": "C", "p1Max": 4, "p2Max": 4, },
     "50": { "tag": [Attr.body], "hex": "50", "sname": "地质学", "cost": -99, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 3, },
     "51": { "tag": [Attr.atk], "hex": "51", "sname": "破坏王", "cost": 6, "max": 3, "lvType": "B", "p1Max": 3, "p2Max": 2, },
@@ -134,7 +134,7 @@ var skill_data = {
     "76": { "tag": [Attr.def], "hex": "76", "sname": "坚如磐石", "cost": 6, "max": 5, "lvType": "C", "p1Max": 5, "p2Max": 4, },
     "77": { "tag": [Attr.spec], "hex": "77", "sname": "偷袭", "cost": 12, "max": 3, "lvType": "A", "p1Max": 3, "p2Max": 2, },
     "78": { "tag": [Attr.spec], "hex": "78", "sname": "巧击", "cost": 9, "max": 3, "lvType": "A", "p1Max": 3, "p2Max": 2, },
-    "79": { "tag": [Attr.def], "hex": "79", "sname": "嘲讽防御(煽动)", "cost": 6, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 2, },
+    "79": { "tag": [Attr.def], "hex": "79", "sname": "嘲讽防御", "cost": 6, "max": 3, "lvType": "C", "p1Max": 3, "p2Max": 2, },
     "7A": { "tag": [Attr.def], "hex": "7A", "sname": "合气", "cost": 9, "max": 2, "lvType": "", "p1Max": 0, "p2Max": 0, },
     "7B": { "tag": [Attr.def], "hex": "7B", "sname": "提供", "cost": 3, "max": 1, "lvType": "", "p1Max": 0, "p2Max": 0, },
     "7C": { "tag": [Attr.atk], "hex": "7C", "sname": "蓄力大师", "cost": 9, "max": 3, "lvType": "A", "p1Max": 3, "p2Max": 2, },
@@ -388,7 +388,7 @@ var skill_desc = {
                 </ul>
             `},
     "19": {
-        "sname": "钢刃研磨", "desc": `打磨武器后，一定时间内锋利度不会降低。`, "effect": `
+        "sname": "刚刃打磨", "desc": `打磨武器后，一定时间内锋利度不会降低。`, "effect": `
                 <ul>
                     <li>Lv1. 发动后，效果持续30秒</li>
                     <li>Lv2. 发动后，效果持续60秒</li>
@@ -518,7 +518,7 @@ var skill_desc = {
                 </ul>
             `},
     "29": {
-        "sname": "KO术", "desc": `更容易让怪物陷入昏厥状态。`, "effect": `
+        "sname": "击晕术", "desc": `更容易让怪物陷入昏厥状态。`, "effect": `
                 <ul>
                     <li>Lv1. 昏厥威力1.2倍</li>
                     <li>Lv2. 昏厥威力1.3倍</li>
@@ -568,7 +568,7 @@ var skill_desc = {
                 </ul>
             `},
     "30": {
-        "sname": "通常弹·连射箭强化", "desc": `提高弩炮的通常弹或是弓的连射箭的攻击力。`, "effect": `
+        "sname": "通常弹・连射箭强化", "desc": `提高弩炮的通常弹或是弓的连射箭的攻击力。`, "effect": `
                 <ul>
                     <li>Lv1. 通常弹与连射箭的威力小幅上升</li>
                     <li>Lv2. 通常弹与连射箭的威力上升</li>
@@ -576,7 +576,7 @@ var skill_desc = {
                 </ul>
             `},
     "31": {
-        "sname": "贯通弹·贯通箭强化", "desc": `提高弩炮的贯穿弹或是弓的贯穿箭的攻击力。`, "effect": `
+        "sname": "贯穿弹・贯穿箭强化", "desc": `提高弩炮的贯穿弹或是弓的贯穿箭的攻击力。`, "effect": `
                         <ul>
                             <li>Lv1. 贯穿弹与贯穿箭的威力小幅上升</li>
                             <li>Lv2. 贯穿弹与贯穿箭的威力上升</li>
@@ -584,7 +584,7 @@ var skill_desc = {
                         </ul>
                     `},
     "32": {
-        "sname": "散弹·扩散箭强化", "desc": `提高弩炮的散弹、放散弹或是弓的扩散箭的攻击力。`, "effect": `
+        "sname": "散弹・扩散箭强化", "desc": `提高弩炮的散弹、放散弹或是弓的扩散箭的攻击力。`, "effect": `
                 <ul>
                     <li>Lv1. 散弹、放散弹、扩散箭的威力小幅上升</li>
                     <li>Lv2. 散弹、放散弹、扩散箭的威力上升</li>
@@ -651,7 +651,7 @@ var skill_desc = {
                 </ul>
             `},
     "3A": {
-        "sname": "体力回复量UP", "desc": `提高体力回复时的回复量。`, "effect": `
+        "sname": "体力回复量提升", "desc": `提高体力回复时的回复量。`, "effect": `
                 <ul>
                     <li>Lv1. 回复量小幅增加</li>
                     <li>Lv2. 回复量中幅增加</li>
@@ -675,7 +675,7 @@ var skill_desc = {
                 </ul>
             `},
     "3D": {
-        "sname": "耳栓", "desc": `拥有对大型怪物咆哮的耐性。`, "effect": `
+        "sname": "耳塞", "desc": `拥有对大型怪物咆哮的耐性。`, "effect": `
                 <ul>
                     <li>Lv1. 减轻咆哮【小】的影响</li>
                     <li>Lv2. 使咆哮【小】无效</li>
@@ -719,7 +719,7 @@ var skill_desc = {
                 </ul>
             `},
     "42": {
-        "sname": "回避距离UP", "desc": `延长回避时的移动距离。`, "effect": `
+        "sname": "回避距离提升", "desc": `延长回避时的移动距离。`, "effect": `
                 <ul>
                     <li>Lv1. 小幅延长回避距离</li>
                     <li>Lv2. 延长回避距离</li>
@@ -799,7 +799,7 @@ var skill_desc = {
                 </ul>
             `},
     "4C": {
-        "sname": "气绝耐性", "desc": `缩短昏厥状态的时间。`, "effect": `
+        "sname": "昏厥耐性", "desc": `缩短昏厥状态的时间。`, "effect": `
                 <ul>
                     <li>Lv1. 昏厥状态的时间减少60%</li>
                     <li>Lv2. 昏厥状态的时间减少90%</li>
@@ -814,7 +814,7 @@ var skill_desc = {
                 </ul>
             `},
     "4E": {
-        "sname": "爆破耐性", "desc": `拥有对爆破异常状态的耐性。`, "effect": `
+        "sname": "爆破异常状态的耐性", "desc": `拥有对爆破异常状态的耐性。`, "effect": `
                 <ul>
                     <li>Lv1. 延长爆破前的间隔时间，减轻爆破时受到的伤害</li>
                     <li>Lv2. 进一步延长爆破前的间隔时间，大幅减轻爆破时受到的伤害</li>
@@ -1161,7 +1161,7 @@ var skill_desc = {
                 </ul>
             `},
     "79": {
-        "sname": "嘲讽防御(煽动)", "desc": `成为大型怪物的攻击目标时，怪物会更容易发怒，但玩家的防御类性能会上升。`, "effect": `
+        "sname": "嘲讽防御", "desc": `成为大型怪物的攻击目标时，怪物会更容易发怒，但玩家的防御类性能会上升。`, "effect": `
                 <ul>
                     <li>Lv1. 技能发动时，防御力+10，小幅延长回避的无敌时间；防御时，小幅减少攻击威力</li>
                     <li>Lv2. 技能发动时，防御力+20，延长回避的无敌时间；防御时，减少攻击威力</li>
