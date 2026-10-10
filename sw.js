@@ -1,7 +1,7 @@
 // mhrise-skill / sw.js
 // 简单的离线缓存 Service Worker：优先使用缓存，后台更新
 
-const CACHE_NAME = 'mhrise-skill-v1';
+const CACHE_NAME = 'mhrise-skill-v14';
 
 // 需要预缓存的资源（相对路径，便于部署到 GitHub Pages 子目录）
 const PRECACHE_URLS = [
@@ -9,6 +9,7 @@ const PRECACHE_URLS = [
   './index.html',
   './render.js',
   './skillData.js',
+  './skill_data.js',
   './manifest.json',
   './icon-192.png',
   './icon-512.png'
@@ -34,6 +35,13 @@ self.addEventListener('activate', (event) => {
       )
     ).then(() => self.clients.claim())
   );
+});
+
+// 接收页面消息：跳过等待（用于"点击版本号更新"）
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
 });
 
 // 请求拦截：stale-while-revalidate

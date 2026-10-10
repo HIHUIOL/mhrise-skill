@@ -12,3 +12,22 @@ Thumbs.db
 # 临时文件
 *.tmp
 *.bak
+
+# 原模组源码（第三方，不上传）
+More Detailed Skill Descriptions*/
+mods/
+*.lua
+
+# 本地备份
+.backup/
+
+# 密钥 / 凭据（切勿上传）
+token.txt
+.git-credentials
+
+# Python
+__pycache__/
+*.pyc
+
+# push 脚本（按需保留，默认不上传也行）
+# push.sh

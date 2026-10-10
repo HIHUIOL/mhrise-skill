@@ -218,6 +218,65 @@
       vertical-align: middle;
     }
 
+    /* ---------- 卡片内数据源切换按钮 ---------- */
+    .skill-title-right {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-shrink: 0;
+    }
+
+    .card-src-toggle {
+      background: #2d3843;
+      color: #b0c4d9;
+      border: 1px solid #4a5a6e;
+      border-radius: 14px;
+      padding: 0.15rem 0.6rem;
+      font-size: 0.72rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: inherit;
+      line-height: 1.6;
+      white-space: nowrap;
+    }
+
+    .card-src-toggle:hover {
+      background: #3c4d5e;
+      border-color: #6f8fa7;
+      color: #e9eef2;
+    }
+
+    .card-src-toggle[data-mode="game"] {
+      background: #4a5a3c;
+      border-color: #6f8f3c;
+      color: #d4e6b0;
+    }
+
+    /* 卡片正文容器 */
+    .card-body { display: flex; flex-direction: column; width: 100%; }
+
+    /* 主文本里补注的"默认值对应武器" */
+    .default-weapon-note {
+      color: #8fa6bb;
+      font-size: 0.82em;
+      font-style: normal;
+    }
+
+    /* 「仅原文」标记（模组详述版未收录的技能） */
+    .src-badge {
+      display: inline-block;
+      background: #3a4a3a;
+      color: #b8d09a;
+      border: 1px solid #4e6b3c;
+      border-radius: 12px;
+      padding: 0.05rem 0.5rem;
+      font-size: 0.7rem;
+      font-weight: 500;
+      line-height: 1.6;
+      white-space: nowrap;
+    }
+
     /* ---------- 百龙技能配色 ---------- */
     .rampage-card {
       background: #1f2a1f;
@@ -270,32 +329,350 @@
     footer a { color: #7d99b0; text-decoration: none; }
     footer a:hover { color: #c9a86c; }
 
+    /* ---------- 标题 + 版本号 ---------- */
+    .title-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.5rem;
+    }
+
+    .title-bar h1 { margin-bottom: 0; }
+
+    .version-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: #2d3843;
+      color: #b0c4d9;
+      border: 1px solid #4a5a6e;
+      border-radius: 14px;
+      padding: 0.15rem 0.65rem;
+      font-size: 0.78rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      font-family: inherit;
+      line-height: 1.6;
+      white-space: nowrap;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .version-badge:hover {
+      background: #3c4d5e;
+      border-color: #6f8fa7;
+      color: #e9eef2;
+    }
+
+    .version-badge.checking { color: #ffc000; border-color: #c9a86c; }
+
+    .version-badge .ver-icon { font-size: 0.9em; }
+
+    /* ---------- 技能一览（目录） ---------- */
+    .catalog {
+      margin: 0 auto 1.5rem;
+      max-width: 1100px;
+      width: 100%;
+      background: #202832;
+      border: 1px solid #35424e;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .catalog-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      user-select: none;
+      background: #232d37;
+      border-bottom: 1px solid #35424e;
+    }
+
+    .catalog-head:hover { background: #28333e; }
+
+    .catalog-head .catalog-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #e6d8b5;
+      letter-spacing: 0.5px;
+    }
+
+    .catalog-head .catalog-arrow {
+      color: #7d8f9f;
+      font-size: 0.85rem;
+      transition: transform 0.2s ease;
+    }
+
+    .catalog.collapsed .catalog-arrow { transform: rotate(-90deg); }
+    .catalog.collapsed .catalog-body { display: none; }
+
+    .catalog-body {
+      padding: 0.75rem 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .catalog-group { display: flex; flex-direction: column; gap: 0.35rem; }
+
+    .catalog-cat {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #c9a86c;
+      border-left: 3px solid #c9a86c;
+      padding-left: 0.5rem;
+      cursor: pointer;
+      align-self: flex-start;
+    }
+
+    .catalog-cat .cat-count {
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: #7d8f9f;
+    }
+
+    .catalog-cat:hover { color: #f5e2b5; }
+
+    .catalog-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      padding-left: 0.5rem;
+    }
+
+    .catalog-item {
+      background: #2a333e;
+      color: #b0c4d9;
+      border: 1px solid #35424e;
+      border-radius: 12px;
+      padding: 0.15rem 0.6rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.12s ease;
+      white-space: nowrap;
+      font-family: inherit;
+      line-height: 1.6;
+    }
+
+    .catalog-item:hover {
+      background: #3c4d5e;
+      border-color: #6f8fa7;
+      color: #e9eef2;
+    }
+
+    /* ---------- 技能详情弹窗 ---------- */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+      backdrop-filter: blur(2px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      z-index: 1000;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-card {
+      background: #202832;
+      border: 1px solid #4a5a6e;
+      border-radius: 14px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+      width: 100%;
+      max-width: 560px;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: modal-in 0.18s ease;
+    }
+
+    @keyframes modal-in {
+      from { transform: translateY(16px) scale(0.98); opacity: 0; }
+      to { transform: translateY(0) scale(1); opacity: 1; }
+    }
+
+    .modal-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.9rem 1.1rem;
+      background: #232d37;
+      border-bottom: 1px solid #35424e;
+      flex-shrink: 0;
+    }
+
+    .modal-title {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #f5e2b5;
+      min-width: 0;
+    }
+
+    .modal-title .skill-id { flex-shrink: 0; }
+    .modal-title .modal-title-icon { font-size: 1.05em; }
+
+    .modal-close {
+      background: #2d3843;
+      color: #b0c4d9;
+      border: 1px solid #4a5a6e;
+      border-radius: 50%;
+      width: 32px;
+      height: 32px;
+      font-size: 1.1rem;
+      line-height: 1;
+      cursor: pointer;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+
+    .modal-close:hover { background: #3c4d5e; color: #e9eef2; border-color: #6f8fa7; }
+
+    .modal-body {
+      padding: 1rem 1.1rem 1.2rem;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* 弹窗里的版本切换按钮行 */
+    .modal-switch {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .modal-switch button {
+      flex: 1;
+      background: #2a333e;
+      color: #b0c4d9;
+      border: 1px solid #35424e;
+      border-radius: 10px;
+      padding: 0.45rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.12s ease;
+    }
+
+    .modal-switch button.active {
+      background: #c9a86c;
+      color: #1a1e24;
+      border-color: #c9a86c;
+      font-weight: 600;
+    }
+
+    /* ---------- 回到顶部按钮 ---------- */
+    .back-top {
+      position: fixed;
+      right: 1.1rem;
+      bottom: 1.4rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: #2d3843;
+      color: #e9eef2;
+      border: 1px solid #4a5a6e;
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+      z-index: 900;
+      -webkit-tap-highlight-color: transparent;
+      font-family: inherit;
+    }
+
+    .back-top.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .back-top:hover { background: #3c4d5e; border-color: #6f8fa7; }
+
+    .back-top:active { background: #c9a86c; color: #1a1e24; }
+
     @media (max-width: 600px) {
       h1 { font-size: 1.8rem; }
       .skill-grid { grid-template-columns: 1fr; }
       body { padding: 1rem 0.75rem; }
+      .version-badge { font-size: 0.72rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>🌅 曙光技能图鉴</h1>
+    <div class="title-bar">
+      <h1>🌅 曙光技能图鉴</h1>
+      <button class="version-badge" id="versionBadge" title="点击检查更新">
+        <span class="ver-icon">🏷️</span><span id="versionText">v1.0</span>
+      </button>
+    </div>
     <div class="subhead">怪物猎人崛起：曙光 · 技能效果一览 · mhrise-skill</div>
 
     <!-- 数据来源说明 -->
     <div class="data-source">
-      📖 <b>数据来源：</b>本站技能文本整理自 Nexus Mods 模组
-      <b>《Skill Descriptions》</b>（Monster Hunter Rise: Sunbreak，作者 local mod 团队）。
+      📖 <b>数据来源：</b>技能卡牌提供两套文本，点击卡片右上角按钮即可切换：
       <br>
-      🔗 原始模组页面：
+      📘 <b>详细版：</b>整理自 Nexus Mods 模组 <b>《Skill Descriptions》</b>（Monster Hunter Rise: Sunbreak），
+      含武器差分、瓶类型等细节。
       <a href="https://www.nexusmods.com/monsterhunterrise/mods/3872" target="_blank" rel="noopener noreferrer">
-        https://www.nexusmods.com/monsterhunterrise/mods/3872
+        查看原模组 ↗
       </a>
       <br>
+      🎮 <b>原文版：</b>游戏内技能说明原始文本（含各等级效果）。
+      <br>
       <span style="color:#7d8f9f;font-size:0.82rem;">
-        本页面仅作游戏技能查阅展示用途，模组及其文本版权归原作者所有；
-        与 CAPCOM 及 Nexus Mods 无隶属关系。
+        技能名称统一采用详细版名称。本页面仅作游戏技能查阅展示用途，模组及其文本版权归原作者所有；
+        《怪物猎人崛起：曙光》为 CAPCOM 版权作品，本页面与 CAPCOM 及 Nexus Mods 无隶属关系。
       </span>
+    </div>
+
+    <!-- 技能一览（目录） -->
+    <div class="catalog" id="catalog">
+      <div class="catalog-head" id="catalogHead">
+        <span class="catalog-title">📑 技能一览</span>
+        <span class="catalog-arrow">▼</span>
+      </div>
+      <div class="catalog-body" id="catalogBody">
+        <!-- 由 render.js 动态生成 -->
+      </div>
+    </div>
+
+    <!-- 百龙技能一览（目录） -->
+    <div class="catalog" id="ramCatalog">
+      <div class="catalog-head" id="ramCatalogHead">
+        <span class="catalog-title">🐉 百龙技能一览</span>
+        <span class="catalog-arrow">▼</span>
+      </div>
+      <div class="catalog-body" id="ramCatalogBody">
+        <!-- 由 render.js 动态生成 -->
+      </div>
     </div>
 
     <!-- 搜索框 -->
@@ -324,21 +701,124 @@
     </footer>
   </div>
 
+  <!-- 技能详情弹窗 -->
+  <div class="modal-overlay" id="skillModal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div class="modal-title" id="modalTitle"></div>
+        <button class="modal-close" id="modalClose" aria-label="关闭">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- 回到顶部 -->
+  <button class="back-top" id="backTop" aria-label="回到顶部">↑</button>
+
   <script src="skillData.js"></script>
+  <script src="skill_data.js"></script>
   <script src="render.js"></script>
   <script>
+    // ========================================================
+    // 应用版本号（修改此值即可让"点击版本号"提示有新版本）
+    // ========================================================
+    window.APP_VERSION = 'v1.0';
+
+    // 显示版本号
+    (function () {
+      var el = document.getElementById('versionText');
+      if (el) el.textContent = window.APP_VERSION;
+    })();
+
+    // --------------------------------------------------------
     // 注册 Service Worker（PWA 离线支持）
+    // --------------------------------------------------------
+    var swRegistration = null;
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {
         navigator.serviceWorker.register('sw.js')
           .then(function (reg) {
+            swRegistration = reg;
             console.log('[mhrise-skill] Service Worker 已注册:', reg.scope);
+
+            // 监听更新：SW 发现新版本时提示
+            reg.addEventListener('updatefound', function () {
+              var nw = reg.installing;
+              if (!nw) return;
+              nw.addEventListener('statechange', function () {
+                if (nw.state === 'installed' && navigator.serviceWorker.controller) {
+                  console.log('[mhrise-skill] 发现新版本，可点击版本号更新');
+                }
+              });
+            });
           })
           .catch(function (err) {
             console.warn('[mhrise-skill] Service Worker 注册失败:', err);
           });
       });
     }
+
+    // --------------------------------------------------------
+    // 点击版本号 → 检查并更新
+    // --------------------------------------------------------
+    (function () {
+      var badge = document.getElementById('versionBadge');
+      var text = document.getElementById('versionText');
+      if (!badge) return;
+
+      var updating = false;
+
+      function setText(s) { if (text) text.textContent = s; }
+      function reset() {
+        badge.classList.remove('checking');
+        setText(window.APP_VERSION);
+        badge.title = '点击检查更新';
+        updating = false;
+      }
+
+      badge.addEventListener('click', function () {
+        if (updating) return;
+        updating = true;
+        badge.classList.add('checking');
+        setText('检查中…');
+        badge.title = '正在检查更新…';
+
+        // 1) 清理所有缓存
+        var clearCaches = Promise.resolve();
+        if ('caches' in window) {
+          clearCaches = caches.keys().then(function (keys) {
+            return Promise.all(keys.map(function (k) { return caches.delete(k); }));
+          }).catch(function () { /* ignore */ });
+        }
+
+        // 2) 更新 Service Worker
+        var updateSW = Promise.resolve();
+        if (swRegistration) {
+          updateSW = swRegistration.update().catch(function () { /* ignore */ });
+        }
+
+        Promise.all([clearCaches, updateSW]).then(function () {
+          setText('更新中…');
+          // 3) 等待 SW 激活后强制刷新（绕过缓存）
+          if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+            // 通知 SW 跳过等待（若有新 SW）
+            if (navigator.serviceWorker.controller) {
+              navigator.serviceWorker.controller.postMessage({ type: 'SKIP_WAITING' });
+            }
+          }
+          // 延迟一点点，确保缓存清理生效，然后刷新
+          setTimeout(function () {
+            location.reload();
+          }, 400);
+        }).catch(function () {
+          // 出错也尝试刷新
+          location.reload();
+        });
+      });
+
+      // 页面从缓存恢复时，重置版本号显示
+      window.addEventListener('pageshow', function () { reset(); });
+    })();
   </script>
 </body>
 </html>
