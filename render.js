@@ -2930,13 +2930,20 @@
         const tbody = document.createElement('tbody');
 
         if (mode === 'part') {
-          // 按部位分组：完全按网站原顺序，每行都显示部位名（不合并）
+          // 按部位：把「连续的相同部位名」合并（视觉上只显示一次部位名）
+          // 例：头部×4状态 → 合并；但 爪…(其他)…爪 → 不合并（中间隔了别的部位）
           const stateCol = hz.some(function (r) { return String(r[1]) !== '0'; });
-          hz.forEach(function (r) {
+          hz.forEach(function (r, idx) {
             const tr = document.createElement('tr');
             const td0 = document.createElement('td');
             td0.className = 'hit-part';
-            td0.appendChild(makePartName(r[0]));
+            // 和上一行同名 → 不重复显示部位名（靠 border 连成一组）
+            const sameAsPrev = idx > 0 && hz[idx - 1][0] === r[0];
+            if (!sameAsPrev) {
+              td0.appendChild(makePartName(r[0]));
+            } else {
+              td0.className += ' hit-part-cont';
+            }
             if (stateCol) {
               const sp = document.createElement('span');
               sp.className = 'hit-state' + ((!r[1] || r[1] === '0') ? ' hit-state-normal' : '');
