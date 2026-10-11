@@ -693,6 +693,8 @@
       color: #7d8f9f;
     }
     .quest-group.cat-collapsed .quest-group-items { display: none; }
+    /* 任务一览（目录）里的分组：容器是 .catalog-group，items 是 .quest-group-items */
+    .catalog-group.cat-collapsed .quest-group-items { display: none; }
 
     /* 任务里面的可点怪物行 / 补给 chip */
     .mon-quest-clickable {
@@ -1509,8 +1511,28 @@
     .cat-filter {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: 0.4rem;
       margin: 0.6rem 0 1rem;
+    }
+    /* 让 8 个按钮在窄屏也能比较均匀地铺满（最后一行不会孤零零一个） */
+    @media (max-width: 480px) {
+      .cat-filter .cat-btn {
+        flex: 1 1 calc(25% - 0.4rem);
+        min-width: 4.2rem;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        text-align: center;
+        white-space: nowrap;
+      }
+      /* 长名字按钮略缩字，保证一行放得下且字号一致 */
+      .cat-filter .cat-btn[data-cat="ram"],
+      .cat-filter .cat-btn[data-cat="ramdeco"],
+      .cat-filter .cat-btn[data-cat="material"],
+      .cat-filter .cat-btn[data-cat="monster"],
+      .cat-filter .cat-btn[data-cat="quest"] {
+        font-size: 0.76rem;
+      }
     }
 
     .cat-btn {
@@ -2006,7 +2028,7 @@
     <!-- 搜索框 + 分类筛选 -->
     <div class="search-box">
       <div class="search-input-wrap">
-        <input type="text" id="searchInput" placeholder="搜索技能名 / ID / 效果 / 珠子 / 素材…">
+        <input type="text" id="searchInput" placeholder="搜索技能 / 珠子 / 怪物 / 素材 / 任务…">
         <button type="button" id="searchClear" title="清空" aria-label="清空搜索">✕</button>
       </div>
       <span id="searchCount"></span>
@@ -2184,16 +2206,23 @@
       <br>
       🎮 <b>原文版：</b>游戏内技能说明原始文本（含各等级效果）。
       <br>
+      🏹 <b>怪物 / 素材 / 任务：</b>抓取自
+      <a href="https://mhrise.kiranico.com/zh" target="_blank" rel="noopener noreferrer">Kiranico（MHRise 中文站）</a>，
+      含怪物图标、肉质、素材掉落与全部任务数据（698 条，含各人数 HP、补给箱等）。
+      <br>
       <span style="color:#7d8f9f;font-size:0.82rem;">
         技能名称统一采用详细版名称。本页面仅作游戏技能查阅展示用途，模组及其文本版权归原作者所有；
-        《怪物猎人崛起：曙光》为 CAPCOM 版权作品，本页面与 CAPCOM 及 Nexus Mods 无隶属关系。
+        《怪物猎人崛起：曙光》为 CAPCOM 版权作品，本页面与 CAPCOM、Nexus Mods 及 Kiranico 无隶属关系。
       </span>
     </div>
 
     <footer>
       数据来源：Nexus Mods 模组《Skill Descriptions》（
       <a href="https://www.nexusmods.com/monsterhunterrise/mods/3872" target="_blank" rel="noopener noreferrer">mods/3872</a>
-      ）· 仅作展示用途<br>
+      ）
+      · 怪物/素材/任务数据来自
+      <a href="https://mhrise.kiranico.com/zh" target="_blank" rel="noopener noreferrer">Kiranico</a>
+      · 仅作展示用途<br>
       <span style="font-size:0.78rem;">怪物猎人崛起：曙光 为 CAPCOM 商标，本页面与官方无关</span>
     </footer>
   </div>
