@@ -79,6 +79,8 @@
   let _openMonsterModal = null;
   // 素材详情弹窗（供"无怪物掉落"的素材点击调用）
   let _openItemModal = null;
+  // 任务详情弹窗（供任务卡片 / 怪物弹窗里的任务列表调用）
+  let _openQuestModal = null;
 
   // 弹窗历史栈（支持"返回上一级"）
   const _modalStack = [];
@@ -96,6 +98,20 @@
   // ========================================================
   const ITEMS = window.item_data || {};
   const MONSTERS = window.monster_data || {};
+  // quests.js: { "任务id": {name,cat,star,full,desc,goal,fail,hrp,mrp,mons,supply} }
+  const QUESTS = window.quest_data || {};
+  // 任务分类顺序（Kiranico 网站顺序，下位→上位→大师→…）
+  const QUEST_CAT_ORDER = [
+    '村庄任务',
+    '集会所任务 下位',
+    '集会所任务 上位',
+    '集会所任务 大师',
+    '怪异任务',
+    '盟友任务',
+    '活动任务',
+    '斗技大会任务',
+    '训练任务',
+  ];
 
   // 素材名 → [怪物名, ...]（按怪物→素材反向建索引）
   const monsterByMaterial = {};
@@ -1172,6 +1188,143 @@
   }
 
   // ========================================================
+  // 任务卡片（quests.js）
+  // ========================================================
+  // 怪物名 → [任务id, ...]（任务里的怪物名和 monsters.js 基本一致）
+  const questsByMonster = {};
+  Object.keys(QUESTS).forEach(function (qid) {
+    const q = QUESTS[qid];
+    (q.mons || []).forEach(function (m) {
+      if (!questsByMonster[m.name]) questsByMonster[m.name] = [];
+      questsByMonster[m.name].push(qid);
+    });
+  });
+
+  // monsters.js 里每个怪物的 quests[].quest 形如：
+  //   "集会所 4★ 某夜，狩猎奇怪龙 Area 12 (60%) Area 2 (30%) (3%) (5%)"
+  //   "活动任务 7★ 人鱼龙妖艳起舞 Area 7 (50%) ..."
+  // 需要剥掉「分类前缀 + 星级」和「尾部区域/概率」，还原成 quests.js 里的任务名。
+  function normalizeQuestLabel(s) {
+    if (!s) return '';
+    let t = String(s);
+    // ① 尾部 "Area NN (NN%)"（可多个）
+    t = t.replace(/(\s*Area\s*\d+\s*\(\d+%\))+/g, '');
+    // ② 尾部孤立的 "(NN%)"（可多个）
+    t = t.replace(/(\s*\(\d+%\))+/g, '');
+    // ③ 前缀分类（注意 HTML 里可能出现「训 练」这种被插空格的写法）
+    t = t.replace(/^(活动任务|斗技大会任务|怪异调查|怪异任务|村庄|集会所|大师等级|盟友|训练|怪异|斗技大会)\s*/, '');
+    // ④ 残留星级 "7★ "
+    t = t.replace(/^\d+\s*★\s*/, '');
+    // ⑤ 去掉所有空白再比（兼容"训 练"这类插空格）
+    return t.replace(/\s+/g, '').trim();
+  }
+
+  // 任务名 → id（同样去空白，保证匹配）
+  const _questIdByNormName = {};
+  Object.keys(QUESTS).forEach(function (qid) {
+    const nm = (QUESTS[qid].name || '').replace(/\s+/g, '');
+    if (nm && !_questIdByNormName[nm]) _questIdByNormName[nm] = qid;
+  });
+
+  // 由 monsters.js 的 quest 标签找出 quests.js 的 id
+  function findQuestIdByLabel(label) {
+    const key = normalizeQuestLabel(label);
+    if (!key) return null;
+    if (_questIdByNormName[key]) return _questIdByNormName[key];
+    // 兜底：quests.js 里的名字可能带「村庄/集会所…」前缀，再宽松匹配一次
+    const loose = key.replace(/^\d*★?/, '');
+    if (_questIdByNormName[loose]) return _questIdByNormName[loose];
+    return null;
+  }
+
+  // 按分类分组（保持 QUEST_CAT_ORDER 顺序，未列出的分类追加在后）
+  function groupQuestsByCat() {
+    const groups = {};
+    Object.keys(QUESTS).forEach(function (qid) {
+      const c = QUESTS[qid].cat || '其他';
+      (groups[c] = groups[c] || []).push(qid);
+    });
+    const order = QUEST_CAT_ORDER.filter(function (c) { return groups[c]; });
+    Object.keys(groups).forEach(function (c) {
+      if (order.indexOf(c) < 0) order.push(c);
+    });
+    return { groups: groups, order: order };
+  }
+
+  // 渲染任务卡片
+  function renderQuestCard(qid) {
+    const q = QUESTS[qid];
+    const card = document.createElement('div');
+    card.className = 'skill-card quest-card';
+    card.setAttribute('data-qid', qid);
+
+    // 顶部：名字 + 星级
+    const top = document.createElement('div');
+    top.className = 'quest-card-top';
+    const nameEl = document.createElement('div');
+    nameEl.className = 'quest-card-name';
+    nameEl.textContent = q.name || q.full || qid;
+    top.appendChild(nameEl);
+    if (q.star) {
+      const st = document.createElement('span');
+      st.className = 'quest-star';
+      st.textContent = '★' + q.star;
+      top.appendChild(st);
+    }
+    card.appendChild(top);
+
+    // 分类
+    const catEl = document.createElement('div');
+    catEl.className = 'quest-card-cat';
+    catEl.textContent = q.cat || '';
+    card.appendChild(catEl);
+
+    // 怪物（最多显示 3 个图标 + "+N"）
+    const mons = q.mons || [];
+    if (mons.length) {
+      const mEl = document.createElement('div');
+      mEl.className = 'quest-card-mons';
+      const icons = (typeof window !== 'undefined' && window.MONSTER_ICONS) || {};
+      mons.slice(0, 3).forEach(function (m) {
+        const f = icons[m.name];
+        if (f) {
+          const im = document.createElement('img');
+          im.loading = 'lazy';
+          im.decoding = 'async';
+          im.alt = m.name;
+          im.title = m.name;
+          im.src = 'monster-icons/' + f;
+          mEl.appendChild(im);
+        } else {
+          const sp = document.createElement('span');
+          sp.textContent = m.name;
+          mEl.appendChild(sp);
+        }
+      });
+      if (mons.length > 3) {
+        const more = document.createElement('span');
+        more.className = 'q-more';
+        more.textContent = '+' + (mons.length - 3);
+        mEl.appendChild(more);
+      }
+      card.appendChild(mEl);
+    }
+
+    // 搜索：任务名 + 完整标题 + 分类 + 怪物名
+    card._search = (
+      (q.name || '') + ' ' + (q.full || '') + ' ' + (q.cat || '') + ' ' +
+      mons.map(function (m) { return m.name; }).join(' ')
+    ).toLowerCase();
+    card._qid = qid;
+
+    card.addEventListener('click', function () {
+      if (_openQuestModal) _openQuestModal(qid);
+    });
+
+    return card;
+  }
+
+  // ========================================================
   // 通用：区块折叠
   // titleId/containerId/hintId + 状态对象
   // ========================================================
@@ -1542,6 +1695,80 @@
       return { id: 'mat_' + nm, el, search: el._search || '' };
     });
 
+    // --------------------------------------------------------
+    // 任务（quests.js，698 条）
+    // 性能考虑：分类标题先建，卡片「首次展开该类时才渲染」
+    // --------------------------------------------------------
+    const questContainer = document.getElementById('questContainer');
+    const _qGroup = groupQuestsByCat();
+    const questCards = [];          // 已渲染的卡片 { id, el, search }
+    const _questCardById = {};      // qid → { id, el, search }
+    const _questGroupEls = {};      // 分类 → { groupEl, itemsEl, qids, rendered }
+
+    function buildQuestGroupEl(cat, qids) {
+      const groupEl = document.createElement('div');
+      groupEl.className = 'quest-group';
+      groupEl.setAttribute('data-qcat', cat);
+
+      const head = document.createElement('div');
+      head.className = 'catalog-cat catalog-cat-toggle quest-group-head';
+      // 初始为「折叠」状态（箭头 ▶），第一次点击即展开并渲染卡片
+      head.innerHTML =
+        '<span class="catalog-cat-arrow">▶</span>' +
+        escapeHtml(cat) + ' <span class="quest-group-count">' + qids.length + '</span>';
+      groupEl.appendChild(head);
+
+      const itemsEl = document.createElement('div');
+      itemsEl.className = 'quest-grid quest-group-items';
+      groupEl.appendChild(itemsEl);
+
+      // 初始折叠：与箭头 ▶ 保持一致，避免"看起来展开其实没渲染"
+      groupEl.classList.add('cat-collapsed');
+
+      const state = { groupEl: groupEl, itemsEl: itemsEl, qids: qids, rendered: false, collapsed: true };
+
+      head.addEventListener('click', function () {
+        state.collapsed = !state.collapsed;
+        groupEl.classList.toggle('cat-collapsed', state.collapsed);
+        head.querySelector('.catalog-cat-arrow').textContent = state.collapsed ? '▶' : '▼';
+        // 首次展开才渲染卡片
+        if (!state.collapsed && !state.rendered) {
+          renderQuestGroupCards(state);
+        }
+      });
+
+      return state;
+    }
+
+    function renderQuestGroupCards(state) {
+      if (state.rendered) return;
+      state.rendered = true;
+      state.qids.forEach(function (qid) {
+        const el = renderQuestCard(qid);
+        const obj = { id: 'quest_' + qid, el: el, search: el._search || '' };
+        _questCardById[qid] = obj;
+        questCards.push(obj);
+        state.itemsEl.appendChild(el);
+      });
+    }
+
+    // 展开「某一类」的全部卡片（搜索时需要）
+    function ensureQuestRendered(cat) {
+      const st = _questGroupEls[cat];
+      if (st) renderQuestGroupCards(st);
+    }
+    function ensureAllQuestsRendered() {
+      _qGroup.order.forEach(ensureQuestRendered);
+    }
+
+    if (questContainer) {
+      _qGroup.order.forEach(function (cat) {
+        const st = buildQuestGroupEl(cat, _qGroup.groups[cat]);
+        _questGroupEls[cat] = st;
+        questContainer.appendChild(st.groupEl);
+      });
+    }
+
     // 合并所有「普通技能」卡片，并按技能 ID 统一排序（详述版与仅原文版混排）
     const allSkillCards = skillCards.concat(gameOnlyCards)
       .sort((a, b) => Number(a.id) - Number(b.id));
@@ -1584,6 +1811,7 @@
     const ramDecoCollapse = setupSectionCollapse('ramdeco', 'ramDecoSectionTitle', 'ramDecoContainer', 'ramDecoSectionHint', true, EX, CO);
     const monsterCollapse = setupSectionCollapse('monster', 'monsterSectionTitle', 'monsterContainer', 'monsterSectionHint', true, EX, CO);
     const materialCollapse = setupSectionCollapse('material', 'materialSectionTitle', 'materialContainer', 'materialSectionHint', true, EX, CO);
+    const questCollapse = setupSectionCollapse('quest', 'questSectionTitle', 'questContainer', 'questSectionHint', true, EX, CO);
 
     // --------------------------------------------------------
     // 分类筛选（全部 / 技能 / 百龙技能 / 珠子 / 百龙珠 / 怪物）
@@ -1604,10 +1832,11 @@
         ramdeco: 'ramDecoSection',
         monster: 'monsterSection',
         material: 'materialSection',
+        quest: 'questSection',
       };
-      // 6 个目录
+      // 7 个目录
       const CATALOGS = ['catalog', 'ramCatalog', 'decoCatalog',
-        'ramDecoCatalog', 'monsterCatalog', 'materialCatalog'];
+        'ramDecoCatalog', 'monsterCatalog', 'materialCatalog', 'questCatalog'];
 
       // 显示/隐藏某区块
       function showSection(key, on) {
@@ -1623,6 +1852,7 @@
         ramdeco: function () { return ramDecoCollapse; },
         monster: function () { return monsterCollapse; },
         material: function () { return materialCollapse; },
+        quest: function () { return questCollapse; },
       };
 
       // 应用分类
@@ -1885,8 +2115,57 @@
     })();
 
     // --------------------------------------------------------
-    // 百龙技能一览（按名称特征分组的目录）
+    // 任务一览（目录，按 9 个分类，可折叠）
     // --------------------------------------------------------
+    (function buildQuestCatalog() {
+      const body = document.getElementById('questCatalogBody');
+      const head = document.getElementById('questCatalogHead');
+      const catalog = document.getElementById('questCatalog');
+      if (!body || !head || !catalog) return;
+
+      _qGroup.order.forEach(function (cat) {
+        const qids = _qGroup.groups[cat];
+        const groupEl = document.createElement('div');
+        groupEl.className = 'catalog-group';
+
+        const catEl = document.createElement('div');
+        catEl.className = 'catalog-cat catalog-cat-toggle';
+        catEl.innerHTML =
+          '<span class="catalog-cat-arrow">▶</span>' +
+          escapeHtml(cat) +
+          ' <span class="cat-count">' + qids.length + '</span>';
+        groupEl.appendChild(catEl);
+
+        const itemsEl = document.createElement('div');
+        itemsEl.className = 'quest-grid quest-group-items';
+        groupEl.appendChild(itemsEl);
+        // 初始折叠（与箭头 ▶ 一致）
+        groupEl.classList.add('cat-collapsed');
+
+        // 首次展开才渲染（和上面区块一样，省性能）
+        let rendered = false;
+        function renderThis() {
+          if (rendered) return;
+          rendered = true;
+          qids.forEach(function (qid) {
+            itemsEl.appendChild(renderQuestCard(qid));
+          });
+        }
+
+        catEl.addEventListener('click', function () {
+          const collapsed = groupEl.classList.toggle('cat-collapsed');
+          catEl.querySelector('.catalog-cat-arrow').textContent = collapsed ? '▶' : '▼';
+          if (!collapsed) renderThis();
+        });
+
+        body.appendChild(groupEl);
+      });
+
+      head.addEventListener('click', function () {
+        catalog.classList.toggle('collapsed');
+      });
+      if (window.innerWidth < 600) catalog.classList.add('collapsed');
+    })();
     (function buildRamCatalog() {
       const body = document.getElementById('ramCatalogBody');
       const head = document.getElementById('ramCatalogHead');
@@ -2063,6 +2342,7 @@
       let ramDecoHits = 0;
       let monHits = 0;
       let matHits = 0;
+      let questHits = 0;
 
       // 当前分类（决定搜索范围）：all / skill / ram / deco / ramdeco / monster
       const cat = window._activeCat || 'all';
@@ -2094,10 +2374,63 @@
         if (hit) monHits++;
       });
       materialCards.forEach((item) => {
-const hit = inScope('material') && (!kw || item.search.includes(kw));
+        const hit = inScope('material') && (!kw || item.search.includes(kw));
         item.el.style.display = hit ? '' : 'none';
         if (hit) matHits++;
       });
+
+      // ---- 任务（懒渲染：先按数据判断命中，再确保命中的分类已渲染）----
+      (function filterQuests() {
+        const questOn = inScope('quest');
+        if (!questOn) return;
+        // 无关键词：只需保证任务区块自身由「展开时才渲染」逻辑处理，这里不动
+        if (!kw) {
+          // 已渲染过的卡片全部显示
+          questCards.forEach(function (item) { item.el.style.display = ''; });
+          Object.keys(_questGroupEls).forEach(function (cat) {
+            _questGroupEls[cat].groupEl.style.display = '';
+          });
+          return;
+        }
+        // 有搜索词：逐分类判断
+        let total = 0;
+        _qGroup.order.forEach(function (cat) {
+          const st = _questGroupEls[cat];
+          if (!st) return;
+          const hitIds = st.qids.filter(function (qid) {
+            const q = QUESTS[qid];
+            const hay = (
+              (q.name || '') + ' ' + (q.full || '') + ' ' + (q.cat || '') + ' ' +
+              (q.mons || []).map(function (m) { return m.name; }).join(' ') + ' ' +
+              (q.goal || '')
+            ).toLowerCase();
+            return hay.indexOf(kw) >= 0;
+          });
+          if (!hitIds.length) {
+            st.groupEl.style.display = 'none';
+            return;
+          }
+          total += hitIds.length;
+          st.groupEl.style.display = '';
+          // 确保渲染，并按命中过滤
+          renderQuestGroupCards(st);
+          const hitSet = {};
+          hitIds.forEach(function (id) { hitSet[id] = 1; });
+          st.qids.forEach(function (qid) {
+            const obj = _questCardById[qid];
+            if (!obj) return;
+            const show = !!hitSet[qid];
+            obj.el.style.display = show ? '' : 'none';
+            if (show) questHits++;
+          });
+          // 搜索时自动展开该分类（否则卡片藏着看不见）
+          st.collapsed = false;
+          st.groupEl.classList.remove('cat-collapsed');
+          const arrow = st.groupEl.querySelector('.catalog-cat-arrow');
+          if (arrow) arrow.textContent = '▼';
+        });
+        if (!total) questHits = 0;
+      })();
 
       // 怪物分组标题：某一组没有命中就隐藏标题
       (function syncMonGroupTitles() {
@@ -2135,6 +2468,10 @@ const hit = inScope('material') && (!kw || item.search.includes(kw));
         materialCollapse.state.collapsed = kw ? (matHits === 0) : true;
         materialCollapse.apply();
       }
+      if (questCollapse) {
+        questCollapse.state.collapsed = kw ? (questHits === 0) : true;
+        questCollapse.apply();
+      }
 
       if (!kw) {
         searchCount.textContent = '';
@@ -2147,9 +2484,10 @@ const hit = inScope('material') && (!kw || item.search.includes(kw));
         if (ramDecoHits) parts.push('百龙珠 ' + ramDecoHits);
         if (monHits) parts.push('怪物 ' + monHits);
         if (matHits) parts.push('素材 ' + matHits);
-        const total = skillHits + rampageHits + decoHits + ramDecoHits + monHits + matHits;
+        if (questHits) parts.push('任务 ' + questHits);
+        const total = skillHits + rampageHits + decoHits + ramDecoHits + monHits + matHits + questHits;
         const scopeName = { skill: '技能', ram: '百龙技能', deco: '珠子',
-          ramdeco: '百龙珠', monster: '怪物', material: '素材' }[cat];
+          ramdeco: '百龙珠', monster: '怪物', material: '素材', quest: '任务' }[cat];
         if (total) {
           searchCount.textContent = scopeName
             ? ('【' + scopeName + '】共 ' + total + ' 条')
@@ -2169,6 +2507,7 @@ const hit = inScope('material') && (!kw || item.search.includes(kw));
         ramDecoSection: ramDecoHits,
         monsterSection: monHits,
         materialSection: matHits,
+        questSection: questHits,
       };
       Object.keys(RESULT_MAP).forEach(function (id) {
         const sec = document.getElementById(id);
@@ -2181,7 +2520,8 @@ const hit = inScope('material') && (!kw || item.search.includes(kw));
       if (kw) {
         const CS = { skillSection: skillCollapse, ramSection: ramCollapse,
           decoSection: decoCollapse, ramDecoSection: ramDecoCollapse,
-          monsterSection: monsterCollapse, materialSection: materialCollapse };
+          monsterSection: monsterCollapse, materialSection: materialCollapse,
+          questSection: questCollapse };
         Object.keys(CS).forEach(function (id) {
           if (RESULT_MAP[id] > 0 && CS[id]) {
             CS[id].state.collapsed = false;
@@ -2192,7 +2532,7 @@ const hit = inScope('material') && (!kw || item.search.includes(kw));
 
       // 目录：有搜索词时全部隐藏；无搜索词时按当前分类恢复
       const CATALOGS = ['catalog', 'ramCatalog', 'decoCatalog',
-        'ramDecoCatalog', 'monsterCatalog', 'materialCatalog'];
+        'ramDecoCatalog', 'monsterCatalog', 'materialCatalog', 'questCatalog'];
       CATALOGS.forEach(function (id) {
         const el = document.getElementById(id);
         if (!el) return;
@@ -2465,7 +2805,7 @@ const hit = inScope('material') && (!kw || item.search.includes(kw));
 
       // ③ 任务列表（可折叠，避免太长）
       if (mon.quests && mon.quests.length) {
-        bodyEl.appendChild(buildQuestBlock(mon.quests));
+        bodyEl.appendChild(buildQuestBlock(mon.quests, monName));
       }
 
       // ④ 部位肉质（简要）
@@ -2560,8 +2900,184 @@ const hit = inScope('material') && (!kw || item.search.includes(kw));
     }
     _openItemModal = openItemModal;
 
+    // ========================================================
+    // 任务详情弹窗
+    // ========================================================
+    function openQuestModal(qid) {
+      const q = QUESTS[qid];
+      if (!q) return;
+
+      const overlay = document.getElementById('skillModal');
+      const titleEl = document.getElementById('modalTitle');
+      const bodyEl = document.getElementById('modalBody');
+      if (!overlay || !titleEl || !bodyEl) return;
+
+      titleEl.innerHTML =
+        '<span class="modal-title-icon">🏹</span>' +
+        escapeHtml(q.name || qid);
+
+      bodyEl.innerHTML = '';
+      bodyEl.scrollTop = 0;
+
+      // ① 分类 + 星级
+      const metaLine = document.createElement('div');
+      metaLine.className = 'quest-kv';
+      metaLine.innerHTML =
+        '<span class="q-k">' + escapeHtml(q.cat || '') + '</span>' +
+        '<span class="q-v">' + (q.star ? '★' + q.star : '') +
+          (q.hrp ? ' &nbsp;·&nbsp; HRP ' + escapeHtml(String(q.hrp)) : '') +
+          (q.mrp ? ' &nbsp;·&nbsp; MRP ' + escapeHtml(String(q.mrp)) : '') +
+        '</span>';
+      bodyEl.appendChild(metaLine);
+
+      // ② 委托内容
+      if (q.desc) {
+        const head = document.createElement('div');
+        head.className = 'mon-section-head';
+        head.textContent = '委托内容';
+        bodyEl.appendChild(head);
+        const d = document.createElement('div');
+        d.className = 'mon-mat-desc';
+        d.textContent = q.desc;
+        bodyEl.appendChild(d);
+      }
+
+      // ③ 主要目标 / 失败条件
+      const kvHead = document.createElement('div');
+      kvHead.className = 'mon-section-head';
+      kvHead.textContent = '任务信息';
+      bodyEl.appendChild(kvHead);
+
+      function kv(k, v) {
+        if (!v) return;
+        const row = document.createElement('div');
+        row.className = 'quest-kv';
+        row.innerHTML = '<span class="q-k">' + escapeHtml(k) + '</span>' +
+          '<span class="q-v">' + escapeHtml(String(v)) + '</span>';
+        bodyEl.appendChild(row);
+      }
+      kv('主要目标', q.goal);
+      kv('失败条件', q.fail);
+      kv('报酬金额', q.money);
+
+      // ④ 怪物（可折叠，含各人数 HP 表；怪物名可点开怪物弹窗）
+      const mons = q.mons || [];
+      if (mons.length) {
+        const mHead = document.createElement('div');
+        mHead.className = 'mon-section-head';
+        mHead.textContent = '出现怪物（' + mons.length + '）';
+        bodyEl.appendChild(mHead);
+
+        const icons = (typeof window !== 'undefined' && window.MONSTER_ICONS) || {};
+
+        mons.forEach(function (m) {
+          const block = document.createElement('div');
+          block.className = 'quest-mon-block';
+
+          const hd = document.createElement('div');
+          hd.className = 'quest-mon-head';
+          const f = icons[m.name];
+          hd.innerHTML =
+            (f ? '<img src="monster-icons/' + f + '" alt="">' : '👹') +
+            '<span class="qm-name-txt">' + escapeHtml(m.name) + '</span>' +
+            '<span class="qm-arrow">▼</span>';
+          block.appendChild(hd);
+
+          const bd = document.createElement('div');
+          bd.className = 'quest-mon-body';
+
+          const pls = m.players || [];
+          if (pls.length) {
+            const tbl = document.createElement('table');
+            tbl.className = 'quest-hp-table';
+            tbl.innerHTML =
+              '<thead><tr>' +
+                '<th>人数</th><th>HP</th><th>攻击</th><th>部位</th><th>防御</th>' +
+                '<th>异常</th><th>眩晕</th><th>耐力</th><th>骑乘</th>' +
+              '</tr></thead>';
+            const tb = document.createElement('tbody');
+            pls.forEach(function (p) {
+              const tr = document.createElement('tr');
+              [
+                p.p ? p.p + '人' : '',
+                p.hp || '', p.atk || '', p.parts || '', p.def || '',
+                p.ail || '', p.stun || '', p.stam || '', p.mount || '',
+              ].forEach(function (v) {
+                const td = document.createElement('td');
+                td.textContent = v || '—';
+                tr.appendChild(td);
+              });
+              tb.appendChild(tr);
+            });
+            tbl.appendChild(tb);
+            bd.appendChild(tbl);
+          } else {
+            const none = document.createElement('div');
+            none.className = 'mon-mat-none';
+            none.textContent = '（无人数档数据）';
+            bd.appendChild(none);
+          }
+
+          block.appendChild(bd);
+
+          // 点标题 → 折叠；点怪物名 → 打开怪物弹窗
+          hd.addEventListener('click', function (ev) {
+            const nameTxt = ev.target && ev.target.closest && ev.target.closest('.qm-name-txt');
+            if (nameTxt && MONSTERS[m.name] && _openMonsterModal) {
+              // 记录历史：返回时回到本任务
+              if (typeof _pushHist === 'function') _pushHist(function () { openQuestModal(qid); });
+              _openMonsterModal(m.name);
+              return;
+            }
+            const collapsed = block.classList.toggle('qm-collapsed');
+            const arrow = hd.querySelector('.qm-arrow');
+            if (arrow) arrow.textContent = collapsed ? '▶' : '▼';
+          });
+
+          // 为了联动顺畅：怪物名加下划线提示可点
+          if (MONSTERS[m.name] && _openMonsterModal) {
+            hd.querySelector('.qm-name-txt').classList.add('qm-name-link');
+          }
+
+          bodyEl.appendChild(block);
+        });
+      }
+
+      // ⑤ 补给箱
+      const sups = q.supply || [];
+      if (sups.length) {
+        const sHead = document.createElement('div');
+        sHead.className = 'mon-section-head';
+        sHead.textContent = '补给箱（' + sups.length + '）';
+        bodyEl.appendChild(sHead);
+
+        const cloud = document.createElement('div');
+        cloud.className = 'mon-mat-cloud';
+        sups.forEach(function (s) {
+          const chip = document.createElement('span');
+          chip.className = 'mon-mat-chip quest-sup-chip';
+          chip.textContent = s.item + (s.count ? ' x' + s.count : '');
+          // 素材名能对上 → 点开素材详情
+          if (ITEMS[s.item] && _openItemModal) {
+            chip.style.cursor = 'pointer';
+            chip.addEventListener('click', function () {
+              if (typeof _pushHist === 'function') _pushHist(function () { openQuestModal(qid); });
+              _openItemModal(s.item);
+            });
+          }
+          cloud.appendChild(chip);
+        });
+        bodyEl.appendChild(cloud);
+      }
+
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    _openQuestModal = openQuestModal;
+
     // 任务列表块（默认折叠，点标题展开）
-    function buildQuestBlock(quests) {
+    // monName：所属怪物名（用于「返回」历史栈）
+    function buildQuestBlock(quests, monName) {
       const wrap = document.createElement('div');
       wrap.className = 'mon-quest';
 
@@ -2618,6 +3134,20 @@ const hit = inScope('material') && (!kw || item.search.includes(kw));
           meta.appendChild(s);
         });
         row.appendChild(meta);
+
+        // 能对上 quests.js 里的任务 → 可点击看详情
+        const _qid = findQuestIdByLabel(questName);
+        if (_qid && _openQuestModal) {
+          row.classList.add('mon-quest-clickable');
+          row.title = '点击查看任务详情';
+          row.addEventListener('click', function (ev) {
+            ev.stopPropagation();
+            if (typeof _pushHist === 'function') {
+              _pushHist(function () { openMonsterModal(monName); });
+            }
+            _openQuestModal(_qid);
+          });
+        }
 
         listEl.appendChild(row);
       });

@@ -508,9 +508,203 @@
       display: inline-block;
       width: 0.7em;
     }
-    /* 折叠时隐藏该类的项目 */
+/* 折叠时隐藏该类的项目 */
     .catalog-group.cat-collapsed .catalog-items {
       display: none;
+    }
+
+    /* ========================================================
+       任务（quests.js）
+       ======================================================== */
+    /* 任务区块：一行 2 个卡片（名字较长） */
+    .quest-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.45rem;
+    }
+    /* 任务卡片 */
+    .quest-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.22rem;
+      padding: 0.5rem 0.55rem;
+      text-align: left;
+      min-height: 4.2rem;
+    }
+    .quest-card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.3rem;
+    }
+    .quest-card-name {
+      font-weight: 700;
+      font-size: 0.8rem;
+      line-height: 1.25;
+      color: #e9eef2;
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+    .quest-star {
+      flex: 0 0 auto;
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: #f5d488;
+      background: #3a2f4a;
+      border-radius: 4px;
+      padding: 0.05rem 0.3rem;
+      white-space: nowrap;
+    }
+    .quest-card-cat {
+      font-size: 0.62rem;
+      color: #8fa3b5;
+    }
+    .quest-card-mons {
+      font-size: 0.62rem;
+      color: #b9c9d6;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      flex-wrap: wrap;
+    }
+    .quest-card-mons img {
+      width: 16px;
+      height: 16px;
+      object-fit: contain;
+      image-rendering: -webkit-optimize-contrast;
+    }
+    .quest-card-mons .q-more {
+      color: #7d8f9f;
+    }
+
+    /* 任务弹窗 */
+    .quest-kv {
+      display: flex;
+      gap: 0.4rem;
+      margin: 0.35rem 0;
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
+    .quest-kv .q-k {
+      flex: 0 0 auto;
+      color: #8fa3b5;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .quest-kv .q-v {
+      flex: 1 1 auto;
+      color: #e9eef2;
+      overflow-wrap: anywhere;
+    }
+    .quest-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.28rem;
+      margin-top: 0.2rem;
+    }
+    .quest-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+      font-size: 0.7rem;
+      color: #e9eef2;
+      background: #2b3542;
+      border: 1px solid #3a4757;
+      border-radius: 5px;
+      padding: 0.16rem 0.4rem;
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .quest-chip:active { background: #3a4757; }
+    .quest-chip img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+    }
+    /* 怪物血量表 */
+    .quest-mon-block {
+      margin: 0.4rem 0;
+      border: 1px solid #2f3a48;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .quest-mon-head {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.32rem 0.45rem;
+      background: #232c37;
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: #dbe6f0;
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .quest-mon-head img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+    .quest-mon-head .qm-arrow {
+      margin-left: auto;
+      font-size: 0.6rem;
+      color: #7d8f9f;
+    }
+    .quest-mon-block.qm-collapsed .quest-mon-body { display: none; }
+    .quest-mon-body { padding: 0.2rem 0.3rem 0.35rem; }
+    .quest-hp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.66rem;
+    }
+    .quest-hp-table th,
+    .quest-hp-table td {
+      border: 1px solid #2f3a48;
+      padding: 0.18rem 0.2rem;
+      text-align: center;
+      color: #cfdae4;
+      white-space: nowrap;
+    }
+    .quest-hp-table th {
+      background: #1f2731;
+      color: #8fa3b5;
+      font-weight: 700;
+    }
+    .quest-hp-table td.qm-name { text-align: left; color: #a8bfd4; }
+
+    /* 任务分组（区块内 / 目录内） */
+    .quest-group { margin-bottom: 0.6rem; }
+    .quest-group-head {
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: #cfe0f0;
+      padding: 0.3rem 0.15rem;
+      border-bottom: 1px solid #2a3442;
+      margin-bottom: 0.4rem;
+    }
+    .quest-group-count {
+      font-size: 0.66rem;
+      font-weight: 400;
+      color: #7d8f9f;
+    }
+    .quest-group.cat-collapsed .quest-group-items { display: none; }
+
+    /* 任务里面的可点怪物行 / 补给 chip */
+    .mon-quest-clickable {
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .mon-quest-clickable:active { background: #2b3542; }
+    .quest-sup-chip { cursor: default; }
+    .qm-name-link {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 2px;
     }
 
     .catalog-items {
@@ -1827,6 +2021,7 @@
       <button class="cat-btn" data-cat="ramdeco">百龙珠</button>
       <button class="cat-btn" data-cat="monster">怪物</button>
       <button class="cat-btn" data-cat="material">素材</button>
+      <button class="cat-btn" data-cat="quest">任务</button>
     </div>
 
     <!-- ================= 五个区块（数据容器） =================
@@ -1885,6 +2080,15 @@
           <span class="section-toggle-hint" id="materialSectionHint">（点击展开 ▼）</span>
         </div>
         <div id="materialContainer" class="skill-grid"></div>
+      </div>
+
+      <!-- 任务 -->
+      <div class="skill-section cat-hidden" id="questSection">
+        <div class="section-title section-toggle" id="questSectionTitle">
+          🏹 任务
+          <span class="section-toggle-hint" id="questSectionHint">（点击展开 ▼）</span>
+        </div>
+        <div id="questContainer" class="monster-grid quest-grid"></div>
       </div>
 
     </div>
@@ -1953,6 +2157,17 @@
         <span class="catalog-arrow">▼</span>
       </div>
       <div class="catalog-body" id="materialCatalogBody">
+        <!-- 由 render.js 动态生成 -->
+      </div>
+    </div>
+
+    <!-- 任务一览（目录） -->
+    <div class="catalog" id="questCatalog">
+      <div class="catalog-head" id="questCatalogHead">
+        <span class="catalog-title">🏹 任务一览</span>
+        <span class="catalog-arrow">▼</span>
+      </div>
+      <div class="catalog-body" id="questCatalogBody">
         <!-- 由 render.js 动态生成 -->
       </div>
     </div>
