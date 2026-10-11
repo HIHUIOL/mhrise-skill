@@ -129,15 +129,24 @@
       }
       if (!ranksByMaterial[m.item]) ranksByMaterial[m.item] = {};
       if (!ranksByMaterial[m.item][monName]) ranksByMaterial[m.item][monName] = {};
-      if (m.rank) ranksByMaterial[m.item][monName][m.rank] = true;
+      const _rk = normRank(m.rank, m.item);
+      if (_rk) ranksByMaterial[m.item][monName][_rk] = true;
     });
   });
 
   // 等级排序 & 显示名
-  const RANK_ORDER = ['下位', '上位', '大师等级'];
-  const RANK_SHORT = { '下位': '下', '上位': '上', '大师等级': '大师' };
+  const RANK_ORDER = ['下位', '上位', '大师等级', '怪异'];
+  const RANK_SHORT = { '下位': '下', '上位': '上', '大师等级': '大师', '怪异': '怪异' };
   function rankKey(rank) {
-    return rank === '下位' ? 'low' : rank === '上位' ? 'high' : 'master';
+    if (rank === '下位') return 'low';
+    if (rank === '上位') return 'high';
+    if (rank === '怪异') return 'anomaly';
+    return 'master';
+  }
+  // 归一化等级：怪异素材名以「怪异化的」「破怪的」开头 → 归入「怪异」（原数据标的是「大师等级」）
+  function normRank(rank, itemName) {
+    if (/^(怪异化的|破怪的)/.test(String(itemName || ''))) return '怪异';
+    return rank;
   }
 
   // 查某素材来自哪些怪物
@@ -172,8 +181,9 @@
     const groups = {};
     (mon.materials || []).forEach(function (m) {
       if (!m.item || !m.rank) return;
-      if (!groups[m.rank]) groups[m.rank] = [];
-      if (groups[m.rank].indexOf(m.item) < 0) groups[m.rank].push(m.item);
+      const rk = normRank(m.rank, m.item);
+      if (!groups[rk]) groups[rk] = [];
+      if (groups[rk].indexOf(m.item) < 0) groups[rk].push(m.item);
     });
     return RANK_ORDER
       .filter(function (r) { return groups[r] && groups[r].length; })
@@ -4058,7 +4068,7 @@
       let ranks = [];
       if (rows.length) {
         const set = {};
-        rows.forEach(function (r) { if (r.rank) set[r.rank] = true; });
+        rows.forEach(function (r) { if (r.rank) set[normRank(r.rank, r.item)] = true; });
         ranks = RANK_ORDER.filter(function (r) { return set[r]; });
       } else {
         // 无掉落行（例如采集类），用全局反查
@@ -4105,7 +4115,7 @@
       const order = RANK_ORDER;
       let anyRow = false;
       order.forEach(function (rank) {
-        const sub = rows.filter(function (r) { return r.rank === rank; });
+        const sub = rows.filter(function (r) { return normRank(r.rank, r.item) === rank; });
         if (!sub.length) return;
         anyRow = true;
 
@@ -4120,9 +4130,14 @@
         sub.forEach(function (r) {
           const line = document.createElement('div');
           line.className = 'mon-drop-row';
+          // 怪异素材：在部位前加「怪异调查」前缀（如「本体」→「怪异调查 本体」）
+          const _isAnom = /^(怪异化的|破怪的)/.test(String(itemName || ''));
+          const _partTxt = r.part
+            ? (_isAnom ? '怪异调查 ' + prettyPart(r.part) : prettyPart(r.part))
+            : '';
           line.innerHTML =
             '<span class="drop-way">' + escapeHtml(r.way) + '</span>' +
-            (r.part ? '<span class="drop-part">' + escapeHtml(prettyPart(r.part)) + '</span>' : '') +
+            (_partTxt ? '<span class="drop-part">' + escapeHtml(_partTxt) + '</span>' : '') +
             '<span class="drop-count">' + escapeHtml(r.count) + '</span>' +
             '<span class="drop-rate">' + escapeHtml(r.rate) + '</span>';
           grp.appendChild(line);
@@ -4230,10 +4245,11 @@
       // 右：难度 + 数量 + 概率
       const meta = document.createElement('span');
       meta.className = 'obtain-meta';
-      if (r.rank) {
+      const _rk = r.rank ? normRank(r.rank, itemName) : '';
+      if (_rk) {
         const ks = document.createElement('span');
-        ks.className = 'obtain-rank mat-rank-tag rank-' + rankKey(r.rank);
-        ks.textContent = r.rank;
+        ks.className = 'obtain-rank mat-rank-tag rank-' + rankKey(_rk);
+        ks.textContent = _rk;
         meta.appendChild(ks);
       }
       if (r.count) {

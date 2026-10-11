@@ -1973,6 +1973,7 @@
     .rank-low .mon-rank-head { color: #7fb3d5; }
     .rank-high .mon-rank-head { color: #e0a458; }
     .rank-master .mon-rank-head { color: #c08fd0; }
+    .rank-anomaly .mon-rank-head { color: #f08cb0; }
 
     .mon-drop-row {
       display: flex;
@@ -2256,6 +2257,12 @@
       border-color: #6b552f;
     }
 
+    .mat-rank-tag.rank-anomaly {
+      background: #3d1f2e;
+      color: #f08cb0;
+      border-color: #6b2f45;
+    }
+
     /* ---------- 素材一览：按等级分组 ---------- */
     .mon-mat-group {
       margin: 0.35rem 0 0.5rem;
@@ -2286,6 +2293,11 @@
     .mon-mat-group.rank-master .mon-mat-group-label {
       border-left-color: #c69a3e;
       color: #e8c46a;
+    }
+
+    .mon-mat-group.rank-anomaly .mon-mat-group-label {
+      border-left-color: #d15a86;
+      color: #f08cb0;
     }
 
     /* ---------- 素材 chip ---------- */
