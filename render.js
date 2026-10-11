@@ -1712,7 +1712,8 @@
       // 初始为「折叠」状态（箭头 ▶），第一次点击即展开并渲染卡片
       head.innerHTML =
         '<span class="catalog-cat-arrow">▶</span>' +
-        escapeHtml(cat) + ' <span class="quest-group-count">' + qids.length + '</span>';
+        '<span class="qg-name">' + escapeHtml(cat) + '</span>' +
+        '<span class="quest-group-count">' + qids.length + '</span>';
       groupEl.appendChild(head);
 
       const itemsEl = document.createElement('div');
@@ -2074,7 +2075,7 @@
         catEl.className = 'catalog-cat catalog-cat-toggle';
         catEl.innerHTML =
           '<span class="catalog-cat-arrow">▼</span>' +
-          escapeHtml(c) +
+          '<span class="qg-name">' + escapeHtml(c) + '</span>' +
           ' <span class="cat-count">' + list.length + '</span>';
         groupEl.appendChild(catEl);
 
@@ -2129,7 +2130,7 @@
         catEl.className = 'catalog-cat catalog-cat-toggle';
         catEl.innerHTML =
           '<span class="catalog-cat-arrow">▶</span>' +
-          escapeHtml(cat) +
+          '<span class="qg-name">' + escapeHtml(cat) + '</span>' +
           ' <span class="cat-count">' + qids.length + '</span>';
         groupEl.appendChild(catEl);
 

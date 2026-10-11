@@ -475,7 +475,7 @@
     .catalog-group { display: flex; flex-direction: column; gap: 0.35rem; }
 
     .catalog-cat {
-      display: inline-flex;
+      display: flex;
       align-items: center;
       gap: 0.4rem;
       font-size: 0.85rem;
@@ -484,7 +484,25 @@
       border-left: 3px solid #c9a86c;
       padding-left: 0.5rem;
       cursor: pointer;
-      align-self: flex-start;
+      align-self: stretch;
+      width: 100%;
+      /* 分类名再长也不换行（宁可省略号，也不要竖排/断行） */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+      min-height: 1.6rem;
+    }
+    /* 箭头和计数不参与压缩 */
+    .catalog-cat .catalog-cat-arrow,
+    .catalog-cat .cat-count { flex: 0 0 auto; }
+    /* 分类名文本本身占满剩余空间并省略 */
+    .catalog-cat > :not(.catalog-cat-arrow):not(.cat-count) {
+      flex: 0 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     .catalog-cat .cat-count {
@@ -740,15 +758,33 @@
     /* 任务分组（区块内 / 目录内） */
     .quest-group { margin-bottom: 0.6rem; }
     .quest-group-head {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
       cursor: pointer;
       user-select: none;
       -webkit-tap-highlight-color: transparent;
       font-size: 0.8rem;
       font-weight: 700;
       color: #cfe0f0;
-      padding: 0.3rem 0.15rem;
+      padding: 0.35rem 0.15rem;
       border-bottom: 1px solid #2a3442;
       margin-bottom: 0.4rem;
+      /* 分类名绝不换行（窄屏宁可省略） */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+    }
+    .quest-group-head .catalog-cat-arrow { flex: 0 0 auto; }
+    .quest-group-head .quest-group-count { flex: 0 0 auto; margin-left: auto; }
+    /* 分类名：占满中间剩余宽度，过长自动省略（绝不换行） */
+    .qg-name {
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     .quest-group-count {
       font-size: 0.66rem;
