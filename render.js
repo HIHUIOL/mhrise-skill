@@ -88,6 +88,8 @@
   let _clearModalStack = null;
   // 顶层桥接：记录弹窗跳转（供顶层 openDecoModal 等调用）
   let _pushHist = null;
+  // 顶层桥接：刷新「返回」按钮显隐（弹窗打开时始终显示）
+  let _updateModalBack = null;
   // 顶层桥接：按百龙技能名打开弹窗（供顶层 buildRamDecoSection 用）
   let _openRampageById = null;
   // 当前打开的「怪物弹窗」上下文（返回时用来精准重开同一页）
@@ -270,6 +272,9 @@
 
   // 构造「可用珠子」区块 DOM
   // opts.compact=true 时仅列名字；否则带孔位/等级
+  // opts.noSkillHistory=true 时：点珠子 chip 不记录「返回后重开技能弹窗」
+  //   - 技能卡片内使用 → true（返回时直接回卡片列表，不再弹技能弹窗）
+  //   - 技能弹窗内使用 → false（返回时回到技能弹窗）
   function buildDecoSection(decId, opts) {
     opts = opts || {};
     const list = decosForSkill(decId);
@@ -296,8 +301,8 @@
         (d.lv > 1 ? '<span class="deco-lv">Lv' + d.lv + '</span>' : '');
       chip.addEventListener('click', function (e) {
         e.stopPropagation();
-        // 记录历史：返回时重开该技能
-        if (typeof _pushHist === 'function' && _openSkillModal) {
+        // 记录历史：返回时重开该技能（技能弹窗内才需要）
+        if (!opts.noSkillHistory && typeof _pushHist === 'function' && _openSkillModal) {
           _pushHist(function () { _openSkillModal(Number(decId)); });
         }
         openDecoModal(d.id);
@@ -829,7 +834,7 @@
       gameContent.classList.add('src-game');
       card.appendChild(gameContent);
       // 可用珠子（挂在卡片最下方，不属于某版内容）
-      const decoEl = buildDecoSection(id);
+      const decoEl = buildDecoSection(id, { noSkillHistory: true });
       if (decoEl) card.appendChild(decoEl);
       card._search = buildGameSearchText(id, gameEntry) + ' ' + buildDecoSearchText(id);
       return card;
@@ -852,7 +857,7 @@
     card._search = buildSearchText(id, skill) + (hasGame ? ' ' + buildGameSearchText(id, gameEntry) : '') + ' ' + buildDecoSearchText(id);
 
     // 可用珠子（挂在卡片最下方）
-    const decoEl2 = buildDecoSection(id);
+    const decoEl2 = buildDecoSection(id, { noSkillHistory: true });
     if (decoEl2) card.appendChild(decoEl2);
 
     // 绑定卡片内切换（仅两版都有时）
@@ -1025,41 +1030,12 @@
       '</span>';
     card.appendChild(titleEl);
 
-    // 提供技能
-    const gmeta = window.GAME_SKILL_DATA || {};
-    const skEntry = d.hex ? gmeta[d.hex] : null;
-    if (skEntry && skEntry.sname) {
-      const skRow = document.createElement('div');
-      skRow.className = 'deco-provide';
-      skRow.innerHTML = '提供技能：<b>' + escapeHtml(skEntry.sname) + '</b>';
-      card.appendChild(skRow);
-    }
-
-    // 必要素材
-    if (d.material && d.material.length) {
-      const matWrap = document.createElement('div');
-      matWrap.className = 'deco-materials';
-      const head = document.createElement('div');
-      head.className = 'deco-mat-head';
-      head.textContent = '必要素材';
-      matWrap.appendChild(head);
-      const ul = document.createElement('ul');
-      ul.className = 'deco-mat-list';
-      d.material.forEach((m) => {
-        const li = document.createElement('li');
-        li.className = 'deco-mat-item';
-        li.innerHTML = '<span class="deco-mat-name">' + escapeHtml(m.item) + '</span>' +
-          '<span class="deco-mat-count">×' + m.count + '</span>';
-        ul.appendChild(li);
-      });
-      matWrap.appendChild(ul);
-      card.appendChild(matWrap);
-    }
+    // 详情内容（孔位/等级/提供技能可点击/必要素材可点击）——与弹窗完全一致
+    // 直接内联到卡片，不再需要「点卡片 → 弹窗」这一层
+    // recordHistory=false：卡片内点素材/技能，返回时直接回卡片列表，不再弹珠子弹窗
+    card.appendChild(buildDecoDetailBody(d, d.id, false));
 
     card._search = buildSingleDecoSearchText(d);
-
-    // 点击卡片 → 打开珠子弹窗
-    card.addEventListener('click', function () { openDecoModal(d.id); });
 
     return card;
   }
@@ -1730,23 +1706,22 @@
     return '';
   }
 
-  // 打开珠子详情弹窗：显示孔位 / 等级 / 提供技能 / 必要素材
-  function openDecoModal(decoId) {
-    const d = DECO[decoId];
-    if (!d) return;
-    const entry = decoByName[d.dname] || {
-      id: Number(decoId), hex: d.hex, slot: d.slot, lv: d.lv || 1,
-      dname: d.dname, skip: !!d.skip, material: Array.isArray(d.material) ? d.material : []
-    };
+  // 构建珠子详情内容（孔位/等级/提供技能/必要素材）——卡片和弹窗共用
+  // decoId: 用于「返回时重新打开珠子」的历史记录
+  // recordHistory: 子元素点击时，是否记录「返回后重新打开珠子弹窗」
+  //   - 弹窗内使用 → true（返回时回到珠子弹窗）
+  //   - 珠子一览卡片内使用 → false（返回时直接回到卡片列表，不再弹珠子弹窗）
+  function buildDecoDetailBody(entry, decoId, recordHistory) {
+    if (recordHistory === undefined) recordHistory = true;
+    const bodyEl = document.createElement('div');
+    bodyEl.className = 'deco-detail-body';
 
-    const overlay = document.getElementById('skillModal'); // 复用同一个弹窗容器
-    const titleEl = document.getElementById('modalTitle');
-    const bodyEl = document.getElementById('modalBody');
-    if (!overlay || !titleEl || !bodyEl) return;
-
-    titleEl.innerHTML = escapeHtml(entry.dname) +
-      '<span class="skill-id">🔮</span>';
-    bodyEl.innerHTML = '';
+    // 子元素点击时，按需记录返回历史
+    function recordBack() {
+      if (recordHistory && typeof _pushHist === 'function') {
+        _pushHist(function () { openDecoModal(decoId); });
+      }
+    }
 
     // 基本信息行
     const info = document.createElement('div');
@@ -1767,10 +1742,10 @@
       skRow.innerHTML = '提供技能：<b>' + escapeHtml(skEntry.sname || '') + '</b>' +
         ' <span class="deco-lv">Lv' + entry.lv + '</span>' +
         '<span class="deco-skill-go">查看技能 ▸</span>';
-      skRow.addEventListener('click', function () {
+      skRow.addEventListener('click', function (e) {
+        e.stopPropagation();
         if (!isNaN(decId) && _openSkillModal) {
-          // 记录：返回时重新打开当前珠子
-          if (typeof _pushHist === 'function') _pushHist(function () { openDecoModal(decoId); });
+          recordBack();
           _openSkillModal(decId);
         }
       });
@@ -1809,8 +1784,9 @@
           '<span class="deco-mat-count">×' + m.count + '</span>';
         if (linkable) {
           li.classList.add('deco-mat-link');
-          li.addEventListener('click', function () {
-            if (typeof _pushHist === 'function') _pushHist(function () { openDecoModal(decoId); });
+          li.addEventListener('click', function (e) {
+            e.stopPropagation();
+            recordBack();
             // 多个来源怪 → 走素材详情让用户选；单个 → 直接跳
             if (mons.length === 1 && _openMonsterModal) {
               _openMonsterModal(mons[0], m.item);
@@ -1821,8 +1797,9 @@
         } else if (ITEMS[m.item]) {
           // 无怪物掉落，但有道具数据（说明/其他获得途径）→ 也可点
           li.classList.add('deco-mat-link', 'deco-mat-item-link');
-          li.addEventListener('click', function () {
-            if (typeof _pushHist === 'function') _pushHist(function () { openDecoModal(decoId); });
+          li.addEventListener('click', function (e) {
+            e.stopPropagation();
+            recordBack();
             if (_openItemModal) _openItemModal(m.item);
           });
         }
@@ -1836,7 +1813,30 @@
       bodyEl.appendChild(empty);
     }
 
+    return bodyEl;
+  }
+
+  // 打开珠子详情弹窗（供「从别处跳转过来」时使用）
+  function openDecoModal(decoId) {
+    const d = DECO[decoId];
+    if (!d) return;
+    const entry = decoByName[d.dname] || {
+      id: Number(decoId), hex: d.hex, slot: d.slot, lv: d.lv || 1,
+      dname: d.dname, skip: !!d.skip, material: Array.isArray(d.material) ? d.material : []
+    };
+
+    const overlay = document.getElementById('skillModal'); // 复用同一个弹窗容器
+    const titleEl = document.getElementById('modalTitle');
+    const bodyEl = document.getElementById('modalBody');
+    if (!overlay || !titleEl || !bodyEl) return;
+
+    titleEl.innerHTML = escapeHtml(entry.dname) +
+      '<span class="skill-id">🔮</span>';
+    bodyEl.innerHTML = '';
+    bodyEl.appendChild(buildDecoDetailBody(entry, decoId));
+
     overlay.classList.add('open');
+    if (_updateModalBack) _updateModalBack();
     document.body.style.overflow = 'hidden';
   }
 
@@ -3130,6 +3130,7 @@
       if (decoSec) bodyEl.appendChild(decoSec);
 
       overlay.classList.add('open');
+      if (_updateModalBack) _updateModalBack();
       document.body.style.overflow = 'hidden'; // 防止背景滚动
     }
 
@@ -3145,10 +3146,12 @@
       updateModalBack();
     }
 
-    // 更新「返回」按钮显隐
+    // 更新「返回」按钮显隐：弹窗打开时始终显示（在最底层时点击 = 关闭弹窗）
     function updateModalBack() {
       const b = document.getElementById('modalBack');
-      if (b) b.classList.toggle('show', _modalStack.length > 0);
+      const overlay = document.getElementById('skillModal');
+      const isOpen = !!(overlay && overlay.classList.contains('open'));
+      if (b) b.classList.toggle('show', isOpen);
     }
 
     // 记录一次弹窗跳转（在打开新弹窗前调用）
@@ -3164,6 +3167,7 @@
     }
     // 桥接给顶层函数（openDecoModal 等在顶层）
     _pushHist = pushModalHistory;
+    _updateModalBack = updateModalBack;
 
     // ---- 弹窗状态快照（用于「返回」时还原展开状态 + 滚动位置）----
     function captureModalState() {
@@ -3264,9 +3268,9 @@
       if (fid != null) openRampageModal(fid);
     };
 
-    // 返回上一级
+    // 返回上一级（若已在最底层，则关闭弹窗）
     function modalGoBack() {
-      if (!_modalStack.length) return;
+      if (!_modalStack.length) { closeSkillModal(); return; }
       const item = _modalStack.pop();
       updateModalBack();
       const fn = (item && item.fn) || item;   // 兼容旧格式
@@ -3331,6 +3335,7 @@
       }
 
       overlay.classList.add('open');
+      if (_updateModalBack) _updateModalBack();
       document.body.style.overflow = 'hidden';
     }
 
@@ -3420,6 +3425,7 @@
       if (focusItem && !restoreState) bodyEl.scrollTop = 0;
 
       overlay.classList.add('open');
+      if (_updateModalBack) _updateModalBack();
       document.body.style.overflow = 'hidden';
 
       // 从「返回」进来 → 恢复展开状态与滚动位置
@@ -3504,6 +3510,7 @@
       bodyEl.appendChild(buildObtainBlock(itemName, true));
 
       overlay.classList.add('open');
+      if (_updateModalBack) _updateModalBack();
       document.body.style.overflow = 'hidden';
     }
     _openItemModal = openItemModal;
@@ -3809,6 +3816,7 @@
       }
 
       overlay.classList.add('open');
+      if (_updateModalBack) _updateModalBack();
       document.body.style.overflow = 'hidden';
     }
     _openQuestModal = openQuestModal;
@@ -4742,6 +4750,7 @@
       if (ramDecoEl) bodyEl.appendChild(ramDecoEl);
 
       overlay.classList.add('open');
+      if (_updateModalBack) _updateModalBack();
       document.body.style.overflow = 'hidden';
     }
 
