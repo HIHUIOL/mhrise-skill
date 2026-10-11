@@ -230,7 +230,11 @@
   }
 
   // 构造「可用百龙珠」区块 DOM
-  function buildRamDecoSection(skillName) {
+  // opts.noSkillHistory=true 时：点百龙珠 chip 不记录「返回后重开百龙技能弹窗」
+  //   - 百龙技能卡片内使用 → true（返回时直接回卡片列表）
+  //   - 百龙技能弹窗内使用 → false（返回时回到百龙技能弹窗）
+  function buildRamDecoSection(skillName, opts) {
+    opts = opts || {};
     const list = ramDecosForSkill(skillName);
     if (!list.length) return null;
 
@@ -252,8 +256,8 @@
       chip.textContent = d.name;
       chip.addEventListener('click', function (e) {
         e.stopPropagation();
-        // 记录历史：返回时重开该百龙技能（按名称查 id）
-        if (typeof _pushHist === 'function' && typeof _openRampageById === 'function') {
+        // 记录历史：返回时重开该百龙技能（百龙技能弹窗内才需要）
+        if (!opts.noSkillHistory && typeof _pushHist === 'function' && typeof _openRampageById === 'function') {
           _pushHist(function () { _openRampageById(skillName); });
         }
         if (_openRamDecoModal) _openRamDecoModal(d.name);
@@ -1004,7 +1008,7 @@
     card._search = buildSearchText(id, skill);
 
     // 可用百龙珠（挂在卡片最下方）
-    const ramDecoEl = buildRamDecoSection(displayName);
+    const ramDecoEl = buildRamDecoSection(displayName, { noSkillHistory: true });
     if (ramDecoEl) card.appendChild(ramDecoEl);
     card._search += ' ' + buildRamDecoSearchText(displayName);
 
@@ -1057,11 +1061,18 @@
       '</span>';
     card.appendChild(titleEl);
 
-    // 提供技能
+    // 提供技能（可点击 → 跳百龙技能弹窗）
     if (d.skill) {
-      const skRow = document.createElement('div');
-      skRow.className = 'deco-provide';
-      skRow.innerHTML = '提供技能：<b>' + escapeHtml(d.skill) + '</b>';
+      const skRow = document.createElement('button');
+      skRow.type = 'button';
+      skRow.className = 'deco-provide deco-modal-skill deco-skill-link';
+      skRow.innerHTML = '提供技能：<b>' + escapeHtml(d.skill) + '</b>' +
+        '<span class="deco-skill-go">查看技能 ▸</span>';
+      skRow.addEventListener('click', function (e) {
+        e.stopPropagation();
+        // 不记录「返回时重开百龙珠弹窗」（卡片已展开，直接回卡片列表）
+        if (typeof _openRampageById === 'function') _openRampageById(d.skill);
+      });
       card.appendChild(skRow);
     }
 
@@ -1073,12 +1084,15 @@
       card.appendChild(descEl);
     }
 
-    card._search = (d.name + ' ' + (d.skill || '') + ' ' + d.slot + '孔 ' + (d.desc || '')).toLowerCase();
+    // 说明为模板套用（非游戏原文）时给出提示
+    if (d.descTpl) {
+      const tplEl = document.createElement('div');
+      tplEl.className = 'desc-tpl-note';
+      tplEl.textContent = '⚠️ 本条说明为格式套用，非游戏原文，待补充';
+      card.appendChild(tplEl);
+    }
 
-    // 点击卡片 → 打开百龙珠详情弹窗
-    card.addEventListener('click', function () {
-      if (_openRamDecoModal) _openRamDecoModal(d.name);
-    });
+    card._search = (d.name + ' ' + (d.skill || '') + ' ' + d.slot + '孔 ' + (d.desc || '')).toLowerCase();
 
     return card;
   }
