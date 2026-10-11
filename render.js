@@ -1179,6 +1179,30 @@
     return null;
   }
 
+  // 由「任务全名」（如「活动任务 7★ 影之迅龙」）找出 quests.js 的 id
+  // 用于任务弹窗的「上一任务 / 下一任务」跳转
+  function findQuestIdByName(fullName) {
+    if (!fullName) return null;
+    // ① 先用 full 字段精确匹配（含分类/星级前缀）
+    const exact = String(fullName).replace(/\s+/g, '');
+    let hit = null;
+    Object.keys(QUESTS).forEach(function (qid) {
+      if (hit) return;
+      const f = (QUESTS[qid].full || '').replace(/\s+/g, '');
+      if (f && f === exact) hit = qid;
+    });
+    if (hit) return hit;
+    // ② 退一步：用 normalizeQuestLabel 剥前缀后按任务名匹配
+    return findQuestIdByLabel(fullName);
+  }
+
+  // 地图编号 → 地图名（映射表见 quest_maps.js；未收录则回退「Area N」）
+  function questMapName(mapNo) {
+    const m = (typeof window !== 'undefined' && window.QUEST_MAPS) || {};
+    const nm = m[mapNo] || m[String(mapNo)];
+    return nm ? nm : 'Area ' + mapNo;
+  }
+
   // 按分类分组（保持 QUEST_CAT_ORDER 顺序，未列出的分类追加在后）
   function groupQuestsByCat() {
     const groups = {};
@@ -1202,6 +1226,21 @@
       .replace(/\s*\(?\s*(HRP|MRP)[:：\s][^)）]*([)）]|$)/gi, '')
       .replace(/\s*\(?\s*(HRP|MRP)[:：\s].*$/gi, '')
       .trim();
+  }
+
+  // 失败条件可能多条黏连在一起（数据源无分隔符），这里拆开加「/」分隔
+  // 例：「报酬金额为零时间耗尽」→「报酬金额为零 / 时间耗尽」
+  //     「报酬金额为零（1次力尽倒下）时间耗尽」→「报酬金额为零（1次力尽倒下） / 时间耗尽」
+  //     「最终关口遭到破坏时间耗尽」→「最终关口遭到破坏 / 时间耗尽」
+  function splitQuestFail(s) {
+    if (!s) return '';
+    var t = String(s).trim();
+    if (t === '无条件') return t;
+    // 在「时间耗尽」前断开（若它不在开头）—— 用 replace 回调避免后顾断言（兼容旧 Safari）
+    t = t.replace(/时间耗尽/g, function (m, off) {
+      return off === 0 ? m : ' / ' + m;
+    });
+    return t.replace(/\s*\/\s*\/\s*/g, ' / ').trim();
   }
 
   // 任务「主要目标怪」分析（多处共用：任务卡片 / 任务弹窗 / 怪物弹窗任务列表）
@@ -3288,6 +3327,20 @@
         '</span>';
       bodyEl.appendChild(metaLine);
 
+      // ①b 速览条：时间 / 猫车 / 报酬金额（新抓取的数据）
+      const facts = [];
+      if (q.timeLimit && q.timeLimit !== '0') facts.push(['⏱', q.timeLimit + ' 分钟']);
+      if (q.questLife) facts.push(['💀', q.questLife + ' 猫']);
+      if (q.money && q.money !== '0') facts.push(['💰', Number(q.money).toLocaleString() + ' z']);
+      if (facts.length) {
+        const bar = document.createElement('div');
+        bar.className = 'quest-facts';
+        bar.innerHTML = facts.map(function (f) {
+          return '<span class="qf-item"><i>' + f[0] + '</i>' + escapeHtml(f[1]) + '</span>';
+        }).join('');
+        bodyEl.appendChild(bar);
+      }
+
       // ② 主要目标（置顶高亮，最先看到）
       if (q.goal) {
         const goalBox = document.createElement('div');
@@ -3324,8 +3377,12 @@
           '<span class="q-v">' + escapeHtml(String(v)) + '</span>';
         bodyEl.appendChild(row);
       }
-      kv('失败条件', q.fail);
-      kv('报酬金额', q.money);
+      kv('失败条件', splitQuestFail(q.fail));
+      kv('报酬金额', q.money && q.money !== '0' ? Number(q.money).toLocaleString() + ' z' : '');
+      if (q.timeLimit && q.timeLimit !== '0') kv('时间限制', q.timeLimit + ' 分钟');
+      if (q.questLife) kv('力尽上限', q.questLife + ' 次');
+      if (q.mapNo) kv('地图', questMapName(q.mapNo));
+      if (q.points && q.points !== '0') kv('炎火点数', q.points);
 
       // ⑤ 怪物（可折叠，含各人数 HP 表；怪物名可点开怪物弹窗）
       const mons = q.mons || [];
@@ -3448,7 +3505,9 @@
         sups.forEach(function (s) {
           const chip = document.createElement('span');
           chip.className = 'mon-mat-chip quest-sup-chip';
-          chip.textContent = s.item + (s.count ? ' x' + s.count : '');
+          // count 数据形如 "x4"，已含 x 前缀 → 有 x 就直接拼，没有才补
+          const _cnt = s.count ? String(s.count) : '';
+          chip.textContent = s.item + (_cnt ? (/^x/i.test(_cnt) ? ' ' + _cnt : ' x' + _cnt) : '');
           // 素材名能对上 → 点开素材详情
           if (ITEMS[s.item] && _openItemModal) {
             chip.style.cursor = 'pointer';
@@ -3460,6 +3519,82 @@
           cloud.appendChild(chip);
         });
         bodyEl.appendChild(cloud);
+      }
+
+      // ⑥ 任务报酬（报酬金余额表：素材 + 数量 + 概率；common/additional 分组）
+      const rw = q.reward || {};
+      const rwCommon = rw.common || [];
+      const rwAdd = rw.additional || [];
+      if (rwCommon.length || rwAdd.length) {
+        const rHead = document.createElement('div');
+        rHead.className = 'mon-section-head';
+        rHead.textContent = '任务报酬（' + (rwCommon.length + rwAdd.length) + '）';
+        bodyEl.appendChild(rHead);
+
+        function renderRewardGroup(title, list, cls) {
+          if (!list.length) return;
+          const sub = document.createElement('div');
+          sub.className = 'quest-reward-sub ' + cls;
+          sub.textContent = title + '（' + list.length + '）';
+          bodyEl.appendChild(sub);
+
+          const wrap = document.createElement('div');
+          wrap.className = 'quest-reward-list';
+          list.forEach(function (it) {
+            const row = document.createElement('div');
+            row.className = 'quest-reward-item';
+            // 概率条宽度（0~100%）
+            const pct = Math.max(0, Math.min(100, parseFloat(it.rate) || 0));
+            row.innerHTML =
+              '<span class="qr-name">' + escapeHtml(it.name) + '</span>' +
+              '<span class="qr-bar"><i style="width:' + pct + '%"></i></span>' +
+              '<span class="qr-count">x' + escapeHtml(String(it.count)) + '</span>' +
+              '<span class="qr-rate">' + escapeHtml(it.rate) + '</span>';
+            // 素材名能对上 → 可点跳素材详情
+            if (ITEMS[it.name] && _openItemModal) {
+              row.classList.add('qr-clickable');
+              row.addEventListener('click', function () {
+                if (typeof _pushHist === 'function') _pushHist(function () { openQuestModal(qid); });
+                _openItemModal(it.name);
+              });
+            }
+            wrap.appendChild(row);
+          });
+          bodyEl.appendChild(wrap);
+        }
+        renderRewardGroup('基本报酬', rwCommon, 'qr-common');
+        renderRewardGroup('追加报酬', rwAdd, 'qr-add');
+      }
+
+      // ⑦ 上一任务 / 下一任务（同系列导航）
+      const navs = [];
+      if (q.prev) navs.push(['prev', '◀ 上一任务', q.prev]);
+      if (q.next) navs.push(['next', '下一任务 ▶', q.next]);
+      if (navs.length) {
+        const nHead = document.createElement('div');
+        nHead.className = 'mon-section-head';
+        nHead.textContent = '同系列任务';
+        bodyEl.appendChild(nHead);
+
+        const navWrap = document.createElement('div');
+        navWrap.className = 'quest-nav';
+        navs.forEach(function (n) {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'quest-nav-btn ' + (n[0] === 'prev' ? 'qn-prev' : 'qn-next');
+          btn.innerHTML = '<span class="qn-arrow">' + escapeHtml(n[1]) + '</span>' +
+            '<span class="qn-name">' + escapeHtml(cleanQuestText(n[2])) + '</span>';
+          // 找同名任务 → 可直接跳转
+          btn.addEventListener('click', function () {
+            const targetId = findQuestIdByName(n[2]);
+            if (targetId && targetId !== qid) {
+              if (typeof _pushHist === 'function') _pushHist(function () { openQuestModal(qid); });
+              openQuestModal(targetId);
+            }
+          });
+          navWrap.appendChild(btn);
+        });
+        bodyEl.appendChild(navWrap);
       }
 
       overlay.classList.add('open');

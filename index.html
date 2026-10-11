@@ -690,6 +690,136 @@
       color: #e9eef2;
       overflow-wrap: anywhere;
     }
+    /* 任务速览条：⏱ 时间 · 💀 猫车 · 💰 报酬金额 */
+    .quest-facts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin: 0.15rem 0 0.45rem;
+    }
+    .quest-facts .qf-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.22rem;
+      padding: 0.16rem 0.5rem;
+      font-size: 0.72rem;
+      color: #dbe6f0;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+    .quest-facts .qf-item i {
+      font-style: normal;
+      font-size: 0.78rem;
+    }
+    /* 任务报酬：基本/追加分组 + 概率条 */
+    .quest-reward-sub {
+      font-size: 0.72rem;
+      font-weight: 700;
+      margin: 0.45rem 0 0.25rem;
+      padding-left: 0.4rem;
+      border-left: 3px solid #4a91e2;
+      color: #9fb0c0;
+    }
+    .quest-reward-sub.qr-add { border-left-color: #c9a44a; }
+    .quest-reward-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .quest-reward-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.26rem 0.4rem;
+      font-size: 0.74rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 5px;
+    }
+    .quest-reward-item.qr-clickable { cursor: pointer; }
+    .quest-reward-item.qr-clickable:active { background: rgba(255, 255, 255, 0.09); }
+    .quest-reward-item .qr-name {
+      flex: 0 0 auto;
+      max-width: 40%;
+      color: #e9eef2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .quest-reward-item.qr-clickable .qr-name {
+      color: #7fc3ff;
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-underline-offset: 2px;
+    }
+    .quest-reward-item .qr-bar {
+      flex: 1 1 auto;
+      height: 6px;
+      min-width: 30px;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .quest-reward-item .qr-bar > i {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, #3a7fc4, #5fb3f0);
+      border-radius: 3px;
+    }
+    .quest-reward-item .qr-count {
+      flex: 0 0 auto;
+      min-width: 2.2rem;
+      text-align: right;
+      color: #b9c7d4;
+      font-variant-numeric: tabular-nums;
+    }
+    .quest-reward-item .qr-rate {
+      flex: 0 0 auto;
+      min-width: 2.4rem;
+      text-align: right;
+      color: #8fa3b5;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    /* 同系列任务导航：上一任务 / 下一任务 */
+    .quest-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.32rem;
+    }
+    .quest-nav-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      width: 100%;
+      padding: 0.42rem 0.55rem;
+      font-size: 0.76rem;
+      text-align: left;
+      color: #dbe6f0;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 7px;
+      cursor: pointer;
+    }
+    .quest-nav-btn:active { background: rgba(255, 255, 255, 0.12); }
+    .quest-nav-btn .qn-arrow {
+      flex: 0 0 auto;
+      font-size: 0.7rem;
+      color: #7fc3ff;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .quest-nav-btn .qn-name {
+      flex: 1 1 auto;
+      color: #e9eef2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .quest-nav-btn.qn-next { flex-direction: row; }
+    .quest-nav-btn.qn-next .qn-arrow { order: 2; }
+    .quest-nav-btn.qn-next .qn-name { order: 1; text-align: right; }
     .quest-chips {
       display: flex;
       flex-wrap: wrap;
@@ -2862,6 +2992,7 @@
   <script src="monsters.js"></script>
   <script src="monster_icons.js"></script>
   <script src="quests.js"></script>
+  <script src="quest_maps.js"></script>
   <script src="render.js"></script>
   <script>
     // ========================================================
