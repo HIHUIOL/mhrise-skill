@@ -536,9 +536,16 @@
        ======================================================== */
     /* 任务区块：一行 2 个卡片（名字较长） */
     .quest-grid {
+      display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 0.45rem;
     }
+    /* 任务区块外层容器：普通块级流（内部自己管 grid） */
+    .quest-section-wrap {
+      display: block;
+    }
+    /* 任务区块折叠时隐藏 */
+    .quest-section-wrap.collapsed { display: none; }
     /* 任务卡片 —— 左：图标区；右：文字区（更紧凑、更像"一条任务"） */
     .quest-card {
       display: flex;
@@ -795,6 +802,81 @@
     /* 任务一览（目录）里的分组：容器是 .catalog-group，items 是 .quest-group-items */
     .catalog-group.cat-collapsed .quest-group-items { display: none; }
 
+    /* ---------- 任务切页：分类按钮条 ---------- */
+    .qcat-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      padding: 0.55rem 0.4rem;
+      border-bottom: 1px solid #2b3542;
+      margin-bottom: 0.6rem;
+      /* 吸顶：滚动时分类按钮钉在屏幕顶部 */
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: #1a222c;
+      border-radius: 0 0 6px 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    }
+    /* JS 吸顶兜底时的状态（position:fixed 由 JS 设置） */
+    .qcat-tabs.qcat-tabs-fixed {
+      border-radius: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+    }
+    .qcat-tab {
+      font: inherit;
+      font-size: 0.7rem;
+      padding: 0.25rem 0.55rem;
+      border-radius: 13px;
+      border: 1px solid #31404f;
+      background: #202a35;
+      color: #b0becc;
+      cursor: pointer;
+      white-space: nowrap;
+      -webkit-tap-highlight-color: transparent;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .qcat-tab:active { background: #2a3644; }
+    .qcat-tab.active {
+      background: #3a5d7a;
+      border-color: #6fa8d8;
+      color: #fff;
+      font-weight: 600;
+    }
+    .qcat-tab .qcat-tab-count {
+      opacity: 0.65;
+      font-weight: 400;
+      font-size: 0.64rem;
+    }
+    /* 搜索时：该类没有命中 → 置灰 */
+    .qcat-tab.qcat-tab-empty {
+      opacity: 0.35;
+    }
+    .qcat-panel { min-height: 2rem; }
+
+    /* 素材区块（切页式）—— 复用任务分类按钮样式，只是面板内容不同 */
+    .mcat-tabs { /* 同 .qcat-tabs，只是名字好区分 */ }
+    .mcat-panel { min-height: 2rem; }
+    /* 素材条目：小按钮网格（比原一览更密集） */
+    .mcat-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .mcat-items .catalog-item {
+      font-size: 0.72rem;
+      padding: 0.28rem 0.6rem;
+    }
+    .mcat-empty {
+      color: #7d8f9f;
+      font-size: 0.8rem;
+      padding: 0.8rem 0.2rem;
+      text-align: center;
+    }
+
     /* 任务里面的可点怪物行 / 补给 chip */
     .mon-quest-clickable {
       cursor: pointer;
@@ -815,24 +897,7 @@
       padding-left: 0.5rem;
     }
 
-    /* 「怪物一览」里的图标网格（和怪物区块一样的卡片） */
-    .catalog-mon-grid {
-      width: 100%;
-      margin-top: 0.1rem;
-    }
     /* 目录里卡片更紧凑一点 */
-    .catalog-mon-grid .mon-icon-card {
-      padding: 0.3rem 0.15rem 0.25rem;
-    }
-    .catalog-mon-grid .mon-icon-img {
-      width: 40px;
-      height: 40px;
-    }
-    .catalog-mon-grid .mon-icon-name {
-      font-size: 0.66rem;
-      margin-top: 0.2rem;
-    }
-
     .catalog-item {
       background: #2a333e;
       color: #b0c4d9;
@@ -2240,7 +2305,7 @@
           📦 全部素材
           <span class="section-toggle-hint" id="materialSectionHint">（点击展开 ▼）</span>
         </div>
-        <div id="materialContainer" class="skill-grid"></div>
+        <div id="materialContainer" class="quest-section-wrap"></div>
       </div>
 
       <!-- 任务 -->
@@ -2249,7 +2314,7 @@
           🏹 任务
           <span class="section-toggle-hint" id="questSectionHint">（点击展开 ▼）</span>
         </div>
-        <div id="questContainer" class="monster-grid quest-grid"></div>
+        <div id="questContainer" class="quest-section-wrap"></div>
       </div>
 
     </div>
@@ -2296,39 +2361,6 @@
         <span class="catalog-arrow">▼</span>
       </div>
       <div class="catalog-body" id="ramDecoCatalogBody">
-        <!-- 由 render.js 动态生成 -->
-      </div>
-    </div>
-
-    <!-- 怪物一览（目录） -->
-    <div class="catalog" id="monsterCatalog">
-      <div class="catalog-head" id="monsterCatalogHead">
-        <span class="catalog-title">👹 怪物一览</span>
-        <span class="catalog-arrow">▼</span>
-      </div>
-      <div class="catalog-body" id="monsterCatalogBody">
-        <!-- 由 render.js 动态生成 -->
-      </div>
-    </div>
-
-    <!-- 素材一览（目录） -->
-    <div class="catalog" id="materialCatalog">
-      <div class="catalog-head" id="materialCatalogHead">
-        <span class="catalog-title">📦 素材一览</span>
-        <span class="catalog-arrow">▼</span>
-      </div>
-      <div class="catalog-body" id="materialCatalogBody">
-        <!-- 由 render.js 动态生成 -->
-      </div>
-    </div>
-
-    <!-- 任务一览（目录） -->
-    <div class="catalog" id="questCatalog">
-      <div class="catalog-head" id="questCatalogHead">
-        <span class="catalog-title">🏹 任务一览</span>
-        <span class="catalog-arrow">▼</span>
-      </div>
-      <div class="catalog-body" id="questCatalogBody">
         <!-- 由 render.js 动态生成 -->
       </div>
     </div>

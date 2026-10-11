@@ -1127,67 +1127,6 @@
   }
 
   // ========================================================
-  // 素材卡片（items.js）
-  // ========================================================
-  function renderMaterialCard(itemName, info) {
-    const card = document.createElement('div');
-    card.className = 'skill-card material-card';
-
-    const mons = monstersForMaterial(itemName);
-    const ranks = ranksForMaterial(itemName);
-
-    const titleEl = document.createElement('div');
-    titleEl.className = 'skill-name';
-    titleEl.innerHTML =
-      '<span class="deco-title-text">' + escapeHtml(itemName) + '</span>' +
-      '<span class="skill-title-right">' +
-        (mons.length
-          ? '<span class="deco-slot-badge mon-badge">' + mons.length + ' 怪</span>'
-          : '<span class="deco-slot-badge">采集</span>') +
-      '</span>';
-    card.appendChild(titleEl);
-
-    // 等级标签
-    if (ranks.length) {
-      const rr = document.createElement('div');
-      rr.className = 'mon-card-ranks';
-      ranks.forEach(function (r) {
-        const s = document.createElement('span');
-        s.className = 'mat-rank-tag rank-' + rankKey(r);
-        s.textContent = r;
-        rr.appendChild(s);
-      });
-      card.appendChild(rr);
-    }
-
-    // 说明（截断）
-    const desc = (info && info.desc) || '';
-    if (desc) {
-      const d = document.createElement('div');
-      d.className = 'mon-card-mats';
-      d.textContent = desc.length > 60 ? desc.slice(0, 60) + '…' : desc;
-      card.appendChild(d);
-    }
-
-    card._search = (itemName + ' ' + desc + ' ' + mons.join(' ')).toLowerCase();
-
-    card.addEventListener('click', function () {
-      if (mons.length === 1 && _openMonsterModal) {
-        // 只有一个来源怪 → 直接跳
-        _openMonsterModal(mons[0], itemName);
-      } else if (mons.length > 1 && _openItemModal) {
-        // 多个来源怪 → 打开素材详情，让用户选怪物
-        _openItemModal(itemName);
-      } else if (_openItemModal) {
-        // 无怪物掉落 → 素材详情（获得途径）
-        _openItemModal(itemName);
-      }
-    });
-
-    return card;
-  }
-
-  // ========================================================
   // 任务卡片（quests.js）
   // ========================================================
   // 怪物名 → [任务id, ...]（任务里的怪物名和 monsters.js 基本一致）
@@ -1683,18 +1622,20 @@
     monsterCards.forEach(function (it) { _monCardMap[it.el.querySelector('.deco-title-text').textContent] = it; });
 
     // --------------------------------------------------------
-    // 素材卡片（items.js，1764 条）
+    // 素材（items.js，1764 条）
+    // 素材区块：切页式 —— 顶部一排分类按钮，点哪个只显示哪个分类的条目
     // --------------------------------------------------------
     const materialContainer = document.getElementById('materialContainer');
     const matNames = Object.keys(ITEMS).sort();
-    const materialCards = matNames.map((nm) => {
-      const el = renderMaterialCard(nm, ITEMS[nm]);
-      return { id: 'mat_' + nm, el, search: el._search || '' };
-    });
+    let materialSectionSelect = null;  // 由 buildMaterialSection 赋值（搜索时用）
+    let materialSectionUpdateCounts = null; // 更新分类按钮计数（搜索时用）
+    let materialHitsByCat = null;      // (kw) => { cat: 命中数 }（搜索时用）
+    let materialSectionSetKw = null;   // (kw) => 切换搜索状态（搜索时用）
 
     // --------------------------------------------------------
     // 任务（quests.js，698 条）
-    // 性能考虑：分类标题先建，卡片「首次展开该类时才渲染」
+    // 任务区块：切页式 —— 顶部一排分类按钮，点哪个只显示哪个分类的卡片
+    // 性能考虑：卡片「首次切到该类时才渲染」
     // --------------------------------------------------------
     const questContainer = document.getElementById('questContainer');
     const _qGroup = groupQuestsByCat();
@@ -1702,81 +1643,173 @@
     const _questCardById = {};      // qid → { id, el, search }
     const _questGroupEls = {};      // 分类 → { groupEl, itemsEl, qids, rendered }
 
-    // 任务区块：分类「单选切换」（点一个只显示一个，再点收起）
-    // —— 与任务一览目录的折叠逻辑互不影响
-    let _activeQuestCat = null;   // 当前展开的分类名
+    // 任务区块：切页控制器
+    let questSectionSelect = null;      // 由 buildQuestSection 赋值（搜索时用）
+    let questSectionUpdateCounts = null; // 更新分类按钮上的计数（搜索时用）
+    let _activeQSectCat = null;         // 当前选中的分类（null = 收起）
 
-    function setQuestCatActive(cat) {
-      _qGroup.order.forEach(function (c) {
-        const st = _questGroupEls[c];
-        if (!st) return;
-        const on = (c === cat);
-        st.collapsed = !on;
-        st.groupEl.classList.toggle('cat-collapsed', !on);
-        const arrow = st.groupEl.querySelector('.catalog-cat-arrow');
-        if (arrow) arrow.textContent = on ? '▼' : '▶';
-        // 需要显示时确保卡片已渲染
-        if (on) renderQuestGroupCards(st);
+    function buildQuestSection() {
+      if (!questContainer) return;
+
+      // ① 分类按钮条
+      const bar = document.createElement('div');
+      bar.className = 'qcat-tabs';
+
+      // ② 面板（只挂载当前分类的卡片）
+      const panel = document.createElement('div');
+      panel.className = 'qcat-panel';
+
+      function ensureRendered(cat) {
+        const st = _questGroupEls[cat];
+        if (!st || st.rendered) return;
+        st.rendered = true;
+        st.qids.forEach(function (qid) {
+          const el = renderQuestCard(qid);
+          const obj = { id: 'quest_' + qid, el: el, search: el._search || '' };
+          _questCardById[qid] = obj;
+          questCards.push(obj);
+          st.itemsEl.appendChild(el);
+        });
+      }
+
+      function selectCat(cat) {
+        _activeQSectCat = cat;
+        bar.querySelectorAll('.qcat-tab').forEach(function (b) {
+          b.classList.toggle('active', b.getAttribute('data-cat') === cat);
+        });
+        panel.innerHTML = '';
+        if (cat) {
+          ensureRendered(cat);
+          panel.appendChild(_questGroupEls[cat].itemsEl);
+        }
+      }
+      questSectionSelect = selectCat;
+
+      // 建分组 state（itemsEl 复用）
+      _qGroup.order.forEach(function (cat) {
+        const itemsEl = document.createElement('div');
+        itemsEl.className = 'quest-grid quest-group-items';
+        _questGroupEls[cat] = {
+          itemsEl: itemsEl, qids: _qGroup.groups[cat], rendered: false, collapsed: false,
+          total: _qGroup.groups[cat].length,   // 原始总数（清空搜索时还原）
+        };
+
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'qcat-tab';
+        b.setAttribute('data-cat', cat);
+        b.innerHTML = escapeHtml(cat) +
+          ' <span class="qcat-tab-count">' + _qGroup.groups[cat].length + '</span>';
+        b.addEventListener('click', function () {
+          selectCat(_activeQSectCat === cat ? null : cat);
+        });
+        bar.appendChild(b);
       });
-      _activeQuestCat = cat;
+
+      // 更新按钮上的计数：counts[cat] 有值则显示该值（并标记"无命中"样式）
+      // 传 null 表示还原为原始总数
+      function updateTabCounts(counts) {
+        _qGroup.order.forEach(function (cat) {
+          const st = _questGroupEls[cat];
+          const b = bar.querySelector('.qcat-tab[data-cat="' + cat + '"]');
+          if (!b) return;
+          const span = b.querySelector('.qcat-tab-count');
+          if (!span) return;
+          if (!counts) {
+            span.textContent = st.total;
+            b.classList.remove('qcat-tab-empty');
+          } else {
+            const n = counts[cat] || 0;
+            span.textContent = n;
+            b.classList.toggle('qcat-tab-empty', n === 0);
+          }
+        });
+      }
+      questSectionUpdateCounts = updateTabCounts;
+
+      questContainer.appendChild(bar);
+      questContainer.appendChild(panel);
+
+      // 默认选中第一个分类
+      if (_qGroup.order.length) selectCat(_qGroup.order[0]);
+
+      // ---- 滚动吸顶兜底 ----
+      // body 是 display:flex，部分浏览器下 sticky 会失效，
+      // 所以用 JS 兜底：滚过按钮条时给它固定定位。
+      (function stickyFallback() {
+        let placeholder = null;
+
+        function ensurePlaceholder() {
+          if (!placeholder) {
+            placeholder = document.createElement('div');
+            // 高度随时同步
+            placeholder.style.display = 'none';
+            bar.parentNode.insertBefore(placeholder, bar);
+          }
+          return placeholder;
+        }
+
+        function onScroll() {
+          // 区块不可见 / 折叠时不处理
+          if (questContainer.classList.contains('collapsed') ||
+              questContainer.offsetParent === null) {
+            reset();
+            return;
+          }
+          const rect = bar.getBoundingClientRect();
+          const ph = ensurePlaceholder();
+          const phRect = ph.getBoundingClientRect();
+
+          if (phRect.top < 0 && rect.top <= 0) {
+            // 按钮条已经滚到屏幕上方 → 固定
+            if (bar.style.position !== 'fixed') {
+              ph.style.display = 'block';
+              ph.style.height = bar.offsetHeight + 'px';
+              bar.style.position = 'fixed';
+              bar.style.top = '0';
+              bar.style.left = phRect.left + 'px';
+              bar.style.width = phRect.width + 'px';
+              bar.style.zIndex = '50';
+              bar.classList.add('qcat-tabs-fixed');
+            } else {
+              // 跟随宽度变化
+              bar.style.left = phRect.left + 'px';
+              bar.style.width = phRect.width + 'px';
+            }
+          } else {
+            reset();
+          }
+        }
+
+        function reset() {
+          if (bar.style.position === 'fixed') {
+            bar.style.position = '';
+            bar.style.top = '';
+            bar.style.left = '';
+            bar.style.width = '';
+            bar.style.zIndex = '';
+            bar.classList.remove('qcat-tabs-fixed');
+            if (placeholder) placeholder.style.display = 'none';
+          }
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', function () { reset(); onScroll(); }, { passive: true });
+      })();
     }
+    buildQuestSection();
 
-    function buildQuestGroupEl(cat, qids) {
-      const groupEl = document.createElement('div');
-      groupEl.className = 'quest-group';
-      groupEl.setAttribute('data-qcat', cat);
-
-      const head = document.createElement('div');
-      head.className = 'catalog-cat catalog-cat-toggle quest-group-head';
-      head.innerHTML =
-        '<span class="catalog-cat-arrow">▶</span>' +
-        '<span class="qg-name">' + escapeHtml(cat) + '</span>' +
-        '<span class="quest-group-count">' + qids.length + '</span>';
-      groupEl.appendChild(head);
-
-      const itemsEl = document.createElement('div');
-      itemsEl.className = 'quest-grid quest-group-items';
-      groupEl.appendChild(itemsEl);
-
-      // 初始全部收起（与箭头 ▶ 一致）
-      groupEl.classList.add('cat-collapsed');
-
-      const state = { groupEl: groupEl, itemsEl: itemsEl, qids: qids, rendered: false, collapsed: true };
-
-      head.addEventListener('click', function () {
-        // 单选切换：点已展开的 → 收起；点别的 → 切到那个
-        setQuestCatActive(_activeQuestCat === cat ? null : cat);
-      });
-
-      return state;
-    }
-
-    function renderQuestGroupCards(state) {
-      if (state.rendered) return;
-      state.rendered = true;
-      state.qids.forEach(function (qid) {
+    // 兼容旧调用（搜索时用）
+    function renderQuestGroupCards(cat) {
+      const st = _questGroupEls[cat];
+      if (!st || st.rendered) return;
+      st.rendered = true;
+      st.qids.forEach(function (qid) {
         const el = renderQuestCard(qid);
         const obj = { id: 'quest_' + qid, el: el, search: el._search || '' };
         _questCardById[qid] = obj;
         questCards.push(obj);
-        state.itemsEl.appendChild(el);
-      });
-    }
-
-    // 展开「某一类」的全部卡片（搜索时需要）
-    function ensureQuestRendered(cat) {
-      const st = _questGroupEls[cat];
-      if (st) renderQuestGroupCards(st);
-    }
-    function ensureAllQuestsRendered() {
-      _qGroup.order.forEach(ensureQuestRendered);
-    }
-
-    if (questContainer) {
-      _qGroup.order.forEach(function (cat) {
-        const st = buildQuestGroupEl(cat, _qGroup.groups[cat]);
-        _questGroupEls[cat] = st;
-        questContainer.appendChild(st.groupEl);
+        st.itemsEl.appendChild(el);
       });
     }
 
@@ -1807,7 +1840,7 @@
         if (_monCardMap[nm]) monsterContainer.appendChild(_monCardMap[nm].el);
       });
     }
-    if (materialContainer) materialCards.forEach((it) => materialContainer.appendChild(it.el));
+    buildMaterialSection();
 
     // --------------------------------------------------------
     // 四个区块折叠（统一逻辑）
@@ -1845,10 +1878,9 @@
         material: 'materialSection',
         quest: 'questSection',
       };
-      // 7 个目录
+      // 5 个目录（怪物/任务用顶部分类即可，不再有目录）
       const CATALOGS = ['catalog', 'ramCatalog', 'decoCatalog',
-        'ramDecoCatalog', 'monsterCatalog', 'materialCatalog', 'questCatalog'];
-
+        'ramDecoCatalog'];
       // 显示/隐藏某区块
       function showSection(key, on) {
         const sec = document.getElementById(SECTION_MAP[key]);
@@ -2002,67 +2034,12 @@
     })();
 
     // --------------------------------------------------------
-    // 怪物一览（目录）
     // --------------------------------------------------------
-    (function buildMonsterCatalog() {
-      const body = document.getElementById('monsterCatalogBody');
-      const head = document.getElementById('monsterCatalogHead');
-      const catalog = document.getElementById('monsterCatalog');
-      if (!body || !head || !catalog) return;
-      if (!_allMonNames.length) return;
-
-      // 按类别分组（霸主 / 大型怪物 / 小型怪物）
-      // 判定：图标 ems*** = 小型；名字以「霸主」开头 → 霸主
-      const groups = {};
-      _allMonNames.forEach((nm) => {
-        let c;
-        if (nm.indexOf('霸主') === 0) {
-          c = '霸主';
-        } else {
-          c = _isSmallMonster(nm) ? '小型怪物' : '大型怪物';
-        }
-        if (!groups[c]) groups[c] = [];
-        groups[c].push(nm);
-      });
-
-      const CAT_ORDER = ['霸主', '大型怪物', '小型怪物'];
-      const finalOrder = CAT_ORDER.filter((c) => groups[c])
-        .concat(Object.keys(groups).filter((c) => CAT_ORDER.indexOf(c) < 0));
-
-      finalOrder.forEach((c) => {
-        const list = groups[c].sort();
-        const groupEl = document.createElement('div');
-        groupEl.className = 'catalog-group';
-
-        const catEl = document.createElement('div');
-        catEl.className = 'catalog-cat';
-        catEl.innerHTML = escapeHtml(c) + ' <span class="cat-count">' + list.length + '</span>';
-        groupEl.appendChild(catEl);
-
-        // 和上面「怪物」区块一样的图标网格
-        const gridEl = document.createElement('div');
-        gridEl.className = 'monster-grid catalog-mon-grid';
-        list.forEach((nm) => {
-          gridEl.appendChild(renderMonsterCard(nm, MONSTERS[nm]));
-        });
-        groupEl.appendChild(gridEl);
-        body.appendChild(groupEl);
-      });
-
-      head.addEventListener('click', () => {
-        catalog.classList.toggle('collapsed');
-      });
-      if (window.innerWidth < 600) catalog.classList.add('collapsed');
-    })();
-
+    // 素材：按分类「切页式」（点分类只显示该类）
     // --------------------------------------------------------
-    // 素材一览（目录）
-    // --------------------------------------------------------
-    (function buildMaterialCatalog() {
-      const body = document.getElementById('materialCatalogBody');
-      const head = document.getElementById('materialCatalogHead');
-      const catalog = document.getElementById('materialCatalog');
-      if (!body || !head || !catalog) return;
+    function buildMaterialSection() {
+      const container = document.getElementById('materialContainer');
+      if (!container) return;
 
       // 按 Kiranico 网站分类（item_categories.js）
       //   回复/辅助 / 素材 / 余料 / 弹药·瓶 / 交纳委托 / 变更房屋的设计
@@ -2074,27 +2051,29 @@
         if (!groups[c]) groups[c] = [];
         groups[c].push(nm);
       });
-
-      const finalOrder = ORDER.filter((c) => groups[c])
+      const order = ORDER.filter((c) => groups[c])
         .concat(Object.keys(groups).filter((c) => ORDER.indexOf(c) < 0));
 
-      finalOrder.forEach((c) => {
-        const list = groups[c].sort();
-        const groupEl = document.createElement('div');
-        groupEl.className = 'catalog-group';
+      // 分类按钮条（吸顶）
+      const bar = document.createElement('div');
+      bar.className = 'qcat-tabs mcat-tabs';
+      // 内容面板（只挂当前分类的列表）
+      const panel = document.createElement('div');
+      panel.className = 'mcat-panel';
 
-        // 分类标题（可点击折叠）
-        const catEl = document.createElement('div');
-        catEl.className = 'catalog-cat catalog-cat-toggle';
-        catEl.innerHTML =
-          '<span class="catalog-cat-arrow">▼</span>' +
-          '<span class="qg-name">' + escapeHtml(c) + '</span>' +
-          ' <span class="cat-count">' + list.length + '</span>';
-        groupEl.appendChild(catEl);
+      const panels = {};   // cat → 该分类的列表容器（懒渲染）
+      const catBtnByCat = {}; // cat → 分类按钮
+      let activeCat = null;
+      let curKw = '';      // 当前搜索词（'' = 无搜索）
 
+      // 渲染某分类的条目列表（按 curKw 过滤）
+      function renderCatItems(cat) {
         const itemsEl = document.createElement('div');
-        itemsEl.className = 'catalog-items';
-        list.forEach((nm) => {
+        itemsEl.className = 'mcat-items';
+        let n = 0;
+        groups[cat].slice().sort().forEach((nm) => {
+          const nameLo = nm.toLowerCase();
+          if (curKw && nameLo.indexOf(curKw) < 0) return;   // 搜索过滤
           const b = document.createElement('button');
           b.className = 'catalog-item';
           b.textContent = nm;
@@ -2107,76 +2086,101 @@
             }
           });
           itemsEl.appendChild(b);
+          n++;
         });
-        groupEl.appendChild(itemsEl);
+        itemsEl._count = n;
+        return itemsEl;
+      }
 
-        // 点击标题 → 折叠 / 展开该分类
-        catEl.addEventListener('click', () => {
-          const collapsed = groupEl.classList.toggle('cat-collapsed');
-          catEl.querySelector('.catalog-cat-arrow').textContent = collapsed ? '▶' : '▼';
+      function selectCat(cat) {
+        activeCat = cat;
+        bar.querySelectorAll('.qcat-tab').forEach((b) => {
+          b.classList.toggle('active', b.getAttribute('data-cat') === cat);
         });
-
-        body.appendChild(groupEl);
-      });
-
-      head.addEventListener('click', () => {
-        catalog.classList.toggle('collapsed');
-      });
-      if (window.innerWidth < 600) catalog.classList.add('collapsed');
-    })();
-
-    // --------------------------------------------------------
-    // 任务一览（目录，按 9 个分类，可折叠）
-    // --------------------------------------------------------
-    (function buildQuestCatalog() {
-      const body = document.getElementById('questCatalogBody');
-      const head = document.getElementById('questCatalogHead');
-      const catalog = document.getElementById('questCatalog');
-      if (!body || !head || !catalog) return;
-
-      _qGroup.order.forEach(function (cat) {
-        const qids = _qGroup.groups[cat];
-        const groupEl = document.createElement('div');
-        groupEl.className = 'catalog-group';
-
-        const catEl = document.createElement('div');
-        catEl.className = 'catalog-cat catalog-cat-toggle';
-        catEl.innerHTML =
-          '<span class="catalog-cat-arrow">▶</span>' +
-          '<span class="qg-name">' + escapeHtml(cat) + '</span>' +
-          ' <span class="cat-count">' + qids.length + '</span>';
-        groupEl.appendChild(catEl);
-
-        const itemsEl = document.createElement('div');
-        itemsEl.className = 'quest-grid quest-group-items';
-        groupEl.appendChild(itemsEl);
-        // 初始折叠（与箭头 ▶ 一致）
-        groupEl.classList.add('cat-collapsed');
-
-        // 首次展开才渲染（和上面区块一样，省性能）
-        let rendered = false;
-        function renderThis() {
-          if (rendered) return;
-          rendered = true;
-          qids.forEach(function (qid) {
-            itemsEl.appendChild(renderQuestCard(qid));
-          });
+        panel.innerHTML = '';
+        if (cat) {
+          if (!panels[cat]) panels[cat] = renderCatItems(cat);
+          panel.appendChild(panels[cat]);
+          // 搜索时：当前分类无命中 → 显示「无结果」提示
+          if (curKw && panels[cat]._count === 0) {
+            const tip = document.createElement('div');
+            tip.className = 'mcat-empty';
+            tip.textContent = '该分类无匹配素材';
+            panel.appendChild(tip);
+          }
         }
+      }
+      materialSectionSelect = selectCat;
 
-        catEl.addEventListener('click', function () {
-          const collapsed = groupEl.classList.toggle('cat-collapsed');
-          catEl.querySelector('.catalog-cat-arrow').textContent = collapsed ? '▶' : '▼';
-          if (!collapsed) renderThis();
+      order.forEach((c) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'qcat-tab';
+        b.setAttribute('data-cat', c);
+        b.innerHTML = escapeHtml(c) +
+          ' <span class="qcat-tab-count">' + groups[c].length + '</span>';
+        b.addEventListener('click', () => {
+          selectCat(activeCat === c ? null : c);
         });
-
-        body.appendChild(groupEl);
+        catBtnByCat[c] = b;
+        bar.appendChild(b);
       });
 
-      head.addEventListener('click', function () {
-        catalog.classList.toggle('collapsed');
-      });
-      if (window.innerWidth < 600) catalog.classList.add('collapsed');
-    })();
+      // 更新按钮计数：counts 有值 → 显示命中数并灰化无命中的；null → 还原总数
+      materialSectionUpdateCounts = function (counts) {
+        order.forEach((c) => {
+          const b = catBtnByCat[c];
+          if (!b) return;
+          const span = b.querySelector('.qcat-tab-count');
+          if (!span) return;
+          if (!counts) {
+            span.textContent = groups[c].length;
+            b.classList.remove('qcat-tab-empty');
+          } else {
+            const n = counts[c] || 0;
+            span.textContent = n;
+            b.classList.toggle('qcat-tab-empty', n === 0);
+          }
+        });
+      };
+
+      // 统计每个分类在当前关键词下的命中数
+      materialHitsByCat = function (kw) {
+        const res = {};
+        order.forEach((c) => {
+          let n = 0;
+          groups[c].forEach((nm) => {
+            if (nm.toLowerCase().indexOf(kw) >= 0) n++;
+          });
+          res[c] = n;
+        });
+        return res;
+      };
+
+      // 搜索状态切换：更新 curKw → 面板重建 + 计数更新 + 切到命中最多
+      materialSectionSetKw = function (kw) {
+        curKw = kw || '';
+        // 面板若已渲染的，需要按新 kw 重建
+        Object.keys(panels).forEach((c) => { delete panels[c]; });
+        if (!curKw) {
+          materialSectionUpdateCounts(null);
+          selectCat(order[0] || null);
+          return;
+        }
+        const counts = materialHitsByCat(curKw);
+        materialSectionUpdateCounts(counts);
+        let best = null, bn = 0;
+        order.forEach((c) => { if (counts[c] > bn) { bn = counts[c]; best = c; } });
+        selectCat(best);
+      };
+
+      container.appendChild(bar);
+      container.appendChild(panel);
+
+      // 默认选中第一个分类
+      if (order.length) selectCat(order[0]);
+    }
+
     (function buildRamCatalog() {
       const body = document.getElementById('ramCatalogBody');
       const head = document.getElementById('ramCatalogHead');
@@ -2384,33 +2388,33 @@
         item.el.style.display = hit ? '' : 'none';
         if (hit) monHits++;
       });
-      materialCards.forEach((item) => {
-        const hit = inScope('material') && (!kw || item.search.includes(kw));
-        item.el.style.display = hit ? '' : 'none';
-        if (hit) matHits++;
-      });
+      // ---- 素材（切页式：更新计数 + 按命中切到最多的一类）----
+      (function filterMaterials() {
+        if (!inScope('material')) return;
+        if (!materialSectionSetKw) return;
+        materialSectionSetKw(kw);
+        if (kw && materialHitsByCat) {
+          const counts = materialHitsByCat(kw);
+          Object.keys(counts).forEach(function (c) { matHits += counts[c]; });
+        }
+      })();
 
       // ---- 任务（懒渲染：先按数据判断命中，再确保命中的分类已渲染）----
       (function filterQuests() {
         const questOn = inScope('quest');
         if (!questOn) return;
-        // 无关键词：恢复「单选切换」状态（清掉搜索时临时展开的分类）
+
+        // 无关键词：恢复「切页」状态 + 还原按钮计数
         if (!kw) {
           questCards.forEach(function (item) { item.el.style.display = ''; });
-          _qGroup.order.forEach(function (c) {
-            const st = _questGroupEls[c];
-            if (!st) return;
-            st.groupEl.style.display = '';
-            const on = (c === _activeQuestCat);
-            st.collapsed = !on;
-            st.groupEl.classList.toggle('cat-collapsed', !on);
-            const arrow = st.groupEl.querySelector('.catalog-cat-arrow');
-            if (arrow) arrow.textContent = on ? '▼' : '▶';
-          });
+          if (questSectionSelect) questSectionSelect(_activeQSectCat || null);
+          if (questSectionUpdateCounts) questSectionUpdateCounts(null);
           return;
         }
-        // 有搜索词：逐分类判断
+
+        // 有搜索词：跨所有分类筛选，并统计每类命中数
         let total = 0;
+        const hitCounts = {};     // cat → 命中数（用于更新按钮）
         _qGroup.order.forEach(function (cat) {
           const st = _questGroupEls[cat];
           if (!st) return;
@@ -2423,14 +2427,10 @@
             ).toLowerCase();
             return hay.indexOf(kw) >= 0;
           });
-          if (!hitIds.length) {
-            st.groupEl.style.display = 'none';
-            return;
-          }
           total += hitIds.length;
-          st.groupEl.style.display = '';
+          hitCounts[cat] = hitIds.length;
           // 确保渲染，并按命中过滤
-          renderQuestGroupCards(st);
+          renderQuestGroupCards(cat);
           const hitSet = {};
           hitIds.forEach(function (id) { hitSet[id] = 1; });
           st.qids.forEach(function (qid) {
@@ -2440,12 +2440,18 @@
             obj.el.style.display = show ? '' : 'none';
             if (show) questHits++;
           });
-          // 搜索时自动展开该分类（否则卡片藏着看不见）
-          st.collapsed = false;
-          st.groupEl.classList.remove('cat-collapsed');
-          const arrow = st.groupEl.querySelector('.catalog-cat-arrow');
-          if (arrow) arrow.textContent = '▼';
         });
+        // 按钮上的数字 → 改为各类命中数（无命中的置灰）
+        if (questSectionUpdateCounts) questSectionUpdateCounts(hitCounts);
+        // 搜索时：把当前分类切到"命中最多"的那个，方便直接看到结果
+        if (_qGroup.order.length) {
+          let bestCat = null, bestN = 0;
+          _qGroup.order.forEach(function (cat) {
+            const n = hitCounts[cat] || 0;
+            if (n > bestN) { bestN = n; bestCat = cat; }
+          });
+          if (bestCat && questSectionSelect) questSectionSelect(bestCat);
+        }
         if (!total) questHits = 0;
       })();
 
@@ -2549,7 +2555,7 @@
 
       // 目录：有搜索词时全部隐藏；无搜索词时按当前分类恢复
       const CATALOGS = ['catalog', 'ramCatalog', 'decoCatalog',
-        'ramDecoCatalog', 'monsterCatalog', 'materialCatalog', 'questCatalog'];
+        'ramDecoCatalog'];
       CATALOGS.forEach(function (id) {
         const el = document.getElementById(id);
         if (!el) return;
