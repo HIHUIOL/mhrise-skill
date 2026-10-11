@@ -129,7 +129,7 @@
       }
       if (!ranksByMaterial[m.item]) ranksByMaterial[m.item] = {};
       if (!ranksByMaterial[m.item][monName]) ranksByMaterial[m.item][monName] = {};
-      const _rk = normRank(m.rank, m.item);
+      const _rk = m.rank;
       if (_rk) ranksByMaterial[m.item][monName][_rk] = true;
     });
   });
@@ -142,11 +142,6 @@
     if (rank === '上位') return 'high';
     if (rank === '怪异') return 'anomaly';
     return 'master';
-  }
-  // 归一化等级：怪异素材名以「怪异化的」「破怪的」开头 → 归入「怪异」（原数据标的是「大师等级」）
-  function normRank(rank, itemName) {
-    if (/^(怪异化的|破怪的)/.test(String(itemName || ''))) return '怪异';
-    return rank;
   }
 
   // 查某素材来自哪些怪物
@@ -181,10 +176,27 @@
     const groups = {};
     (mon.materials || []).forEach(function (m) {
       if (!m.item || !m.rank) return;
-      const rk = normRank(m.rank, m.item);
+      const rk = m.rank;
       if (!groups[rk]) groups[rk] = [];
       if (groups[rk].indexOf(m.item) < 0) groups[rk].push(m.item);
     });
+
+    // 「怪异」组：用数据层提供的 anomalyMaterials（该怪的怪异 3 档素材，低→高）
+    // （游戏里剥取只掉最低档，但硬骨/重骨可通过怪异探究任务获得，故也列出来）
+    if (mon.anomalyMaterials && mon.anomalyMaterials.length) {
+      const anomItems = groups['怪异'] || [];
+      mon.anomalyMaterials.forEach(function (nm) {
+        if (nm && anomItems.indexOf(nm) < 0) anomItems.push(nm);
+      });
+      // 按数据层数组顺序（低→中→高）排序
+      const ord = mon.anomalyMaterials;
+      anomItems.sort(function (a, b) {
+        const ia = ord.indexOf(a), ib = ord.indexOf(b);
+        return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib);
+      });
+      groups['怪异'] = anomItems;
+    }
+
     return RANK_ORDER
       .filter(function (r) { return groups[r] && groups[r].length; })
       .map(function (r) { return { rank: r, items: groups[r] }; });
@@ -4059,6 +4071,17 @@
       const wrap = document.createElement('div');
       wrap.className = 'mon-mat-detail' + (highlight ? ' highlight' : '');
 
+      // 怪异剥取记录：按 anomLv 档位顺序（低→高）排序，保证「骨→硬骨→重骨」
+      if (rows && rows.length > 1 && rows.some(function (r) { return r.anomLv; })) {
+        const lvNum = function (s) {
+          const m = String(s || '').match(/^(\d+)/);
+          return m ? parseInt(m[1], 10) : 1e9;
+        };
+        rows.sort(function (a, b) {
+          return lvNum(a.anomLv) - lvNum(b.anomLv);
+        });
+      }
+
       // 素材名 + 等级标签
       const nm = document.createElement('div');
       nm.className = 'mon-mat-title';
@@ -4068,7 +4091,7 @@
       let ranks = [];
       if (rows.length) {
         const set = {};
-        rows.forEach(function (r) { if (r.rank) set[normRank(r.rank, r.item)] = true; });
+        rows.forEach(function (r) { if (r.rank) set[r.rank] = true; });
         ranks = RANK_ORDER.filter(function (r) { return set[r]; });
       } else {
         // 无掉落行（例如采集类），用全局反查
@@ -4115,7 +4138,7 @@
       const order = RANK_ORDER;
       let anyRow = false;
       order.forEach(function (rank) {
-        const sub = rows.filter(function (r) { return normRank(r.rank, r.item) === rank; });
+        const sub = rows.filter(function (r) { return r.rank === rank; });
         if (!sub.length) return;
         anyRow = true;
 
@@ -4130,17 +4153,33 @@
         sub.forEach(function (r) {
           const line = document.createElement('div');
           line.className = 'mon-drop-row';
-          // 怪异素材：在部位前加「怪异调查」前缀（如「本体」→「怪异调查 本体」）
-          const _isAnom = /^(怪异化的|破怪的)/.test(String(itemName || ''));
-          const _partTxt = r.part
-            ? (_isAnom ? '怪异调查 ' + prettyPart(r.part) : prettyPart(r.part))
-            : '';
-          line.innerHTML =
-            '<span class="drop-way">' + escapeHtml(r.way) + '</span>' +
-            (_partTxt ? '<span class="drop-part">' + escapeHtml(_partTxt) + '</span>' : '') +
-            '<span class="drop-count">' + escapeHtml(r.count) + '</span>' +
-            '<span class="drop-rate">' + escapeHtml(r.rate) + '</span>';
-          grp.appendChild(line);
+          // 部位 + 来源（carveSrc 由数据层提供，如「怪异调查」）
+          const _basePart = r.part ? prettyPart(r.part) : '';
+          const _partTxt = r.carveSrc
+            ? (r.carveSrc + (_basePart ? ' ' + _basePart : ''))
+            : _basePart;
+          // 无 carveSrc 但有 anomLv → 只有「怪异探究」一条来源，不渲染普通行
+          if (!(!r.carveSrc && r.anomLv)) {
+            line.innerHTML =
+              '<span class="drop-way">' + escapeHtml(r.way) + '</span>' +
+              (_partTxt ? '<span class="drop-part">' + escapeHtml(_partTxt) + '</span>' : '') +
+              '<span class="drop-count">' + escapeHtml(r.count) + '</span>' +
+              '<span class="drop-rate">' + escapeHtml(r.rate) + '</span>';
+            grp.appendChild(line);
+          }
+
+          // 怪异素材：额外补一条「怪异探究 Lvx-y 本体」剥取行
+          if (r.anomLv) {
+            const l2 = document.createElement('div');
+            l2.className = 'mon-drop-row og-explore-drop';
+            const _p2 = '怪异探究 Lv' + r.anomLv + (_basePart ? ' ' + _basePart : '');
+            l2.innerHTML =
+              '<span class="drop-way">' + escapeHtml(r.way) + '</span>' +
+              '<span class="drop-part drop-part-explore">' + escapeHtml(_p2) + '</span>' +
+              '<span class="drop-count">' + escapeHtml(r.count) + '</span>' +
+              '<span class="drop-rate">' + escapeHtml(r.rate) + '</span>';
+            grp.appendChild(l2);
+          }
         });
         wrap.appendChild(grp);
       });
@@ -4169,6 +4208,8 @@
     function obtainTypeInfo(t) {
       t = String(t || '').trim();
       if (!t) return { group: 'zzz', label: '其他', icon: '•' };
+      if (/^怪异探究/.test(t))
+        return { group: 'explore', label: '怪异探究', icon: '🧭' };
       if (/^部位破坏/.test(t) || /^broken$/.test(t))
         return { group: 'part', label: '部位破坏', icon: '🦴' };
       if (/^剥取/.test(t) || /^carve$/.test(t))
@@ -4195,8 +4236,59 @@
       // 左：来源名（怪物名/任务名/地名）
       const qspan = document.createElement('span');
       qspan.className = 'obtain-quest';
+
+      // ---- 怪异探究行：特殊渲染（怪异探究 | Lv档位 | 主/副奖励 | 来源怪 | x? | 100%）----
+      if (r.type === '怪异探究') {
+        line.classList.add('og-explore');
+        const nameEl = document.createElement('span');
+        nameEl.className = 'obtain-explore-name';
+        nameEl.textContent = '怪异探究';
+        qspan.appendChild(nameEl);
+        if (r.lv) {
+          const lvEl = document.createElement('span');
+          lvEl.className = 'obtain-explore-lv';
+          lvEl.textContent = 'Lv' + r.lv;
+          qspan.appendChild(lvEl);
+        }
+        if (r.reward) {
+          const rwEl = document.createElement('span');
+          rwEl.className = 'obtain-explore-reward' + (r.reward === '副奖励' ? ' sub' : '');
+          rwEl.textContent = r.reward;
+          qspan.appendChild(rwEl);
+        }
+        if (r.mons) {
+          const mEl = document.createElement('span');
+          mEl.className = 'obtain-explore-mons';
+          mEl.textContent = r.mons;
+          qspan.appendChild(mEl);
+        }
+        line.appendChild(qspan);
+
+        const meta = document.createElement('span');
+        meta.className = 'obtain-meta';
+        if (r.count) {
+          const cs = document.createElement('span');
+          cs.className = 'obtain-count';
+          cs.textContent = 'x' + r.count;
+          meta.appendChild(cs);
+        }
+        if (r.rate) {
+          const rs = document.createElement('span');
+          rs.className = 'obtain-rate';
+          rs.textContent = r.rate;
+          meta.appendChild(rs);
+        }
+        line.appendChild(meta);
+        parent.appendChild(line);
+        return;
+      }
+
       const _qid = (typeof findQuestIdByLabel === 'function')
         ? findQuestIdByLabel(r.quest) : null;
+      // 「怪异探究剥取」等带来源的剥取行：显示来源 + Lv + 部位
+      const _carveTxt = r.carveSrc
+        ? (r.carveSrc + (r.anomLv ? ' Lv' + r.anomLv : '') + (r.part ? ' ' + r.part : ''))
+        : '';
       if (MONSTERS[r.quest]) {
         const mb = document.createElement('button');
         mb.type = 'button';
@@ -4240,12 +4332,19 @@
       } else {
         qspan.textContent = r.quest;
       }
+      // 带来源的剥取行（如怪异探究）：在怪物名后追加「来源 Lv 部位」
+      if (_carveTxt) {
+        const cs = document.createElement('span');
+        cs.className = 'obtain-carve-src';
+        cs.textContent = _carveTxt;
+        qspan.appendChild(cs);
+      }
       line.appendChild(qspan);
 
       // 右：难度 + 数量 + 概率
       const meta = document.createElement('span');
       meta.className = 'obtain-meta';
-      const _rk = r.rank ? normRank(r.rank, itemName) : '';
+      const _rk = r.rank ? r.rank : '';
       if (_rk) {
         const ks = document.createElement('span');
         ks.className = 'obtain-rank mat-rank-tag rank-' + rankKey(_rk);
@@ -4300,7 +4399,7 @@
       ob.forEach(function (o) {
         const q = o.quest || o.name || (typeof o === 'string' ? o : '');
         const rank = o.rank || '';
-        const key = [q, rank, o.type, o.count, o.rate].join('|');
+        const key = [q, rank, o.type, o.count, o.rate, o.lv, o.reward].join('|');
         if (seen[key]) return;
         seen[key] = 1;
         rows.push({
@@ -4309,11 +4408,17 @@
           type: o.type || '',
           count: o.count || '',
           rate: o.rate || '',
+          lv: o.lv || '',
+          mons: o.mons || '',
+          reward: o.reward || '',
+          carveSrc: o.carveSrc || '',
+          anomLv: o.anomLv || '',
+          part: o.part || ''
         });
       });
       if (!rows.length) return wrap;
       // ---- 按类型分组（组内保持原顺序，组按固定次序）----
-      const GROUP_ORDER = ['quest', 'carve', 'drop', 'part', 'palico', 'rank', 'other', 'zzz'];
+      const GROUP_ORDER = ['explore', 'quest', 'carve', 'drop', 'part', 'palico', 'rank', 'other', 'zzz'];
       const groups = {};
       rows.forEach(function (r) {
         const ti = obtainTypeInfo(r.type);
@@ -4339,9 +4444,11 @@
         gBox.className = 'obtain-group obtain-group-' + (gi % 2 ? 'odd' : 'even');
         const gHead = document.createElement('div');
         gHead.className = 'obtain-group-head';
+        // 怪异探究组：不显示计数（单条，计数冗余）
+        const _showCnt = (grp.rows.length > 1) || grp.rows[0].type !== '怪异探究';
         gHead.innerHTML = '<span class="obtain-group-icon">' + grp.icon + '</span>' +
           '<span class="obtain-group-name">' + escapeHtml(grp.label) + '</span>' +
-          '<span class="obtain-group-count">' + grp.rows.length + '</span>';
+          (_showCnt ? '<span class="obtain-group-count">' + grp.rows.length + '</span>' : '');
         gBox.appendChild(gHead);
         const gBody = document.createElement('div');
         gBody.className = 'obtain-group-body';
