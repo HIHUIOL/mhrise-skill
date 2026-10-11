@@ -1900,6 +1900,52 @@
     }());
 
     // --------------------------------------------------------
+    // 任务一览目录：「查看」按钮 → 跳到任务区块，只看某一分类
+    //   - 切到「任务」分类（显示任务区块、隐藏其它目录）
+    //   - 任务区块里只展开该分类，其它分类折叠
+    //   - 自动滚动到任务区块
+    // --------------------------------------------------------
+    window._showQuestCategory = function (cat) {
+      // 1) 顶部按钮高亮切到「任务」
+      const btns = document.querySelectorAll('#catFilter .cat-btn');
+      btns.forEach(function (b) {
+        const on = b.getAttribute('data-cat') === 'quest';
+        b.classList.toggle('active', on);
+      });
+      // 2) 走统一分类切换逻辑
+      if (typeof window._applyCat === 'function') window._applyCat('quest');
+      document.body.classList.add('searching');
+
+      // 3) 任务区块：只展开目标分类
+      Object.keys(_questGroupEls).forEach(function (c) {
+        const st = _questGroupEls[c];
+        const shouldOpen = (c === cat);
+        st.collapsed = !shouldOpen;
+        st.groupEl.classList.toggle('cat-collapsed', !shouldOpen);
+        const arrow = st.groupEl.querySelector('.catalog-cat-arrow');
+        if (arrow) arrow.textContent = shouldOpen ? '▼' : '▶';
+        if (shouldOpen) renderQuestGroupCards(st);
+      });
+
+      // 4) 滚到任务区块
+      const sec = document.getElementById('questSection');
+      if (sec) {
+        // 展开分区（若之前折叠）
+        if (questCollapse) { questCollapse.state.collapsed = false; questCollapse.apply(); }
+        // 兼容无 scrollIntoView 的环境（如部分 WebView / 测试环境）
+        if (typeof sec.scrollIntoView === 'function') {
+          try { sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+          catch (e) { sec.scrollIntoView(); }
+        } else {
+          const top = sec.getBoundingClientRect ? sec.getBoundingClientRect().top : 0;
+          if (window.scrollTo) {
+            window.scrollTo({ top: (window.pageYOffset || 0) + top - 60, behavior: 'smooth' });
+          }
+        }
+      }
+    };
+
+    // --------------------------------------------------------
     // 技能一览（按分类分组的目录）
     // --------------------------------------------------------
     (function buildCatalog() {
@@ -2129,8 +2175,9 @@
         catEl.className = 'catalog-cat catalog-cat-toggle';
         catEl.innerHTML =
           '<span class="catalog-cat-arrow">▶</span>' +
-          escapeHtml(cat) +
-          ' <span class="cat-count">' + qids.length + '</span>';
+          '<span class="catalog-cat-name">' + escapeHtml(cat) + '</span>' +
+          ' <span class="cat-count">' + qids.length + '</span>' +
+          '<button type="button" class="cat-goto-btn" title="在上方任务区单独查看这一类">查看</button>';
         groupEl.appendChild(catEl);
 
         const itemsEl = document.createElement('div');
@@ -2149,7 +2196,16 @@
           });
         }
 
-        catEl.addEventListener('click', function () {
+        catEl.addEventListener('click', function (ev) {
+          // 点「查看」按钮 → 跳到上方任务区，只看这一类
+          if (ev.target && ev.target.classList &&
+              ev.target.classList.contains('cat-goto-btn')) {
+            ev.stopPropagation();
+            if (typeof window._showQuestCategory === 'function') {
+              window._showQuestCategory(cat);
+            }
+            return;
+          }
           const collapsed = groupEl.classList.toggle('cat-collapsed');
           catEl.querySelector('.catalog-cat-arrow').textContent = collapsed ? '▶' : '▼';
           if (!collapsed) renderThis();
