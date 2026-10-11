@@ -759,33 +759,6 @@
     /* 任务一览（目录）里的分组：容器是 .catalog-group，items 是 .quest-group-items */
     .catalog-group.cat-collapsed .quest-group-items { display: none; }
 
-    /* 「查看」按钮：跳到上方任务区只看这一类 */
-    .catalog-cat .catalog-cat-name { margin-right: 0.15rem; }
-    .catalog-cat .cat-goto-btn {
-      margin-left: auto;
-      font: inherit;
-      font-size: 0.62rem;
-      font-weight: 600;
-      line-height: 1;
-      padding: 0.18rem 0.45rem;
-      border-radius: 10px;
-      border: 1px solid #3a5d7a;
-      background: #22303d;
-      color: #8fc7f0;
-      cursor: pointer;
-      white-space: nowrap;
-      -webkit-tap-highlight-color: transparent;
-      transition: background 0.15s, color 0.15s;
-    }
-    .catalog-cat .cat-goto-btn:hover { background: #2c3f52; color: #cfe8ff; }
-    .catalog-cat .cat-goto-btn:active { background: #3a5d7a; color: #fff; }
-    /* 让「分类名」和「查看」分列两端 */
-    .catalog-cat.catalog-cat-toggle {
-      display: flex;
-      align-items: center;
-      gap: 0.2rem;
-    }
-
     /* 任务里面的可点怪物行 / 补给 chip */
     .mon-quest-clickable {
       cursor: pointer;
@@ -1882,6 +1855,39 @@
 
     .mon-quest-list.collapsed {
       display: none;
+    }
+
+    /* 任务列表里的「分类筛选条」（怪物弹窗内） */
+    .mon-quest-filter {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      padding: 0.4rem 0.4rem 0.5rem;
+      border-bottom: 1px solid #253240;
+      position: sticky;
+      top: 0;
+      background: #1a222c;
+      z-index: 2;
+    }
+    .mqf-btn {
+      font: inherit;
+      font-size: 0.68rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 12px;
+      border: 1px solid #31404f;
+      background: #202a35;
+      color: #b0becc;
+      cursor: pointer;
+      white-space: nowrap;
+      -webkit-tap-highlight-color: transparent;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .mqf-btn:active { background: #2a3644; }
+    .mqf-btn.active {
+      background: #3a5d7a;
+      border-color: #6fa8d8;
+      color: #fff;
+      font-weight: 600;
     }
 
     .mon-quest-row {

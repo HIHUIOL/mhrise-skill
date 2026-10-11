@@ -1900,52 +1900,6 @@
     }());
 
     // --------------------------------------------------------
-    // 任务一览目录：「查看」按钮 → 跳到任务区块，只看某一分类
-    //   - 切到「任务」分类（显示任务区块、隐藏其它目录）
-    //   - 任务区块里只展开该分类，其它分类折叠
-    //   - 自动滚动到任务区块
-    // --------------------------------------------------------
-    window._showQuestCategory = function (cat) {
-      // 1) 顶部按钮高亮切到「任务」
-      const btns = document.querySelectorAll('#catFilter .cat-btn');
-      btns.forEach(function (b) {
-        const on = b.getAttribute('data-cat') === 'quest';
-        b.classList.toggle('active', on);
-      });
-      // 2) 走统一分类切换逻辑
-      if (typeof window._applyCat === 'function') window._applyCat('quest');
-      document.body.classList.add('searching');
-
-      // 3) 任务区块：只展开目标分类
-      Object.keys(_questGroupEls).forEach(function (c) {
-        const st = _questGroupEls[c];
-        const shouldOpen = (c === cat);
-        st.collapsed = !shouldOpen;
-        st.groupEl.classList.toggle('cat-collapsed', !shouldOpen);
-        const arrow = st.groupEl.querySelector('.catalog-cat-arrow');
-        if (arrow) arrow.textContent = shouldOpen ? '▼' : '▶';
-        if (shouldOpen) renderQuestGroupCards(st);
-      });
-
-      // 4) 滚到任务区块
-      const sec = document.getElementById('questSection');
-      if (sec) {
-        // 展开分区（若之前折叠）
-        if (questCollapse) { questCollapse.state.collapsed = false; questCollapse.apply(); }
-        // 兼容无 scrollIntoView 的环境（如部分 WebView / 测试环境）
-        if (typeof sec.scrollIntoView === 'function') {
-          try { sec.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-          catch (e) { sec.scrollIntoView(); }
-        } else {
-          const top = sec.getBoundingClientRect ? sec.getBoundingClientRect().top : 0;
-          if (window.scrollTo) {
-            window.scrollTo({ top: (window.pageYOffset || 0) + top - 60, behavior: 'smooth' });
-          }
-        }
-      }
-    };
-
-    // --------------------------------------------------------
     // 技能一览（按分类分组的目录）
     // --------------------------------------------------------
     (function buildCatalog() {
@@ -2175,9 +2129,8 @@
         catEl.className = 'catalog-cat catalog-cat-toggle';
         catEl.innerHTML =
           '<span class="catalog-cat-arrow">▶</span>' +
-          '<span class="catalog-cat-name">' + escapeHtml(cat) + '</span>' +
-          ' <span class="cat-count">' + qids.length + '</span>' +
-          '<button type="button" class="cat-goto-btn" title="在上方任务区单独查看这一类">查看</button>';
+          escapeHtml(cat) +
+          ' <span class="cat-count">' + qids.length + '</span>';
         groupEl.appendChild(catEl);
 
         const itemsEl = document.createElement('div');
@@ -2196,16 +2149,7 @@
           });
         }
 
-        catEl.addEventListener('click', function (ev) {
-          // 点「查看」按钮 → 跳到上方任务区，只看这一类
-          if (ev.target && ev.target.classList &&
-              ev.target.classList.contains('cat-goto-btn')) {
-            ev.stopPropagation();
-            if (typeof window._showQuestCategory === 'function') {
-              window._showQuestCategory(cat);
-            }
-            return;
-          }
+        catEl.addEventListener('click', function () {
           const collapsed = groupEl.classList.toggle('cat-collapsed');
           catEl.querySelector('.catalog-cat-arrow').textContent = collapsed ? '▶' : '▼';
           if (!collapsed) renderThis();
@@ -3158,8 +3102,8 @@
       const FIELD_ORDER = ['players', 'hp', 'attack', 'parts', 'defense',
         'ailment', 'stun', 'stamina', 'mount'];
 
-      quests.forEach(function (q) {
-        // 兼容旧格式（数组）
+      // 先解析每行（顺带识别分类），便于建筛选条
+      const parsed = quests.map(function (q) {
         let questName, fields;
         if (Array.isArray(q)) {
           questName = q[0];
@@ -3173,21 +3117,68 @@
             .filter(function (k) { return q[k]; })
             .map(function (k) { return { key: k, val: q[k] }; });
         }
+        const qid = findQuestIdByLabel(questName);
+        const qd = qid ? QUESTS[qid] : null;
+        return {
+          name: questName,
+          fields: fields,
+          qid: qid,
+          cat: (qd && qd.cat) || '其他',
+          star: (qd && qd.star) || 0,
+        };
+      });
 
+      // ---- 分类筛选条（≥2 类才显示）----
+      const catCount = {};
+      parsed.forEach(function (it) { catCount[it.cat] = (catCount[it.cat] || 0) + 1; });
+      const catList = QUEST_CAT_ORDER.filter(function (c) { return catCount[c]; })
+        .concat(Object.keys(catCount).filter(function (c) { return QUEST_CAT_ORDER.indexOf(c) < 0; }));
+
+      let filterBar = null;
+      const rows = [];      // { el, cat }
+      let activeCat = '';
+
+      if (catList.length >= 2) {
+        filterBar = document.createElement('div');
+        filterBar.className = 'mon-quest-filter';
+        const mk = function (label, val, count) {
+          const b = document.createElement('button');
+          b.type = 'button';
+          b.className = 'mqf-btn' + (val === '' ? ' active' : '');
+          b.setAttribute('data-cat', val);
+          b.textContent = label + (count != null ? ' ' + count : '');
+          b.addEventListener('click', function (ev) {
+            ev.stopPropagation();
+            activeCat = val;
+            filterBar.querySelectorAll('.mqf-btn').forEach(function (x) {
+              x.classList.toggle('active', x === b);
+            });
+            rows.forEach(function (r) {
+              r.el.style.display = (!val || r.cat === val) ? '' : 'none';
+            });
+          });
+          return b;
+        };
+        filterBar.appendChild(mk('全部', '', parsed.length));
+        catList.forEach(function (c) { filterBar.appendChild(mk(c, c, catCount[c])); });
+        listEl.appendChild(filterBar);
+      }
+
+      // ---- 任务行 ----
+      parsed.forEach(function (it) {
         const row = document.createElement('div');
         row.className = 'mon-quest-row';
 
         const nm = document.createElement('div');
         nm.className = 'mon-quest-name';
-        nm.textContent = questName;
+        nm.textContent = it.name;
         row.appendChild(nm);
 
         const meta = document.createElement('div');
         meta.className = 'mon-quest-meta';
-        fields.forEach(function (f) {
+        it.fields.forEach(function (f) {
           const s = document.createElement('span');
           s.className = 'qmeta';
-          // HP 太长单独占一行处理
           s.innerHTML = '<i>' + (FIELD_LABEL[f.key] || f.key) + '</i>' +
             escapeHtml(String(f.val));
           meta.appendChild(s);
@@ -3195,8 +3186,7 @@
         row.appendChild(meta);
 
         // 能对上 quests.js 里的任务 → 可点击看详情
-        const _qid = findQuestIdByLabel(questName);
-        if (_qid && _openQuestModal) {
+        if (it.qid && _openQuestModal) {
           row.classList.add('mon-quest-clickable');
           row.title = '点击查看任务详情';
           row.addEventListener('click', function (ev) {
@@ -3204,10 +3194,11 @@
             if (typeof _pushHist === 'function') {
               _pushHist(function () { openMonsterModal(monName); });
             }
-            _openQuestModal(_qid);
+            _openQuestModal(it.qid);
           });
         }
 
+        rows.push({ el: row, cat: it.cat });
         listEl.appendChild(row);
       });
 
