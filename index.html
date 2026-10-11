@@ -521,14 +521,15 @@
       grid-template-columns: repeat(2, 1fr);
       gap: 0.45rem;
     }
-    /* 任务卡片 */
+    /* 任务卡片 —— 左：图标区；右：文字区（更紧凑、更像"一条任务"） */
     .quest-card {
       display: flex;
       flex-direction: column;
-      gap: 0.22rem;
+      gap: 0.3rem;
       padding: 0.5rem 0.55rem;
       text-align: left;
-      min-height: 4.2rem;
+      min-height: 3.6rem;
+      align-items: stretch;
     }
     .quest-card-top {
       display: flex;
@@ -544,6 +545,11 @@
       flex: 1 1 auto;
       min-width: 0;
       overflow-wrap: anywhere;
+      /* 最多两行，超出省略，避免长短不一把卡片撑变形 */
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
     .quest-star {
       flex: 0 0 auto;
@@ -556,25 +562,49 @@
       white-space: nowrap;
     }
     .quest-card-cat {
-      font-size: 0.62rem;
+      font-size: 0.6rem;
       color: #8fa3b5;
+      /* 分类名可能较长（集会所任务 大师），压缩成一行省略 */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+    /* 怪物图标：全部显示，自动换行 */
     .quest-card-mons {
-      font-size: 0.62rem;
-      color: #b9c9d6;
       display: flex;
-      align-items: center;
-      gap: 0.25rem;
       flex-wrap: wrap;
+      align-items: center;
+      gap: 0.18rem;
+      margin-top: auto;
+    }
+    .quest-card-mons .qmon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      flex: 0 0 auto;
     }
     .quest-card-mons img {
-      width: 16px;
-      height: 16px;
+      width: 100%;
+      height: 100%;
       object-fit: contain;
       image-rendering: -webkit-optimize-contrast;
     }
+    .quest-card-mons .qmon-noicon {
+      width: auto;
+      height: auto;
+      font-size: 0.6rem;
+      color: #b9c9d6;
+      padding: 0 0.18rem;
+    }
     .quest-card-mons .q-more {
       color: #7d8f9f;
+      font-size: 0.62rem;
+    }
+    /* 很窄的屏：任务卡片改一行 1 个（名字 + 图标太挤） */
+    @media (max-width: 360px) {
+      .quest-grid { grid-template-columns: 1fr; }
     }
 
     /* 任务弹窗 */
@@ -622,57 +652,90 @@
       height: 18px;
       object-fit: contain;
     }
-    /* 怪物血量表 */
+    /* 怪物血量块 */
     .quest-mon-block {
-      margin: 0.4rem 0;
+      margin: 0.35rem 0;
       border: 1px solid #2f3a48;
-      border-radius: 6px;
+      border-radius: 7px;
       overflow: hidden;
     }
     .quest-mon-head {
       display: flex;
       align-items: center;
-      gap: 0.3rem;
-      padding: 0.32rem 0.45rem;
+      gap: 0.35rem;
+      padding: 0.4rem 0.5rem;
       background: #232c37;
-      font-size: 0.74rem;
+      font-size: 0.76rem;
       font-weight: 700;
       color: #dbe6f0;
       cursor: pointer;
       user-select: none;
       -webkit-tap-highlight-color: transparent;
     }
+    .quest-mon-head .qm-emoji { font-size: 0.9rem; }
     .quest-mon-head img {
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
+      flex: 0 0 auto;
       object-fit: contain;
     }
-    .quest-mon-head .qm-arrow {
+    .quest-mon-head .qm-name-txt { flex: 0 1 auto; }
+    .quest-mon-head .qm-hp {
       margin-left: auto;
+      font-size: 0.66rem;
+      font-weight: 400;
+      color: #f0c27a;
+      white-space: nowrap;
+    }
+    .quest-mon-head .qm-arrow {
+      flex: 0 0 auto;
+      margin-left: 0.35rem;
       font-size: 0.6rem;
       color: #7d8f9f;
     }
     .quest-mon-block.qm-collapsed .quest-mon-body { display: none; }
-    .quest-mon-body { padding: 0.2rem 0.3rem 0.35rem; }
-    .quest-hp-table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.66rem;
+    .quest-mon-body {
+      padding: 0.35rem 0.4rem 0.45rem;
+      background: #1a212a;
     }
-    .quest-hp-table th,
-    .quest-hp-table td {
-      border: 1px solid #2f3a48;
-      padding: 0.18rem 0.2rem;
+
+    /* 每档人数一行：左边「1人」，右边属性 chips */
+    .qm-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.4rem;
+      padding: 0.28rem 0;
+      border-top: 1px dashed #2a3442;
+    }
+    .qm-row:first-child { border-top: 0; }
+    .qm-players {
+      flex: 0 0 auto;
+      min-width: 2.1rem;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: #8fd4a8;
+      background: #223229;
+      border-radius: 4px;
+      padding: 0.1rem 0.3rem;
       text-align: center;
-      color: #cfdae4;
+    }
+    .qm-vals {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 0.5rem;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+    .qm-kv {
+      font-size: 0.68rem;
+      color: #d3e0ea;
       white-space: nowrap;
     }
-    .quest-hp-table th {
-      background: #1f2731;
-      color: #8fa3b5;
-      font-weight: 700;
+    .qm-kv i {
+      font-style: normal;
+      color: #7f93a5;
+      margin-right: 0.15rem;
     }
-    .quest-hp-table td.qm-name { text-align: left; color: #a8bfd4; }
 
     /* 任务分组（区块内 / 目录内） */
     .quest-group { margin-bottom: 0.6rem; }

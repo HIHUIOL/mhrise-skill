@@ -1279,14 +1279,16 @@
     catEl.textContent = q.cat || '';
     card.appendChild(catEl);
 
-    // 怪物（最多显示 3 个图标 + "+N"）
+    // 怪物（全部显示，换行排）
     const mons = q.mons || [];
     if (mons.length) {
       const mEl = document.createElement('div');
       mEl.className = 'quest-card-mons';
       const icons = (typeof window !== 'undefined' && window.MONSTER_ICONS) || {};
-      mons.slice(0, 3).forEach(function (m) {
+      mons.forEach(function (m) {
         const f = icons[m.name];
+        const cell = document.createElement('span');
+        cell.className = 'qmon';
         if (f) {
           const im = document.createElement('img');
           im.loading = 'lazy';
@@ -1294,19 +1296,14 @@
           im.alt = m.name;
           im.title = m.name;
           im.src = 'monster-icons/' + f;
-          mEl.appendChild(im);
+          cell.appendChild(im);
         } else {
-          const sp = document.createElement('span');
-          sp.textContent = m.name;
-          mEl.appendChild(sp);
+          // 没有图标时退化显示名字
+          cell.classList.add('qmon-noicon');
+          cell.textContent = m.name;
         }
+        mEl.appendChild(cell);
       });
-      if (mons.length > 3) {
-        const more = document.createElement('span');
-        more.className = 'q-more';
-        more.textContent = '+' + (mons.length - 3);
-        mEl.appendChild(more);
-      }
       card.appendChild(mEl);
     }
 
@@ -2972,45 +2969,51 @@
 
         mons.forEach(function (m) {
           const block = document.createElement('div');
-          block.className = 'quest-mon-block';
+          block.className = 'quest-mon-block qm-collapsed';   // 默认折叠
+
+          const pls = m.players || [];
+          // 标题右侧显示「1人档 HP」概要，不展开也能看到关键信息
+          const hp0 = (pls[0] && pls[0].hp) ? ' ' + pls[0].hp : '';
 
           const hd = document.createElement('div');
           hd.className = 'quest-mon-head';
           const f = icons[m.name];
           hd.innerHTML =
-            (f ? '<img src="monster-icons/' + f + '" alt="">' : '👹') +
+            (f ? '<img src="monster-icons/' + f + '" alt="">' : '<span class="qm-emoji">👹</span>') +
             '<span class="qm-name-txt">' + escapeHtml(m.name) + '</span>' +
-            '<span class="qm-arrow">▼</span>';
+            (hp0 ? '<span class="qm-hp">' + escapeHtml(hp0.replace(/\s*HP$/, '')) + ' HP</span>' : '') +
+            '<span class="qm-arrow">▶</span>';
           block.appendChild(hd);
 
           const bd = document.createElement('div');
           bd.className = 'quest-mon-body';
 
-          const pls = m.players || [];
           if (pls.length) {
-            const tbl = document.createElement('table');
-            tbl.className = 'quest-hp-table';
-            tbl.innerHTML =
-              '<thead><tr>' +
-                '<th>人数</th><th>HP</th><th>攻击</th><th>部位</th><th>防御</th>' +
-                '<th>异常</th><th>眩晕</th><th>耐力</th><th>骑乘</th>' +
-              '</tr></thead>';
-            const tb = document.createElement('tbody');
+            // 每档人数一块（手机上比 9 列表格好读）
             pls.forEach(function (p) {
-              const tr = document.createElement('tr');
+              const row = document.createElement('div');
+              row.className = 'qm-row';
+
+              const tag = document.createElement('span');
+              tag.className = 'qm-players';
+              tag.textContent = (p.p ? p.p + '人' : '—');
+              row.appendChild(tag);
+
+              const vals = document.createElement('div');
+              vals.className = 'qm-vals';
               [
-                p.p ? p.p + '人' : '',
-                p.hp || '', p.atk || '', p.parts || '', p.def || '',
-                p.ail || '', p.stun || '', p.stam || '', p.mount || '',
-              ].forEach(function (v) {
-                const td = document.createElement('td');
-                td.textContent = v || '—';
-                tr.appendChild(td);
+                ['HP', p.hp], ['攻击', p.atk], ['部位', p.parts], ['防御', p.def],
+                ['异常', p.ail], ['眩晕', p.stun], ['耐力', p.stam], ['骑乘', p.mount],
+              ].forEach(function (kv) {
+                if (!kv[1]) return;
+                const s = document.createElement('span');
+                s.className = 'qm-kv';
+                s.innerHTML = '<i>' + kv[0] + '</i>' + escapeHtml(String(kv[1]));
+                vals.appendChild(s);
               });
-              tb.appendChild(tr);
+              row.appendChild(vals);
+              bd.appendChild(row);
             });
-            tbl.appendChild(tb);
-            bd.appendChild(tbl);
           } else {
             const none = document.createElement('div');
             none.className = 'mon-mat-none';
