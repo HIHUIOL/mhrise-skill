@@ -587,12 +587,57 @@
       white-space: nowrap;
     }
     .quest-card-cat {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
       font-size: 0.6rem;
       color: #8fa3b5;
-      /* 分类名可能较长（集会所任务 大师），压缩成一行省略 */
+      min-width: 0;
+    }
+    /* 分类名可能较长（集会所任务 大师），压缩成一行省略 */
+    .quest-card-cat-name {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+    .quest-card-map {
+      flex: 0 0 auto;
+      color: #7fc3ff;
+      background: rgba(90, 160, 230, 0.12);
+      border: 1px solid rgba(90, 160, 230, 0.25);
+      border-radius: 4px;
+      padding: 0.04rem 0.3rem;
+      white-space: nowrap;
+      font-weight: 700;
+    }
+    /* 活动任务位阶标签（大师 / 上位 / 下位 / 百龙） */
+    .quest-card-rank {
+      flex: 0 0 auto;
+      border-radius: 4px;
+      padding: 0.04rem 0.3rem;
+      white-space: nowrap;
+      font-weight: 700;
+      border: 1px solid transparent;
+    }
+    .quest-card-rank.rank-0 {   /* 大师 */
+      color: #ffd76a;
+      background: rgba(230, 180, 60, 0.14);
+      border-color: rgba(230, 180, 60, 0.35);
+    }
+    .quest-card-rank.rank-1 {   /* 上位 */
+      color: #9fe0b0;
+      background: rgba(80, 190, 120, 0.13);
+      border-color: rgba(80, 190, 120, 0.3);
+    }
+    .quest-card-rank.rank-2 {   /* 下位 */
+      color: #b8c4cf;
+      background: rgba(150, 165, 180, 0.12);
+      border-color: rgba(150, 165, 180, 0.28);
+    }
+    .quest-card-rank.rank-3 {   /* 百龙 */
+      color: #ff9d7a;
+      background: rgba(230, 120, 70, 0.13);
+      border-color: rgba(230, 120, 70, 0.32);
     }
     /* 怪物图标：全部显示，自动换行 */
     .quest-card-mons {
@@ -628,6 +673,20 @@
       border-radius: 5px;
       background: rgba(240, 194, 122, 0.22);
       box-shadow: inset 0 0 0 1px rgba(240, 194, 122, 0.55);
+    }
+    /* 目标怪 与 乱入怪 之间的间隔（约一个图标宽）*/
+    .quest-card-mons .qmon-gap {
+      flex: 0 0 auto;
+      width: 20px;
+      height: 1px;
+      margin: 0 0.1rem;
+      align-self: center;
+      /* 虚线分隔，视觉上更清楚「目标 / 乱入」分界 */
+      background-image: linear-gradient(to bottom, #46586a 50%, transparent 50%);
+      background-size: 1px 6px;
+      background-repeat: repeat-y;
+      background-position: center;
+      opacity: 0.7;
     }
     .quest-card-mons .q-more {
       color: #7d8f9f;
@@ -2577,6 +2636,75 @@
       padding: 0.06rem 0.34rem;
       font-weight: 700;
     }
+
+    /* 出生区域 + 金冠概率（怪物详情里的任务列表） */
+    .mq-spawn {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.3rem 0.5rem;
+      margin-top: 0.26rem;
+    }
+    .mq-spawn-areas,
+    .mq-spawn-crowns {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.22rem;
+    }
+    .mq-spawn-areas .mq-map-name {
+      font-size: 0.62rem;
+      color: #7fc3ff;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .mq-area-chip {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.14rem;
+      padding: 0.05rem 0.34rem;
+      font-size: 0.62rem;
+      background: #1f2a36;
+      border: 1px solid #2c3a49;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .mq-area-chip b {
+      color: #d7e3ef;
+      font-weight: 700;
+    }
+    .mq-area-chip i {
+      font-style: normal;
+      color: #8fa3b5;
+    }
+    .mq-crown-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+      padding: 0.05rem 0.38rem 0.05rem 0.22rem;
+      font-size: 0.62rem;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .mq-crown-chip img {
+      width: 14px;
+      height: 14px;
+      vertical-align: middle;
+    }
+    .mq-crown-chip i {
+      font-style: normal;
+      font-weight: 700;
+    }
+    .mq-crown-chip.crown-mini {
+      background: #1e2c22;
+      border: 1px solid #2f4a37;
+    }
+    .mq-crown-chip.crown-mini i { color: #8fd6a2; }
+    .mq-crown-chip.crown-king {
+      background: #33291a;
+      border: 1px solid #5a4526;
+    }
+    .mq-crown-chip.crown-king i { color: #ffd479; }
 
     .mon-quest-meta {
       display: flex;

@@ -1,7 +1,7 @@
 // mhrise-skill / sw.js
 // 简单的离线缓存 Service Worker：优先使用缓存，后台更新
 
-const CACHE_NAME = 'mhrise-skill-v82';
+const CACHE_NAME = 'mhrise-skill-v83';
 
 // 需要预缓存的资源（相对路径，便于部署到 GitHub Pages 子目录）
 const PRECACHE_URLS = [
@@ -20,6 +20,8 @@ const PRECACHE_URLS = [
     './monster_icons.js',
     './quests.js',
     './quest_maps.js',
+    './ui-icons/crown_mini.png',
+    './ui-icons/crown_king.png',
     './manifest.json',
   './icon-192.png',
   './icon-512.png',

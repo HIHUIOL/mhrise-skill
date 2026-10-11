@@ -93,6 +93,9 @@ def fetch_retry(url):
 
 
 def strip(s):
+    # 金冠图标 → 文本标记（否则 <img> 被当标签删掉，分不清是小金还是大金）
+    s = re.sub(r'<img[^>]*crown_mini\.png[^>]*>', ' [小金冠] ', s)
+    s = re.sub(r'<img[^>]*crown_king\.png[^>]*>', ' [大金冠] ', s)
     s = re.sub(r"<br\s*/?>", " ", s)
     s = re.sub(r"<[^>]+>", "", s)
     s = s.replace("&nbsp;", " ").replace("&amp;", "&")

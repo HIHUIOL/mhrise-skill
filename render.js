@@ -1179,6 +1179,54 @@
     return null;
   }
 
+  // 由「任务名 + 本怪名 + 同名任务出现序号」找出 quests.js 的 id
+  // 解决「同名任务多张地图」的歧义（如「来自彼方的凶星」有 水没林/熔岩洞/冰封群岛/沙原 4 场）
+  //   ① 先取同名任务全部候选（按 ID 排序，与 Kiranico 页面顺序一致）
+  //   ② 用「本怪是否在该候选任务的 mons 里」过滤
+  //   ③ 若还多个 → 用序号（该怪 quests 里第几次出现）取对应候选
+  const _questIdsByNormName = {};
+  Object.keys(QUESTS).forEach(function (qid) {
+    const nm = (QUESTS[qid].name || '').replace(/\s+/g, '');
+    if (!nm) return;
+    (_questIdsByNormName[nm] = _questIdsByNormName[nm] || []).push(qid);
+  });
+
+  function findQuestIdForMonster(label, monName, occurIndex) {
+    const key = normalizeQuestLabel(label);
+    if (!key) return null;
+
+    let cands = _questIdsByNormName[key] || [];
+    if (!cands.length) {
+      const loose = key.replace(/^\d*★?/, '');
+      cands = _questIdsByNormName[loose] || [];
+    }
+    if (!cands.length) return null;
+    if (cands.length === 1) return cands[0];
+
+    // ② 用「本怪是否在候选任务里」过滤（monName 可能是「怪异化」等形式，做宽松比对）
+    let pool = cands;
+    if (monName) {
+      const base = function (s) { return String(s || '').replace(/[（(].*?[)）]/g, '').replace(/\s+/g, ''); };
+      const bmon = base(monName);
+      const filtered = cands.filter(function (qid) {
+        const q = QUESTS[qid];
+        if (!q || !q.mons) return false;
+        return q.mons.some(function (m) {
+          const b = base(m.name);
+          return b === bmon || m.name === monName;
+        });
+      });
+      if (filtered.length) pool = filtered;
+    }
+    if (pool.length === 1) return pool[0];
+
+    // ③ 仍多个 → 用出现序号（该怪任务表里第几次遇到同名任务）
+    if (typeof occurIndex === 'number' && occurIndex >= 0 && occurIndex < pool.length) {
+      return pool[occurIndex];
+    }
+    return pool[0];
+  }
+
   // 由「任务全名」（如「活动任务 7★ 影之迅龙」）找出 quests.js 的 id
   // 用于任务弹窗的「上一任务 / 下一任务」跳转
   function findQuestIdByName(fullName) {
@@ -1203,12 +1251,101 @@
     return nm ? nm : 'Area ' + mapNo;
   }
 
+  // 活动任务的「位阶」判定（Kiranico 不提供该字段，按游戏内规则推断）：
+  //   ① 百龙夜行：地图为翡叶要塞（mapNo 7）或名称含「百龙」
+  //   ② 大师：有 MRP（mrp > 0）
+  //   ③ 上位：排除上面两类后，星级 ≥ 4（★4~★8）
+  //   ④ 下位：其余（★1~★3）
+  // 返回 0~3（用于排序，越小越靠前）：大师 0 → 上位 1 → 下位 2 → 百龙 3
+  function actRankOrder(q) {
+    if (!q) return 1;
+    const name = String(q.name || '').trim();
+    if (String(q.mapNo) === '7' || name.indexOf('百龙') >= 0) return 3; // 百龙夜行
+    const mrp = Number(String(q.mrp == null ? '0' : q.mrp).replace(/,/g, ''));
+    if (mrp > 0) return 0;                                             // 大师（有 MRP）
+    return (Number(q.star) || 0) >= 4 ? 1 : 2;                         // 上位（★4~8）/ 下位（★1~3）
+  }
+  // 「活动任务」位阶中文名（用于卡片上显示的小标签）
+  const ACT_RANK_LABEL = ['大师', '上位', '下位', '百龙'];
+
+  // 斗技大会任务的「系列」判定（按名称前缀）：
+  //   0 大师等级斗技大会 → 1 斗技大会 → 2 挑战任务 → 9 其他
+  function arenaSeriesOrder(q) {
+    const name = String((q && q.name) || '');
+    if (name.indexOf('大师等级斗技大会') === 0) return 0;
+    if (name.indexOf('斗技大会') === 0) return 1;
+    if (name.indexOf('挑战任务') === 0) return 2;
+    return 9;
+  }
+  // 取名称末尾的数字（用于同系列内升序：01, 02, 03…）
+  function nameTailNum(name) {
+    const m = String(name || '').match(/(\d+)\s*$/);
+    return m ? Number(m[1]) : 9999;
+  }
+
+  // 解析 monsters.js 的 quest 字符串尾部：
+  //   "… Area 7 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)"
+  // 返回 { name: 纯任务名, areas: [{n,rate}], crownMini, crownKing }
+  function parseQuestArea(label) {
+    let s = String(label || '');
+    const areas = [];
+    let crownMini = '', crownKing = '';
+
+    // ① 区域概率：Area N (NN%)
+    s = s.replace(/Area\s*(\d+)\s*\((\d+)%\)/g, function (m, n, r) {
+      areas.push({ n: Number(n), rate: r });
+      return '';
+    });
+    // ② 金冠概率（带图标标记）
+    s = s.replace(/\[小金冠\]\s*\((\d+)%\)/g, function (m, r) { crownMini = r; return ''; });
+    s = s.replace(/\[大金冠\]\s*\((\d+)%\)/g, function (m, r) { crownKing = r; return ''; });
+    // ③ 兜底：旧的孤立百分比（无标记）按顺序当作 小金/大金
+    const leftover = s.match(/\((\d+)%\)/g) || [];
+    leftover.forEach(function (p, i) {
+      const r = p.replace(/[()%]/g, '');
+      if (i === 0 && !crownMini) crownMini = r;
+      else if (i === 1 && !crownKing) crownKing = r;
+    });
+    s = s.replace(/\(\d+%\)/g, '');
+
+    return {
+      name: s.replace(/\s+/g, ' ').trim(),
+      areas: areas,
+      crownMini: crownMini,
+      crownKing: crownKing,
+    };
+  }
+
   // 按分类分组（保持 QUEST_CAT_ORDER 顺序，未列出的分类追加在后）
+  // 组内按星级降序（★ 高的在前）；同星级按任务名稳定排序
   function groupQuestsByCat() {
     const groups = {};
     Object.keys(QUESTS).forEach(function (qid) {
       const c = QUESTS[qid].cat || '其他';
       (groups[c] = groups[c] || []).push(qid);
+    });
+    Object.keys(groups).forEach(function (c) {
+      const isAct = (c === '活动任务');
+      const isArena = (c === '斗技大会任务');
+      groups[c].sort(function (a, b) {
+        // 活动任务：先按「位阶」分段（大师 → 上位 → 下位 → 百龙），再按星级降序
+        if (isAct) {
+          const ra = actRankOrder(QUESTS[a]), rb = actRankOrder(QUESTS[b]);
+          if (ra !== rb) return ra - rb;
+        }
+        // 斗技大会任务：先按「系列」（大师等级斗技大会 → 斗技大会 → 挑战任务），
+        //               再按名称末尾编号升序（01, 02, 03…）
+        if (isArena) {
+          const sa2 = arenaSeriesOrder(QUESTS[a]), sb2 = arenaSeriesOrder(QUESTS[b]);
+          if (sa2 !== sb2) return sa2 - sb2;
+          const na = nameTailNum(QUESTS[a].name), nb = nameTailNum(QUESTS[b].name);
+          if (na !== nb) return na - nb;
+          return 0;
+        }
+        const sa = QUESTS[a].star || 0, sb = QUESTS[b].star || 0;
+        if (sa !== sb) return sb - sa;
+        return String(QUESTS[a].full || '').localeCompare(String(QUESTS[b].full || ''), 'zh');
+      });
     });
     const order = QUEST_CAT_ORDER.filter(function (c) { return groups[c]; });
     Object.keys(groups).forEach(function (c) {
@@ -1273,12 +1410,32 @@
       }
     }
 
+    // 目标怪名与任务 goal 里的写法可能不一致，做一层别名容错：
+    //   例：怪物列表写「怪异克服天彗龙」，goal 写「讨伐1头怪异克服神秘红光天彗龙」
+    //   （怪异调查：神秘红光天彗龙）
+    var _QT_ALIAS = {
+      '怪异克服天彗龙': ['神秘红光天彗龙', '怪异克服神秘红光天彗龙'],
+    };
+    function appearsWithAlias(nm) {
+      var pos = appears(nm);
+      if (pos >= 0) return pos;
+      var alts = _QT_ALIAS[nm];
+      if (alts) {
+        for (var k = 0; k < alts.length; k++) {
+          var p = appears(alts[k]);
+          if (p >= 0) return p;
+        }
+      }
+      // 反向：怪物名可能是 goal 里名字的后缀（如 goal「怪异克服神秘红光天彗龙」含「天彗龙」）
+      return -1;
+    }
+
     var hitAt = {};
     mons.forEach(function (m) {
       var nm = m && m.name;
       if (!nm) return;
       if (hitAt[nm] == null) {
-        var pos = appears(nm);
+        var pos = appearsWithAlias(nm);
         if (pos >= 0) hitAt[nm] = pos;
       }
     });
@@ -1319,18 +1476,37 @@
     nameEl.className = 'quest-card-name';
     nameEl.textContent = q.name || q.full || qid;
     top.appendChild(nameEl);
-    if (q.star) {
+    const _effStar = q.star || 0;
+    if (_effStar) {
       const st = document.createElement('span');
       st.className = 'quest-star';
-      st.textContent = '★' + q.star;
+      st.textContent = '★' + _effStar;
+      if ((q.cat || '') === '怪异任务') st.title = '怪异等级 ' + _effStar;
       top.appendChild(st);
     }
     card.appendChild(top);
 
-    // 分类
+    // 分类 + 地图（新）
     const catEl = document.createElement('div');
     catEl.className = 'quest-card-cat';
-    catEl.textContent = q.cat || '';
+    const catName = document.createElement('span');
+    catName.className = 'quest-card-cat-name';
+    catName.textContent = q.cat || '';
+    catEl.appendChild(catName);
+    // 活动任务：额外显示「位阶」小标签（大师 / 上位 / 下位 / 百龙）
+    if ((q.cat || '') === '活动任务') {
+      const rk = actRankOrder(q);
+      const rkTag = document.createElement('span');
+      rkTag.className = 'quest-card-rank rank-' + rk;
+      rkTag.textContent = ACT_RANK_LABEL[rk];
+      catEl.appendChild(rkTag);
+    }
+    if (q.mapNo) {
+      const mapTag = document.createElement('span');
+      mapTag.className = 'quest-card-map';
+      mapTag.textContent = '📍' + questMapName(q.mapNo);
+      catEl.appendChild(mapTag);
+    }
     card.appendChild(catEl);
 
     // 怪物（全部显示，换行排；目标怪排前面并加标记）
@@ -1342,18 +1518,23 @@
       const ordered = analyzeQuestTargets(q.goal, mons).list;
       const multi = ordered.length > 1;
       const anyTarget = ordered.some(function (x) { return x.isTarget; });
-      ordered.forEach(function (entry) {
+      // 目标怪与乱入怪之间插间隔（仅在「有目标 + 有乱入」时才有意义）
+      const targetCount = ordered.filter(function (x) { return multi && x.isTarget && anyTarget; }).length;
+      const needGap = targetCount > 0 && targetCount < ordered.length;
+
+      ordered.forEach(function (entry, idx) {
         const m = entry.m;
         const f = icons[m.name];
+        const isTargetCell = multi && entry.isTarget && anyTarget;
         const cell = document.createElement('span');
         cell.className = 'qmon';
-        if (multi && entry.isTarget && anyTarget) cell.classList.add('qmon-target');
+        if (isTargetCell) cell.classList.add('qmon-target');
         if (f) {
           const im = document.createElement('img');
           im.loading = 'lazy';
           im.decoding = 'async';
           im.alt = m.name;
-          im.title = m.name + (entry.isTarget && multi && anyTarget ? '（目标）' : '');
+          im.title = m.name + (isTargetCell ? '（目标）' : '');
           im.src = 'monster-icons/' + f;
           cell.appendChild(im);
         } else {
@@ -1362,13 +1543,22 @@
           cell.textContent = m.name;
         }
         mEl.appendChild(cell);
+
+        // 最后一个「目标怪」之后 → 插一个间隔（约一个图标宽），分隔乱入怪
+        if (needGap && isTargetCell && (idx + 1 >= ordered.length || !(multi && ordered[idx + 1].isTarget && anyTarget))) {
+          const gap = document.createElement('span');
+          gap.className = 'qmon-gap';
+          gap.setAttribute('aria-hidden', 'true');
+          mEl.appendChild(gap);
+        }
       });
       card.appendChild(mEl);
     }
 
-    // 搜索：任务名 + 完整标题 + 分类 + 怪物名
+    // 搜索：任务名 + 完整标题 + 分类 + 地图 + 怪物名
     card._search = (
       (q.name || '') + ' ' + (q.full || '') + ' ' + (q.cat || '') + ' ' +
+      (q.mapNo ? questMapName(q.mapNo) : '') + ' ' +
       mons.map(function (m) { return m.name; }).join(' ')
     ).toLowerCase();
     card._qid = qid;
@@ -3627,6 +3817,9 @@
         'ailment', 'stun', 'stamina', 'mount'];
 
       // 先解析每行（顺带识别分类 + 判断「本怪是否为该任务目标」）
+      // 同名任务计数器：记录每个「纯任务名」在本怪任务表里第几次出现
+      // （用于解决「来自彼方的凶星」等同名多地图任务的歧义）
+      const _nameOccur = {};
       const parsed = quests.map(function (q) {
         let questName, fields;
         if (Array.isArray(q)) {
@@ -3641,8 +3834,25 @@
             .filter(function (k) { return q[k]; })
             .map(function (k) { return { key: k, val: q[k] }; });
         }
-        const qid = findQuestIdByLabel(questName);
+
+        // 拆出「任务名 / 出生区域 / 金冠概率」（旧数据可能是裸任务名）
+        const areaInfo = parseQuestArea(questName);
+        const pureName = areaInfo.name || questName;
+
+        // 本怪任务表里，该任务名第几次出现（0 起）
+        const pureKey = pureName.replace(/\s+/g, '');
+        const occurIndex = _nameOccur[pureKey] || 0;
+        _nameOccur[pureKey] = occurIndex + 1;
+
+        // 用「纯任务名 + 本怪名 + 出现序号」匹配 quests.js
+        // （带区域/金冠的原始串会匹配失败；同名多地图任务需靠怪名+序号区分）
+        let qid = findQuestIdForMonster(pureName, monName, occurIndex);
+        if (!qid) qid = findQuestIdByLabel(pureName);
+        if (!qid) qid = findQuestIdByLabel(questName);
         const qd = qid ? QUESTS[qid] : null;
+
+        // 地图名（由任务的地图编号反查）
+        const mapName = (qd && qd.mapNo) ? questMapName(qd.mapNo) : '';
 
         // 本怪是否是该任务的「主要目标怪」？
         // 注意：任务弹窗里怪物名可能是「怪异化」等带括号形式，做宽松匹配
@@ -3658,7 +3868,12 @@
         }
 
         return {
-          name: questName,
+          name: pureName,
+          rawName: questName,
+          areas: areaInfo.areas,
+          crownMini: areaInfo.crownMini,
+          crownKing: areaInfo.crownKing,
+          mapName: mapName,
           fields: fields,
           qid: qid,
           cat: (qd && qd.cat) || '其他',
@@ -3668,13 +3883,15 @@
       });
 
       // 排序：① 本怪是「主要目标」的任务 → 靠前
-      //       ② 其余按 分类顺序 → 星级降序
+      //       ② 星级降序（★ 高的在前）
+      //       ③ 同星级再按 分类顺序
       parsed.sort(function (a, b) {
         if (a.isTarget !== b.isTarget) return a.isTarget ? -1 : 1;
+        const sa = a.star || 0, sb = b.star || 0;
+        if (sa !== sb) return sb - sa;   // 星级降序
         const ca = QUEST_CAT_ORDER.indexOf(a.cat);
         const cb = QUEST_CAT_ORDER.indexOf(b.cat);
-        if (ca !== cb) return (ca < 0 ? 99 : ca) - (cb < 0 ? 99 : cb);
-        return (b.star || 0) - (a.star || 0);
+        return (ca < 0 ? 99 : ca) - (cb < 0 ? 99 : cb);
       });
 
       // ---- 分类筛选条（≥2 类才显示）----
@@ -3735,6 +3952,51 @@
             '<span class="mq-cat">' + escapeHtml(it.cat) + '</span>' +
             (it.star ? '<span class="mq-star">★' + it.star + '</span>' : '');
           row.appendChild(tag);
+        }
+
+        // 出生区域 + 金冠概率（来自 monsters.js 的 quest 尾部数据）
+        const hasArea = it.areas && it.areas.length;
+        const hasCrown = it.crownMini || it.crownKing;
+        if (hasArea || hasCrown) {
+          const spawn = document.createElement('div');
+          spawn.className = 'mq-spawn';
+
+          // 区域：📍 地图名 7区 60% · 8区 30%
+          if (hasArea) {
+            const areaWrap = document.createElement('div');
+            areaWrap.className = 'mq-spawn-areas';
+            const mapTag = it.mapName
+              ? '<span class="mq-map-name">📍' + escapeHtml(it.mapName) + '</span>'
+              : '';
+            const chips = it.areas.map(function (a) {
+              return '<span class="mq-area-chip">' +
+                '<b>' + a.n + '区</b><i>' + escapeHtml(String(a.rate)) + '%</i>' +
+                '</span>';
+            }).join('');
+            areaWrap.innerHTML = mapTag + chips;
+            spawn.appendChild(areaWrap);
+          }
+
+          // 金冠：👑小金 6% / 👑大金 10%（用刚抓的图标）
+          if (hasCrown) {
+            const crownWrap = document.createElement('div');
+            crownWrap.className = 'mq-spawn-crowns';
+            if (it.crownMini) {
+              crownWrap.innerHTML +=
+                '<span class="mq-crown-chip crown-mini" title="小金冠概率">' +
+                '<img src="ui-icons/crown_mini.png" alt="小金">' +
+                '<i>' + escapeHtml(String(it.crownMini)) + '%</i></span>';
+            }
+            if (it.crownKing) {
+              crownWrap.innerHTML +=
+                '<span class="mq-crown-chip crown-king" title="大金冠概率">' +
+                '<img src="ui-icons/crown_king.png" alt="大金">' +
+                '<i>' + escapeHtml(String(it.crownKing)) + '%</i></span>';
+            }
+            spawn.appendChild(crownWrap);
+          }
+
+          row.appendChild(spawn);
         }
 
         const meta = document.createElement('div');

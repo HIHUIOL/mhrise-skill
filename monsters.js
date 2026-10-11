@@ -1492,7 +1492,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 7 (50%) Area 8 (30%) Area 11 (20%) (3%) (3%)",
+        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 7 (50%) Area 8 (30%) Area 11 (20%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -1504,7 +1504,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 开心婚礼缺不了人鱼龙 Area 7 (50%) Area 8 (30%) Area 11 (20%) (100%)",
+        "quest": "6★ 开心婚礼缺不了人鱼龙 Area 7 (50%) Area 8 (30%) Area 11 (20%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -1516,7 +1516,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15.5",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 6 (60%) Area 14 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 6 (60%) Area 14 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -1528,7 +1528,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 来自神秘猫？的礼物 Area 6 (60%) Area 14 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "4★ 来自神秘猫？的礼物 Area 6 (60%) Area 14 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -1588,7 +1588,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 请君入梦 Area 6 (60%) Area 14 (30%) Area 2 (10%) (1%)",
+        "quest": "集会所 3★ 请君入梦 Area 6 (60%) Area 14 (30%) Area 2 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -1600,7 +1600,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 邀往冥府的歌声 Area 6 (60%) Area 9 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 邀往冥府的歌声 Area 6 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -1612,7 +1612,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 8 (60%) Area 11 (30%) Area 7 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 8 (60%) Area 11 (30%) Area 7 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -1624,7 +1624,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 酣然入梦人鱼龙枕 Area 7 (50%) Area 8 (30%) Area 11 (20%) (6%) (10%)",
+        "quest": "大师等级 2★ 酣然入梦人鱼龙枕 Area 7 (50%) Area 8 (30%) Area 11 (20%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -1648,7 +1648,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 打磨琥珀色的牙 Area 8 (100%) (1%)",
+        "quest": "集会所 6★ 打磨琥珀色的牙 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -1660,7 +1660,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 6 (100%) (1%)",
+        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -1672,7 +1672,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 14 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -1684,7 +1684,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查奇怪龙 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查奇怪龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -1696,7 +1696,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 蜿蜿蜒蜒or弯弯曲曲？ Area 7 (50%) Area 8 (30%) Area 11 (20%) (6%) (10%)",
+        "quest": "大师等级 2★ 蜿蜿蜒蜒or弯弯曲曲？ Area 7 (50%) Area 8 (30%) Area 11 (20%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -1708,7 +1708,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 6 (60%) Area 14 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 6 (60%) Area 14 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -1720,7 +1720,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 王国骑士姐妹出战 Area 7 (50%) Area 8 (30%) Area 11 (20%) (6%) (10%)",
+        "quest": "盟友 3★ 王国骑士姐妹出战 Area 7 (50%) Area 8 (30%) Area 11 (20%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -1732,7 +1732,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰封群岛的地盘 Area 7 (50%) Area 8 (30%) Area 11 (20%) (6%) (10%)",
+        "quest": "盟友 3★ 调查冰封群岛的地盘 Area 7 (50%) Area 8 (30%) Area 11 (20%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -1744,7 +1744,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查冰封群岛的遇难原因 Area 7 (50%) Area 8 (30%) Area 11 (20%) (6%) (10%)",
+        "quest": "盟友 4★ 调查冰封群岛的遇难原因 Area 7 (50%) Area 8 (30%) Area 11 (20%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -1756,7 +1756,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 公主们的盛宴 Area 1 (100%) (3%) (3%)",
+        "quest": "活动任务 8★ 公主们的盛宴 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -1768,7 +1768,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 9 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -1780,7 +1780,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 冰刃闪耀 Area 8 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 冰刃闪耀 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -1792,7 +1792,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -1804,7 +1804,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 水清月自现 Area 1 (100%) (3%) (3%)",
+        "quest": "活动任务 6★ 水清月自现 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -1816,7 +1816,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -1828,7 +1828,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -1840,7 +1840,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 6 (100%) (1%)",
+        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -1888,7 +1888,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 勇猛之力宛如大地 Area 8 (100%) (1%)",
+        "quest": "集会所 7★ 勇猛之力宛如大地 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -1900,7 +1900,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 9 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -1912,7 +1912,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 交错的柿子与枪火 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 交错的柿子与枪火 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -1924,7 +1924,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查天狗兽 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查天狗兽 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -1936,7 +1936,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥底来客 Area 14 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 泥底来客 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -1948,7 +1948,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 纯白的奇怪龙果 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 纯白的奇怪龙果 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -1960,7 +1960,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 绝音利镰 Area 14 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 绝音利镰 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -1972,7 +1972,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 才不要又湿又冷地睡着！ Area 7 (50%) Area 8 (30%) Area 11 (20%) (6%) (10%)",
+        "quest": "大师等级 3★ 才不要又湿又冷地睡着！ Area 7 (50%) Area 8 (30%) Area 11 (20%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -1984,7 +1984,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查将军镰蟹 Area 14 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查将军镰蟹 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -1996,7 +1996,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 缝制映于白雪的礼服 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 缝制映于白雪的礼服 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -2020,7 +2020,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 来自泥海的邀请 Area 6 (100%) (1%)",
+        "quest": "集会所 7★ 来自泥海的邀请 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -2032,7 +2032,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 吹火贵妇 Area 6 (100%) (1%)",
+        "quest": "集会所 7★ 吹火贵妇 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -2044,7 +2044,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 8 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -2056,7 +2056,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 6 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -2068,7 +2068,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 祈福需怨念 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 祈福需怨念 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -2080,7 +2080,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -2092,7 +2092,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -2104,7 +2104,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 2 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -2116,7 +2116,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 8★ 雪中暴牙 Area 11 (100%) (1%)",
+        "quest": "活动任务 8★ 雪中暴牙 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -2128,7 +2128,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金火龙 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：金火龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -2140,7 +2140,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 刃风破泥 Area 14 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 刃风破泥 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -2152,7 +2152,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查泥翁龙 Area 14 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查泥翁龙 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -2164,7 +2164,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 8 (60%) Area 11 (40%) (1%)",
+        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 8 (60%) Area 11 (40%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -2176,7 +2176,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 雪鬼兽来了 Area 8 (60%) Area 11 (40%) (1%)",
+        "quest": "集会所 7★ 雪鬼兽来了 Area 8 (60%) Area 11 (40%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -2188,7 +2188,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰牙龙 Area 8 (60%) Area 11 (40%) (1%) (1%)",
+        "quest": "盟友 3★ 调查冰牙龙 Area 8 (60%) Area 11 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -2200,7 +2200,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 称号・劲敌之心 Area 6 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "活动任务 8★ 称号・劲敌之心 Area 6 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -2212,7 +2212,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 刚与柔的极致 Area 8 (60%) Area 11 (40%) (1%) (1%)",
+        "quest": "大师等级 5★ 刚与柔的极致 Area 8 (60%) Area 11 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -2224,7 +2224,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 8 (60%) Area 11 (40%) (1%) (1%)",
+        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 8 (60%) Area 11 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -2236,7 +2236,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 6 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 6 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -2248,7 +2248,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 6 (60%) Area 9 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 6 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -2260,7 +2260,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 8 (60%) Area 11 (40%) (1%) (1%)",
+        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 8 (60%) Area 11 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -2272,7 +2272,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 6 (70%) Area 3 (30%) (1%)",
+        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 6 (70%) Area 3 (30%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -2284,7 +2284,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 6 (70%) Area 3 (30%) (1%)",
+        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 6 (70%) Area 3 (30%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -2296,7 +2296,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 6 (60%) Area 9 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 6 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -2308,7 +2308,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 自投蛮颚龙 Area 6 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 2★ 自投蛮颚龙 Area 6 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -2320,7 +2320,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 6 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 6 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       }
@@ -3278,7 +3278,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：伞鸟 Area 7 (60%) Area 8 (30%) Area 11 (10%) (4%) (6%)",
+        "quest": "怪异 6★ 怪异调查：伞鸟 Area 7 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (4%) [大金冠] (6%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -3290,7 +3290,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 6 (50%) Area 5 (30%) Area 7 (20%) (100%)",
+        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 6 (50%) Area 5 (30%) Area 7 (20%) [小金冠] (100%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -3350,7 +3350,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 伞鸟圆舞 Area 7 (60%) Area 8 (30%) Area 11 (10%) (2%) (2%)",
+        "quest": "集会所 4★ 伞鸟圆舞 Area 7 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (2%) [大金冠] (2%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -3362,7 +3362,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 6 (50%) Area 5 (30%) Area 7 (20%) (2%) (2%)",
+        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 6 (50%) Area 5 (30%) Area 7 (20%) [小金冠] (2%) [大金冠] (2%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -3374,7 +3374,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 火不足为惧 Area 6 (50%) Area 5 (30%) Area 7 (20%) (4%) (6%)",
+        "quest": "大师等级 1★ 火不足为惧 Area 6 (50%) Area 5 (30%) Area 7 (20%) [小金冠] (4%) [大金冠] (6%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -3386,7 +3386,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 7 (60%) Area 8 (30%) Area 11 (10%) (4%) (6%)",
+        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 7 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (4%) [大金冠] (6%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -3398,7 +3398,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 猎人前辈的魅力背影 Area 7 (60%) Area 8 (30%) Area 11 (10%) (4%) (6%)",
+        "quest": "大师等级 3★ 猎人前辈的魅力背影 Area 7 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (4%) [大金冠] (6%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -3410,7 +3410,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查密林庆典骚动 Area 4 (60%) Area 1 (30%) Area 5 (10%) (4%) (6%)",
+        "quest": "盟友 3★ 调查密林庆典骚动 Area 4 (60%) Area 1 (30%) Area 5 (10%) [小金冠] (4%) [大金冠] (6%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -3530,7 +3530,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 6 (50%) Area 5 (30%) Area 7 (20%) (2%) (2%)",
+        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 6 (50%) Area 5 (30%) Area 7 (20%) [小金冠] (2%) [大金冠] (2%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -3554,7 +3554,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "2★ 狡猾绯红色，妖艳油纸伞 Area 7 (60%) Area 8 (30%) Area 11 (10%) (4%) (6%)",
+        "quest": "2★ 狡猾绯红色，妖艳油纸伞 Area 7 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (4%) [大金冠] (6%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -3566,7 +3566,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 三头伞鸟，残暴惨状 Area 11 (100%) (100%)",
+        "quest": "活动任务 5★ 三头伞鸟，残暴惨状 Area 11 (100%) [大金冠] (100%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -3578,7 +3578,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 三头伞鸟，残暴惨状 Area 6 (100%) (100%)",
+        "quest": "活动任务 5★ 三头伞鸟，残暴惨状 Area 6 (100%) [小金冠] (100%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -3878,7 +3878,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 6 (50%) Area 5 (30%) Area 7 (20%) (33%)",
+        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 6 (50%) Area 5 (30%) Area 7 (20%) [大金冠] (33%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -3890,7 +3890,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 身披剧毒锦缎 Area 7 (50%) Area 8 (50%) (33%)",
+        "quest": "集会所 4★ 身披剧毒锦缎 Area 7 (50%) Area 8 (50%) [大金冠] (33%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -3902,7 +3902,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 7 (50%) Area 8 (50%) (33%)",
+        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 7 (50%) Area 8 (50%) [大金冠] (33%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -3914,7 +3914,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 为女王所吸引 Area 7 (50%) Area 8 (50%) (33%)",
+        "quest": "集会所 5★ 为女王所吸引 Area 7 (50%) Area 8 (50%) [大金冠] (33%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -3986,7 +3986,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 6 (50%) Area 5 (30%) Area 7 (20%) (33%)",
+        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 6 (50%) Area 5 (30%) Area 7 (20%) [大金冠] (33%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -3998,7 +3998,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 2 (70%) Area 5 (30%) (33%)",
+        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 2 (70%) Area 5 (30%) [大金冠] (33%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -4010,7 +4010,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 6 (50%) Area 5 (30%) Area 7 (20%) (33%)",
+        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 6 (50%) Area 5 (30%) Area 7 (20%) [大金冠] (33%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -5178,7 +5178,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 来自冰海的邀请 Area 9 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 来自冰海的邀请 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -5190,7 +5190,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 缝制映于白雪的礼服 Area 9 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 缝制映于白雪的礼服 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -5202,7 +5202,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 胸中烈火融化冻土 Area 9 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 胸中烈火融化冻土 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -5214,7 +5214,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰人鱼龙 Area 9 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查冰人鱼龙 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -5226,7 +5226,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 冻冻电电爆爆 Area 6 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 冻冻电电爆爆 Area 6 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5238,7 +5238,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 9 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -5250,7 +5250,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 侍奉白衣歌女的巨体 Area 6 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "3★ 侍奉白衣歌女的巨体 Area 6 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -5262,7 +5262,7 @@ var monster_data = {
         "mount": "1",
         "parts": "12.8",
         "players": "1",
-        "quest": "6★ 别打扰我的演出！ Area 9 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "6★ 别打扰我的演出！ Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5274,7 +5274,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 9 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5286,7 +5286,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 9 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -5298,7 +5298,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 冰点下的统治者 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 冰点下的统治者 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5310,7 +5310,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 相异者们的四兽双曲 Area 12 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 相异者们的四兽双曲 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5322,7 +5322,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "4★ 吾辈是名侦探喵！ Area 9 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "4★ 吾辈是名侦探喵！ Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -5334,7 +5334,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 开心婚礼缺不了人鱼龙 Area 9 (60%) Area 3 (30%) Area 5 (10%) (100%)",
+        "quest": "6★ 开心婚礼缺不了人鱼龙 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5346,7 +5346,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 祈福需怨念 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 祈福需怨念 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -5358,7 +5358,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 冰狼啸血月 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 冰狼啸血月 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5370,7 +5370,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 冰狼，不回首望月 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 冰狼，不回首望月 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5382,7 +5382,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 刚与柔的极致 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 刚与柔的极致 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5394,7 +5394,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5406,7 +5406,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5418,7 +5418,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绝对强者 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 绝对强者 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5430,7 +5430,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5442,7 +5442,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 破坏城塞的暴君 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 破坏城塞的暴君 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5454,7 +5454,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查轰龙 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查轰龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5466,7 +5466,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5478,7 +5478,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查棘茶龙 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查棘茶龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5490,7 +5490,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 爆鳞预警 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 爆鳞预警 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5502,7 +5502,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5514,7 +5514,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的护卫 Area 6 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 城塞高地的护卫 Area 6 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5526,7 +5526,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查火龙 Area 6 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查火龙 Area 6 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -5538,7 +5538,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 6 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 6 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5550,7 +5550,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查冰封群岛剧变 Area 9 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查冰封群岛剧变 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5562,7 +5562,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 6 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 6 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5574,7 +5574,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：钢龙 Area 9 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：钢龙 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5586,7 +5586,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 6 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 6 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -5598,7 +5598,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 9 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -6015,7 +6015,7 @@ var monster_data = {
         "mount": "1",
         "parts": "24",
         "players": "1",
-        "quest": "6★ 烈祸袭来：雪花纷飞 Area 1 (100%) (100%)",
+        "quest": "6★ 烈祸袭来：雪花纷飞 Area 1 (100%) [大金冠] (100%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -6027,7 +6027,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "6★ 熔岩洞过冷却 Area 7 (60%) Area 2 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "6★ 熔岩洞过冷却 Area 7 (60%) Area 2 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -6039,7 +6039,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.6",
         "players": "1",
-        "quest": "大师等级 6★ 冰冠的交战 Area 6 (60%) Area 11 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 冰冠的交战 Area 6 (60%) Area 11 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -6051,7 +6051,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "6★ 双凶来袭：高贵盛宴 Area 8 (60%) Area 3 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：高贵盛宴 Area 8 (60%) Area 3 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -6063,7 +6063,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 8 (60%) Area 5 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 8 (60%) Area 5 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -7207,7 +7207,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -7231,7 +7231,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 白骑士 对 猎人 Area 10 (60%) Area 7 (30%) Area 3 (10%) (1%)",
+        "quest": "集会所 3★ 白骑士 对 猎人 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -7243,7 +7243,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 打磨琥珀色的牙 Area 10 (60%) Area 7 (30%) Area 3 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 打磨琥珀色的牙 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -7255,7 +7255,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 10 (60%) Area 7 (30%) Area 3 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -7279,7 +7279,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 冰上的白骑士 Area 9 (60%) Area 6 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 冰上的白骑士 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7291,7 +7291,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 白骑士与新手骑士 Area 10 (60%) Area 7 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 白骑士与新手骑士 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7303,7 +7303,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰牙龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查冰牙龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7315,7 +7315,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的护卫 Area 9 (60%) Area 6 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 城塞高地的护卫 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7327,7 +7327,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 10 (60%) Area 7 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7363,7 +7363,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 3 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -7375,7 +7375,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 发狂的怪力化身 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 发狂的怪力化身 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7387,7 +7387,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 发狂的巨力怪物 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 发狂的巨力怪物 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7399,7 +7399,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 8★ 雪中暴牙 Area 10 (60%) Area 7 (30%) Area 3 (10%) (3%) (3%)",
+        "quest": "活动任务 8★ 雪中暴牙 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -7411,7 +7411,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 爆鳞爆碎 Area 7 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 爆鳞爆碎 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -7423,7 +7423,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 称号・忍者之心 Area 12 (100%) (3%) (3%)",
+        "quest": "活动任务 7★ 称号・忍者之心 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -7435,7 +7435,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 3 (100%) (1%)",
+        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -7447,7 +7447,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7459,7 +7459,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 侍奉白衣歌女的巨体 Area 2 (100%) (1%) (1%)",
+        "quest": "3★ 侍奉白衣歌女的巨体 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7471,7 +7471,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7483,7 +7483,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 冰刃闪耀 Area 10 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 冰刃闪耀 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -7519,7 +7519,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 10 (100%) (1%)",
+        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -7531,7 +7531,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 雪鬼兽来了 Area 3 (100%) (1%)",
+        "quest": "集会所 7★ 雪鬼兽来了 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -7543,7 +7543,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 3 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -7555,7 +7555,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 7 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -7567,7 +7567,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 来自冰海的邀请 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 来自冰海的邀请 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7579,7 +7579,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查冰封群岛的遇难原因 Area 10 (60%) Area 7 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查冰封群岛的遇难原因 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7591,7 +7591,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绝对强者 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 绝对强者 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7603,7 +7603,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7615,7 +7615,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 冰狼啸血月 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 冰狼啸血月 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7627,7 +7627,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 冰狼，不回首望月 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 冰狼，不回首望月 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7639,7 +7639,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7651,7 +7651,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 身披黑衣的龙 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 身披黑衣的龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7663,7 +7663,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 冰点下的统治者 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 冰点下的统治者 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7675,7 +7675,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 1 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7687,7 +7687,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 一夜暴富！金狮子战斗！ Area 12 (100%) (1%) (1%)",
+        "quest": "5★ 一夜暴富！金狮子战斗！ Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7699,7 +7699,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7711,7 +7711,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 别打扰我的演出！ Area 1 (100%) (1%) (1%)",
+        "quest": "6★ 别打扰我的演出！ Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7723,7 +7723,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 爆炎豪水 Area 12 (100%) (1%) (1%)",
+        "quest": "3★ 爆炎豪水 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7735,7 +7735,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 祈福需怨念 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 祈福需怨念 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7747,7 +7747,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7759,7 +7759,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7771,7 +7771,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 勇猛之力宛如大地 Area 10 (60%) Area 7 (30%) Area 3 (10%) (1%)",
+        "quest": "集会所 7★ 勇猛之力宛如大地 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -7783,7 +7783,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 9 (60%) Area 6 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7795,7 +7795,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 血红的月光 Area 9 (60%) Area 6 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 血红的月光 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7807,7 +7807,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7819,7 +7819,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7831,7 +7831,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7843,7 +7843,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：钢龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：钢龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7855,7 +7855,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7867,7 +7867,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 雪鬼兽来了 Area 3 (60%) Area 1 (40%) (1%)",
+        "quest": "集会所 7★ 雪鬼兽来了 Area 3 (60%) Area 1 (40%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -7879,7 +7879,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 3 (60%) Area 1 (40%) (1%) (1%)",
+        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 3 (60%) Area 1 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -7891,7 +7891,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰人鱼龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查冰人鱼龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -7903,7 +7903,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于古城的王者 Area 9 (60%) Area 6 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 沉睡于古城的王者 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7915,7 +7915,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查火龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查火龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7927,7 +7927,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查棘龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查棘龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -7939,7 +7939,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 爆鳞预警 Area 10 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 爆鳞预警 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -7951,7 +7951,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查钢龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查钢龙 Area 10 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -8618,7 +8618,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 10 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 10 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -8630,7 +8630,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 7 (60%) Area 8 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 7 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8642,7 +8642,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 呼唤古龙的冰雷 Area 7 (60%) Area 8 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "5★ 呼唤古龙的冰雷 Area 7 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -8654,7 +8654,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 上镜♪最可爱★穿搭！ Area 8 (60%) Area 2 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "6★ 上镜♪最可爱★穿搭！ Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8666,7 +8666,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 冰冻双牙 Area 1 (100%) (100%)",
+        "quest": "4★ 冰冻双牙 Area 1 (100%) [小金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8678,7 +8678,7 @@ var monster_data = {
         "mount": "1",
         "parts": "24",
         "players": "1",
-        "quest": "6★ 烈祸袭来：冰狼长嚎！ Area 1 (100%) (100%)",
+        "quest": "6★ 烈祸袭来：冰狼长嚎！ Area 1 (100%) [大金冠] (100%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -8690,7 +8690,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 冰狼啸血月 Area 8 (60%) Area 2 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 冰狼啸血月 Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8702,7 +8702,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 冰狼，不回首望月 Area 8 (60%) Area 2 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 冰狼，不回首望月 Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8714,7 +8714,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 10 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 10 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8726,7 +8726,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 8 (60%) Area 2 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8738,7 +8738,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 迎战冰狼 Area 10 (60%) Area 2 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 迎战冰狼 Area 10 (60%) Area 2 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8750,7 +8750,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查冰狼龙 Area 10 (60%) Area 2 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查冰狼龙 Area 10 (60%) Area 2 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8762,7 +8762,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 危险的森林浴 Area 7 (60%) Area 8 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 危险的森林浴 Area 7 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -8774,7 +8774,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 状态异常造成影响的研究 Area 7 (60%) Area 8 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 状态异常造成影响的研究 Area 7 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -8786,7 +8786,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 啮生虫汇集 Area 8 (100%) (6%) (10%)",
+        "quest": "大师等级 5★ 啮生虫汇集 Area 8 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -8798,7 +8798,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于古城的王者 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 沉睡于古城的王者 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8810,7 +8810,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8822,7 +8822,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 10 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 10 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8834,7 +8834,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 月光之下 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 月光之下 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8846,7 +8846,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 血红的月光 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 血红的月光 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8858,7 +8858,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查夜里的威胁者 Area 8 (60%) Area 2 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查夜里的威胁者 Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -8870,7 +8870,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 爆鳞龙飞翔 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 爆鳞龙飞翔 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8882,7 +8882,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查爆鳞龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查爆鳞龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8894,7 +8894,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查废神社的支配者 Area 10 (60%) Area 2 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查废神社的支配者 Area 10 (60%) Area 2 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8906,7 +8906,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8918,7 +8918,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 远方传来的毁灭之音 Area 8 (60%) Area 2 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 远方传来的毁灭之音 Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8930,7 +8930,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：紫电一闪 Area 12 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：紫电一闪 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8942,7 +8942,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8954,7 +8954,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -8966,7 +8966,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 巨兽夜宴 Area 1 (100%) (100%)",
+        "quest": "4★ 巨兽夜宴 Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8978,7 +8978,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 冰冻双牙 Area 1 (100%) (100%)",
+        "quest": "4★ 冰冻双牙 Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -8990,7 +8990,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9002,7 +9002,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9014,7 +9014,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红之回归 Area 3 (100%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：红之回归 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9026,7 +9026,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "4★ 吾辈是名侦探喵！ Area 10 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "4★ 吾辈是名侦探喵！ Area 10 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -9038,7 +9038,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 为随从献上可爱服装！ Area 2 (100%) (1%) (1%)",
+        "quest": "5★ 为随从献上可爱服装！ Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9050,7 +9050,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -9062,7 +9062,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -9074,7 +9074,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的护卫 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 城塞高地的护卫 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -9086,7 +9086,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 月夜假寐的沉睡之龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 月夜假寐的沉睡之龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -9098,235 +9098,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查棘龙 Area 8 (100%) (1%) (1%)",
-        "stamina": "2.05",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "10.9",
-        "defense": "1",
-        "hp": "36,480 HP",
-        "mount": "1",
-        "parts": "8.8",
-        "players": "1",
-        "quest": "大师等级 5★ 爆鳞预警 Area 11 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "10.9",
-        "defense": "1",
-        "hp": "36,480 HP",
-        "mount": "1",
-        "parts": "8.8",
-        "players": "1",
-        "quest": "大师等级 5★ 刚与柔的极致 Area 11 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "44,160 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 4 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "44,160 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 8 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "48,480 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 2 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "48,480 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "怪异 6★ 怪异调查：迅龙 Area 4 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "48,480 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 8 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "48,480 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "大师等级 6★ 积怨的怒吼 Area 2 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "48,480 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "大师等级 6★ 高难度：金色冲击 Area 4 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "48,480 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 11 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "48,480 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "怪异 6★ 怪异调查：钢龙 Area 11 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.4/2.4",
-        "attack": "9.75",
-        "defense": "1",
-        "hp": "32,640 HP",
-        "mount": "1",
-        "parts": "7.6",
-        "players": "1",
-        "quest": "盟友 4★ 摇曳的草叶与樱尾 Area 4 (100%) (1%) (1%)",
-        "stamina": "2.05",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.4/2.4",
-        "attack": "9.75",
-        "defense": "1",
-        "hp": "32,640 HP",
-        "mount": "1",
-        "parts": "7.6",
-        "players": "1",
-        "quest": "盟友 4★ 飞天龙影 Area 3 (100%) (1%) (1%)",
-        "stamina": "2.05",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.4/2.4",
-        "attack": "9.75",
-        "defense": "1",
-        "hp": "32,640 HP",
-        "mount": "1",
-        "parts": "7.6",
-        "players": "1",
-        "quest": "盟友 4★ 调查泡狐龙 Area 4 (100%) (1%) (1%)",
-        "stamina": "2.05",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.4/2.4",
-        "attack": "9.75",
-        "defense": "1",
-        "hp": "32,640 HP",
-        "mount": "1",
-        "parts": "7.6",
-        "players": "1",
-        "quest": "盟友 4★ 调查火龙 Area 3 (100%) (1%) (1%)",
-        "stamina": "2.05",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "44,160 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "盟友 6★ 用狩猎说话 Area 8 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "44,160 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 8 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.4/2.4",
-        "attack": "9.75",
-        "defense": "1",
-        "hp": "32,640 HP",
-        "mount": "1",
-        "parts": "7.6",
-        "players": "1",
-        "quest": "大师等级 4★ 双雷照夜 Area 7 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
-        "stamina": "2.05",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.4/2.4",
-        "attack": "9.75",
-        "defense": "1",
-        "hp": "32,640 HP",
-        "mount": "1",
-        "parts": "7.6",
-        "players": "1",
-        "quest": "盟友 4★ 调查电龙 Area 7 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查棘龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -9338,7 +9110,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 2 (50%) Area 8 (50%) (1%) (1%)",
+        "quest": "大师等级 5★ 爆鳞预警 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9350,7 +9122,31 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 5 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "大师等级 5★ 刚与柔的极致 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "44,160 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "44,160 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "大师等级 6★ 神秘光辉 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9362,7 +9158,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 5 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9374,7 +9170,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 5 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：迅龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9386,7 +9182,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查金火龙 Area 7 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9398,7 +9194,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查银火龙 Area 8 (60%) Area 2 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 积怨的怒吼 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9410,7 +9206,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：千刃龙 Area 8 (60%) Area 2 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：金色冲击 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9422,7 +9218,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：霞龙 Area 2 (50%) Area 8 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9434,7 +9230,211 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 复活之传说 Area 8 (60%) Area 2 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：钢龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.4/2.4",
+        "attack": "9.75",
+        "defense": "1",
+        "hp": "32,640 HP",
+        "mount": "1",
+        "parts": "7.6",
+        "players": "1",
+        "quest": "盟友 4★ 摇曳的草叶与樱尾 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.05",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.4/2.4",
+        "attack": "9.75",
+        "defense": "1",
+        "hp": "32,640 HP",
+        "mount": "1",
+        "parts": "7.6",
+        "players": "1",
+        "quest": "盟友 4★ 飞天龙影 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.05",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.4/2.4",
+        "attack": "9.75",
+        "defense": "1",
+        "hp": "32,640 HP",
+        "mount": "1",
+        "parts": "7.6",
+        "players": "1",
+        "quest": "盟友 4★ 调查泡狐龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.05",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.4/2.4",
+        "attack": "9.75",
+        "defense": "1",
+        "hp": "32,640 HP",
+        "mount": "1",
+        "parts": "7.6",
+        "players": "1",
+        "quest": "盟友 4★ 调查火龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.05",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "44,160 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "盟友 6★ 用狩猎说话 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "44,160 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.4/2.4",
+        "attack": "9.75",
+        "defense": "1",
+        "hp": "32,640 HP",
+        "mount": "1",
+        "parts": "7.6",
+        "players": "1",
+        "quest": "大师等级 4★ 双雷照夜 Area 7 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.05",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.4/2.4",
+        "attack": "9.75",
+        "defense": "1",
+        "hp": "32,640 HP",
+        "mount": "1",
+        "parts": "7.6",
+        "players": "1",
+        "quest": "盟友 4★ 调查电龙 Area 7 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.05",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "10.9",
+        "defense": "1",
+        "hp": "36,480 HP",
+        "mount": "1",
+        "parts": "8.8",
+        "players": "1",
+        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 2 (50%) Area 8 (50%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "10.9",
+        "defense": "1",
+        "hp": "36,480 HP",
+        "mount": "1",
+        "parts": "8.8",
+        "players": "1",
+        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 5 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "48,480 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 5 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "48,480 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 5 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "48,480 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "盟友 6★ 调查金火龙 Area 7 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "48,480 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "盟友 6★ 调查银火龙 Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "48,480 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "怪异 6★ 怪异调查：千刃龙 Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "48,480 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "大师等级 6★ 怪异克服：霞龙 Area 2 (50%) Area 8 (50%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "48,480 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "大师等级 6★ 复活之传说 Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9446,7 +9446,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 用拳头粉碎一切…… Area 2 (50%) Area 8 (50%) (1%) (1%)",
+        "quest": "4★ 用拳头粉碎一切…… Area 2 (50%) Area 8 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -9458,7 +9458,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 8 (60%) Area 2 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9470,7 +9470,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘龙 Area 7 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：棘龙 Area 7 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -9482,7 +9482,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金狮子 Area 8 (60%) Area 2 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：金狮子 Area 8 (60%) Area 2 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -10093,7 +10093,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 发狂的怪力化身 Area 11 (60%) Area 2 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 发狂的怪力化身 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10105,7 +10105,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 发狂的巨力怪物 Area 11 (60%) Area 2 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 发狂的巨力怪物 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10117,7 +10117,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 岿然不动的刚缠兽 Area 13 (60%) Area 9 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 岿然不动的刚缠兽 Area 13 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10129,7 +10129,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查刚缠兽 Area 13 (60%) Area 9 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查刚缠兽 Area 13 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10141,7 +10141,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 13 (60%) Area 9 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 13 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10153,7 +10153,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查2头刚缠兽 Area 13 (60%) Area 9 (30%) Area 11 (10%) (100%)",
+        "quest": "盟友 5★ 调查2头刚缠兽 Area 13 (60%) Area 9 (30%) Area 11 (10%) [大金冠] (100%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -10165,7 +10165,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 11 (60%) Area 2 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -10189,7 +10189,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 爆炎豪水 Area 11 (100%) (100%)",
+        "quest": "3★ 爆炎豪水 Area 11 (100%) [大金冠] (100%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10201,7 +10201,7 @@ var monster_data = {
         "mount": "1",
         "parts": "24",
         "players": "1",
-        "quest": "6★ 烈祸袭来：刚缠巨响！ Area 1 (100%) (100%)",
+        "quest": "6★ 烈祸袭来：刚缠巨响！ Area 1 (100%) [大金冠] (100%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -10213,7 +10213,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 冰狼啸血月 Area 11 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 冰狼啸血月 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10225,7 +10225,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 冰狼，不回首望月 Area 11 (100%) (3%) (3%)",
+        "quest": "大师等级 4★ 冰狼，不回首望月 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10237,7 +10237,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的护卫 Area 11 (60%) Area 2 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 城塞高地的护卫 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10249,7 +10249,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 11 (60%) Area 2 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10261,7 +10261,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 11 (60%) Area 2 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10273,7 +10273,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查2头刚缠兽 Area 10 (60%) Area 8 (30%) Area 12 (10%) (100%)",
+        "quest": "盟友 5★ 调查2头刚缠兽 Area 10 (60%) Area 8 (30%) Area 12 (10%) [小金冠] (100%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -10285,7 +10285,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 13 (100%) (1%) (7%)",
+        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 13 (100%) [小金冠] (1%) [大金冠] (7%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10297,7 +10297,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 侍奉白衣歌女的巨体 Area 11 (60%) Area 2 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "3★ 侍奉白衣歌女的巨体 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10309,7 +10309,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 冰上的白骑士 Area 13 (100%) (3%) (3%)",
+        "quest": "大师等级 3★ 冰上的白骑士 Area 13 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10321,7 +10321,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 11 (100%) (3%) (3%)",
+        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10333,7 +10333,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 刃风破泥 Area 13 (100%) (3%) (3%)",
+        "quest": "盟友 3★ 刃风破泥 Area 13 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10345,7 +10345,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查泥翁龙 Area 9 (100%) (3%) (3%)",
+        "quest": "盟友 3★ 调查泥翁龙 Area 9 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10357,7 +10357,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 别毁坏我的垂钓点喵 Area 13 (60%) Area 9 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 别毁坏我的垂钓点喵 Area 13 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10369,7 +10369,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 水没林的师徒共斗 Area 13 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 水没林的师徒共斗 Area 13 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10381,7 +10381,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查雷狼龙 Area 13 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 调查雷狼龙 Area 13 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10393,7 +10393,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 远方传来的毁灭之音 Area 11 (60%) Area 2 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 远方传来的毁灭之音 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10405,7 +10405,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 11 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10417,7 +10417,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金火龙 Area 13 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：金火龙 Area 13 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10429,7 +10429,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 骑士需秉持优雅 Area 12 (100%) (3%) (3%)",
+        "quest": "6★ 骑士需秉持优雅 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10441,7 +10441,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 柔顺好？斑点好？ Area 11 (100%) (3%) (3%)",
+        "quest": "大师等级 3★ 柔顺好？斑点好？ Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10453,7 +10453,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 飞天龙影 Area 11 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 飞天龙影 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10465,7 +10465,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查火龙 Area 11 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 调查火龙 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10477,7 +10477,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 13 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 13 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10489,7 +10489,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 3 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 3 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10501,7 +10501,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 11 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10513,7 +10513,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 烈祸袭来：超速电导 Area 13 (100%) (3%) (3%)",
+        "quest": "6★ 烈祸袭来：超速电导 Area 13 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10525,7 +10525,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查水没林水难事故 Area 9 (100%) (3%) (3%)",
+        "quest": "盟友 3★ 调查水没林水难事故 Area 9 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10537,7 +10537,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查棘茶龙 Area 11 (100%) (3%) (3%)",
+        "quest": "盟友 6★ 调查棘茶龙 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10549,7 +10549,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于古城的王者 Area 11 (60%) Area 2 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "大师等级 4★ 沉睡于古城的王者 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10561,7 +10561,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 11 (60%) Area 2 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10573,7 +10573,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 11 (60%) Area 2 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10585,7 +10585,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查将军镰蟹 Area 13 (60%) Area 9 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "盟友 3★ 调查将军镰蟹 Area 13 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -10597,7 +10597,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绝对强者 Area 11 (60%) Area 2 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "大师等级 4★ 绝对强者 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -10609,7 +10609,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 11 (60%) Area 2 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10621,7 +10621,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 11 (60%) Area 2 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10633,7 +10633,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红之回归 Area 11 (60%) Area 2 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "6★ 双凶来袭：红之回归 Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -10645,7 +10645,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 上镜♪最可爱★穿搭！ Area 11 (60%) Area 2 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "6★ 上镜♪最可爱★穿搭！ Area 11 (60%) Area 2 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -11171,7 +11171,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 千刃来袭 Area 9 (60%) Area 5 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 千刃来袭 Area 9 (60%) Area 5 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11183,7 +11183,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 3 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11195,7 +11195,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 飞扬的是热沙，抑或千刃？ Area 9 (60%) Area 5 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 飞扬的是热沙，抑或千刃？ Area 9 (60%) Area 5 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11207,7 +11207,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查千刃龙 Area 9 (60%) Area 5 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查千刃龙 Area 9 (60%) Area 5 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11219,7 +11219,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 用狩猎说话 Area 3 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 用狩猎说话 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11231,7 +11231,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11243,7 +11243,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：千刃龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：千刃龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -11255,7 +11255,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 废神社三狂徒 Area 12 (60%) Area 7 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 废神社三狂徒 Area 12 (60%) Area 7 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11267,7 +11267,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 来自未知的侵蚀 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 来自未知的侵蚀 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11279,7 +11279,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查黑蚀龙 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查黑蚀龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11291,7 +11291,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 12 (60%) Area 7 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 12 (60%) Area 7 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -11303,7 +11303,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：驱除灾厄的烈焰 Area 12 (60%) Area 7 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：驱除灾厄的烈焰 Area 12 (60%) Area 7 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11315,7 +11315,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：谁是真正的天空王者？ Area 12 (60%) Area 7 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：谁是真正的天空王者？ Area 12 (60%) Area 7 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11327,7 +11327,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 身披黑衣的龙 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 身披黑衣的龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11339,7 +11339,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 我等荒野三凶龙 Area 9 (60%) Area 5 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 我等荒野三凶龙 Area 9 (60%) Area 5 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11351,7 +11351,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11363,7 +11363,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 月夜假寐的沉睡之龙 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 月夜假寐的沉睡之龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11375,7 +11375,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查棘龙 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查棘龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11387,7 +11387,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 异常震区 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 异常震区 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11399,7 +11399,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查适应沙原者 Area 9 (60%) Area 5 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查适应沙原者 Area 9 (60%) Area 5 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -11411,7 +11411,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11423,7 +11423,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11435,7 +11435,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：轰龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：轰龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11447,7 +11447,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查棘茶龙 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查棘茶龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11459,7 +11459,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11471,7 +11471,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11483,7 +11483,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 上镜♪最可爱★穿搭！ Area 5 (100%) (1%) (1%)",
+        "quest": "6★ 上镜♪最可爱★穿搭！ Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11495,7 +11495,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11507,7 +11507,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11519,7 +11519,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 研究成果烟消云散 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 研究成果烟消云散 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11531,7 +11531,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查废神社的支配者 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查废神社的支配者 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11543,7 +11543,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 积怨的怒吼 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 积怨的怒吼 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11555,7 +11555,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11567,7 +11567,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 熊熊燃烧的狩猎之魂 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 熊熊燃烧的狩猎之魂 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11579,7 +11579,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11591,7 +11591,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11603,7 +11603,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11615,7 +11615,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11627,7 +11627,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查轰龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查轰龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -11639,7 +11639,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 黑中之白 Area 3 (60%) Area 5 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 黑中之白 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11651,7 +11651,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查炎王龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查炎王龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11663,7 +11663,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 12 (60%) Area 7 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 12 (60%) Area 7 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -11675,7 +11675,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 9 (60%) Area 5 (30%) Area 7 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 9 (60%) Area 5 (30%) Area 7 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -12528,7 +12528,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "大师等级 6★ 复活之传说 Area 8 (60%) Area 2 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 复活之传说 Area 8 (60%) Area 2 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -12540,7 +12540,7 @@ var monster_data = {
         "mount": "1",
         "parts": "24",
         "players": "1",
-        "quest": "大师等级 6★ 烈祸袭来：原初异音！ Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 烈祸袭来：原初异音！ Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -12552,7 +12552,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "盟友 6★ 灭净制裁 Area 8 (60%) Area 2 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 灭净制裁 Area 8 (60%) Area 2 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -12564,7 +12564,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "6★ 那日的笑容，摇曳于灯下 Area 8 (60%) Area 2 (30%) Area 4 (10%) (100%)",
+        "quest": "6★ 那日的笑容，摇曳于灯下 Area 8 (60%) Area 2 (30%) Area 4 (10%) [大金冠] (100%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -12576,7 +12576,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "6★ 双凶来袭：高贵盛宴 Area 8 (60%) Area 2 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：高贵盛宴 Area 8 (60%) Area 2 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3.1",
         "stun": "3.1"
       }
@@ -13745,7 +13745,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查沉睡于废神社的大怨灵 Area 3 (60%) Area 10 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查沉睡于废神社的大怨灵 Area 3 (60%) Area 10 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -13757,7 +13757,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "6★ 那日的笑容，摇曳于灯下 Area 14 (60%) Area 8 (30%) Area 13 (10%) (100%)",
+        "quest": "6★ 那日的笑容，摇曳于灯下 Area 14 (60%) Area 8 (30%) Area 13 (10%) [大金冠] (100%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -13769,7 +13769,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 积怨的怒吼 Area 14 (60%) Area 8 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 积怨的怒吼 Area 14 (60%) Area 8 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -13781,7 +13781,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "6★ 双凶来袭：交错的极大祸患 Area 1 (100%) (100%)",
+        "quest": "6★ 双凶来袭：交错的极大祸患 Area 1 (100%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -13793,7 +13793,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：追寻真相 Area 7 (60%) Area 10 (30%) Area 14 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：追寻真相 Area 7 (60%) Area 10 (30%) Area 14 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -13805,7 +13805,7 @@ var monster_data = {
         "mount": "1",
         "parts": "23",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 14 (60%) Area 8 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 14 (60%) Area 8 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3",
         "stun": "3"
       },
@@ -13817,7 +13817,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "6★ 双凶来袭：交错的极大祸患 Area 1 (100%) (100%)",
+        "quest": "6★ 双凶来袭：交错的极大祸患 Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -13829,7 +13829,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "6★ 双凶来袭：光与暗之缝隙 Area 12 (100%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：光与暗之缝隙 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -15039,7 +15039,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 大地激昂 Area 7 (60%) Area 5 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "活动任务 7★ 大地激昂 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -15051,7 +15051,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 沙中出现的角 Area 7 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "4★ 沙中出现的角 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -15087,7 +15087,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 土砂龙的硬脑袋 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%)",
+        "quest": "集会所 2★ 土砂龙的硬脑袋 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -15099,7 +15099,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 灾祸中也要保持美丽 Area 11 (100%) (1%)",
+        "quest": "集会所 3★ 灾祸中也要保持美丽 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -15111,7 +15111,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 7 (60%) Area 5 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -15123,7 +15123,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 7 (60%) Area 5 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -15147,7 +15147,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 7 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -15159,7 +15159,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：土砂龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：土砂龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -15219,7 +15219,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 领会吧！长枪之型 Area 7 (100%) (1%)",
+        "quest": "集会所 5★ 领会吧！长枪之型 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -15231,7 +15231,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 阴森的石壁 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 阴森的石壁 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -15243,7 +15243,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查沙原的危险生物 Area 7 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查沙原的危险生物 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -15255,7 +15255,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 泥翁与流行文化 Area 6 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 泥翁与流行文化 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -15279,7 +15279,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 请小心沙原的魔球 Area 7 (100%) (1%)",
+        "quest": "集会所 5★ 请小心沙原的魔球 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -15291,7 +15291,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 滴水穿岩 Area 5 (100%) (1%)",
+        "quest": "集会所 5★ 滴水穿岩 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -15303,7 +15303,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “刺穿兔团子的四根角！”之卷 Area 7 (100%) (1%)",
+        "quest": "集会所 7★ “刺穿兔团子的四根角！”之卷 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -15315,7 +15315,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 7 (100%) (1%)",
+        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -15327,7 +15327,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 沙尘藏毒 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 沙尘藏毒 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -15339,7 +15339,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 参见陆地女王 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 参见陆地女王 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -15351,7 +15351,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查雌火龙 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查雌火龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -15363,7 +15363,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 泥翁龙的考验 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 泥翁龙的考验 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -15375,7 +15375,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 飞扬的是热沙，抑或千刃？ Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 飞扬的是热沙，抑或千刃？ Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -15387,7 +15387,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查千刃龙 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查千刃龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -15399,7 +15399,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -15411,7 +15411,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 滚动逼近的红球 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 滚动逼近的红球 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -15423,7 +15423,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -15435,7 +15435,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 岩龙集结 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 岩龙集结 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -15447,7 +15447,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查2头岩龙 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查2头岩龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -15459,7 +15459,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 文殊与猎人！？ Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 文殊与猎人！？ Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -15471,7 +15471,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 最近成为话题的坚硬家伙 Area 7 (100%) (1%)",
+        "quest": "集会所 5★ 最近成为话题的坚硬家伙 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -15483,7 +15483,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -15495,7 +15495,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%)",
+        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -15507,7 +15507,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -15519,7 +15519,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查绯天狗兽 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "盟友 2★ 调查绯天狗兽 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -15531,7 +15531,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -15543,7 +15543,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：搔鸟 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：搔鸟 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -15555,7 +15555,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 请小心沙原的魔球 Area 11 (60%) Area 3 (40%) (1%)",
+        "quest": "集会所 5★ 请小心沙原的魔球 Area 11 (60%) Area 3 (40%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -15567,7 +15567,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 滴水穿岩 Area 11 (60%) Area 3 (40%) (1%)",
+        "quest": "集会所 5★ 滴水穿岩 Area 11 (60%) Area 3 (40%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -15579,7 +15579,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 奔驰于地底的角龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%)",
+        "quest": "集会所 7★ 奔驰于地底的角龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -15591,7 +15591,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 轰隆隆的咆哮 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%)",
+        "quest": "集会所 7★ 轰隆隆的咆哮 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -15603,7 +15603,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 滚动逼近的红球 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 滚动逼近的红球 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -15615,7 +15615,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 异常震区 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 异常震区 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -15627,7 +15627,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -15639,7 +15639,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       }
@@ -16467,7 +16467,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "1★ 寻求极品珍珠 Area 11 (100%) (100%)",
+        "quest": "1★ 寻求极品珍珠 Area 11 (100%) [大金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16479,7 +16479,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4",
         "players": "1",
-        "quest": "大师等级 1★ 撕裂寂静者 Area 2 (60%) Area 10 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 撕裂寂静者 Area 2 (60%) Area 10 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16491,7 +16491,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 为船开路 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 为船开路 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16503,7 +16503,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ “安全采购素材”之卷 Area 11 (60%) Area 7 (30%) Area 8 (10%) (100%)",
+        "quest": "大师等级 1★ “安全采购素材”之卷 Area 11 (60%) Area 7 (30%) Area 8 (10%) [大金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16515,7 +16515,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 盾镰夹击！ Area 12 (100%) (6%) (10%)",
+        "quest": "大师等级 3★ 盾镰夹击！ Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -16527,7 +16527,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 爪音回响的试胆 Area 5 (60%) Area 10 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 爪音回响的试胆 Area 5 (60%) Area 10 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -16539,7 +16539,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查水没林大战 Area 5 (60%) Area 10 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查水没林大战 Area 5 (60%) Area 10 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -16551,7 +16551,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 11 (60%) Area 7 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 11 (60%) Area 7 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -16563,7 +16563,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 拦路的河童蛙 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 拦路的河童蛙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16575,7 +16575,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16587,7 +16587,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 密林的指南 Area 11 (60%) Area 7 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 密林的指南 Area 11 (60%) Area 7 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16599,7 +16599,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ “安全采购素材”之卷 Area 3 (70%) Area 5 (30%) (100%)",
+        "quest": "大师等级 1★ “安全采购素材”之卷 Area 3 (70%) Area 5 (30%) [小金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16611,7 +16611,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -16623,7 +16623,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查绯天狗兽 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查绯天狗兽 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -16635,7 +16635,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 发现神药！？ Area 11 (60%) Area 7 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 发现神药！？ Area 11 (60%) Area 7 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -16647,7 +16647,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "5★ 猿蟹大战 Area 12 (100%) (6%) (10%)",
+        "quest": "5★ 猿蟹大战 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -16659,7 +16659,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16671,7 +16671,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 向镰鼬龙王学习 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 向镰鼬龙王学习 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16683,7 +16683,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 滚动逼近的红球 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 滚动逼近的红球 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16695,7 +16695,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -16707,7 +16707,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：搔鸟 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：搔鸟 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16719,7 +16719,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16731,7 +16731,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 注意树荫的水兽 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 注意树荫的水兽 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16743,7 +16743,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -16755,7 +16755,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -16767,7 +16767,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查千刃龙 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查千刃龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -16779,7 +16779,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：河童蛙 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：河童蛙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16791,7 +16791,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 沙尘中的黑影 Area 11 (100%) (1%) (1%)",
+        "quest": "6★ 沙尘中的黑影 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16803,7 +16803,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16815,7 +16815,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16827,7 +16827,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天狗兽 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：天狗兽 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16839,7 +16839,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 雷电摧群木 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 雷电摧群木 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -16851,7 +16851,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查电龙 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查电龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -16863,7 +16863,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 拦路的河童蛙 Area 11 (60%) Area 7 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 拦路的河童蛙 Area 11 (60%) Area 7 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -16875,7 +16875,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 沙尘藏毒 Area 7 (60%) Area 10 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 沙尘藏毒 Area 7 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -16887,7 +16887,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 泥翁龙的考验 Area 7 (60%) Area 10 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 泥翁龙的考验 Area 7 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -16899,7 +16899,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查水没林水难事故 Area 5 (60%) Area 10 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查水没林水难事故 Area 5 (60%) Area 10 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -16911,7 +16911,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查冰狼龙 Area 2 (60%) Area 10 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查冰狼龙 Area 2 (60%) Area 10 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -16923,7 +16923,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查2头刚缠兽 Area 5 (60%) Area 10 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查2头刚缠兽 Area 5 (60%) Area 10 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16935,7 +16935,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 7 (60%) Area 10 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 7 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16947,7 +16947,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 5 (60%) Area 10 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 5 (60%) Area 10 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16959,7 +16959,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：伞鸟 Area 2 (60%) Area 10 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：伞鸟 Area 2 (60%) Area 10 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16971,7 +16971,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：水兽 Area 5 (60%) Area 10 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：水兽 Area 5 (60%) Area 10 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16983,7 +16983,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：土砂龙 Area 7 (60%) Area 10 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：土砂龙 Area 7 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -16995,7 +16995,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 5 (60%) Area 10 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 5 (60%) Area 10 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -17007,7 +17007,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雌火龙 Area 11 (60%) Area 7 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雌火龙 Area 11 (60%) Area 7 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -17019,7 +17019,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 7 (60%) Area 10 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 7 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -17031,7 +17031,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 7 (60%) Area 10 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 7 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -17043,7 +17043,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 2 (60%) Area 10 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 2 (60%) Area 10 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -17055,7 +17055,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 绯色天狗来袭 Area 2 (60%) Area 10 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 绯色天狗来袭 Area 2 (60%) Area 10 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -17067,7 +17067,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查雌火龙 Area 7 (60%) Area 10 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "盟友 2★ 调查雌火龙 Area 7 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -17079,7 +17079,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查迅龙 Area 11 (60%) Area 7 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查迅龙 Area 11 (60%) Area 7 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -17091,7 +17091,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 11 (60%) Area 7 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 11 (60%) Area 7 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -17103,7 +17103,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查泡狐龙 Area 11 (60%) Area 7 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查泡狐龙 Area 11 (60%) Area 7 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       }
@@ -17546,7 +17546,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 黑中之白 Area 7 (70%) Area 4 (20%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 黑中之白 Area 7 (70%) Area 4 (20%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -17558,7 +17558,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 7 (70%) Area 4 (20%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 7 (70%) Area 4 (20%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -17570,7 +17570,7 @@ var monster_data = {
         "mount": "1",
         "parts": "12.4",
         "players": "1",
-        "quest": "6★ 璀璨的灾祸之光 Area 11 (100%) (100%)",
+        "quest": "6★ 璀璨的灾祸之光 Area 11 (100%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -17582,7 +17582,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红之回归 Area 7 (70%) Area 4 (20%) Area 2 (10%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：红之回归 Area 7 (70%) Area 4 (20%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -17594,7 +17594,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 4 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 4 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -17606,7 +17606,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 7 (70%) Area 4 (20%) Area 2 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 7 (70%) Area 4 (20%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -17618,7 +17618,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 用狩猎说话 Area 7 (70%) Area 4 (20%) Area 2 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 用狩猎说话 Area 7 (70%) Area 4 (20%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -18630,7 +18630,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天狗兽 Area 7 (60%) Area 6 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：天狗兽 Area 7 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -18642,7 +18642,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 侵袭！大天狗与小天狗 Area 11 (100%) (100%)",
+        "quest": "活动任务 6★ 侵袭！大天狗与小天狗 Area 11 (100%) [大金冠] (100%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -18666,7 +18666,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 用尾巴转圈圈 Area 11 (60%) Area 2 (30%) Area 10 (10%) (1%)",
+        "quest": "集会所 2★ 用尾巴转圈圈 Area 11 (60%) Area 2 (30%) Area 10 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -18678,7 +18678,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 尾巴×尾巴 Area 7 (60%) Area 6 (30%) Area 9 (10%) (1%)",
+        "quest": "集会所 3★ 尾巴×尾巴 Area 7 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -18690,7 +18690,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 一柿入魂 Area 11 (60%) Area 2 (30%) Area 10 (10%) (3%) (5%)",
+        "quest": "集会所 5★ 一柿入魂 Area 11 (60%) Area 2 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (5%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -18714,7 +18714,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 6 (60%) Area 1 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 6 (60%) Area 1 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -18726,7 +18726,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 交错的柿子与枪火 Area 11 (60%) Area 2 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 2★ 交错的柿子与枪火 Area 11 (60%) Area 2 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -18738,7 +18738,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查天狗兽 Area 11 (60%) Area 2 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 2★ 调查天狗兽 Area 11 (60%) Area 2 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -18750,7 +18750,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 水没林三暴徒 Area 11 (60%) Area 2 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 水没林三暴徒 Area 11 (60%) Area 2 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -18810,7 +18810,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 为女王所吸引 Area 9 (100%) (1%)",
+        "quest": "集会所 5★ 为女王所吸引 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -18834,7 +18834,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 水边的祸害 Area 10 (100%) (1%) (13%)",
+        "quest": "大师等级 2★ 水边的祸害 Area 10 (100%) [小金冠] (1%) [大金冠] (13%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -18846,7 +18846,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 刺激的试胆♪ Area 7 (60%) Area 6 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 刺激的试胆♪ Area 7 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -18858,7 +18858,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 刃风破泥 Area 10 (100%) (1%)",
+        "quest": "盟友 3★ 刃风破泥 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -18870,7 +18870,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查泥翁龙 Area 10 (100%) (1%)",
+        "quest": "盟友 3★ 调查泥翁龙 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -18882,7 +18882,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 潜伏于岩洞的黑影 Area 6 (100%) (1%)",
+        "quest": "盟友 3★ 潜伏于岩洞的黑影 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -18894,7 +18894,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查迅龙 Area 6 (100%) (1%)",
+        "quest": "盟友 3★ 调查迅龙 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -18906,7 +18906,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 欲速则不达 Area 2 (100%) (1%) (13%)",
+        "quest": "活动任务 8★ 欲速则不达 Area 2 (100%) [小金冠] (1%) [大金冠] (13%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -18918,7 +18918,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 侵袭！大天狗与小天狗 Area 12 (100%) (100%)",
+        "quest": "活动任务 6★ 侵袭！大天狗与小天狗 Area 12 (100%) [小金冠] (100%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -18954,7 +18954,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 7 (100%) (1%)",
+        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -18966,7 +18966,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 妖艳之舞 Area 9 (100%) (1%)",
+        "quest": "集会所 6★ 妖艳之舞 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -18978,7 +18978,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 迅雷无止 Area 6 (100%) (1%)",
+        "quest": "大师等级 2★ 迅雷无止 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -18990,7 +18990,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 猎人前辈的魅力背影 Area 7 (60%) Area 6 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 猎人前辈的魅力背影 Area 7 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -19002,7 +19002,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查密林庆典骚动 Area 6 (60%) Area 1 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查密林庆典骚动 Area 6 (60%) Area 1 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -19014,7 +19014,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 怨念翻涌的神社 Area 7 (100%) (1%)",
+        "quest": "盟友 3★ 怨念翻涌的神社 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -19026,7 +19026,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查怨虎龙 Area 7 (100%) (1%)",
+        "quest": "盟友 3★ 调查怨虎龙 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -19038,7 +19038,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 6 (100%) (1%)",
+        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 6 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -19050,7 +19050,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 双雷照夜 Area 1 (100%) (1%)",
+        "quest": "大师等级 4★ 双雷照夜 Area 1 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -19062,7 +19062,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：河童蛙 Area 10 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：河童蛙 Area 10 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19074,7 +19074,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 与水共存之物 Area 11 (100%) (1%)",
+        "quest": "集会所 5★ 与水共存之物 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -19086,7 +19086,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 水没林的扰人群体 Area 11 (100%) (1%)",
+        "quest": "集会所 5★ 水没林的扰人群体 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -19098,7 +19098,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 锻炼吧！弓之型 Area 6 (100%) (1%)",
+        "quest": "集会所 6★ 锻炼吧！弓之型 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -19110,7 +19110,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 11 (100%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -19122,7 +19122,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 赠君勿忘花 Area 6 (100%) (1%)",
+        "quest": "大师等级 2★ 赠君勿忘花 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -19134,7 +19134,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查蛮颚龙 Area 1 (100%) (1%)",
+        "quest": "盟友 2★ 调查蛮颚龙 Area 1 (100%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -19146,7 +19146,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查水没林水难事故 Area 10 (100%) (1%)",
+        "quest": "盟友 3★ 调查水没林水难事故 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -19158,7 +19158,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 来自未知的侵蚀 Area 7 (100%) (1%)",
+        "quest": "盟友 4★ 来自未知的侵蚀 Area 7 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -19170,7 +19170,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查黑蚀龙 Area 7 (100%) (1%)",
+        "quest": "盟友 4★ 调查黑蚀龙 Area 7 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -19182,7 +19182,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：伞鸟 Area 10 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：伞鸟 Area 10 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19194,7 +19194,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：水兽 Area 10 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：水兽 Area 10 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19206,7 +19206,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 6 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 6 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19218,7 +19218,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 10 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 10 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19230,7 +19230,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 10 (100%) (1%)",
+        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -19242,7 +19242,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 飞跃头顶的威胁 Area 10 (60%) Area 12 (40%) (1%)",
+        "quest": "集会所 6★ 飞跃头顶的威胁 Area 10 (60%) Area 12 (40%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -19254,7 +19254,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 1 (70%) Area 3 (30%) (1%)",
+        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 1 (70%) Area 3 (30%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -19266,7 +19266,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 1 (70%) Area 3 (30%) (1%)",
+        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 1 (70%) Area 3 (30%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -19278,7 +19278,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 6 (60%) Area 1 (30%) Area 3 (10%) (1%)",
+        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 6 (60%) Area 1 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19290,7 +19290,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 1 (70%) Area 3 (30%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 1 (70%) Area 3 (30%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19302,7 +19302,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 10 (60%) Area 12 (40%) (1%)",
+        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 10 (60%) Area 12 (40%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -19314,7 +19314,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 渴望疾翔 Area 10 (60%) Area 12 (40%) (3%) (5%)",
+        "quest": "活动任务 5★ 渴望疾翔 Area 10 (60%) Area 12 (40%) [小金冠] (3%) [大金冠] (5%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -19326,7 +19326,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ SF：最强流升段考试 Area 7 (50%) Area 6 (50%) (1%)",
+        "quest": "活动任务 8★ SF：最强流升段考试 Area 7 (50%) Area 6 (50%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -19338,7 +19338,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 1 (70%) Area 3 (30%) (1%)",
+        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 1 (70%) Area 3 (30%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19350,7 +19350,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：迅龙 Area 6 (60%) Area 1 (30%) Area 3 (10%) (1%)",
+        "quest": "怪异 6★ 怪异调查：迅龙 Area 6 (60%) Area 1 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19362,7 +19362,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 7 (50%) Area 6 (50%) (1%)",
+        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 7 (50%) Area 6 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -19374,7 +19374,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 请小心暴徒 Area 10 (60%) Area 12 (40%) (1%)",
+        "quest": "集会所 7★ 请小心暴徒 Area 10 (60%) Area 12 (40%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -19386,7 +19386,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 7 (50%) Area 6 (50%) (1%) (13%)",
+        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 7 (50%) Area 6 (50%) [小金冠] (1%) [大金冠] (13%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -19398,7 +19398,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥底来客 Area 10 (60%) Area 12 (40%) (1%)",
+        "quest": "大师等级 2★ 泥底来客 Area 10 (60%) Area 12 (40%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -19410,7 +19410,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查飞雷龙 Area 7 (50%) Area 6 (50%) (1%)",
+        "quest": "盟友 2★ 调查飞雷龙 Area 7 (50%) Area 6 (50%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -19422,7 +19422,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 1 (70%) Area 3 (30%) (1%)",
+        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 1 (70%) Area 3 (30%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -19434,7 +19434,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 1 (70%) Area 3 (30%) (1%)",
+        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 1 (70%) Area 3 (30%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -19446,7 +19446,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 如云雾般消散之人 Area 1 (70%) Area 3 (30%) (1%)",
+        "quest": "大师等级 5★ 如云雾般消散之人 Area 1 (70%) Area 3 (30%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19458,7 +19458,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 10 (60%) Area 12 (40%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 10 (60%) Area 12 (40%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -19470,7 +19470,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：镰鼬龙王 Area 7 (60%) Area 6 (30%) Area 9 (10%) (1%)",
+        "quest": "怪异 6★ 怪异调查：镰鼬龙王 Area 7 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -20533,7 +20533,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 迫近的白影 Area 12 (60%) Area 2 (30%) Area 5 (10%) (1%)",
+        "quest": "集会所 2★ 迫近的白影 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -20545,7 +20545,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 12 (60%) Area 2 (30%) Area 5 (10%) (3%) (5%)",
+        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (5%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -20557,7 +20557,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 吞噬寒地之影 Area 12 (60%) Area 2 (30%) Area 5 (10%) (3%) (5%)",
+        "quest": "集会所 5★ 吞噬寒地之影 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (5%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -20569,7 +20569,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 一心吞噬的白色怪物 Area 12 (60%) Area 2 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 一心吞噬的白色怪物 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -20581,7 +20581,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查奇怪龙 Area 12 (60%) Area 2 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 2★ 调查奇怪龙 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -20593,7 +20593,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 纯白的奇怪龙果 Area 12 (60%) Area 2 (30%) Area 5 (10%) (100%)",
+        "quest": "大师等级 2★ 纯白的奇怪龙果 Area 12 (60%) Area 2 (30%) Area 5 (10%) [大金冠] (100%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -20605,7 +20605,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 蜿蜿蜒蜒or弯弯曲曲？ Area 12 (60%) Area 2 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 蜿蜿蜒蜒or弯弯曲曲？ Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -20617,7 +20617,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 王国骑士姐妹出战 Area 12 (60%) Area 2 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 王国骑士姐妹出战 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -20629,7 +20629,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 12 (60%) Area 2 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -20641,7 +20641,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 巨兽夜宴 Area 1 (100%) (100%)",
+        "quest": "4★ 巨兽夜宴 Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -20689,7 +20689,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 12 (60%) Area 2 (30%) Area 5 (10%) (3%) (5%)",
+        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (5%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -20701,7 +20701,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 四处逼近的威胁 Area 6 (60%) Area 7 (30%) Area 2 (10%) (3%) (5%)",
+        "quest": "集会所 7★ 四处逼近的威胁 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (5%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -20713,7 +20713,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 纯白的奇怪龙果 Area 11 (60%) Area 3 (30%) Area 7 (10%) (100%)",
+        "quest": "大师等级 2★ 纯白的奇怪龙果 Area 11 (60%) Area 3 (30%) Area 7 (10%) [小金冠] (100%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -20725,7 +20725,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 7 (100%) (1%)",
+        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 7 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -20737,7 +20737,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：眠狗龙王 Area 5 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：眠狗龙王 Area 5 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -20749,7 +20749,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 雷电阴阳 Area 12 (100%) (3%) (5%)",
+        "quest": "活动任务 7★ 雷电阴阳 Area 12 (100%) [小金冠] (3%) [大金冠] (5%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -20785,7 +20785,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 冰天雪地打瞌睡 Area 2 (100%) (1%)",
+        "quest": "集会所 4★ 冰天雪地打瞌睡 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -20797,7 +20797,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 2 (100%) (1%)",
+        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -20809,7 +20809,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 白骑士与新手骑士 Area 2 (100%) (1%)",
+        "quest": "盟友 3★ 白骑士与新手骑士 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -20821,7 +20821,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰牙龙 Area 2 (100%) (1%)",
+        "quest": "盟友 3★ 调查冰牙龙 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -20833,7 +20833,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：白兔兽 Area 12 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：白兔兽 Area 12 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -20857,7 +20857,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 2 (100%) (1%)",
+        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -20869,7 +20869,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ “守护通往兔团子的道路”之卷 Area 12 (100%) (1%)",
+        "quest": "集会所 4★ “守护通往兔团子的道路”之卷 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -20881,7 +20881,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 2 (100%) (1%)",
+        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -20893,7 +20893,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 7 (100%) (1%)",
+        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -20905,7 +20905,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 雪上加蛛 Area 7 (100%) (1%)",
+        "quest": "大师等级 4★ 雪上加蛛 Area 7 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -20917,7 +20917,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 6 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 6 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -20929,7 +20929,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 12 (100%) (1%)",
+        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -20941,7 +20941,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 爆炎豪水 Area 12 (100%) (3%) (5%)",
+        "quest": "3★ 爆炎豪水 Area 12 (100%) [小金冠] (3%) [大金冠] (5%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -20953,7 +20953,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 熔岩洞扫荡战 Area 6 (100%) (1%)",
+        "quest": "集会所 6★ 熔岩洞扫荡战 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -20965,7 +20965,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 2 (100%) (1%)",
+        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 2 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -20977,7 +20977,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 2 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 2 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -20989,7 +20989,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 12 (60%) Area 2 (30%) Area 5 (10%) (1%)",
+        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -21001,7 +21001,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 邀往冥府的歌声 Area 6 (50%) Area 2 (50%) (1%)",
+        "quest": "集会所 6★ 邀往冥府的歌声 Area 6 (50%) Area 2 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -21013,7 +21013,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 6 (50%) Area 2 (50%) (1%)",
+        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 6 (50%) Area 2 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -21025,7 +21025,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 来自冰海的邀请 Area 12 (60%) Area 2 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 3★ 来自冰海的邀请 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -21037,7 +21037,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰人鱼龙 Area 12 (60%) Area 2 (30%) Area 5 (10%) (1%)",
+        "quest": "盟友 3★ 调查冰人鱼龙 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -21049,7 +21049,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 6 (50%) Area 2 (50%) (1%)",
+        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 6 (50%) Area 2 (50%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -21061,7 +21061,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 12 (60%) Area 2 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -21073,7 +21073,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 关爱随从之人的求助 Area 6 (50%) Area 2 (50%) (1%)",
+        "quest": "大师等级 5★ 关爱随从之人的求助 Area 6 (50%) Area 2 (50%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -21085,7 +21085,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 冰刃闪耀 Area 12 (60%) Area 2 (30%) Area 5 (10%) (1%)",
+        "quest": "活动任务 8★ 冰刃闪耀 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -21097,7 +21097,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 爆鳞爆碎 Area 12 (60%) Area 2 (30%) Area 5 (10%) (1%)",
+        "quest": "活动任务 8★ 爆鳞爆碎 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -21109,7 +21109,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 7 (70%) Area 11 (30%) (1%)",
+        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 7 (70%) Area 11 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -21121,7 +21121,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 打磨琥珀色的牙 Area 12 (60%) Area 2 (30%) Area 5 (10%) (1%)",
+        "quest": "集会所 6★ 打磨琥珀色的牙 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -21133,7 +21133,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 祈福需怨念 Area 12 (60%) Area 2 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 3★ 祈福需怨念 Area 12 (60%) Area 2 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -21145,7 +21145,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 6 (60%) Area 7 (30%) Area 2 (10%) (1%)",
+        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -21157,7 +21157,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 6 (60%) Area 7 (30%) Area 2 (10%) (1%)",
+        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -21169,7 +21169,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 6 (50%) Area 2 (50%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 6 (50%) Area 2 (50%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -21181,7 +21181,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 6 (50%) Area 2 (50%) (1%)",
+        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 6 (50%) Area 2 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       }
@@ -21949,7 +21949,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 12 (60%) Area 9 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 12 (60%) Area 9 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -21973,7 +21973,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 吹火贵妇 Area 14 (60%) Area 5 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 吹火贵妇 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -21985,7 +21985,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 四处逼近的威胁 Area 14 (60%) Area 5 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 四处逼近的威胁 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -21997,7 +21997,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.75",
         "players": "1",
-        "quest": "集会所 8★ 倪泰教官的挑战书・其五 Area 14 (60%) Area 5 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 倪泰教官的挑战书・其五 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22009,7 +22009,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 12 (60%) Area 9 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 12 (60%) Area 9 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -22021,7 +22021,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 激情燃烧！熔岩洞的考验 Area 14 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 激情燃烧！熔岩洞的考验 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -22033,7 +22033,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 14 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -22045,7 +22045,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 14 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22057,7 +22057,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 5 (70%) Area 4 (30%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 5 (70%) Area 4 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -22069,7 +22069,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -22081,7 +22081,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 14 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -22093,7 +22093,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 加深情谊的团体战 Area 12 (60%) Area 9 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 加深情谊的团体战 Area 12 (60%) Area 9 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -22105,7 +22105,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查暗夜沙漠中的凶暴者 Area 12 (60%) Area 9 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查暗夜沙漠中的凶暴者 Area 12 (60%) Area 9 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -22117,7 +22117,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22129,7 +22129,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22141,7 +22141,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：角龙 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：角龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22153,7 +22153,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22165,7 +22165,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 公主们的盛宴 Area 1 (100%) (3%) (3%)",
+        "quest": "活动任务 8★ 公主们的盛宴 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22177,7 +22177,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 大地激昂 Area 9 (100%) (1%)",
+        "quest": "活动任务 7★ 大地激昂 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -22189,7 +22189,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 12 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22201,7 +22201,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 14 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22213,7 +22213,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 泥翁与流行文化 Area 12 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 泥翁与流行文化 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22225,7 +22225,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 12 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22237,7 +22237,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 奔驰于地底的角龙 Area 12 (100%) (1%)",
+        "quest": "集会所 7★ 奔驰于地底的角龙 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -22249,7 +22249,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 烈焰与阔步横行的强者们 Area 14 (60%) Area 13 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 烈焰与阔步横行的强者们 Area 14 (60%) Area 13 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22261,7 +22261,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 5 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22273,7 +22273,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 岩龙集结 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 岩龙集结 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -22285,7 +22285,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查2头岩龙 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查2头岩龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -22297,7 +22297,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -22309,7 +22309,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查沙原的危险生物 Area 12 (60%) Area 9 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查沙原的危险生物 Area 12 (60%) Area 9 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -22321,7 +22321,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查热源的居住者 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查热源的居住者 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22333,7 +22333,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22345,7 +22345,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 炎国之王 Area 13 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 炎国之王 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22357,7 +22357,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 12 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22369,7 +22369,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22381,7 +22381,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查沙原的异常活动 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查沙原的异常活动 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22393,7 +22393,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22405,7 +22405,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：火龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：火龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22417,7 +22417,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 大小暴君 Area 5 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 大小暴君 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22429,7 +22429,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22441,7 +22441,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 13 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22453,7 +22453,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 守住食材运输路！ Area 14 (100%) (1%) (1%)",
+        "quest": "6★ 守住食材运输路！ Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22465,7 +22465,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -22477,7 +22477,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 飞扬的是热沙，抑或千刃？ Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 飞扬的是热沙，抑或千刃？ Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -22489,7 +22489,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 异常震区 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 异常震区 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22501,7 +22501,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22513,7 +22513,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 饯别武夫 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 饯别武夫 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22525,7 +22525,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查2头怨虎龙 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查2头怨虎龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22537,7 +22537,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 11 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 11 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22549,7 +22549,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 9 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 9 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22561,7 +22561,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查喷火大地 Area 11 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "盟友 5★ 调查喷火大地 Area 11 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22573,7 +22573,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 12 (60%) Area 9 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 12 (60%) Area 9 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22585,7 +22585,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：轰龙 Area 9 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：轰龙 Area 9 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -22597,7 +22597,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 狂热粉丝 Area 11 (50%) Area 13 (50%) (1%)",
+        "quest": "活动任务 7★ 狂热粉丝 Area 11 (50%) Area 13 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -22609,7 +22609,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 11 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 11 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22621,7 +22621,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 9 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 9 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -22633,7 +22633,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 文殊与猎人！？ Area 9 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "大师等级 4★ 文殊与猎人！？ Area 9 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -22645,7 +22645,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查千刃龙 Area 9 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "盟友 4★ 调查千刃龙 Area 9 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -22657,7 +22657,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 夺回那份光辉 Area 11 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "大师等级 6★ 夺回那份光辉 Area 11 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -23082,7 +23082,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 绝音利镰 Area 13 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 绝音利镰 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -23094,7 +23094,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 翼镰毒毒 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 翼镰毒毒 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -23106,7 +23106,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查将军镰蟹 Area 13 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查将军镰蟹 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -23118,7 +23118,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 14 (60%) Area 8 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 14 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23130,7 +23130,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 13 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23142,7 +23142,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15.5",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 13 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -23154,7 +23154,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：紫电一闪 Area 11 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：紫电一闪 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23166,7 +23166,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 岿然不动的刚缠兽 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 岿然不动的刚缠兽 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -23178,7 +23178,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查刚缠兽 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查刚缠兽 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -23190,7 +23190,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 盾镰夹击！ Area 11 (100%) (6%) (10%)",
+        "quest": "大师等级 3★ 盾镰夹击！ Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -23202,7 +23202,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 13 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23214,7 +23214,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 雪上加蛛 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 雪上加蛛 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23226,7 +23226,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 爪音回响的试胆 Area 13 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 爪音回响的试胆 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23238,7 +23238,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查水没林大战 Area 13 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查水没林大战 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23250,7 +23250,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：岩龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：岩龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23262,7 +23262,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23274,7 +23274,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23286,7 +23286,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23298,7 +23298,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23310,7 +23310,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：火龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：火龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23322,7 +23322,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23334,7 +23334,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 一夜暴富！金狮子战斗！ Area 12 (100%) (1%) (1%)",
+        "quest": "5★ 一夜暴富！金狮子战斗！ Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23346,7 +23346,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "5★ 猿蟹大战 Area 11 (100%) (6%) (10%)",
+        "quest": "5★ 猿蟹大战 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -23358,7 +23358,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金火龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：金火龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23370,7 +23370,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -23382,7 +23382,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 夺回那份光辉 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 夺回那份光辉 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23394,7 +23394,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 大哥的请求 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 大哥的请求 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23406,7 +23406,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 寂静深处 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 寂静深处 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23418,7 +23418,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23430,7 +23430,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：电龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：电龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23442,7 +23442,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炎王龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：炎王龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23454,7 +23454,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23466,7 +23466,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 守住食材运输路！ Area 14 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "6★ 守住食材运输路！ Area 14 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23478,7 +23478,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查泥翁龙 Area 13 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查泥翁龙 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -23490,7 +23490,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查雷狼龙 Area 13 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查雷狼龙 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23502,7 +23502,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 14 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 14 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23514,7 +23514,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 14 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 14 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -23526,7 +23526,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查2头怨虎龙 Area 14 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查2头怨虎龙 Area 14 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23538,7 +23538,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 14 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 14 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23550,7 +23550,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：电龙 Area 13 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：电龙 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23562,7 +23562,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：追寻真相 Area 14 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：追寻真相 Area 14 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23574,7 +23574,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 刹那双影 Area 13 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 刹那双影 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -23586,7 +23586,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 关爱随从之人的求助 Area 14 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 关爱随从之人的求助 Area 14 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23598,7 +23598,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查2头刚缠兽 Area 13 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查2头刚缠兽 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23610,7 +23610,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 14 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 14 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -23622,7 +23622,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 13 (60%) Area 9 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 13 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -25867,7 +25867,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 回头一看是岩龙 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%)",
+        "quest": "集会所 2★ 回头一看是岩龙 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -25879,7 +25879,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 滴水穿岩 Area 8 (60%) Area 7 (30%) Area 3 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 滴水穿岩 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -25891,7 +25891,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 阴森的石壁 Area 8 (60%) Area 7 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 阴森的石壁 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -25903,7 +25903,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 沙原遗失物搜查队 Area 8 (60%) Area 7 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 沙原遗失物搜查队 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -25915,7 +25915,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 岩龙集结 Area 8 (60%) Area 7 (30%) Area 3 (10%) (100%)",
+        "quest": "盟友 3★ 岩龙集结 Area 8 (60%) Area 7 (30%) Area 3 (10%) [大金冠] (100%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -25927,7 +25927,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查2头岩龙 Area 8 (60%) Area 7 (30%) Area 3 (10%) (100%)",
+        "quest": "盟友 3★ 调查2头岩龙 Area 8 (60%) Area 7 (30%) Area 3 (10%) [大金冠] (100%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -25939,7 +25939,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 大哥的请求 Area 5 (60%) Area 11 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 大哥的请求 Area 5 (60%) Area 11 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -25951,7 +25951,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：岩龙 Area 5 (60%) Area 11 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：岩龙 Area 5 (60%) Area 11 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -25999,7 +25999,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 8 (100%) (1%)",
+        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -26011,7 +26011,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 击穿吧！重弩之型 Area 12 (100%) (3%) (3%)",
+        "quest": "集会所 5★ 击穿吧！重弩之型 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -26035,7 +26035,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查雌火龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查雌火龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -26047,7 +26047,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 沙丘后的潜伏者 Area 8 (60%) Area 7 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 沙丘后的潜伏者 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -26059,7 +26059,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 泥翁龙的考验 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 泥翁龙的考验 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -26071,7 +26071,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 岩龙集结 Area 6 (60%) Area 4 (30%) Area 12 (10%) (100%)",
+        "quest": "盟友 3★ 岩龙集结 Area 6 (60%) Area 4 (30%) Area 12 (10%) [小金冠] (100%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -26083,7 +26083,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查2头岩龙 Area 6 (60%) Area 4 (30%) Area 12 (10%) (100%)",
+        "quest": "盟友 3★ 调查2头岩龙 Area 6 (60%) Area 4 (30%) Area 12 (10%) [小金冠] (100%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -26095,7 +26095,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 13 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -26107,7 +26107,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：搔鸟 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：搔鸟 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -26119,7 +26119,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 沙中出现的角 Area 8 (60%) Area 7 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "4★ 沙中出现的角 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -26131,7 +26131,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 无惧粉盔碎甲 Area 13 (100%) (3%) (3%)",
+        "quest": "活动任务 6★ 无惧粉盔碎甲 Area 13 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -26143,7 +26143,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 爆炎豪水 Area 12 (100%) (1%) (1%)",
+        "quest": "3★ 爆炎豪水 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -26191,7 +26191,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 领会吧！长枪之型 Area 8 (100%) (1%)",
+        "quest": "集会所 5★ 领会吧！长枪之型 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -26203,7 +26203,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 绽放于天际的红莲 Area 5 (100%) (1%)",
+        "quest": "集会所 6★ 绽放于天际的红莲 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -26215,7 +26215,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 7 (100%) (1%)",
+        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -26227,7 +26227,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 吹火贵妇 Area 13 (100%) (1%)",
+        "quest": "集会所 7★ 吹火贵妇 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -26239,7 +26239,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -26251,7 +26251,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 文殊与猎人！？ Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 文殊与猎人！？ Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -26263,7 +26263,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：土砂龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：土砂龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -26275,7 +26275,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 3 (100%) (1%)",
+        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -26287,7 +26287,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 最近成为话题的坚硬家伙 Area 8 (100%) (1%)",
+        "quest": "集会所 5★ 最近成为话题的坚硬家伙 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -26299,7 +26299,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 狂热粉丝 Area 4 (100%) (1%)",
+        "quest": "活动任务 7★ 狂热粉丝 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -26311,7 +26311,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 沙尘中的黑影 Area 8 (100%) (1%) (1%)",
+        "quest": "6★ 沙尘中的黑影 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -26323,7 +26323,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查千刃龙 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查千刃龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -26335,7 +26335,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 雪上加蛛 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 雪上加蛛 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -26347,7 +26347,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 13 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -26359,7 +26359,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 请小心沙原的魔球 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%)",
+        "quest": "集会所 5★ 请小心沙原的魔球 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -26371,7 +26371,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -26383,7 +26383,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 5 (60%) Area 11 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 5 (60%) Area 11 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -26395,7 +26395,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 千刃来袭 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 千刃来袭 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -26407,7 +26407,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -26419,7 +26419,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 领会吧！长枪之型 Area 7 (60%) Area 5 (40%) (1%)",
+        "quest": "集会所 5★ 领会吧！长枪之型 Area 7 (60%) Area 5 (40%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -26431,7 +26431,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 邀往冥府的歌声 Area 13 (50%) Area 11 (50%) (1%)",
+        "quest": "集会所 6★ 邀往冥府的歌声 Area 13 (50%) Area 11 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -26443,7 +26443,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 妖魔鬼怪 Area 13 (50%) Area 11 (50%) (1%)",
+        "quest": "集会所 7★ 妖魔鬼怪 Area 13 (50%) Area 11 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -26455,7 +26455,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%)",
+        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -26467,7 +26467,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -26479,7 +26479,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 13 (50%) Area 11 (50%) (1%) (1%)",
+        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 13 (50%) Area 11 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -26491,7 +26491,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查热源的居住者 Area 5 (60%) Area 11 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查热源的居住者 Area 5 (60%) Area 11 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -26503,7 +26503,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -26515,7 +26515,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -26527,7 +26527,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 泥翁与流行文化 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 泥翁与流行文化 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -26539,7 +26539,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 大地激昂 Area 8 (60%) Area 7 (30%) Area 3 (10%) (1%)",
+        "quest": "活动任务 7★ 大地激昂 Area 8 (60%) Area 7 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       }
@@ -28124,7 +28124,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 饯别武夫 Area 11 (60%) Area 10 (30%) Area 13 (10%) (100%)",
+        "quest": "盟友 6★ 饯别武夫 Area 11 (60%) Area 10 (30%) Area 13 (10%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28136,7 +28136,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查2头怨虎龙 Area 11 (60%) Area 10 (30%) Area 13 (10%) (100%)",
+        "quest": "盟友 6★ 调查2头怨虎龙 Area 11 (60%) Area 10 (30%) Area 13 (10%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28148,7 +28148,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 9 (60%) Area 12 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 9 (60%) Area 12 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -28160,7 +28160,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6",
         "players": "1",
-        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 11 (60%) Area 10 (30%) Area 13 (10%) (100%)",
+        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 11 (60%) Area 10 (30%) Area 13 (10%) [大金冠] (100%)",
         "stamina": "5",
         "stun": "8"
       },
@@ -28184,7 +28184,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 守住食材运输路！ Area 11 (60%) Area 10 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "6★ 守住食材运输路！ Area 11 (60%) Area 10 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28196,7 +28196,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "6★ 春去秋来，风起风落 Area 9 (60%) Area 12 (30%) Area 6 (10%) (100%)",
+        "quest": "6★ 春去秋来，风起风落 Area 9 (60%) Area 12 (30%) Area 6 (10%) [小金冠] (100%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -28232,7 +28232,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 鬼火 Area 11 (60%) Area 10 (30%) Area 13 (10%) (1%)",
+        "quest": "集会所 3★ 鬼火 Area 11 (60%) Area 10 (30%) Area 13 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -28244,7 +28244,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 身缠鬼火者 Area 9 (60%) Area 12 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 身缠鬼火者 Area 9 (60%) Area 12 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -28256,7 +28256,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 11 (60%) Area 10 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 11 (60%) Area 10 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -28268,7 +28268,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 9 (60%) Area 12 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 9 (60%) Area 12 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -28280,7 +28280,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.75",
         "players": "1",
-        "quest": "集会所 8★ 倪泰教官的挑战书・其三 Area 9 (60%) Area 12 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 倪泰教官的挑战书・其三 Area 9 (60%) Area 12 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28292,7 +28292,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 祈福需怨念 Area 9 (70%) Area 8 (20%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 祈福需怨念 Area 9 (70%) Area 8 (20%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -28304,7 +28304,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 怨念翻涌的神社 Area 9 (60%) Area 12 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 怨念翻涌的神社 Area 9 (60%) Area 12 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -28316,7 +28316,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查怨虎龙 Area 9 (60%) Area 12 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查怨虎龙 Area 9 (60%) Area 12 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -28352,7 +28352,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 风暴之黑影 Area 8 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 风暴之黑影 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28364,7 +28364,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 炎国之王 Area 10 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 炎国之王 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28376,7 +28376,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 12 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28388,7 +28388,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 8 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28400,7 +28400,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 10 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28412,7 +28412,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 9 (60%) Area 12 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 9 (60%) Area 12 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -28424,7 +28424,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 缝制映于白雪的礼服 Area 9 (70%) Area 8 (20%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 缝制映于白雪的礼服 Area 9 (70%) Area 8 (20%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -28436,7 +28436,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 11 (60%) Area 10 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 11 (60%) Area 10 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -28448,7 +28448,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 9 (70%) Area 8 (20%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 9 (70%) Area 8 (20%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -28460,7 +28460,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -28472,7 +28472,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 饯别武夫 Area 14 (60%) Area 12 (30%) Area 7 (10%) (100%)",
+        "quest": "盟友 6★ 饯别武夫 Area 14 (60%) Area 12 (30%) Area 7 (10%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28484,7 +28484,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查2头怨虎龙 Area 14 (60%) Area 12 (30%) Area 7 (10%) (100%)",
+        "quest": "盟友 6★ 调查2头怨虎龙 Area 14 (60%) Area 12 (30%) Area 7 (10%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28496,7 +28496,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28508,7 +28508,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28520,7 +28520,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28532,7 +28532,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28544,7 +28544,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：银火龙 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：银火龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28556,7 +28556,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：钢龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：钢龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28568,7 +28568,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "活动任务 3★ 称号・武士之心 Area 12 (100%) (1%)",
+        "quest": "活动任务 3★ 称号・武士之心 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -28580,7 +28580,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28592,7 +28592,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28604,7 +28604,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28616,7 +28616,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 冰冠的交战 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 冰冠的交战 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28628,7 +28628,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 高难度：吾等乐土之父母 Area 2 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 高难度：吾等乐土之父母 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28652,7 +28652,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ USJ・废神社的激斗！ Area 9 (60%) Area 12 (30%) Area 6 (10%) (8%)",
+        "quest": "活动任务 8★ USJ・废神社的激斗！ Area 9 (60%) Area 12 (30%) Area 6 (10%) [大金冠] (8%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28664,7 +28664,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 10 (100%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28700,7 +28700,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3",
         "players": "1",
-        "quest": "村庄 6★ 高难度：挑战霸者的队列 Area 11 (100%) (3%) (3%)",
+        "quest": "村庄 6★ 高难度：挑战霸者的队列 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -28724,7 +28724,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 灾祸中也要保持美丽 Area 11 (100%) (1%)",
+        "quest": "集会所 3★ 灾祸中也要保持美丽 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -28736,7 +28736,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 妖魔鬼怪 Area 11 (100%) (1%)",
+        "quest": "集会所 7★ 妖魔鬼怪 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -28748,7 +28748,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 百龙渊源 Area 2 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 百龙渊源 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28760,7 +28760,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 8 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28772,7 +28772,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：强者们的酒宴 Area 1 (100%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：强者们的酒宴 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -28784,7 +28784,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 给烈焰的考验 Area 9 (60%) Area 12 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 给烈焰的考验 Area 9 (60%) Area 12 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -28796,7 +28796,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 大哥的请求 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 大哥的请求 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -28808,7 +28808,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 8 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28820,7 +28820,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 胸中烈火融化冻土 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 胸中烈火融化冻土 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -28832,7 +28832,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰人鱼龙 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查冰人鱼龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -28844,7 +28844,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -28856,7 +28856,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -28868,7 +28868,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -28880,7 +28880,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28892,7 +28892,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28904,7 +28904,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28916,7 +28916,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 无法抑制的狂想曲 Area 12 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 无法抑制的狂想曲 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28928,7 +28928,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 13 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28940,7 +28940,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28952,7 +28952,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炎王龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：炎王龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -28964,7 +28964,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 往日的回忆 Area 9 (50%) Area 12 (50%) (3%) (3%)",
+        "quest": "活动任务 7★ 往日的回忆 Area 9 (50%) Area 12 (50%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -28976,7 +28976,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 12 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -28988,7 +28988,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 用拳头粉碎一切…… Area 6 (100%) (1%) (1%)",
+        "quest": "4★ 用拳头粉碎一切…… Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -29000,7 +29000,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 冰点下的统治者 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 冰点下的统治者 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29012,7 +29012,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查冰封群岛剧变 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查冰封群岛剧变 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29024,7 +29024,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29036,7 +29036,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 13 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29048,7 +29048,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29060,7 +29060,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 爆鳞爆碎 Area 12 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 爆鳞爆碎 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -29072,7 +29072,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 11 (60%) Area 10 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 11 (60%) Area 10 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29084,7 +29084,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 11 (60%) Area 10 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 11 (60%) Area 10 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29096,7 +29096,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 闪闪★亮亮？ Area 11 (60%) Area 10 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "6★ 闪闪★亮亮？ Area 11 (60%) Area 10 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29108,7 +29108,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查喷火大地 Area 11 (60%) Area 10 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查喷火大地 Area 11 (60%) Area 10 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29120,7 +29120,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 9 (50%) Area 12 (50%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 9 (50%) Area 12 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29132,7 +29132,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 11 (60%) Area 10 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 11 (60%) Area 10 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29144,7 +29144,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 别打扰我的演出！ Area 9 (70%) Area 8 (20%) Area 12 (10%) (1%) (1%)",
+        "quest": "6★ 别打扰我的演出！ Area 9 (70%) Area 8 (20%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -29156,7 +29156,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 废神社大骚动 Area 9 (50%) Area 12 (50%) (1%)",
+        "quest": "集会所 7★ 废神社大骚动 Area 9 (50%) Area 12 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -29168,7 +29168,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 勇猛之力宛如大地 Area 9 (70%) Area 8 (20%) Area 12 (10%) (1%)",
+        "quest": "集会所 7★ 勇猛之力宛如大地 Area 9 (70%) Area 8 (20%) Area 12 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -29180,7 +29180,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 神秘红光 Area 9 (50%) Area 12 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 神秘红光 Area 9 (50%) Area 12 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -29192,7 +29192,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 11 (60%) Area 10 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 11 (60%) Area 10 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -29204,7 +29204,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 9 (70%) Area 8 (20%) Area 12 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 9 (70%) Area 8 (20%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -29216,7 +29216,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查冰狼龙 Area 9 (50%) Area 12 (50%) (1%) (1%)",
+        "quest": "盟友 4★ 调查冰狼龙 Area 9 (50%) Area 12 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       }
@@ -29651,7 +29651,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天廻龙 Area 8 (70%) Area 2 (20%) Area 7 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：天廻龙 Area 8 (70%) Area 2 (20%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -29663,7 +29663,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15.5",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：天廻龙 Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 怪异克服：天廻龙 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.25",
         "stun": "1.7"
       }
@@ -30573,7 +30573,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 8 (60%) Area 7 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 8 (60%) Area 7 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.2",
         "stun": "1.7"
       },
@@ -30585,7 +30585,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 9 (60%) Area 13 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 9 (60%) Area 13 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3.1",
         "stun": "3.1"
       }
@@ -31231,7 +31231,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 10 (60%) Area 5 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 10 (60%) Area 5 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -31243,7 +31243,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炎王龙 Area 9 (60%) Area 11 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：炎王龙 Area 9 (60%) Area 11 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3",
         "stun": "3"
       }
@@ -31713,7 +31713,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：钢龙 Area 4 (60%) Area 10 (30%) Area 1 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 怪异克服：钢龙 Area 4 (60%) Area 10 (30%) Area 1 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -31725,7 +31725,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：钢龙 Area 8 (60%) Area 6 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：钢龙 Area 8 (60%) Area 6 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3",
         "stun": "3"
       }
@@ -32249,7 +32249,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：霞龙 Area 7 (60%) Area 6 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 怪异克服：霞龙 Area 7 (60%) Area 6 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -32261,7 +32261,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：霞龙 Area 9 (50%) Area 13 (30%) Area 7 (20%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：霞龙 Area 9 (50%) Area 13 (30%) Area 7 (20%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3",
         "stun": "3"
       }
@@ -33191,7 +33191,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "1★ 蛋与白兔的丰收祈愿 Area 11 (100%) (100%)",
+        "quest": "1★ 蛋与白兔的丰收祈愿 Area 11 (100%) [大金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33203,7 +33203,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 11 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 11 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -33215,7 +33215,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：搔鸟 Area 11 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：搔鸟 Area 11 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -33263,7 +33263,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.51",
         "players": "1",
-        "quest": "集会所 1★ 半夜三更击退搔鸟 Area 6 (60%) Area 7 (30%) Area 12 (10%) (1%)",
+        "quest": "集会所 1★ 半夜三更击退搔鸟 Area 6 (60%) Area 7 (30%) Area 12 (10%) [小金冠] (1%)",
         "stamina": "1.15",
         "stun": "1.1"
       },
@@ -33311,7 +33311,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 7 (60%) Area 3 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 7 (60%) Area 3 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33323,7 +33323,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 悄然出现的虫子 Area 7 (60%) Area 3 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 悄然出现的虫子 Area 7 (60%) Area 3 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33383,7 +33383,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 怪物美食家 Area 11 (60%) Area 8 (30%) Area 4 (10%) (3%) (3%)",
+        "quest": "集会所 4★ 怪物美食家 Area 11 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -33407,7 +33407,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 与水共存之物 Area 13 (100%) (1%)",
+        "quest": "集会所 5★ 与水共存之物 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -33419,7 +33419,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 最近成为话题的坚硬家伙 Area 11 (100%) (1%)",
+        "quest": "集会所 5★ 最近成为话题的坚硬家伙 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -33431,7 +33431,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 滚动逼近的红球 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 滚动逼近的红球 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33443,7 +33443,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 6 (60%) Area 7 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 6 (60%) Area 7 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -33455,7 +33455,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 爆炎豪水 Area 12 (100%) (1%) (1%)",
+        "quest": "3★ 爆炎豪水 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -33467,7 +33467,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -33479,7 +33479,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：镰鼬龙王 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：镰鼬龙王 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -33491,7 +33491,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -33503,7 +33503,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.51",
         "players": "1",
-        "quest": "活动任务 1★ 毁灭之鸟龙？ Area 11 (100%) (1%)",
+        "quest": "活动任务 1★ 毁灭之鸟龙？ Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.15",
         "stun": "1.1"
       },
@@ -33563,7 +33563,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 伞鸟圆舞 Area 12 (100%) (1%)",
+        "quest": "集会所 4★ 伞鸟圆舞 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -33575,7 +33575,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 身披剧毒锦缎 Area 7 (100%) (1%)",
+        "quest": "集会所 4★ 身披剧毒锦缎 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -33587,7 +33587,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 慎重派与冲锋派 Area 12 (100%) (1%)",
+        "quest": "集会所 4★ 慎重派与冲锋派 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -33599,7 +33599,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 注意树荫的水兽 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 注意树荫的水兽 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33611,7 +33611,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33623,7 +33623,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 绯色天狗参拜神社 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 绯色天狗参拜神社 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -33635,7 +33635,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -33647,7 +33647,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -33719,7 +33719,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 12 (100%) (1%)",
+        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -33731,7 +33731,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 沼中危影 Area 13 (100%) (1%)",
+        "quest": "集会所 5★ 沼中危影 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -33743,7 +33743,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 熔岩洞扫荡战 Area 3 (100%) (1%)",
+        "quest": "集会所 6★ 熔岩洞扫荡战 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -33755,7 +33755,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "大师等级 1★ 撕裂寂静者 Area 12 (100%) (1%)",
+        "quest": "大师等级 1★ 撕裂寂静者 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33767,7 +33767,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33779,7 +33779,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 14 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -33791,7 +33791,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雌火龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雌火龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -33803,7 +33803,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -33815,7 +33815,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 大哥的请求 Area 10 (50%) Area 8 (50%) (1%) (1%)",
+        "quest": "大师等级 4★ 大哥的请求 Area 10 (50%) Area 8 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -33827,7 +33827,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查飞雷龙 Area 6 (50%) Area 7 (50%) (1%) (1%)",
+        "quest": "盟友 2★ 调查飞雷龙 Area 6 (50%) Area 7 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -33839,7 +33839,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 11 (70%) Area 5 (30%) (1%) (1%)",
+        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 11 (70%) Area 5 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -33851,7 +33851,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 包围而来的旋风 Area 6 (50%) Area 7 (50%) (1%)",
+        "quest": "集会所 4★ 包围而来的旋风 Area 6 (50%) Area 7 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -33863,7 +33863,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 看清吧！大剑之型 Area 6 (50%) Area 7 (50%) (1%)",
+        "quest": "集会所 5★ 看清吧！大剑之型 Area 6 (50%) Area 7 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -33875,7 +33875,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 绽放于天际的红莲 Area 10 (50%) Area 8 (50%) (1%)",
+        "quest": "集会所 6★ 绽放于天际的红莲 Area 10 (50%) Area 8 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -33887,7 +33887,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 注意树荫的水兽 Area 7 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 1★ 注意树荫的水兽 Area 7 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33899,7 +33899,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 6 (50%) Area 7 (50%) (1%) (1%)",
+        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 6 (50%) Area 7 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33911,7 +33911,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 滚动逼近的红球 Area 11 (70%) Area 5 (30%) (1%) (1%)",
+        "quest": "大师等级 1★ 滚动逼近的红球 Area 11 (70%) Area 5 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -33923,7 +33923,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查天狗兽 Area 13 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "盟友 2★ 调查天狗兽 Area 13 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -33935,7 +33935,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 迅雷无止 Area 7 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 2★ 迅雷无止 Area 7 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -33947,7 +33947,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 身披剧毒锦缎 Area 13 (50%) Area 11 (50%) (1%)",
+        "quest": "集会所 4★ 身披剧毒锦缎 Area 13 (50%) Area 11 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -33959,7 +33959,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 11 (70%) Area 5 (30%) (1%)",
+        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 11 (70%) Area 5 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -33971,7 +33971,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 一柿入魂 Area 13 (70%) Area 10 (30%) (1%)",
+        "quest": "集会所 5★ 一柿入魂 Area 13 (70%) Area 10 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -33983,7 +33983,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 11 (70%) Area 5 (30%) (1%)",
+        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 11 (70%) Area 5 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -33995,7 +33995,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 向镰鼬龙王学习 Area 6 (60%) Area 7 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 向镰鼬龙王学习 Area 6 (60%) Area 7 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -34007,7 +34007,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 拦路的河童蛙 Area 7 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 1★ 拦路的河童蛙 Area 7 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -34019,7 +34019,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 密林的毒地毯 Area 7 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 1★ 密林的毒地毯 Area 7 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -34043,7 +34043,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：岩龙 Area 10 (50%) Area 8 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：岩龙 Area 10 (50%) Area 8 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -34055,7 +34055,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 为害一方的密林恶棍 Area 7 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 3★ 为害一方的密林恶棍 Area 7 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -34067,7 +34067,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 赠君勿忘花 Area 7 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 2★ 赠君勿忘花 Area 7 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       }
@@ -34592,7 +34592,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 看不见的迅龙 Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 看不见的迅龙 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -34604,7 +34604,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "盟友 6★ 调查月迅龙 Area 1 (100%) (6%) (10%)",
+        "quest": "盟友 6★ 调查月迅龙 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -34616,7 +34616,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 烈祸袭来：朦胧之影 Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 烈祸袭来：朦胧之影 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -34628,7 +34628,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：月夜舞会 Area 1 (100%) (12%)",
+        "quest": "大师等级 6★ 高难度：月夜舞会 Area 1 (100%) [大金冠] (12%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -34640,7 +34640,7 @@ var monster_data = {
         "mount": "1",
         "parts": "12",
         "players": "1",
-        "quest": "6★ 双凶来袭：月光闪耀的白焰 Area 1 (100%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：月光闪耀的白焰 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -34652,7 +34652,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "6★ 稀少种星河！ Area 1 (100%) (100%)",
+        "quest": "6★ 稀少种星河！ Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -34664,7 +34664,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "6★ 如划破黑夜一般 Area 1 (100%) (100%)",
+        "quest": "6★ 如划破黑夜一般 Area 1 (100%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -34676,7 +34676,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：以毒攻毒 Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：以毒攻毒 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -35874,7 +35874,7 @@ var monster_data = {
         "mount": "1",
         "parts": "23",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 7 (60%) Area 10 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 7 (60%) Area 10 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3",
         "stun": "3"
       },
@@ -35886,7 +35886,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "盟友 6★ 调查棘茶龙 Area 7 (60%) Area 10 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查棘茶龙 Area 7 (60%) Area 10 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -35898,7 +35898,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 贯穿古塔的一击 Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 贯穿古塔的一击 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -35910,7 +35910,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "6★ 烈祸袭来：传奇一击 Area 1 (100%) (100%)",
+        "quest": "6★ 烈祸袭来：传奇一击 Area 1 (100%) [小金冠] (100%)",
         "stamina": "2.2",
         "stun": "1.7"
       },
@@ -35922,7 +35922,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：以毒攻毒 Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：以毒攻毒 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -35934,7 +35934,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：千差万别，煌煌火光 Area 12 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：千差万别，煌煌火光 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -35946,7 +35946,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 7 (60%) Area 10 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 7 (60%) Area 10 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -36594,7 +36594,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -36606,7 +36606,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 月夜假寐的沉睡之龙 Area 11 (60%) Area 4 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 月夜假寐的沉睡之龙 Area 11 (60%) Area 4 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -36618,7 +36618,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查棘龙 Area 11 (60%) Area 4 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查棘龙 Area 11 (60%) Area 4 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -36630,7 +36630,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 9 (60%) Area 6 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36654,7 +36654,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：棘龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -36666,7 +36666,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 11 (60%) Area 4 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 11 (60%) Area 4 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36678,7 +36678,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 为随从献上可爱服装！ Area 12 (60%) Area 8 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "5★ 为随从献上可爱服装！ Area 12 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -36690,7 +36690,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "6★ 秘境真美 Area 1 (100%) (6%) (10%)",
+        "quest": "6★ 秘境真美 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36702,7 +36702,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 状态异常造成影响的研究 Area 9 (60%) Area 6 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 状态异常造成影响的研究 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -36714,7 +36714,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 黑中之白 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 黑中之白 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36726,7 +36726,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 如云雾般消散之人 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 如云雾般消散之人 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36738,7 +36738,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 以毒攻风 Area 9 (60%) Area 6 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 以毒攻风 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36750,7 +36750,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36762,7 +36762,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36774,7 +36774,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36786,7 +36786,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 破坏城塞的暴君 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 破坏城塞的暴君 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -36798,7 +36798,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查轰龙 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查轰龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -36810,7 +36810,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 月光之下 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 月光之下 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36822,7 +36822,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 危险的森林浴 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 危险的森林浴 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36834,7 +36834,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 血红的月光 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 血红的月光 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36846,7 +36846,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：钢龙 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：钢龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36858,7 +36858,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36870,7 +36870,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 大凶星 Area 2 (100%) (1%) (1%)",
+        "quest": "6★ 大凶星 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36882,7 +36882,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 横扫树荫的金狮子 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 横扫树荫的金狮子 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36894,7 +36894,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查金狮子 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查金狮子 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36906,7 +36906,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查夜里的威胁者 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查夜里的威胁者 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36918,7 +36918,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 用狩猎说话 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 用狩猎说话 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36930,7 +36930,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36942,7 +36942,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36954,7 +36954,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：金色冲击 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：金色冲击 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36966,7 +36966,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：千刃龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：千刃龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36978,7 +36978,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -36990,7 +36990,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -37002,7 +37002,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -37014,7 +37014,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查爆鳞龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查爆鳞龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -38087,7 +38087,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15.5",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 11 (60%) Area 6 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -38099,7 +38099,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 加深情谊的团体战 Area 11 (60%) Area 6 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 加深情谊的团体战 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -38111,7 +38111,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 水没林的恐怖之夜 Area 10 (60%) Area 2 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "5★ 水没林的恐怖之夜 Area 10 (60%) Area 2 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -38123,7 +38123,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查暗夜沙漠中的凶暴者 Area 11 (60%) Area 6 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查暗夜沙漠中的凶暴者 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -38147,7 +38147,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 认真观察毒妖鸟 Area 11 (60%) Area 6 (30%) Area 8 (10%) (1%)",
+        "quest": "集会所 2★ 认真观察毒妖鸟 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -38159,7 +38159,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 3 (60%) Area 6 (30%) Area 9 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 3 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38171,7 +38171,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 最近成为话题的坚硬家伙 Area 6 (100%) (1%)",
+        "quest": "集会所 5★ 最近成为话题的坚硬家伙 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38183,7 +38183,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 沙尘藏毒 Area 11 (60%) Area 6 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 沙尘藏毒 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38219,7 +38219,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 一柿入魂 Area 13 (100%) (1%)",
+        "quest": "集会所 5★ 一柿入魂 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38231,7 +38231,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 6 (60%) Area 8 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 6 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38243,7 +38243,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 绯色天狗参拜神社 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 绯色天狗参拜神社 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38255,7 +38255,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 绯色天狗来袭 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 绯色天狗来袭 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38267,7 +38267,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 参见陆地女王 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 参见陆地女王 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38279,7 +38279,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 翼镰毒毒 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 翼镰毒毒 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -38291,7 +38291,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 11 (60%) Area 6 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -38303,7 +38303,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 怨念翻涌的神社 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 怨念翻涌的神社 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -38315,7 +38315,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查怨虎龙 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查怨虎龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -38327,7 +38327,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：伞鸟 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：伞鸟 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -38339,7 +38339,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 渴望疾翔 Area 10 (60%) Area 2 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "活动任务 5★ 渴望疾翔 Area 10 (60%) Area 2 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38351,7 +38351,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查适应沙原者 Area 11 (60%) Area 6 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查适应沙原者 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -38411,7 +38411,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 6 (100%) (1%)",
+        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38423,7 +38423,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 为女王所吸引 Area 3 (100%) (1%)",
+        "quest": "集会所 5★ 为女王所吸引 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38435,7 +38435,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 锻炼吧！弓之型 Area 9 (100%) (1%)",
+        "quest": "集会所 6★ 锻炼吧！弓之型 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -38447,7 +38447,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查绯天狗兽 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查绯天狗兽 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38459,7 +38459,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 自投蛮颚龙 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 自投蛮颚龙 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38471,7 +38471,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 刺激的试胆♪ Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 刺激的试胆♪ Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38483,7 +38483,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 滴水穿岩 Area 11 (100%) (1%)",
+        "quest": "集会所 5★ 滴水穿岩 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38495,7 +38495,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 看清吧！大剑之型 Area 3 (100%) (1%)",
+        "quest": "集会所 5★ 看清吧！大剑之型 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38507,7 +38507,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 2 (100%) (1%)",
+        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -38519,7 +38519,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38531,7 +38531,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 水边的祸害 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 水边的祸害 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38543,7 +38543,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 泥翁龙的考验 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 泥翁龙的考验 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -38555,7 +38555,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：土砂龙 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：土砂龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -38567,7 +38567,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 水没林的扰人群体 Area 13 (100%) (1%)",
+        "quest": "集会所 5★ 水没林的扰人群体 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38579,7 +38579,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -38591,7 +38591,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 文殊与猎人！？ Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 文殊与猎人！？ Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -38603,7 +38603,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 领会吧！长枪之型 Area 11 (60%) Area 6 (30%) Area 8 (10%) (1%)",
+        "quest": "集会所 5★ 领会吧！长枪之型 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38615,7 +38615,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 10 (60%) Area 2 (30%) Area 6 (10%) (1%)",
+        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 10 (60%) Area 2 (30%) Area 6 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -38627,7 +38627,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 奔驰于地底的角龙 Area 11 (60%) Area 6 (30%) Area 8 (10%) (1%)",
+        "quest": "集会所 7★ 奔驰于地底的角龙 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -38639,7 +38639,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥底来客 Area 10 (60%) Area 2 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 泥底来客 Area 10 (60%) Area 2 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38651,7 +38651,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查刚缠兽 Area 10 (60%) Area 2 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查刚缠兽 Area 10 (60%) Area 2 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -38663,7 +38663,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 3 (60%) Area 6 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 3 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -38675,7 +38675,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 11 (60%) Area 6 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -38687,7 +38687,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查黑蚀龙 Area 3 (60%) Area 6 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查黑蚀龙 Area 3 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -38699,7 +38699,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 11 (60%) Area 6 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -38711,7 +38711,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查废神社的支配者 Area 3 (60%) Area 6 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查废神社的支配者 Area 3 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -38723,7 +38723,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 10 (60%) Area 2 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 10 (60%) Area 2 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -38735,7 +38735,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 10 (60%) Area 2 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 10 (60%) Area 2 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -38747,7 +38747,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：水兽 Area 10 (60%) Area 2 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：水兽 Area 10 (60%) Area 2 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -38759,7 +38759,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 沙尘中的黑影 Area 11 (60%) Area 6 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "6★ 沙尘中的黑影 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -38771,7 +38771,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 为女王所吸引 Area 12 (50%) Area 10 (50%) (1%)",
+        "quest": "集会所 5★ 为女王所吸引 Area 12 (50%) Area 10 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -38783,7 +38783,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 11 (60%) Area 6 (30%) Area 8 (10%) (1%)",
+        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -38795,7 +38795,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查天狗兽 Area 10 (60%) Area 2 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "盟友 2★ 调查天狗兽 Area 10 (60%) Area 2 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -38807,7 +38807,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查水没林水难事故 Area 10 (60%) Area 2 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查水没林水难事故 Area 10 (60%) Area 2 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -38819,7 +38819,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 千刃来袭 Area 11 (60%) Area 6 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 千刃来袭 Area 11 (60%) Area 6 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -38831,7 +38831,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 3 (60%) Area 6 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 3 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       }
@@ -39841,7 +39841,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 10 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -39889,7 +39889,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.51",
         "players": "1",
-        "quest": "集会所 1★ 奔跑于废神社的毒狗龙王 Area 6 (60%) Area 13 (30%) Area 9 (10%) (1%)",
+        "quest": "集会所 1★ 奔跑于废神社的毒狗龙王 Area 6 (60%) Area 13 (30%) Area 9 (10%) [小金冠] (1%)",
         "stamina": "1.15",
         "stun": "1.1"
       },
@@ -39901,7 +39901,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 身披剧毒锦缎 Area 6 (60%) Area 13 (30%) Area 9 (10%) (3%) (3%)",
+        "quest": "集会所 4★ 身披剧毒锦缎 Area 6 (60%) Area 13 (30%) Area 9 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -39913,7 +39913,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 1★ 密林的毒地毯 Area 5 (60%) Area 11 (30%) Area 8 (10%) (100%)",
+        "quest": "大师等级 1★ 密林的毒地毯 Area 5 (60%) Area 11 (30%) Area 8 (10%) [大金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -39925,7 +39925,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 水边的祸害 Area 8 (60%) Area 11 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 水边的祸害 Area 8 (60%) Area 11 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -39961,7 +39961,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 包围而来的旋风 Area 6 (100%) (1%)",
+        "quest": "集会所 4★ 包围而来的旋风 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -39973,7 +39973,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 学习吧！轻弩之型 Area 12 (100%) (3%) (3%)",
+        "quest": "集会所 4★ 学习吧！轻弩之型 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -39985,7 +39985,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 水没林的扰人群体 Area 8 (100%) (1%)",
+        "quest": "集会所 5★ 水没林的扰人群体 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -39997,7 +39997,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 注意树荫的水兽 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 注意树荫的水兽 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40009,7 +40009,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 悄然出现的虫子 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 悄然出现的虫子 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40021,7 +40021,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 1★ 密林的毒地毯 Area 4 (60%) Area 7 (30%) Area 6 (10%) (100%)",
+        "quest": "大师等级 1★ 密林的毒地毯 Area 4 (60%) Area 7 (30%) Area 6 (10%) [小金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40045,7 +40045,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：镰鼬龙王 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：镰鼬龙王 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -40057,7 +40057,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -40069,7 +40069,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "1★ 欢迎踏上新手猎人之路！ Area 11 (100%) (100%)",
+        "quest": "1★ 欢迎踏上新手猎人之路！ Area 11 (100%) [小金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40105,7 +40105,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 13 (100%) (1%)",
+        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -40117,7 +40117,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 沼中危影 Area 11 (100%) (1%)",
+        "quest": "集会所 5★ 沼中危影 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -40129,7 +40129,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 熔岩洞扫荡战 Area 5 (100%) (1%)",
+        "quest": "集会所 6★ 熔岩洞扫荡战 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -40141,7 +40141,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 为船开路 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 为船开路 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40153,7 +40153,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40165,7 +40165,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ “安全采购素材”之卷 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ “安全采购素材”之卷 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40177,7 +40177,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 鸟龙三连星 Area 11 (100%) (6%) (10%)",
+        "quest": "大师等级 2★ 鸟龙三连星 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -40249,7 +40249,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 伞鸟圆舞 Area 13 (100%) (1%)",
+        "quest": "集会所 4★ 伞鸟圆舞 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -40261,7 +40261,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 慎重派与冲锋派 Area 13 (100%) (1%)",
+        "quest": "集会所 4★ 慎重派与冲锋派 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -40273,7 +40273,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40285,7 +40285,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -40297,7 +40297,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 翼镰毒毒 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 翼镰毒毒 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -40309,7 +40309,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 渴望疾翔 Area 11 (100%) (1%)",
+        "quest": "活动任务 5★ 渴望疾翔 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -40321,7 +40321,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查怨虎龙 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查怨虎龙 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -40333,7 +40333,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -40345,7 +40345,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：水兽 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：水兽 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -40357,7 +40357,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 怪物美食家 Area 13 (100%) (1%)",
+        "quest": "集会所 4★ 怪物美食家 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -40369,7 +40369,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "大师等级 1★ 撕裂寂静者 Area 9 (100%) (1%)",
+        "quest": "大师等级 1★ 撕裂寂静者 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40381,7 +40381,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 怨念翻涌的神社 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 怨念翻涌的神社 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -40393,7 +40393,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ “蛋团子争夺战！”之卷 Area 6 (50%) Area 13 (50%) (1%)",
+        "quest": "集会所 4★ “蛋团子争夺战！”之卷 Area 6 (50%) Area 13 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -40405,7 +40405,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 与水共存之物 Area 8 (60%) Area 2 (30%) Area 1 (10%) (1%)",
+        "quest": "集会所 5★ 与水共存之物 Area 8 (60%) Area 2 (30%) Area 1 (10%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -40417,7 +40417,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 向镰鼬龙王学习 Area 6 (60%) Area 13 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 向镰鼬龙王学习 Area 6 (60%) Area 13 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40429,7 +40429,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 废神社大战 Area 6 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "大师等级 2★ 废神社大战 Area 6 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -40441,7 +40441,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 刺激的试胆♪ Area 6 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "大师等级 2★ 刺激的试胆♪ Area 6 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -40453,7 +40453,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查泡狐龙 Area 5 (60%) Area 11 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查泡狐龙 Area 5 (60%) Area 11 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -40465,7 +40465,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天狗兽 Area 6 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：天狗兽 Area 6 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -40477,7 +40477,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 大哥的请求 Area 7 (50%) Area 5 (50%) (1%) (1%)",
+        "quest": "大师等级 4★ 大哥的请求 Area 7 (50%) Area 5 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -40489,7 +40489,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 7 (50%) Area 5 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 7 (50%) Area 5 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -40501,7 +40501,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 怪物美食家 Area 6 (50%) Area 13 (50%) (1%)",
+        "quest": "集会所 4★ 怪物美食家 Area 6 (50%) Area 13 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -40513,7 +40513,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 看清吧！大剑之型 Area 6 (50%) Area 13 (50%) (1%)",
+        "quest": "集会所 5★ 看清吧！大剑之型 Area 6 (50%) Area 13 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -40525,7 +40525,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 绽放于天际的红莲 Area 7 (50%) Area 5 (50%) (1%)",
+        "quest": "集会所 6★ 绽放于天际的红莲 Area 7 (50%) Area 5 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -40537,7 +40537,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 5 (60%) Area 11 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 5 (60%) Area 11 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40549,7 +40549,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 注意树荫的水兽 Area 5 (60%) Area 11 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 注意树荫的水兽 Area 5 (60%) Area 11 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40561,7 +40561,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 6 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 6 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -40573,7 +40573,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 5 (60%) Area 11 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 5 (60%) Area 11 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -40585,7 +40585,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 5 (60%) Area 11 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 5 (60%) Area 11 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -40597,7 +40597,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 迅雷无止 Area 5 (60%) Area 11 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 迅雷无止 Area 5 (60%) Area 11 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -40609,7 +40609,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 绝音利镰 Area 8 (60%) Area 11 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 绝音利镰 Area 8 (60%) Area 11 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       }
@@ -41679,7 +41679,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：水兽 Area 4 (60%) Area 7 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：水兽 Area 4 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -41691,7 +41691,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 渴望疾翔 Area 4 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "活动任务 5★ 渴望疾翔 Area 4 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -41703,7 +41703,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 祈祷招来甘霖之后 …… Area 4 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "5★ 祈祷招来甘霖之后 …… Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -41739,7 +41739,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 水没林被水淹没 Area 4 (60%) Area 7 (30%) Area 2 (10%) (1%)",
+        "quest": "集会所 2★ 水没林被水淹没 Area 4 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -41763,7 +41763,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 水之兽与火之龙 Area 4 (60%) Area 7 (30%) Area 2 (10%) (1%)",
+        "quest": "集会所 2★ 水之兽与火之龙 Area 4 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -41775,7 +41775,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 与水共存之物 Area 4 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 与水共存之物 Area 4 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -41787,7 +41787,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 融为一体吧！盾斧之型 Area 4 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 融为一体吧！盾斧之型 Area 4 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -41799,7 +41799,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 水没林的扰人群体 Area 4 (100%) (1%)",
+        "quest": "集会所 5★ 水没林的扰人群体 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -41811,7 +41811,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 熔岩洞扫荡战 Area 7 (100%) (1%)",
+        "quest": "集会所 6★ 熔岩洞扫荡战 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -41835,7 +41835,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 注意树荫的水兽 Area 4 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 注意树荫的水兽 Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -41847,7 +41847,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 密林的指南 Area 4 (60%) Area 3 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 密林的指南 Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -41859,7 +41859,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查水没林水难事故 Area 4 (60%) Area 7 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查水没林水难事故 Area 4 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -41895,7 +41895,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 为船开路 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 为船开路 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -41907,7 +41907,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -41919,7 +41919,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥底来客 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 泥底来客 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -41931,7 +41931,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查蛮颚龙 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查蛮颚龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -41943,7 +41943,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 水没林三暴徒 Area 4 (60%) Area 7 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 水没林三暴徒 Area 4 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -41955,7 +41955,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 7 (100%) (1%)",
+        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -41967,7 +41967,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -41979,7 +41979,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 别无二致的音速之影 Area 4 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 别无二致的音速之影 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -41991,7 +41991,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：岩龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：岩龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -42015,7 +42015,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 悄然出现的虫子 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 悄然出现的虫子 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -42027,7 +42027,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 拦路的河童蛙 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 拦路的河童蛙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -42039,7 +42039,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 水边的祸害 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 水边的祸害 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -42051,7 +42051,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 为害一方的密林恶棍 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 为害一方的密林恶棍 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -42087,7 +42087,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 一柿入魂 Area 4 (100%) (1%)",
+        "quest": "集会所 5★ 一柿入魂 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -42099,7 +42099,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 绽放于天际的红莲 Area 6 (100%) (1%)",
+        "quest": "集会所 6★ 绽放于天际的红莲 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -42111,7 +42111,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 6 (100%) (1%)",
+        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -42123,7 +42123,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 10 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -42135,7 +42135,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ “安全采购素材”之卷 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ “安全采购素材”之卷 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -42147,7 +42147,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -42159,7 +42159,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -42171,7 +42171,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 交错的柿子与枪火 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 交错的柿子与枪火 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -42183,7 +42183,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查天狗兽 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查天狗兽 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -42195,7 +42195,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -42207,7 +42207,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 雷电摧群木 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 雷电摧群木 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -42219,7 +42219,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查电龙 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查电龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -42231,7 +42231,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 双雷照夜 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 双雷照夜 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -42243,7 +42243,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -42255,7 +42255,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -42267,7 +42267,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -42279,7 +42279,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 4 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -42291,7 +42291,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 欲速则不达 Area 7 (70%) Area 2 (30%) (1%) (1%)",
+        "quest": "活动任务 8★ 欲速则不达 Area 7 (70%) Area 2 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -42303,7 +42303,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 6 (50%) Area 10 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 6 (50%) Area 10 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -42315,7 +42315,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 6 (50%) Area 10 (50%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 6 (50%) Area 10 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -42327,7 +42327,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 6 (50%) Area 10 (50%) (1%)",
+        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 6 (50%) Area 10 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -42339,7 +42339,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 4 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 十万火急！尽快狩猎！ Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -42351,7 +42351,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 密林的毒地毯 Area 4 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 密林的毒地毯 Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -42363,7 +42363,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 自投蛮颚龙 Area 7 (70%) Area 2 (30%) (1%) (1%)",
+        "quest": "大师等级 2★ 自投蛮颚龙 Area 7 (70%) Area 2 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -42375,7 +42375,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 赠君勿忘花 Area 4 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 赠君勿忘花 Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -42387,7 +42387,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 绝音利镰 Area 4 (60%) Area 7 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 绝音利镰 Area 4 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -42399,7 +42399,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 4 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -42411,7 +42411,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查迅龙 Area 4 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查迅龙 Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -42423,7 +42423,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 飞跃头顶的威胁 Area 7 (70%) Area 2 (30%) (1%)",
+        "quest": "集会所 6★ 飞跃头顶的威胁 Area 7 (70%) Area 2 (30%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -42435,7 +42435,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 7 (70%) Area 2 (30%) (1%)",
+        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 7 (70%) Area 2 (30%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -42447,7 +42447,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 四处逼近的威胁 Area 6 (50%) Area 10 (50%) (1%)",
+        "quest": "集会所 7★ 四处逼近的威胁 Area 6 (50%) Area 10 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -42459,7 +42459,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查泥翁龙 Area 7 (70%) Area 2 (30%) (1%) (1%)",
+        "quest": "盟友 3★ 调查泥翁龙 Area 7 (70%) Area 2 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -42471,7 +42471,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 4 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -42483,7 +42483,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雌火龙 Area 4 (60%) Area 3 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雌火龙 Area 4 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -42495,7 +42495,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 7 (70%) Area 2 (30%) (1%) (1%)",
+        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 7 (70%) Area 2 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -42507,7 +42507,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 6 (60%) Area 7 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 6 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -43768,7 +43768,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：河童蛙 Area 6 (60%) Area 9 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：河童蛙 Area 6 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -43792,7 +43792,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ USJ・废神社的激斗！ Area 6 (60%) Area 9 (30%) Area 13 (10%) (8%)",
+        "quest": "活动任务 8★ USJ・废神社的激斗！ Area 6 (60%) Area 9 (30%) Area 13 (10%) [大金冠] (8%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -43828,7 +43828,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 鲸吞力士 Area 6 (60%) Area 9 (30%) Area 13 (10%) (1%)",
+        "quest": "集会所 2★ 鲸吞力士 Area 6 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -43840,7 +43840,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 10 (60%) Area 7 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -43852,7 +43852,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 拦路的河童蛙 Area 3 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 拦路的河童蛙 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -43864,7 +43864,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 才不要又湿又冷地睡着！ Area 10 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 才不要又湿又冷地睡着！ Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -43936,7 +43936,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 兔与蛙的相扑练习 Area 10 (60%) Area 7 (30%) Area 5 (10%) (1%)",
+        "quest": "集会所 2★ 兔与蛙的相扑练习 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -43948,7 +43948,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 身披剧毒锦缎 Area 9 (100%) (1%)",
+        "quest": "集会所 4★ 身披剧毒锦缎 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -43960,7 +43960,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 理解吧！狩猎笛之型 Area 6 (60%) Area 9 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "集会所 4★ 理解吧！狩猎笛之型 Area 6 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -43972,7 +43972,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 9 (100%) (1%)",
+        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -43984,7 +43984,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 吞噬寒地之影 Area 10 (60%) Area 7 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 吞噬寒地之影 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -43996,7 +43996,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 勇猛之力宛如大地 Area 10 (70%) Area 5 (30%) (3%) (3%)",
+        "quest": "集会所 7★ 勇猛之力宛如大地 Area 10 (70%) Area 5 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -44008,7 +44008,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 7 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -44020,7 +44020,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 白兔兽，白又白 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 白兔兽，白又白 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -44032,7 +44032,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 一心吞噬的白色怪物 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 一心吞噬的白色怪物 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -44044,7 +44044,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 赠君勿忘花 Area 3 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 赠君勿忘花 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -44056,7 +44056,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查密林庆典骚动 Area 3 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查密林庆典骚动 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -44068,7 +44068,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 10 (100%) (1%)",
+        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44080,7 +44080,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 熊与河童的踏地表演 Area 1 (100%) (100%)",
+        "quest": "活动任务 5★ 熊与河童的踏地表演 Area 1 (100%) [大金冠] (100%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -44092,7 +44092,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：白兔兽 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：白兔兽 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -44104,7 +44104,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：伞鸟 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：伞鸟 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -44116,7 +44116,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -44152,7 +44152,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 怪物美食家 Area 9 (100%) (1%)",
+        "quest": "集会所 4★ 怪物美食家 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44164,7 +44164,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 10 (100%) (1%)",
+        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44176,7 +44176,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 10 (100%) (1%)",
+        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44188,7 +44188,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 3 (100%) (1%)",
+        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -44200,7 +44200,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 密林的指南 Area 3 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 密林的指南 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -44212,7 +44212,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 酣然入梦人鱼龙枕 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 酣然入梦人鱼龙枕 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -44224,7 +44224,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 绯色天狗来袭 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 绯色天狗来袭 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -44236,7 +44236,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 包围而来的旋风 Area 13 (100%) (1%)",
+        "quest": "集会所 4★ 包围而来的旋风 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44248,7 +44248,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 5 (100%) (1%)",
+        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -44260,7 +44260,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 密林的毒地毯 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 密林的毒地毯 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -44272,7 +44272,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 白骑士与新手骑士 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 白骑士与新手骑士 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -44284,7 +44284,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰牙龙 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查冰牙龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -44296,7 +44296,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ “守护通往兔团子的道路”之卷 Area 7 (100%) (1%)",
+        "quest": "集会所 4★ “守护通往兔团子的道路”之卷 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44308,7 +44308,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ “蛋团子争夺战！”之卷 Area 13 (100%) (1%)",
+        "quest": "集会所 4★ “蛋团子争夺战！”之卷 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44320,7 +44320,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 10 (100%) (1%)",
+        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44332,7 +44332,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -44344,7 +44344,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -44356,7 +44356,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 9 (50%) Area 10 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 9 (50%) Area 10 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -44368,7 +44368,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天狗兽 Area 6 (50%) Area 9 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：天狗兽 Area 6 (50%) Area 9 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -44380,7 +44380,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 冰天雪地打瞌睡 Area 10 (60%) Area 7 (30%) Area 5 (10%) (1%)",
+        "quest": "集会所 4★ 冰天雪地打瞌睡 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44392,7 +44392,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 伞鸟圆舞 Area 6 (50%) Area 9 (50%) (1%)",
+        "quest": "集会所 4★ 伞鸟圆舞 Area 6 (50%) Area 9 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44404,7 +44404,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 10 (60%) Area 7 (30%) Area 5 (10%) (1%)",
+        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44416,7 +44416,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 3 (60%) Area 11 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -44428,7 +44428,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查蛮颚龙 Area 3 (60%) Area 11 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "盟友 2★ 调查蛮颚龙 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -44440,7 +44440,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 为害一方的密林恶棍 Area 3 (60%) Area 11 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 为害一方的密林恶棍 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -44452,7 +44452,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ “蛋团子争夺战！”之卷 Area 4 (50%) Area 8 (50%) (1%)",
+        "quest": "集会所 4★ “蛋团子争夺战！”之卷 Area 4 (50%) Area 8 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -44464,7 +44464,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 6 (50%) Area 9 (50%) (1%)",
+        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 6 (50%) Area 9 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -44476,7 +44476,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 9 (50%) Area 10 (50%) (1%)",
+        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 9 (50%) Area 10 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -44488,7 +44488,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 抖抖抖困困困 Area 10 (60%) Area 7 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 1★ 抖抖抖困困困 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -44500,7 +44500,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查奇怪龙 Area 10 (60%) Area 7 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "盟友 2★ 调查奇怪龙 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -44512,7 +44512,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 8★ 雪中暴牙 Area 10 (60%) Area 7 (30%) Area 5 (10%) (1%)",
+        "quest": "活动任务 8★ 雪中暴牙 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -44524,7 +44524,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：眠狗龙王 Area 10 (60%) Area 7 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：眠狗龙王 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -44536,7 +44536,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 来自冰海的邀请 Area 10 (60%) Area 7 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 来自冰海的邀请 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -44548,7 +44548,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 冰刃闪耀 Area 10 (60%) Area 7 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 冰刃闪耀 Area 10 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       }
@@ -46443,7 +46443,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 樱花妖娆起舞 Area 6 (60%) Area 13 (30%) Area 10 (10%) (100%)",
+        "quest": "6★ 樱花妖娆起舞 Area 6 (60%) Area 13 (30%) Area 10 (10%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46479,7 +46479,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 为泡狐所吸引 Area 7 (60%) Area 4 (30%) Area 2 (10%) (1%)",
+        "quest": "集会所 3★ 为泡狐所吸引 Area 7 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -46491,7 +46491,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 妖艳之舞 Area 6 (60%) Area 13 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 妖艳之舞 Area 6 (60%) Area 13 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -46503,7 +46503,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 3 (60%) Area 7 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 3 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46515,7 +46515,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 摇曳的草叶与樱尾 Area 3 (60%) Area 7 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 摇曳的草叶与樱尾 Area 3 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46527,7 +46527,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查泡狐龙 Area 3 (60%) Area 7 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查泡狐龙 Area 3 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46539,7 +46539,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 10 (60%) Area 12 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 10 (60%) Area 12 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -46551,7 +46551,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 6 (60%) Area 13 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 6 (60%) Area 13 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -46563,7 +46563,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 刚与柔的极致 Area 10 (60%) Area 12 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 刚与柔的极致 Area 10 (60%) Area 12 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -46575,7 +46575,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46587,7 +46587,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46599,7 +46599,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46611,7 +46611,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 用拳头粉碎一切…… Area 6 (60%) Area 13 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "4★ 用拳头粉碎一切…… Area 6 (60%) Area 13 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46623,7 +46623,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 樱花妖娆起舞 Area 6 (60%) Area 13 (30%) Area 10 (10%) (100%)",
+        "quest": "6★ 樱花妖娆起舞 Area 6 (60%) Area 13 (30%) Area 10 (10%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46635,7 +46635,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 来自神秘猫？的礼物 Area 7 (60%) Area 4 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "4★ 来自神秘猫？的礼物 Area 7 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46647,7 +46647,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 祈祷招来甘霖之后 …… Area 3 (60%) Area 7 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "5★ 祈祷招来甘霖之后 …… Area 3 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -46659,7 +46659,7 @@ var monster_data = {
         "mount": "1",
         "parts": "12.8",
         "players": "1",
-        "quest": "6★ 别打扰我的演出！ Area 10 (60%) Area 12 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "6★ 别打扰我的演出！ Area 10 (60%) Area 12 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46683,7 +46683,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 7 (60%) Area 4 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 7 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -46695,7 +46695,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 12 (100%) (1%)",
+        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -46707,7 +46707,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 英雄豪杰 Area 11 (100%) (3%) (3%)",
+        "quest": "集会所 6★ 英雄豪杰 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -46719,7 +46719,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 废神社大骚动 Area 6 (70%) Area 2 (30%) (3%) (3%)",
+        "quest": "集会所 7★ 废神社大骚动 Area 6 (70%) Area 2 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -46731,7 +46731,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 神秘红光 Area 13 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 神秘红光 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -46743,7 +46743,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 7 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -46755,7 +46755,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46767,7 +46767,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 别毁坏我的垂钓点喵 Area 7 (60%) Area 4 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 别毁坏我的垂钓点喵 Area 7 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46779,7 +46779,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 雷电摧群木 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 雷电摧群木 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46791,7 +46791,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查电龙 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查电龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46803,7 +46803,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 6 (60%) Area 13 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 6 (60%) Area 13 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46815,7 +46815,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 爆鳞预警 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 爆鳞预警 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46851,7 +46851,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：龙兽戏画 Area 10 (70%) Area 12 (30%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：龙兽戏画 Area 10 (70%) Area 12 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -46863,7 +46863,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 7 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -46875,7 +46875,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46887,7 +46887,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46899,7 +46899,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46911,7 +46911,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 来自未知的侵蚀 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 来自未知的侵蚀 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46923,7 +46923,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查黑蚀龙 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查黑蚀龙 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -46935,7 +46935,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46947,7 +46947,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 冰点下的统治者 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 冰点下的统治者 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46959,7 +46959,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查废神社的支配者 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查废神社的支配者 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46971,7 +46971,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：迅龙 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：迅龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46983,7 +46983,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查金火龙 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查金火龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -46995,7 +46995,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47007,7 +47007,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 12 (100%) (1%)",
+        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47019,7 +47019,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 清官难断火龙事 Area 6 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 清官难断火龙事 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -47031,7 +47031,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 水清月自现 Area 1 (100%) (3%) (3%)",
+        "quest": "活动任务 6★ 水清月自现 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47043,7 +47043,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 8★ 雪中暴牙 Area 12 (100%) (1%)",
+        "quest": "活动任务 8★ 雪中暴牙 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47055,7 +47055,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 往日的回忆 Area 6 (60%) Area 13 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "活动任务 7★ 往日的回忆 Area 6 (60%) Area 13 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47067,7 +47067,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 爆鳞龙飞翔 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 爆鳞龙飞翔 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47079,7 +47079,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查爆鳞龙 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查爆鳞龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47091,7 +47091,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47103,7 +47103,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47115,7 +47115,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：电龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：电龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47127,7 +47127,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47139,7 +47139,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47151,7 +47151,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：钢龙 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：钢龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47163,7 +47163,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 冰刃闪耀 Area 12 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 冰刃闪耀 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -47175,7 +47175,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 7 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -47199,7 +47199,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 7 (100%) (1%)",
+        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47211,7 +47211,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 12 (100%) (1%)",
+        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47223,7 +47223,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 雪鬼兽来了 Area 10 (100%) (1%)",
+        "quest": "集会所 7★ 雪鬼兽来了 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47235,7 +47235,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 身缠鬼火者 Area 6 (100%) (1%)",
+        "quest": "集会所 7★ 身缠鬼火者 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47247,7 +47247,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 勇猛之力宛如大地 Area 12 (100%) (1%)",
+        "quest": "集会所 7★ 勇猛之力宛如大地 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47259,7 +47259,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 6 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -47271,7 +47271,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 大凶星 Area 7 (100%) (1%) (1%)",
+        "quest": "6★ 大凶星 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47283,7 +47283,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 4 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -47295,7 +47295,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 横扫树荫的金狮子 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 横扫树荫的金狮子 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47307,7 +47307,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查金狮子 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查金狮子 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47319,7 +47319,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终极大干架爆发？ Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 终极大干架爆发？ Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47331,7 +47331,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47343,7 +47343,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：棘龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47355,7 +47355,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 冰冠的交战 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 冰冠的交战 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47367,7 +47367,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -47379,7 +47379,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -47391,7 +47391,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 打磨琥珀色的牙 Area 10 (60%) Area 12 (30%) Area 5 (10%) (1%)",
+        "quest": "集会所 6★ 打磨琥珀色的牙 Area 10 (60%) Area 12 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47403,7 +47403,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 锻炼吧！弓之型 Area 6 (50%) Area 13 (50%) (1%)",
+        "quest": "集会所 6★ 锻炼吧！弓之型 Area 6 (50%) Area 13 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47415,7 +47415,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 10 (60%) Area 12 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 10 (60%) Area 12 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -47427,7 +47427,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 5 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 5 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -47439,7 +47439,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 7 (70%) Area 2 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 7 (70%) Area 2 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -47451,7 +47451,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 6 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 6 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -47463,7 +47463,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 危险的森林浴 Area 3 (60%) Area 7 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 危险的森林浴 Area 3 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47475,7 +47475,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查钢龙 Area 5 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "盟友 5★ 调查钢龙 Area 5 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47487,7 +47487,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 6 (60%) Area 13 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 6 (60%) Area 13 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47499,7 +47499,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 5 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 5 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47511,7 +47511,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查冰封群岛剧变 Area 5 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "盟友 6★ 调查冰封群岛剧变 Area 5 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47523,7 +47523,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 5 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 5 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47535,7 +47535,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 6 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 6 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -47547,7 +47547,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 影之迅龙 Area 6 (50%) Area 13 (50%) (1%)",
+        "quest": "活动任务 7★ 影之迅龙 Area 6 (50%) Area 13 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -47559,7 +47559,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 6 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 6 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -47571,7 +47571,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 6 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 6 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -47583,7 +47583,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查水没林大战 Area 7 (70%) Area 2 (30%) (1%) (1%)",
+        "quest": "盟友 4★ 调查水没林大战 Area 7 (70%) Area 2 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -47595,7 +47595,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 别无二致的音速之影 Area 7 (70%) Area 2 (30%) (1%) (1%)",
+        "quest": "活动任务 8★ 别无二致的音速之影 Area 7 (70%) Area 2 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       }
@@ -49222,7 +49222,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 7 (60%) Area 11 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -49234,7 +49234,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 泥翁与流行文化 Area 7 (60%) Area 5 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "活动任务 8★ 泥翁与流行文化 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49258,7 +49258,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 泥，泥泞，泥翁龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%)",
+        "quest": "集会所 3★ 泥，泥泞，泥翁龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -49270,7 +49270,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 来自泥海的邀请 Area 7 (60%) Area 11 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 来自泥海的邀请 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -49282,7 +49282,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 废神社大骚动 Area 10 (60%) Area 9 (30%) Area 13 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 废神社大骚动 Area 10 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -49294,7 +49294,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.75",
         "players": "1",
-        "quest": "集会所 8★ 倪泰教官的挑战书・其一 Area 7 (60%) Area 11 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 倪泰教官的挑战书・其一 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49306,7 +49306,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 泥翁龙的考验 Area 7 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 泥翁龙的考验 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -49318,7 +49318,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 刃风破泥 Area 7 (60%) Area 11 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 刃风破泥 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -49330,7 +49330,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查泥翁龙 Area 7 (60%) Area 11 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查泥翁龙 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -49342,7 +49342,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 别毁坏我的垂钓点喵 Area 7 (60%) Area 11 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 别毁坏我的垂钓点喵 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -49366,7 +49366,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 尾巴×尾巴 Area 10 (70%) Area 9 (30%) (1%)",
+        "quest": "集会所 3★ 尾巴×尾巴 Area 10 (70%) Area 9 (30%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -49378,7 +49378,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 7 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49390,7 +49390,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 10 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49402,7 +49402,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 绝音利镰 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 绝音利镰 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -49414,7 +49414,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 千刃来袭 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 千刃来袭 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -49426,7 +49426,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49438,7 +49438,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49450,7 +49450,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：轰龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：轰龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49462,7 +49462,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金火龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：金火龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49474,7 +49474,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49486,7 +49486,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ USJ・废神社的激斗！ Area 10 (60%) Area 9 (30%) Area 13 (10%) (8%)",
+        "quest": "活动任务 8★ USJ・废神社的激斗！ Area 10 (60%) Area 9 (30%) Area 13 (10%) [大金冠] (8%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49498,7 +49498,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49510,7 +49510,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49522,7 +49522,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49534,7 +49534,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49546,7 +49546,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 10 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49558,7 +49558,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 7 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49570,7 +49570,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 用拳头粉碎一切…… Area 9 (100%) (1%) (1%)",
+        "quest": "4★ 用拳头粉碎一切…… Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -49582,7 +49582,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 来自神秘猫？的礼物 Area 7 (60%) Area 11 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "4★ 来自神秘猫？的礼物 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -49642,7 +49642,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 身缠鬼火者 Area 10 (100%) (1%)",
+        "quest": "集会所 7★ 身缠鬼火者 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -49654,7 +49654,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 2 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49666,7 +49666,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查水没林水难事故 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查水没林水难事故 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -49678,7 +49678,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -49690,7 +49690,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -49702,7 +49702,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 沙原遗失物搜查队 Area 7 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 沙原遗失物搜查队 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -49714,7 +49714,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -49726,7 +49726,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查2头刚缠兽 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查2头刚缠兽 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49738,7 +49738,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 奔驰于地底的角龙 Area 7 (100%) (1%)",
+        "quest": "集会所 7★ 奔驰于地底的角龙 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -49750,7 +49750,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 11 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49762,7 +49762,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -49774,7 +49774,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 飞扬的是热沙，抑或千刃？ Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 飞扬的是热沙，抑或千刃？ Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -49786,7 +49786,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 寂静深处 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 寂静深处 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49798,7 +49798,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49810,7 +49810,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49822,7 +49822,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：霞龙 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：霞龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49834,7 +49834,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49846,7 +49846,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 7 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49858,7 +49858,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 大地激昂 Area 6 (100%) (1%)",
+        "quest": "活动任务 7★ 大地激昂 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -49870,7 +49870,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 9 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49882,7 +49882,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查沙原的异常活动 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查沙原的异常活动 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49894,7 +49894,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查废神社的支配者 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查废神社的支配者 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49906,7 +49906,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49918,7 +49918,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：霞龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：霞龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49930,7 +49930,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 烈祸袭来：超速电导 Area 6 (100%) (1%) (1%)",
+        "quest": "6★ 烈祸袭来：超速电导 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -49942,7 +49942,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -49954,7 +49954,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 水没林的师徒共斗 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 水没林的师徒共斗 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -49966,7 +49966,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -49978,7 +49978,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 神秘红光 Area 10 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 神秘红光 Area 10 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -49990,7 +49990,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -50002,7 +50002,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 7 (60%) Area 11 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -50014,7 +50014,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 文殊与猎人！？ Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 文殊与猎人！？ Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -50026,7 +50026,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 7 (60%) Area 11 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -50038,7 +50038,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查千刃龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查千刃龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -50050,7 +50050,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 10 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 10 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -50062,7 +50062,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -50074,7 +50074,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 清官难断火龙事 Area 10 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 清官难断火龙事 Area 10 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -50086,7 +50086,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 大小暴君 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 大小暴君 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -50098,7 +50098,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 研究成果烟消云散 Area 10 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 研究成果烟消云散 Area 10 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -50110,7 +50110,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -50122,7 +50122,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 7 (60%) Area 11 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -50134,7 +50134,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：角龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：角龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -50146,7 +50146,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 10 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 10 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -50158,7 +50158,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 为随从献上可爱服装！ Area 10 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "5★ 为随从献上可爱服装！ Area 10 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -50170,7 +50170,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -50182,7 +50182,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 7 (60%) Area 11 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 7 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -50194,7 +50194,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查2头岩龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查2头岩龙 Area 7 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -50206,7 +50206,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查怨虎龙 Area 10 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查怨虎龙 Area 10 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       }
@@ -51010,7 +51010,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 沼中危影 Area 6 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 沼中危影 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -51022,7 +51022,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.4",
         "players": "1",
-        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 6 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -51034,7 +51034,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥底来客 Area 6 (60%) Area 7 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 泥底来客 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -51046,7 +51046,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 6 (60%) Area 7 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -51058,7 +51058,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15.5",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 6 (60%) Area 7 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -51070,7 +51070,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 水清月自现 Area 1 (100%) (3%) (3%)",
+        "quest": "活动任务 6★ 水清月自现 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -51082,7 +51082,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "2★ 用泥鱼龙灭火！ Area 6 (60%) Area 7 (30%) Area 2 (10%) (100%)",
+        "quest": "2★ 用泥鱼龙灭火！ Area 6 (60%) Area 7 (30%) Area 2 (10%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -51094,7 +51094,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 融为一体吧！盾斧之型 Area 6 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 融为一体吧！盾斧之型 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -51106,7 +51106,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查水没林水难事故 Area 6 (60%) Area 7 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查水没林水难事故 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -51118,7 +51118,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 6 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -51142,7 +51142,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 与水共存之物 Area 6 (100%) (1%)",
+        "quest": "集会所 5★ 与水共存之物 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -51154,7 +51154,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 水没林的扰人群体 Area 6 (100%) (1%)",
+        "quest": "集会所 5★ 水没林的扰人群体 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -51166,7 +51166,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 6 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -51178,7 +51178,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 水没林三暴徒 Area 6 (60%) Area 7 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 水没林三暴徒 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -51190,7 +51190,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -51202,7 +51202,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -51214,7 +51214,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "2★ 用泥鱼龙灭火！ Area 6 (60%) Area 7 (30%) Area 2 (10%) (100%)",
+        "quest": "2★ 用泥鱼龙灭火！ Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (100%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -51226,7 +51226,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 飞跃头顶的威胁 Area 6 (100%) (1%)",
+        "quest": "集会所 6★ 飞跃头顶的威胁 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -51238,7 +51238,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 6 (100%) (1%)",
+        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -51250,7 +51250,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 岿然不动的刚缠兽 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 岿然不动的刚缠兽 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -51262,7 +51262,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查刚缠兽 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查刚缠兽 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -51274,7 +51274,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查将军镰蟹 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查将军镰蟹 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -51286,7 +51286,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 翼镰毒毒 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 翼镰毒毒 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -51298,7 +51298,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 欲速则不达 Area 6 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 欲速则不达 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -51310,7 +51310,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 一柿入魂 Area 6 (60%) Area 7 (30%) Area 2 (10%) (1%)",
+        "quest": "集会所 5★ 一柿入魂 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -51322,7 +51322,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 来自泥海的邀请 Area 6 (60%) Area 7 (30%) Area 2 (10%) (1%)",
+        "quest": "集会所 7★ 来自泥海的邀请 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -51334,7 +51334,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 6 (60%) Area 7 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -51346,7 +51346,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 6 (60%) Area 7 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -51358,7 +51358,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 6 (60%) Area 7 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -51370,7 +51370,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 渴望疾翔 Area 6 (60%) Area 7 (30%) Area 2 (10%) (1%)",
+        "quest": "活动任务 5★ 渴望疾翔 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       }
@@ -51919,7 +51919,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 9 (60%) Area 6 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 9 (60%) Area 6 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -51931,7 +51931,7 @@ var monster_data = {
         "mount": "1",
         "parts": "23",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 3 (60%) Area 5 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 3 (60%) Area 5 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3",
         "stun": "3"
       },
@@ -51943,7 +51943,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 7 (60%) Area 14 (30%) Area 13 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 7 (60%) Area 14 (30%) Area 13 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -51955,7 +51955,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 10 (60%) Area 6 (30%) Area 14 (10%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 10 (60%) Area 6 (30%) Area 14 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -52388,7 +52388,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 10 (60%) Area 5 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 10 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52400,7 +52400,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查激昂的金色野兽 Area 3 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查激昂的金色野兽 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52412,7 +52412,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 10 (60%) Area 3 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 10 (60%) Area 3 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52436,7 +52436,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 不灭的怨念 Area 3 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 不灭的怨念 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52448,7 +52448,7 @@ var monster_data = {
         "mount": "1",
         "parts": "23",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 3 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3",
         "stun": "3"
       },
@@ -52460,7 +52460,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 3 (60%) Area 11 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 3 (60%) Area 11 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52472,7 +52472,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：破坏与灭亡之狂宴 Area 11 (100%) (100%)",
+        "quest": "6★ 双凶来袭：破坏与灭亡之狂宴 Area 11 (100%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52484,7 +52484,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 14 (60%) Area 7 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 14 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52496,7 +52496,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 7 (60%) Area 14 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 7 (60%) Area 14 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52508,7 +52508,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "6★ 双凶来袭：光与暗之缝隙 Area 11 (100%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：光与暗之缝隙 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52520,7 +52520,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 3 (60%) Area 5 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 3 (60%) Area 5 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52532,7 +52532,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "6★ 双凶来袭：狮子和谐的肉体 Area 11 (100%) (100%)",
+        "quest": "6★ 双凶来袭：狮子和谐的肉体 Area 11 (100%) [大金冠] (100%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -52544,7 +52544,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 7 (60%) Area 9 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 7 (60%) Area 9 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52556,7 +52556,7 @@ var monster_data = {
         "mount": "1",
         "parts": "12",
         "players": "1",
-        "quest": "6★ 双凶来袭：名为终焉的凶星 Area 12 (100%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：名为终焉的凶星 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52568,7 +52568,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：破坏与灭亡之狂宴 Area 12 (100%) (100%)",
+        "quest": "6★ 双凶来袭：破坏与灭亡之狂宴 Area 12 (100%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52580,7 +52580,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 熔岩洞过冷却 Area 11 (100%) (3%) (3%)",
+        "quest": "6★ 熔岩洞过冷却 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52592,7 +52592,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "6★ 双凶来袭：狮子和谐的肉体 Area 12 (100%) (100%)",
+        "quest": "6★ 双凶来袭：狮子和谐的肉体 Area 12 (100%) [大金冠] (100%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -52604,7 +52604,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 大凶星 Area 5 (100%) (3%) (3%)",
+        "quest": "6★ 大凶星 Area 5 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52616,7 +52616,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：金色冲击 Area 3 (60%) Area 5 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：金色冲击 Area 3 (60%) Area 5 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52628,7 +52628,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 别打扰我的演出！ Area 6 (100%) (3%) (3%)",
+        "quest": "6★ 别打扰我的演出！ Area 6 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -52640,7 +52640,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "6★ 还我安眠！ Area 10 (60%) Area 5 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "6★ 还我安眠！ Area 10 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -54017,7 +54017,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：火龙 Area 12 (60%) Area 14 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：火龙 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -54029,7 +54029,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 呼唤古龙的巨焰 Area 12 (60%) Area 14 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "5★ 呼唤古龙的巨焰 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -54065,7 +54065,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 王者，降临熔岩洞 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%)",
+        "quest": "集会所 3★ 王者，降临熔岩洞 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -54077,7 +54077,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 绽放于天际的红莲 Area 12 (60%) Area 14 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 绽放于天际的红莲 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54089,7 +54089,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于古城的王者 Area 10 (60%) Area 4 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 沉睡于古城的王者 Area 10 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54101,7 +54101,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 飞天龙影 Area 10 (60%) Area 4 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 飞天龙影 Area 10 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54113,7 +54113,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查火龙 Area 10 (60%) Area 4 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查火龙 Area 10 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54125,7 +54125,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 12 (60%) Area 14 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54137,7 +54137,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 充斥天地的火焰与轰鸣 Area 12 (60%) Area 14 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 充斥天地的火焰与轰鸣 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -54149,7 +54149,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查喷火大地 Area 12 (60%) Area 14 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查喷火大地 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -54197,7 +54197,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 11 (100%) (1%)",
+        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54209,7 +54209,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 邀往冥府的歌声 Area 12 (100%) (1%)",
+        "quest": "集会所 6★ 邀往冥府的歌声 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54221,7 +54221,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 吹火贵妇 Area 12 (100%) (1%)",
+        "quest": "集会所 7★ 吹火贵妇 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54233,7 +54233,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 12 (70%) Area 14 (30%) (3%) (3%)",
+        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 12 (70%) Area 14 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54245,7 +54245,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：强者们的酒宴 Area 1 (100%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：强者们的酒宴 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -54257,7 +54257,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.75",
         "players": "1",
-        "quest": "集会所 8★ 倪泰教官的挑战书・其五 Area 12 (70%) Area 13 (30%) (3%) (3%)",
+        "quest": "集会所 8★ 倪泰教官的挑战书・其五 Area 12 (70%) Area 13 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -54269,7 +54269,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 激情燃烧！熔岩洞的考验 Area 12 (60%) Area 14 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 激情燃烧！熔岩洞的考验 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54281,7 +54281,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 身披黑衣的龙 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 身披黑衣的龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54293,7 +54293,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 关爱随从之人的求助 Area 14 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 关爱随从之人的求助 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54305,7 +54305,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 周身龙炎的炎王 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 周身龙炎的炎王 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54317,7 +54317,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查炎王龙 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查炎王龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54329,7 +54329,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 13 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54341,7 +54341,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 积怨的怒吼 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 积怨的怒吼 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54353,7 +54353,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：霞龙 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：霞龙 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54365,7 +54365,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 12 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -54377,7 +54377,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 11 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -54389,7 +54389,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 红绿圆舞曲 Area 12 (100%) (100%)",
+        "quest": "4★ 红绿圆舞曲 Area 12 (100%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54401,7 +54401,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54413,7 +54413,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 烈焰的炎舞曲 Area 10 (60%) Area 4 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 烈焰的炎舞曲 Area 10 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54425,7 +54425,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54437,7 +54437,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54449,7 +54449,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54461,7 +54461,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ SF：最强流升段考试 Area 13 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ SF：最强流升段考试 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -54473,7 +54473,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 无惧粉盔碎甲 Area 14 (100%) (3%) (3%)",
+        "quest": "活动任务 6★ 无惧粉盔碎甲 Area 14 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54485,7 +54485,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 狂热粉丝 Area 14 (100%) (1%)",
+        "quest": "活动任务 7★ 狂热粉丝 Area 14 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54509,7 +54509,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 远古幻影 Area 8 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 远古幻影 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -54521,7 +54521,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 14 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -54533,7 +54533,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的护卫 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 城塞高地的护卫 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54545,7 +54545,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 14 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54557,7 +54557,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 研究成果烟消云散 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 研究成果烟消云散 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54581,7 +54581,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 四处逼近的威胁 Area 12 (100%) (1%)",
+        "quest": "集会所 7★ 四处逼近的威胁 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54593,7 +54593,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54605,7 +54605,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 饯别武夫 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 饯别武夫 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54617,7 +54617,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查2头怨虎龙 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查2头怨虎龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54629,7 +54629,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54641,7 +54641,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54653,7 +54653,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金狮子 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：金狮子 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54665,7 +54665,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天廻龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：天廻龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54677,7 +54677,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 12 (100%) (1%)",
+        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54689,7 +54689,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 上镜♪最可爱★穿搭！ Area 4 (100%) (1%) (1%)",
+        "quest": "6★ 上镜♪最可爱★穿搭！ Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54701,7 +54701,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 守住食材运输路！ Area 9 (100%) (1%) (1%)",
+        "quest": "6★ 守住食材运输路！ Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54713,7 +54713,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54725,7 +54725,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：千刃龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：千刃龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54737,7 +54737,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 影之迅龙 Area 11 (100%) (1%)",
+        "quest": "活动任务 7★ 影之迅龙 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54749,7 +54749,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54761,7 +54761,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54773,7 +54773,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 夺回那份光辉 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 夺回那份光辉 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54785,7 +54785,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 身缠鬼火者 Area 11 (50%) Area 13 (50%) (1%)",
+        "quest": "集会所 7★ 身缠鬼火者 Area 11 (50%) Area 13 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -54797,7 +54797,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -54809,7 +54809,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 11 (50%) Area 13 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 11 (50%) Area 13 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -54821,7 +54821,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 冰狼，不回首望月 Area 10 (60%) Area 4 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 冰狼，不回首望月 Area 10 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54833,7 +54833,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查轰龙 Area 10 (60%) Area 4 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查轰龙 Area 10 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -54845,7 +54845,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54857,7 +54857,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54869,7 +54869,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54881,7 +54881,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54893,7 +54893,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 11 (60%) Area 13 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 11 (60%) Area 13 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54905,7 +54905,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 11 (60%) Area 13 (30%) Area 8 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 11 (60%) Area 13 (30%) Area 8 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54917,7 +54917,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -54929,7 +54929,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54941,7 +54941,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 熔岩洞过冷却 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "6★ 熔岩洞过冷却 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54953,7 +54953,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 10 (60%) Area 4 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 10 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54965,7 +54965,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：追寻真相 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：追寻真相 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54977,7 +54977,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 10 (60%) Area 4 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 10 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -54989,7 +54989,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 复活之传说 Area 10 (60%) Area 4 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 复活之传说 Area 10 (60%) Area 4 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -55001,7 +55001,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -55013,7 +55013,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 12 (60%) Area 14 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 12 (60%) Area 14 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       }
@@ -55995,7 +55995,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 9 (60%) Area 6 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 9 (60%) Area 6 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -56007,7 +56007,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查炎王龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查炎王龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -56019,7 +56019,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 夺回那份光辉 Area 14 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 夺回那份光辉 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56031,7 +56031,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 周身龙炎的炎王 Area 3 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 周身龙炎的炎王 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -56043,7 +56043,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 14 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -56055,7 +56055,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 炎国之王 Area 14 (60%) Area 5 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 炎国之王 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -56067,7 +56067,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 14 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56079,7 +56079,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 9 (60%) Area 6 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 9 (60%) Area 6 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -56091,7 +56091,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 9 (60%) Area 6 (30%) Area 11 (10%) (12%) (3%)",
+        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 9 (60%) Area 6 (30%) Area 11 (10%) [小金冠] (12%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -56103,7 +56103,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查沙原的异常活动 Area 9 (60%) Area 6 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查沙原的异常活动 Area 9 (60%) Area 6 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56115,7 +56115,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：高贵盛宴 Area 5 (100%) (3%) (3%)",
+        "quest": "6★ 双凶来袭：高贵盛宴 Area 5 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56127,7 +56127,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.7",
         "players": "1",
-        "quest": "活动任务 8★ 称号・强者之心 Area 1 (100%) (3%) (3%)",
+        "quest": "活动任务 8★ 称号・强者之心 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -56139,7 +56139,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 沙尘中的黑影 Area 9 (100%) (3%) (3%)",
+        "quest": "6★ 沙尘中的黑影 Area 9 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56151,7 +56151,7 @@ var monster_data = {
         "mount": "1",
         "parts": "12.8",
         "players": "1",
-        "quest": "6★ 蠢蠢欲动的三龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "6★ 蠢蠢欲动的三龙 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56163,7 +56163,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 呼唤古龙的巨焰 Area 14 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "5★ 呼唤古龙的巨焰 Area 14 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -56175,7 +56175,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 高难度：怪物猎人 Area 3 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 高难度：怪物猎人 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56187,7 +56187,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 高难度：吾等乐土之父母 Area 2 (100%) (1%)",
+        "quest": "活动任务 8★ 高难度：吾等乐土之父母 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -56199,7 +56199,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 烈焰的炎舞曲 Area 3 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 烈焰的炎舞曲 Area 3 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56211,7 +56211,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 战栗的神雷【重现】 Area 2 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 战栗的神雷【重现】 Area 2 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56223,7 +56223,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 百龙渊源 Area 2 (100%) (1%)",
+        "quest": "集会所 8★ 百龙渊源 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -56235,7 +56235,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 11 (100%) (1%)",
+        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       }
@@ -56723,7 +56723,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 13 (60%) Area 9 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 13 (60%) Area 9 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -56735,7 +56735,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 13 (60%) Area 9 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 13 (60%) Area 9 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -56747,7 +56747,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 13 (60%) Area 9 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 13 (60%) Area 9 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -56759,7 +56759,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 13 (60%) Area 9 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 13 (60%) Area 9 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -56771,7 +56771,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 夺回那份光辉 Area 13 (60%) Area 9 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 夺回那份光辉 Area 13 (60%) Area 9 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56783,7 +56783,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：千刃龙 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：千刃龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56795,7 +56795,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：棘茶龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56807,7 +56807,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炎王龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：炎王龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56819,7 +56819,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 呼唤古龙的巨焰 Area 13 (60%) Area 9 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "5★ 呼唤古龙的巨焰 Area 13 (60%) Area 9 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -56831,7 +56831,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 冻冻电电爆爆 Area 4 (60%) Area 2 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 冻冻电电爆爆 Area 4 (60%) Area 2 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -56843,7 +56843,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 关爱随从之人的求助 Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 关爱随从之人的求助 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56855,7 +56855,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 用狩猎说话 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 用狩猎说话 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56867,7 +56867,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56879,7 +56879,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56891,7 +56891,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 巨兽夜宴 Area 1 (100%) (100%)",
+        "quest": "4★ 巨兽夜宴 Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -56903,7 +56903,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 月光之下 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 月光之下 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56915,7 +56915,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 血红的月光 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 血红的月光 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56927,7 +56927,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 充斥天地的火焰与轰鸣 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 充斥天地的火焰与轰鸣 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56939,7 +56939,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查喷火大地 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查喷火大地 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56951,7 +56951,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 黑中之白 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 黑中之白 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56963,7 +56963,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 相异者们的四兽双曲 Area 12 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 相异者们的四兽双曲 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56975,7 +56975,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56987,7 +56987,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 4 (100%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -56999,7 +56999,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 熔岩洞过冷却 Area 9 (100%) (1%) (1%)",
+        "quest": "6★ 熔岩洞过冷却 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57011,7 +57011,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查夜里的威胁者 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查夜里的威胁者 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57023,7 +57023,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57035,7 +57035,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：火龙 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：火龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57047,7 +57047,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57059,7 +57059,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57071,7 +57071,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红之回归 Area 12 (100%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：红之回归 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57083,7 +57083,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 4 (60%) Area 2 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 4 (60%) Area 2 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57095,7 +57095,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金狮子 Area 4 (60%) Area 2 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：金狮子 Area 4 (60%) Area 2 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57107,7 +57107,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 13 (60%) Area 9 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 13 (60%) Area 9 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57119,7 +57119,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 4 (60%) Area 2 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 4 (60%) Area 2 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57131,7 +57131,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查银火龙 Area 4 (60%) Area 2 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查银火龙 Area 4 (60%) Area 2 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -57143,7 +57143,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 闪闪★亮亮？ Area 13 (60%) Area 9 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "6★ 闪闪★亮亮？ Area 13 (60%) Area 9 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -58150,7 +58150,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 白炎妖光 Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 白炎妖光 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -58162,7 +58162,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "盟友 6★ 调查焰狐龙 Area 1 (100%) (6%) (10%)",
+        "quest": "盟友 6★ 调查焰狐龙 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -58174,7 +58174,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15.5",
         "players": "1",
-        "quest": "6★ 烈祸袭来：舞于火海的浩劫 Area 1 (100%) (100%)",
+        "quest": "6★ 烈祸袭来：舞于火海的浩劫 Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.2",
         "stun": "1.7"
       },
@@ -58186,7 +58186,7 @@ var monster_data = {
         "mount": "1",
         "parts": "12",
         "players": "1",
-        "quest": "6★ 双凶来袭：月光闪耀的白焰 Area 1 (100%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：月光闪耀的白焰 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -58198,7 +58198,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：千差万别，煌煌火光 Area 11 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：千差万别，煌煌火光 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -58210,7 +58210,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "6★ 稀少种星河！ Area 1 (100%) (100%)",
+        "quest": "6★ 稀少种星河！ Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -59102,7 +59102,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 14 (60%) Area 9 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 14 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -59114,7 +59114,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查热源的居住者 Area 14 (60%) Area 9 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查热源的居住者 Area 14 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -59126,7 +59126,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 雪上加蛛 Area 14 (60%) Area 9 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 雪上加蛛 Area 14 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -59138,7 +59138,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 14 (60%) Area 9 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 14 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -59150,7 +59150,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 闪闪★亮亮？ Area 9 (100%) (1%) (1%)",
+        "quest": "6★ 闪闪★亮亮？ Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59162,7 +59162,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 一夜暴富！金狮子战斗！ Area 12 (100%) (1%) (1%)",
+        "quest": "5★ 一夜暴富！金狮子战斗！ Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59174,7 +59174,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 妨碍平安夜的火焰 Area 12 (100%) (100%)",
+        "quest": "4★ 妨碍平安夜的火焰 Area 12 (100%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -59186,7 +59186,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59198,7 +59198,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 14 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59210,7 +59210,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59222,7 +59222,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59234,7 +59234,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 夺回那份光辉 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 夺回那份光辉 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59246,7 +59246,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 相异者们的四兽双曲 Area 11 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 相异者们的四兽双曲 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59258,7 +59258,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -59270,7 +59270,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 14 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59282,7 +59282,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 激情燃烧！熔岩洞的考验 Area 14 (60%) Area 9 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 激情燃烧！熔岩洞的考验 Area 14 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -59294,7 +59294,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：追寻真相 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：追寻真相 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59306,7 +59306,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59318,7 +59318,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 14 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59330,7 +59330,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 关爱随从之人的求助 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 关爱随从之人的求助 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59342,7 +59342,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 12 (100%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59354,7 +59354,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 熔岩洞过冷却 Area 14 (100%) (1%) (1%)",
+        "quest": "6★ 熔岩洞过冷却 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -59366,7 +59366,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 14 (60%) Area 9 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 14 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -59378,7 +59378,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：火龙 Area 14 (60%) Area 9 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：火龙 Area 14 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -60284,7 +60284,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 爆鳞爆碎 Area 9 (60%) Area 10 (30%) Area 3 (10%) (3%) (3%)",
+        "quest": "活动任务 8★ 爆鳞爆碎 Area 9 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -60296,7 +60296,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 10 (60%) Area 5 (30%) Area 7 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 10 (60%) Area 5 (30%) Area 7 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -60308,7 +60308,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 7 (60%) Area 11 (30%) Area 4 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 7 (60%) Area 11 (30%) Area 4 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -60320,7 +60320,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 9 (60%) Area 10 (30%) Area 3 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 9 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -60332,7 +60332,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 9 (60%) Area 13 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 9 (60%) Area 13 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -60344,7 +60344,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 12 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 12 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -60356,7 +60356,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 爆鳞预警 Area 9 (60%) Area 10 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 爆鳞预警 Area 9 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -60368,7 +60368,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 2 (60%) Area 4 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 2 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -60380,7 +60380,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 10 (60%) Area 5 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 10 (60%) Area 5 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -60392,7 +60392,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 爆鳞龙飞翔 Area 2 (60%) Area 4 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 爆鳞龙飞翔 Area 2 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -60404,7 +60404,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查爆鳞龙 Area 2 (60%) Area 4 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查爆鳞龙 Area 2 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -60416,7 +60416,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 9 (60%) Area 10 (30%) Area 3 (10%) (100%)",
+        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 9 (60%) Area 10 (30%) Area 3 (10%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60428,7 +60428,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 热情与冷静的考验 Area 7 (60%) Area 11 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 热情与冷静的考验 Area 7 (60%) Area 11 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60440,7 +60440,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查冰封群岛剧变 Area 9 (60%) Area 10 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查冰封群岛剧变 Area 9 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60452,7 +60452,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 9 (60%) Area 10 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 9 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -60464,7 +60464,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 5 (60%) Area 7 (30%) Area 6 (10%) (100%)",
+        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 5 (60%) Area 7 (30%) Area 6 (10%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60476,7 +60476,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60488,7 +60488,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查金火龙 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查金火龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60500,7 +60500,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：火龙 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：火龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60512,7 +60512,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60524,7 +60524,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：霞龙 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：霞龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60536,7 +60536,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天廻龙 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：天廻龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60548,7 +60548,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3",
         "players": "1",
-        "quest": "村庄 6★ 高难度：挑战霸者的队列 Area 11 (100%) (1%) (1%)",
+        "quest": "村庄 6★ 高难度：挑战霸者的队列 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -60560,7 +60560,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 7 (60%) Area 11 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 7 (60%) Area 11 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -60584,7 +60584,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 熊熊燃烧的狩猎之魂 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 熊熊燃烧的狩猎之魂 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60596,7 +60596,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60608,7 +60608,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 黑中之白 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 黑中之白 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60620,7 +60620,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 寂静深处 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 寂静深处 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60632,7 +60632,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 水没林的恐怖之夜 Area 9 (60%) Area 13 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "5★ 水没林的恐怖之夜 Area 9 (60%) Area 13 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -60644,7 +60644,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 守住食材运输路！ Area 2 (100%) (1%) (1%)",
+        "quest": "6★ 守住食材运输路！ Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60656,7 +60656,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60668,7 +60668,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 饯别武夫 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 饯别武夫 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60680,7 +60680,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查2头怨虎龙 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查2头怨虎龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60692,7 +60692,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60704,7 +60704,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金狮子 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：金狮子 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60716,7 +60716,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炎王龙 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：炎王龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60728,7 +60728,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60740,7 +60740,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60752,7 +60752,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：角龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：角龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60764,7 +60764,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60776,7 +60776,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：银火龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：银火龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60788,7 +60788,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60800,7 +60800,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 寒风肆虐 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 寒风肆虐 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60812,7 +60812,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查钢龙 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查钢龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60824,7 +60824,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60836,7 +60836,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60848,7 +60848,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60860,7 +60860,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查银火龙 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查银火龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60872,7 +60872,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：追寻真相 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：追寻真相 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60884,7 +60884,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60896,7 +60896,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60908,7 +60908,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60920,7 +60920,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -60932,7 +60932,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 雪鬼兽来了 Area 6 (100%) (1%)",
+        "quest": "集会所 7★ 雪鬼兽来了 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -60944,7 +60944,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 身缠鬼火者 Area 11 (100%) (1%)",
+        "quest": "集会所 7★ 身缠鬼火者 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -60956,7 +60956,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 来自泥海的邀请 Area 9 (100%) (1%)",
+        "quest": "集会所 7★ 来自泥海的邀请 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -60968,7 +60968,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 奔驰于地底的角龙 Area 5 (100%) (1%)",
+        "quest": "集会所 7★ 奔驰于地底的角龙 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -60980,7 +60980,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 轰隆隆的咆哮 Area 7 (100%) (1%)",
+        "quest": "集会所 7★ 轰隆隆的咆哮 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -60992,7 +60992,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 妖魔鬼怪 Area 2 (100%) (1%)",
+        "quest": "集会所 7★ 妖魔鬼怪 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -61004,7 +61004,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 2 (100%) (1%)",
+        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -61016,7 +61016,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “刺穿兔团子的四根角！”之卷 Area 5 (100%) (1%)",
+        "quest": "集会所 7★ “刺穿兔团子的四根角！”之卷 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -61028,7 +61028,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 10 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61040,7 +61040,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 废神社大骚动 Area 11 (100%) (1%)",
+        "quest": "集会所 7★ 废神社大骚动 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -61052,7 +61052,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 勇猛之力宛如大地 Area 3 (100%) (1%)",
+        "quest": "集会所 7★ 勇猛之力宛如大地 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -61064,7 +61064,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 3 (100%) (1%)",
+        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -61076,7 +61076,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 请小心暴徒 Area 2 (100%) (1%)",
+        "quest": "集会所 7★ 请小心暴徒 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -61088,7 +61088,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 四处逼近的威胁 Area 3 (100%) (1%)",
+        "quest": "集会所 7★ 四处逼近的威胁 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -61100,7 +61100,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 神秘红光 Area 7 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 神秘红光 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61112,7 +61112,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 6 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61124,7 +61124,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 5 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61136,7 +61136,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 9 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61148,7 +61148,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 7 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61160,7 +61160,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 2 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61172,7 +61172,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 充斥天地的火焰与轰鸣 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 充斥天地的火焰与轰鸣 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61184,7 +61184,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查喷火大地 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查喷火大地 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61196,7 +61196,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查热源的居住者 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查热源的居住者 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61208,7 +61208,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61220,7 +61220,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61232,7 +61232,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 刚与柔的极致 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 刚与柔的极致 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61244,7 +61244,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 4 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61256,7 +61256,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 2 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61268,7 +61268,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 狂热粉丝 Area 7 (100%) (1%)",
+        "quest": "活动任务 7★ 狂热粉丝 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -61280,7 +61280,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 7 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61292,7 +61292,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 大小暴君 Area 7 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 大小暴君 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61304,7 +61304,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 13 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61316,7 +61316,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 10 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61328,7 +61328,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 8 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61340,7 +61340,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 泥翁与流行文化 Area 10 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 泥翁与流行文化 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61352,7 +61352,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 别无二致的音速之影 Area 2 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 别无二致的音速之影 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61364,7 +61364,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 9 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -61376,7 +61376,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 为随从献上可爱服装！ Area 7 (60%) Area 11 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "5★ 为随从献上可爱服装！ Area 7 (60%) Area 11 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61388,7 +61388,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终极大干架爆发？ Area 9 (60%) Area 13 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 终极大干架爆发？ Area 9 (60%) Area 13 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61400,7 +61400,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查霞龙 Area 2 (60%) Area 4 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查霞龙 Area 2 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61412,7 +61412,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查沙原的异常活动 Area 10 (60%) Area 5 (30%) Area 7 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查沙原的异常活动 Area 10 (60%) Area 5 (30%) Area 7 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61424,7 +61424,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 2 (60%) Area 4 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 2 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61436,7 +61436,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 冰冠的交战 Area 9 (60%) Area 10 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 冰冠的交战 Area 9 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61448,7 +61448,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：金色冲击 Area 2 (60%) Area 4 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：金色冲击 Area 2 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61460,7 +61460,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：高贵盛宴 Area 4 (60%) Area 8 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：高贵盛宴 Area 4 (60%) Area 8 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61472,7 +61472,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查金狮子 Area 2 (60%) Area 4 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查金狮子 Area 2 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61484,7 +61484,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查夜里的威胁者 Area 4 (60%) Area 8 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查夜里的威胁者 Area 4 (60%) Area 8 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61496,7 +61496,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 4 (60%) Area 8 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 4 (60%) Area 8 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -61952,7 +61952,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 8 (60%) Area 5 (30%) Area 3 (10%) (12%)",
+        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 8 (60%) Area 5 (30%) Area 3 (10%) [大金冠] (12%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61964,7 +61964,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 远方传来的毁灭之音 Area 14 (70%) Area 2 (20%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 远方传来的毁灭之音 Area 14 (70%) Area 2 (20%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61976,7 +61976,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查废神社的支配者 Area 12 (60%) Area 5 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查废神社的支配者 Area 12 (60%) Area 5 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -61988,7 +61988,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红之回归 Area 14 (70%) Area 2 (20%) Area 5 (10%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：红之回归 Area 14 (70%) Area 2 (20%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -62000,7 +62000,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 月光之下 Area 14 (70%) Area 2 (20%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 月光之下 Area 14 (70%) Area 2 (20%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -62012,7 +62012,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 血红的月光 Area 14 (70%) Area 2 (20%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 血红的月光 Area 14 (70%) Area 2 (20%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -62024,7 +62024,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：月夜舞会 Area 1 (100%) (12%)",
+        "quest": "大师等级 6★ 高难度：月夜舞会 Area 1 (100%) [大金冠] (12%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -62036,7 +62036,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：追寻真相 Area 8 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：追寻真相 Area 8 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -62048,7 +62048,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 战栗的神雷【重现】 Area 2 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 战栗的神雷【重现】 Area 2 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -62060,7 +62060,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "6★ 春去秋来，风起风落 Area 12 (60%) Area 5 (30%) Area 8 (10%) (100%)",
+        "quest": "6★ 春去秋来，风起风落 Area 12 (60%) Area 5 (30%) Area 8 (10%) [小金冠] (100%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -62072,7 +62072,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 战栗的神雷 Area 2 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 战栗的神雷 Area 2 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -62084,7 +62084,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 14 (70%) Area 2 (20%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 14 (70%) Area 2 (20%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -62096,7 +62096,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 热情与冷静的考验 Area 12 (60%) Area 5 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 热情与冷静的考验 Area 12 (60%) Area 5 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -62108,7 +62108,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：目中无人的一刀 Area 14 (70%) Area 2 (20%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：目中无人的一刀 Area 14 (70%) Area 2 (20%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -62120,7 +62120,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ “坚韧不拔的秘诀”之卷 Area 14 (70%) Area 2 (20%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ “坚韧不拔的秘诀”之卷 Area 14 (70%) Area 2 (20%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -62132,7 +62132,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：紫电一闪 Area 11 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：紫电一闪 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -62144,7 +62144,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：驱除灾厄的烈焰 Area 12 (60%) Area 5 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：驱除灾厄的烈焰 Area 12 (60%) Area 5 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -63878,7 +63878,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 9 (60%) Area 5 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -63890,7 +63890,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 3 (60%) Area 11 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 3 (60%) Area 11 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -63902,7 +63902,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 雷电摧群木 Area 9 (60%) Area 5 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 雷电摧群木 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -63914,7 +63914,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查电龙 Area 9 (60%) Area 5 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查电龙 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -63926,7 +63926,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 8 (60%) Area 7 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 8 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -63938,7 +63938,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：谁是真正的天空王者？ Area 8 (60%) Area 7 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：谁是真正的天空王者？ Area 8 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -63950,7 +63950,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：电龙 Area 3 (60%) Area 11 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：电龙 Area 3 (60%) Area 11 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -63962,7 +63962,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 电光一闪 Area 11 (100%) (100%)",
+        "quest": "4★ 电光一闪 Area 11 (100%) [小金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -63974,7 +63974,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "6★ 还我安眠！ Area 8 (60%) Area 7 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "6★ 还我安眠！ Area 8 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -63986,7 +63986,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -63998,7 +63998,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64010,7 +64010,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：迅龙 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：迅龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64022,7 +64022,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 呼唤古龙的冰雷 Area 9 (60%) Area 5 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "5★ 呼唤古龙的冰雷 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -64034,7 +64034,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "6★ 秘境真美 Area 1 (100%) (6%) (10%)",
+        "quest": "6★ 秘境真美 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64046,7 +64046,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 骑士需秉持优雅 Area 12 (100%) (1%) (1%)",
+        "quest": "6★ 骑士需秉持优雅 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64058,7 +64058,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 废神社三狂徒 Area 8 (60%) Area 7 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 废神社三狂徒 Area 8 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -64070,7 +64070,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 迎战冰狼 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 迎战冰狼 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -64082,7 +64082,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 爪音回响的试胆 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 爪音回响的试胆 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -64094,7 +64094,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查冰狼龙 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查冰狼龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -64106,7 +64106,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查水没林大战 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查水没林大战 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -64118,7 +64118,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查缠雷者 Area 8 (60%) Area 7 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查缠雷者 Area 8 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -64130,7 +64130,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 如云雾般消散之人 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 如云雾般消散之人 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64142,7 +64142,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 以毒攻风 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 以毒攻风 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64154,7 +64154,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 无声无息 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 无声无息 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64166,7 +64166,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查霞龙 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查霞龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64178,7 +64178,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 无法抑制的狂想曲 Area 11 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 无法抑制的狂想曲 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64190,7 +64190,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64202,7 +64202,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64214,7 +64214,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64226,7 +64226,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64238,7 +64238,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 9 (100%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64250,7 +64250,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 为随从献上可爱服装！ Area 11 (100%) (1%) (1%)",
+        "quest": "5★ 为随从献上可爱服装！ Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64262,7 +64262,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64274,7 +64274,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 研究成果烟消云散 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 研究成果烟消云散 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64286,7 +64286,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：银火龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：银火龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64298,7 +64298,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 一夜暴富！金狮子战斗！ Area 12 (100%) (1%) (1%)",
+        "quest": "5★ 一夜暴富！金狮子战斗！ Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64310,7 +64310,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查金狮子 Area 9 (60%) Area 5 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查金狮子 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64322,7 +64322,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 9 (60%) Area 5 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64334,7 +64334,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 3 (60%) Area 11 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 3 (60%) Area 11 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64346,7 +64346,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 8 (60%) Area 7 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 8 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64358,7 +64358,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：钢龙 Area 9 (60%) Area 5 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：钢龙 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64370,7 +64370,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 大凶星 Area 9 (60%) Area 5 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "6★ 大凶星 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64382,7 +64382,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 危险的森林浴 Area 9 (60%) Area 5 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 危险的森林浴 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64394,7 +64394,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查爆鳞龙 Area 9 (60%) Area 5 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查爆鳞龙 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64406,7 +64406,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 8 (60%) Area 7 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 8 (60%) Area 7 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -64418,7 +64418,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 9 (60%) Area 5 (30%) Area 6 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 9 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -65362,7 +65362,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "活动任务 4★ 最小雪主，现身！ Area 11 (100%) (100%)",
+        "quest": "活动任务 4★ 最小雪主，现身！ Area 11 (100%) [小金冠] (100%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65374,7 +65374,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 8★ 雪中暴牙 Area 9 (60%) Area 5 (30%) Area 3 (10%) (3%) (3%)",
+        "quest": "活动任务 8★ 雪中暴牙 Area 9 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -65410,7 +65410,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.51",
         "players": "1",
-        "quest": "集会所 1★ 请小心迫近的雪球 Area 9 (60%) Area 5 (30%) Area 3 (10%) (1%)",
+        "quest": "集会所 1★ 请小心迫近的雪球 Area 9 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.15",
         "stun": "1.1"
       },
@@ -65422,7 +65422,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 兔与蛙的相扑练习 Area 9 (60%) Area 3 (30%) Area 5 (10%) (1%)",
+        "quest": "集会所 2★ 兔与蛙的相扑练习 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -65434,7 +65434,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 9 (60%) Area 5 (30%) Area 3 (10%) (3%) (3%)",
+        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 9 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65446,7 +65446,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 9 (60%) Area 3 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 9 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65458,7 +65458,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 抖抖抖困困困 Area 9 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 抖抖抖困困困 Area 9 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -65470,7 +65470,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 白兔兽，白又白 Area 9 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 白兔兽，白又白 Area 9 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -65482,7 +65482,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 猎出美感，猎出力度 Area 9 (60%) Area 8 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 猎出美感，猎出力度 Area 9 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -65494,7 +65494,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰封群岛的地盘 Area 9 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查冰封群岛的地盘 Area 9 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -65506,7 +65506,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查城塞高地的栖息地 Area 9 (60%) Area 8 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查城塞高地的栖息地 Area 9 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -65518,7 +65518,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查冰封群岛的遇难原因 Area 9 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查冰封群岛的遇难原因 Area 9 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -65530,7 +65530,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：白兔兽 Area 9 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：白兔兽 Area 9 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -65578,7 +65578,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 9 (100%) (1%)",
+        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65590,7 +65590,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 火不足为惧 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 火不足为惧 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -65602,7 +65602,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 冰上的白骑士 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 冰上的白骑士 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -65614,7 +65614,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 柔顺好？斑点好？ Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 柔顺好？斑点好？ Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -65626,7 +65626,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -65638,7 +65638,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "1★ 蛋与白兔的丰收祈愿 Area 12 (100%) (100%)",
+        "quest": "1★ 蛋与白兔的丰收祈愿 Area 12 (100%) [大金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -65674,7 +65674,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ “守护通往兔团子的道路”之卷 Area 9 (100%) (1%)",
+        "quest": "集会所 4★ “守护通往兔团子的道路”之卷 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65686,7 +65686,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 3 (100%) (1%)",
+        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65698,7 +65698,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 打磨琥珀色的牙 Area 5 (100%) (1%)",
+        "quest": "集会所 6★ 打磨琥珀色的牙 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -65710,7 +65710,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查奇怪龙 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查奇怪龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -65722,7 +65722,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 蜿蜿蜒蜒or弯弯曲曲？ Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 蜿蜿蜒蜒or弯弯曲曲？ Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -65734,7 +65734,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -65746,7 +65746,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：青熊兽 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：青熊兽 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -65770,7 +65770,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 冰天雪地打瞌睡 Area 3 (100%) (1%)",
+        "quest": "集会所 4★ 冰天雪地打瞌睡 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65782,7 +65782,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 3 (100%) (1%)",
+        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65794,7 +65794,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 吞噬寒地之影 Area 3 (100%) (1%)",
+        "quest": "集会所 5★ 吞噬寒地之影 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -65806,7 +65806,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 来自冰海的邀请 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 来自冰海的邀请 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -65818,7 +65818,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 3 (60%) Area 5 (40%) (1%)",
+        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 3 (60%) Area 5 (40%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -65830,7 +65830,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 火不足为惧 Area 3 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "大师等级 1★ 火不足为惧 Area 3 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -65842,7 +65842,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 一心吞噬的白色怪物 Area 3 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "大师等级 2★ 一心吞噬的白色怪物 Area 3 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -65854,7 +65854,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 纯白的奇怪龙果 Area 3 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "大师等级 2★ 纯白的奇怪龙果 Area 3 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -65866,7 +65866,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 缝制映于白雪的礼服 Area 3 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "大师等级 3★ 缝制映于白雪的礼服 Area 3 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -65878,7 +65878,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 3 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 3 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -65890,7 +65890,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：眠狗龙王 Area 3 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：眠狗龙王 Area 3 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -65902,7 +65902,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 3 (60%) Area 5 (40%) (1%)",
+        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 3 (60%) Area 5 (40%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -65914,7 +65914,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 9 (60%) Area 5 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 9 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -65926,7 +65926,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 3 (60%) Area 5 (40%) (1%)",
+        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 3 (60%) Area 5 (40%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65938,7 +65938,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 4 (100%) (1%)",
+        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65950,7 +65950,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 4 (100%) (1%)",
+        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -65962,7 +65962,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 酣然入梦人鱼龙枕 Area 3 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "大师等级 2★ 酣然入梦人鱼龙枕 Area 3 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -65974,7 +65974,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰牙龙 Area 3 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "盟友 3★ 调查冰牙龙 Area 3 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -65986,7 +65986,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 3 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 3 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -68121,7 +68121,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.51",
         "players": "1",
-        "quest": "集会所 1★ 眠狗龙王，现身冰封群岛 Area 6 (60%) Area 10 (30%) Area 12 (10%) (1%)",
+        "quest": "集会所 1★ 眠狗龙王，现身冰封群岛 Area 6 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%)",
         "stamina": "1.15",
         "stun": "1.1"
       },
@@ -68157,7 +68157,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ “守护通往兔团子的道路”之卷 Area 10 (100%) (1%)",
+        "quest": "集会所 4★ “守护通往兔团子的道路”之卷 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -68169,7 +68169,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 学习吧！轻弩之型 Area 11 (100%) (3%) (3%)",
+        "quest": "集会所 4★ 学习吧！轻弩之型 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -68181,7 +68181,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：眠狗龙王 Area 6 (60%) Area 10 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：眠狗龙王 Area 6 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -68193,7 +68193,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.51",
         "players": "1",
-        "quest": "活动任务 1★ 毁灭之鸟龙？ Area 12 (100%) (1%)",
+        "quest": "活动任务 1★ 毁灭之鸟龙？ Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.15",
         "stun": "1.1"
       },
@@ -68229,7 +68229,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 12 (100%) (1%)",
+        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -68241,7 +68241,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 抖抖抖困困困 Area 6 (60%) Area 10 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 抖抖抖困困困 Area 6 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -68253,7 +68253,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 鸟龙三连星 Area 12 (100%) (6%) (10%)",
+        "quest": "大师等级 2★ 鸟龙三连星 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -68265,7 +68265,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "1★ 欢迎踏上新手猎人之路！ Area 12 (100%) (100%)",
+        "quest": "1★ 欢迎踏上新手猎人之路！ Area 12 (100%) [小金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -68301,7 +68301,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 6 (100%) (1%)",
+        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -68313,7 +68313,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 火不足为惧 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 火不足为惧 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -68325,7 +68325,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 白兔兽，白又白 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 白兔兽，白又白 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -68361,7 +68361,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 12 (100%) (1%)",
+        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -68373,7 +68373,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查奇怪龙 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查奇怪龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -68385,7 +68385,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 来自冰海的邀请 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 来自冰海的邀请 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -68397,7 +68397,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 6 (100%) (1%)",
+        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -68409,7 +68409,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 吞噬寒地之影 Area 9 (100%) (1%)",
+        "quest": "集会所 5★ 吞噬寒地之影 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -68421,7 +68421,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 10 (70%) Area 12 (30%) (1%)",
+        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 10 (70%) Area 12 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -68433,7 +68433,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 酣然入梦人鱼龙枕 Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "大师等级 2★ 酣然入梦人鱼龙枕 Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -68445,7 +68445,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 蜿蜿蜒蜒or弯弯曲曲？ Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "大师等级 2★ 蜿蜿蜒蜒or弯弯曲曲？ Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -68457,7 +68457,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 祈福需怨念 Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "大师等级 3★ 祈福需怨念 Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -68469,7 +68469,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：白兔兽 Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：白兔兽 Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -68481,7 +68481,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -68493,7 +68493,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 10 (70%) Area 12 (30%) (1%)",
+        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 10 (70%) Area 12 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -68505,7 +68505,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 9 (70%) Area 7 (30%) (1%)",
+        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 9 (70%) Area 7 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -68517,7 +68517,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 吞噬寒地之影 Area 9 (70%) Area 7 (30%) (1%)",
+        "quest": "集会所 5★ 吞噬寒地之影 Area 9 (70%) Area 7 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -68529,7 +68529,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 10 (70%) Area 12 (30%) (1%)",
+        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 10 (70%) Area 12 (30%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -68541,7 +68541,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 火不足为惧 Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "大师等级 1★ 火不足为惧 Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -68553,7 +68553,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 白兔兽，白又白 Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "大师等级 1★ 白兔兽，白又白 Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -68565,7 +68565,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 一心吞噬的白色怪物 Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "大师等级 2★ 一心吞噬的白色怪物 Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -68577,7 +68577,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 纯白的奇怪龙果 Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "大师等级 2★ 纯白的奇怪龙果 Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -68589,7 +68589,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 缝制映于白雪的礼服 Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "大师等级 3★ 缝制映于白雪的礼服 Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -68601,7 +68601,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "大师等级 4★ 受女士欢迎的白骑士与铠武者 Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -68613,7 +68613,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 10 (70%) Area 12 (30%) (1%) (1%)",
+        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 10 (70%) Area 12 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -68625,7 +68625,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 6 (60%) Area 10 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 6 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -70392,7 +70392,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 神秘红光 Area 11 (60%) Area 10 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 神秘红光 Area 11 (60%) Area 10 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -70404,7 +70404,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 10 (60%) Area 9 (30%) Area 3 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 10 (60%) Area 9 (30%) Area 3 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -70416,7 +70416,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 10 (60%) Area 7 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 10 (60%) Area 7 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -70428,7 +70428,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 3 (60%) Area 7 (30%) Area 8 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 3 (60%) Area 7 (30%) Area 8 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -70440,7 +70440,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 12 (60%) Area 3 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 12 (60%) Area 3 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -70452,7 +70452,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 12 (60%) Area 3 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 12 (60%) Area 3 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -70464,7 +70464,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 11 (60%) Area 10 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 11 (60%) Area 10 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70476,7 +70476,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 10 (60%) Area 9 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 10 (60%) Area 9 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70488,7 +70488,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 10 (60%) Area 7 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 10 (60%) Area 7 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70500,7 +70500,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 3 (60%) Area 9 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 3 (60%) Area 9 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70512,7 +70512,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 3 (60%) Area 7 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 3 (60%) Area 7 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70524,7 +70524,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 12 (60%) Area 3 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 12 (60%) Area 3 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70536,7 +70536,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查降临于密林的赤红凶星 Area 3 (60%) Area 9 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查降临于密林的赤红凶星 Area 3 (60%) Area 9 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70548,7 +70548,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 8 (60%) Area 3 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 8 (60%) Area 3 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70560,7 +70560,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6",
         "players": "1",
-        "quest": "活动任务 8★ 高难度：赫耀动乱 Area 1 (100%) (100%)",
+        "quest": "活动任务 8★ 高难度：赫耀动乱 Area 1 (100%) [大金冠] (100%)",
         "stamina": "5",
         "stun": "8"
       },
@@ -70572,7 +70572,7 @@ var monster_data = {
         "mount": "1",
         "parts": "12",
         "players": "1",
-        "quest": "6★ 双凶来袭：名为终焉的凶星 Area 11 (100%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：名为终焉的凶星 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70584,7 +70584,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "6★ 大凶星 Area 3 (60%) Area 9 (30%) Area 4 (10%) (100%)",
+        "quest": "6★ 大凶星 Area 3 (60%) Area 9 (30%) Area 4 (10%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70596,7 +70596,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 毁灭龙神 Area 1 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 毁灭龙神 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70608,7 +70608,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 烈祸袭来：奏响毁灭的旋律 Area 1 (100%) (3%) (3%)",
+        "quest": "6★ 烈祸袭来：奏响毁灭的旋律 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -70620,7 +70620,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：驱除灾厄的烈焰 Area 11 (60%) Area 10 (30%) Area 6 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：驱除灾厄的烈焰 Area 11 (60%) Area 10 (30%) Area 6 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -71777,7 +71777,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 14 (60%) Area 3 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 14 (60%) Area 3 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -71789,7 +71789,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 3 (60%) Area 11 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 3 (60%) Area 11 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -71801,7 +71801,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 10 (60%) Area 6 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 10 (60%) Area 6 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -71813,7 +71813,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 爆风啊，驱除灾厄吧 Area 1 (100%) (100%)",
+        "quest": "6★ 爆风啊，驱除灾厄吧 Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -71825,7 +71825,7 @@ var monster_data = {
         "mount": "1",
         "parts": "23",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 9 (60%) Area 6 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 9 (60%) Area 6 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3",
         "stun": "3"
       },
@@ -71837,7 +71837,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 14 (60%) Area 3 (30%) Area 4 (10%) (100%)",
+        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 14 (60%) Area 3 (30%) Area 4 (10%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -71849,7 +71849,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 11 (60%) Area 13 (30%) Area 5 (10%) (100%)",
+        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 11 (60%) Area 13 (30%) Area 5 (10%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -71861,7 +71861,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 14 (60%) Area 3 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 14 (60%) Area 3 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -72305,7 +72305,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 绯色天狗参拜神社 Area 3 (60%) Area 8 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 2★ 绯色天狗参拜神社 Area 3 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72317,7 +72317,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 绯色天狗来袭 Area 3 (60%) Area 8 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 绯色天狗来袭 Area 3 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72329,7 +72329,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 10 (60%) Area 2 (30%) Area 4 (10%) (100%)",
+        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 10 (60%) Area 2 (30%) Area 4 (10%) [大金冠] (100%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72341,7 +72341,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查绯天狗兽 Area 10 (60%) Area 2 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "盟友 2★ 调查绯天狗兽 Area 10 (60%) Area 2 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72353,7 +72353,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 烈焰的炎舞曲 Area 3 (60%) Area 10 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 烈焰的炎舞曲 Area 3 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72365,7 +72365,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 相异者们的四兽双曲 Area 11 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 相异者们的四兽双曲 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72377,7 +72377,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15.5",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 3 (60%) Area 10 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 3 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -72401,7 +72401,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "2★ 狡猾绯红色，妖艳油纸伞 Area 3 (60%) Area 8 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "2★ 狡猾绯红色，妖艳油纸伞 Area 3 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72413,7 +72413,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 妨碍平安夜的火焰 Area 11 (100%) (100%)",
+        "quest": "4★ 妨碍平安夜的火焰 Area 11 (100%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -72425,7 +72425,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 8 (60%) Area 1 (30%) Area 9 (10%) (100%)",
+        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 8 (60%) Area 1 (30%) Area 9 (10%) [小金冠] (100%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72437,7 +72437,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 3 (100%) (1%)",
+        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72449,7 +72449,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 3 (60%) Area 10 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 3 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72461,7 +72461,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 猎出美感，猎出力度 Area 3 (60%) Area 10 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 猎出美感，猎出力度 Area 3 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72473,7 +72473,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查城塞高地的栖息地 Area 3 (60%) Area 10 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查城塞高地的栖息地 Area 3 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72485,7 +72485,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 飞天龙影 Area 5 (100%) (1%)",
+        "quest": "盟友 4★ 飞天龙影 Area 5 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -72497,7 +72497,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查火龙 Area 5 (100%) (1%)",
+        "quest": "盟友 4★ 调查火龙 Area 5 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -72509,7 +72509,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 10 (100%) (1%) (13%)",
+        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 10 (100%) [小金冠] (1%) [大金冠] (13%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72521,7 +72521,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 阴森的石壁 Area 2 (100%) (1%)",
+        "quest": "大师等级 2★ 阴森的石壁 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72533,7 +72533,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 沙丘后的潜伏者 Area 10 (60%) Area 2 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 沙丘后的潜伏者 Area 10 (60%) Area 2 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72545,7 +72545,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 11 (100%) (1%)",
+        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72557,7 +72557,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 10 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 10 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72569,7 +72569,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 参见陆地女王 Area 2 (100%) (1%)",
+        "quest": "盟友 2★ 参见陆地女王 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72581,7 +72581,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查雌火龙 Area 2 (100%) (1%)",
+        "quest": "盟友 2★ 调查雌火龙 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72593,7 +72593,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 废神社大战 Area 1 (100%) (1%)",
+        "quest": "大师等级 2★ 废神社大战 Area 1 (100%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72605,7 +72605,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 2 (100%) (1%)",
+        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72617,7 +72617,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 千刃来袭 Area 2 (100%) (1%)",
+        "quest": "大师等级 4★ 千刃来袭 Area 2 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -72629,7 +72629,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 迎战冰狼 Area 3 (100%) (1%)",
+        "quest": "盟友 4★ 迎战冰狼 Area 3 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -72641,7 +72641,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查冰狼龙 Area 3 (100%) (1%)",
+        "quest": "盟友 4★ 调查冰狼龙 Area 3 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -72653,7 +72653,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天狗兽 Area 3 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：天狗兽 Area 3 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72665,7 +72665,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 侍奉白衣歌女的巨体 Area 3 (100%) (3%) (5%)",
+        "quest": "3★ 侍奉白衣歌女的巨体 Area 3 (100%) [小金冠] (3%) [大金冠] (5%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72677,7 +72677,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 10 (100%) (1%)",
+        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 10 (100%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -72689,7 +72689,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 2 (100%) (1%)",
+        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 2 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72701,7 +72701,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 10 (100%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 10 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72713,7 +72713,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 上镜♪最可爱★穿搭！ Area 12 (100%) (3%) (5%)",
+        "quest": "6★ 上镜♪最可爱★穿搭！ Area 12 (100%) [小金冠] (3%) [大金冠] (5%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72725,7 +72725,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 冰上的白骑士 Area 3 (60%) Area 10 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 3★ 冰上的白骑士 Area 3 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72737,7 +72737,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 发狂的巨力怪物 Area 3 (60%) Area 10 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 3★ 发狂的巨力怪物 Area 3 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72749,7 +72749,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 3 (60%) Area 10 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 3 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -72761,7 +72761,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 研究成果烟消云散 Area 3 (60%) Area 8 (30%) Area 11 (10%) (1%)",
+        "quest": "大师等级 6★ 研究成果烟消云散 Area 3 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72773,7 +72773,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 3 (60%) Area 8 (30%) Area 11 (10%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 3 (60%) Area 8 (30%) Area 11 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72785,7 +72785,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 3 (60%) Area 10 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 3 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -72797,7 +72797,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 沙尘藏毒 Area 10 (60%) Area 2 (30%) Area 4 (10%) (1%)",
+        "quest": "大师等级 2★ 沙尘藏毒 Area 10 (60%) Area 2 (30%) Area 4 (10%) [小金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -72809,7 +72809,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 10 (60%) Area 2 (30%) Area 4 (10%) (1%)",
+        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 10 (60%) Area 2 (30%) Area 4 (10%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72821,7 +72821,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 10 (60%) Area 2 (30%) Area 4 (10%) (1%)",
+        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 10 (60%) Area 2 (30%) Area 4 (10%) [小金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -72833,7 +72833,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 10 (60%) Area 2 (30%) Area 4 (10%) (1%)",
+        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 10 (60%) Area 2 (30%) Area 4 (10%) [小金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -72845,7 +72845,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 3 (60%) Area 10 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 3 (60%) Area 10 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -75077,7 +75077,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 8 (60%) Area 6 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 8 (60%) Area 6 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75089,7 +75089,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15.5",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 13 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -75113,7 +75113,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 熔岩洞的暴徒 Area 13 (60%) Area 10 (30%) Area 12 (10%) (1%)",
+        "quest": "集会所 3★ 熔岩洞的暴徒 Area 13 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -75125,7 +75125,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 13 (60%) Area 11 (30%) Area 12 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 13 (60%) Area 11 (30%) Area 12 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75137,7 +75137,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 8 (60%) Area 5 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 8 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75149,7 +75149,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 英雄豪杰 Area 11 (100%) (3%) (3%)",
+        "quest": "集会所 6★ 英雄豪杰 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75161,7 +75161,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 自投蛮颚龙 Area 12 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 自投蛮颚龙 Area 12 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -75173,7 +75173,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查蛮颚龙 Area 3 (60%) Area 4 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "盟友 2★ 调查蛮颚龙 Area 3 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -75185,7 +75185,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 为害一方的密林恶棍 Area 3 (60%) Area 4 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 为害一方的密林恶棍 Area 3 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75233,7 +75233,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 绽放于天际的红莲 Area 13 (100%) (1%)",
+        "quest": "集会所 6★ 绽放于天际的红莲 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75245,7 +75245,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 熔岩洞扫荡战 Area 13 (100%) (1%)",
+        "quest": "集会所 6★ 熔岩洞扫荡战 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75257,7 +75257,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 奔驰于地底的角龙 Area 8 (100%) (1%)",
+        "quest": "集会所 7★ 奔驰于地底的角龙 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75269,7 +75269,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 8 (60%) Area 6 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 8 (60%) Area 6 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75281,7 +75281,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 远古幻影 Area 4 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 远古幻影 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -75293,7 +75293,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 8 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -75305,7 +75305,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.75",
         "players": "1",
-        "quest": "集会所 8★ 倪泰教官的挑战书・其四 Area 8 (60%) Area 5 (30%) Area 6 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 倪泰教官的挑战书・其四 Area 8 (60%) Area 5 (30%) Area 6 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -75317,7 +75317,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 迅雷无止 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 迅雷无止 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -75329,7 +75329,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 划开夜幕的雷光 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 划开夜幕的雷光 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -75341,7 +75341,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查飞雷龙 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查飞雷龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -75353,7 +75353,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 8 (60%) Area 6 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查追踪者和逃亡者 Area 8 (60%) Area 6 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75365,7 +75365,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查将军镰蟹 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查将军镰蟹 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75377,7 +75377,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75389,7 +75389,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 沙原遗失物搜查队 Area 8 (60%) Area 6 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 沙原遗失物搜查队 Area 8 (60%) Area 6 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75401,7 +75401,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绝对强者 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 绝对强者 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -75413,7 +75413,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 破坏城塞的暴君 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 破坏城塞的暴君 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -75425,7 +75425,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查轰龙 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查轰龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -75437,7 +75437,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 烈焰的炎舞曲 Area 13 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 烈焰的炎舞曲 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75449,7 +75449,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雌火龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雌火龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75461,7 +75461,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰牙龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75473,7 +75473,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75485,7 +75485,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 8 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -75497,7 +75497,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 狂热粉丝 Area 13 (60%) Area 10 (30%) Area 12 (10%) (3%) (3%)",
+        "quest": "活动任务 7★ 狂热粉丝 Area 13 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75509,7 +75509,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 8 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -75521,7 +75521,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 水没林的恐怖之夜 Area 12 (60%) Area 9 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "5★ 水没林的恐怖之夜 Area 12 (60%) Area 9 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -75533,7 +75533,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75545,7 +75545,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 复活之传说 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 复活之传说 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75557,7 +75557,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 1 (100%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75569,7 +75569,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 闪闪★亮亮？ Area 12 (100%) (1%) (1%)",
+        "quest": "6★ 闪闪★亮亮？ Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75617,7 +75617,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 12 (100%) (1%)",
+        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75629,7 +75629,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 12 (100%) (1%)",
+        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75641,7 +75641,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 轰隆隆的咆哮 Area 8 (100%) (1%)",
+        "quest": "集会所 7★ 轰隆隆的咆哮 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75653,7 +75653,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 请小心暴徒 Area 11 (100%) (1%)",
+        "quest": "集会所 7★ 请小心暴徒 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75665,7 +75665,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 四处逼近的威胁 Area 13 (100%) (1%)",
+        "quest": "集会所 7★ 四处逼近的威胁 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75677,7 +75677,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 4 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -75689,7 +75689,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 10 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -75701,7 +75701,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 赠君勿忘花 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 赠君勿忘花 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -75713,7 +75713,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75725,7 +75725,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 猎出美感，猎出力度 Area 13 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 猎出美感，猎出力度 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75737,7 +75737,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查城塞高地的栖息地 Area 13 (60%) Area 5 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查城塞高地的栖息地 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75749,7 +75749,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 充斥天地的火焰与轰鸣 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 充斥天地的火焰与轰鸣 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75761,7 +75761,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查喷火大地 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查喷火大地 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75773,7 +75773,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 爆鳞龙飞翔 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 爆鳞龙飞翔 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75785,7 +75785,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查爆鳞龙 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查爆鳞龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75797,7 +75797,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75809,7 +75809,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75821,7 +75821,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：角龙 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：角龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75833,7 +75833,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：电龙 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：电龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75845,7 +75845,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75857,7 +75857,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 刹那双影 Area 1 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 刹那双影 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75869,7 +75869,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 潜伏于岩洞的黑影 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 潜伏于岩洞的黑影 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75881,7 +75881,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查迅龙 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查迅龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -75893,7 +75893,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于古城的王者 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 沉睡于古城的王者 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -75905,7 +75905,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -75917,7 +75917,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75929,7 +75929,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查金火龙 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查金火龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75941,7 +75941,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：霞龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：霞龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75953,7 +75953,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -75965,7 +75965,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 影之迅龙 Area 10 (100%) (1%)",
+        "quest": "活动任务 7★ 影之迅龙 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -75977,7 +75977,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 别无二致的音速之影 Area 12 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 别无二致的音速之影 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -75989,7 +75989,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 阴森的石壁 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 阴森的石壁 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -76001,7 +76001,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥底来客 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 泥底来客 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -76013,7 +76013,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -76025,7 +76025,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：河童蛙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：河童蛙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76037,7 +76037,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：岩龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：岩龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76049,7 +76049,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76061,7 +76061,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76073,7 +76073,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76085,7 +76085,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 13 (100%) (1%)",
+        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -76097,7 +76097,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 大地激昂 Area 8 (100%) (1%)",
+        "quest": "活动任务 7★ 大地激昂 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -76109,7 +76109,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 13 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76121,7 +76121,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 6 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 6 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76133,7 +76133,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 13 (50%) Area 10 (50%) (1%) (1%)",
+        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 13 (50%) Area 10 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76145,7 +76145,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 12 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 12 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76157,7 +76157,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 7 (50%) Area 4 (50%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 7 (50%) Area 4 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76169,7 +76169,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 侍奉白衣歌女的巨体 Area 13 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "3★ 侍奉白衣歌女的巨体 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -76181,7 +76181,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红之回归 Area 13 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：红之回归 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76193,7 +76193,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “刺穿兔团子的四根角！”之卷 Area 6 (60%) Area 5 (40%) (1%)",
+        "quest": "集会所 7★ “刺穿兔团子的四根角！”之卷 Area 6 (60%) Area 5 (40%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -76205,7 +76205,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 废神社大骚动 Area 7 (50%) Area 4 (50%) (1%)",
+        "quest": "集会所 7★ 废神社大骚动 Area 7 (50%) Area 4 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -76217,7 +76217,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 6 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 6 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76229,7 +76229,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 6 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 6 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76241,7 +76241,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 13 (50%) Area 10 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 13 (50%) Area 10 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76253,7 +76253,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 12 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 12 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -76265,7 +76265,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 13 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -76277,7 +76277,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 7 (50%) Area 4 (50%) (1%) (1%)",
+        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 7 (50%) Area 4 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -76289,7 +76289,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 13 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76301,7 +76301,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 以毒攻风 Area 3 (60%) Area 4 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 以毒攻风 Area 3 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76313,7 +76313,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 3 (60%) Area 4 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 3 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76325,7 +76325,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：土砂龙 Area 6 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：土砂龙 Area 6 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76337,7 +76337,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 3 (60%) Area 4 (30%) Area 9 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 3 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76349,7 +76349,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 13 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76361,7 +76361,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：银火龙 Area 7 (50%) Area 4 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：银火龙 Area 7 (50%) Area 4 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76373,7 +76373,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 称号・劲敌之心 Area 12 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "活动任务 8★ 称号・劲敌之心 Area 12 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76385,7 +76385,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 大小暴君 Area 6 (60%) Area 5 (40%) (1%) (1%)",
+        "quest": "活动任务 8★ 大小暴君 Area 6 (60%) Area 5 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76397,7 +76397,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 熔岩洞过冷却 Area 13 (50%) Area 10 (50%) (1%) (1%)",
+        "quest": "6★ 熔岩洞过冷却 Area 13 (50%) Area 10 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -76409,7 +76409,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 7 (50%) Area 4 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 7 (50%) Area 4 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76421,7 +76421,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 12 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 12 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -76433,7 +76433,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 废神社大战 Area 7 (50%) Area 4 (50%) (1%) (1%)",
+        "quest": "大师等级 2★ 废神社大战 Area 7 (50%) Area 4 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -76445,7 +76445,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 冰上的白骑士 Area 13 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 冰上的白骑士 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -76457,7 +76457,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 发狂的巨力怪物 Area 13 (60%) Area 5 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 发狂的巨力怪物 Area 13 (60%) Area 5 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       }
@@ -77504,7 +77504,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 请小心尖锐的角 Area 9 (60%) Area 11 (30%) Area 10 (10%) (1%)",
+        "quest": "集会所 3★ 请小心尖锐的角 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -77516,7 +77516,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 奔驰于地底的角龙 Area 9 (60%) Area 11 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 奔驰于地底的角龙 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -77540,7 +77540,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 9 (60%) Area 11 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -77552,7 +77552,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：强者们的酒宴 Area 1 (100%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：强者们的酒宴 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -77564,7 +77564,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 9 (60%) Area 11 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -77576,7 +77576,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 文殊与猎人！？ Area 9 (60%) Area 11 (30%) Area 10 (10%) (100%)",
+        "quest": "大师等级 4★ 文殊与猎人！？ Area 9 (60%) Area 11 (30%) Area 10 (10%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -77588,7 +77588,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 我等荒野三凶龙 Area 9 (60%) Area 11 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 我等荒野三凶龙 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -77600,7 +77600,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：角龙 Area 9 (60%) Area 11 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：角龙 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -77636,7 +77636,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 轰隆隆的咆哮 Area 9 (100%) (1%)",
+        "quest": "集会所 7★ 轰隆隆的咆哮 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -77660,7 +77660,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 9 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -77672,7 +77672,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 文殊与猎人！？ Area 6 (60%) Area 12 (30%) Area 8 (10%) (100%)",
+        "quest": "大师等级 4★ 文殊与猎人！？ Area 6 (60%) Area 12 (30%) Area 8 (10%) [小金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -77684,7 +77684,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 飞扬的是热沙，抑或千刃？ Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 飞扬的是热沙，抑或千刃？ Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -77696,7 +77696,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查千刃龙 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查千刃龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -77708,7 +77708,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 比熊熊燃烧的太阳更红 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -77720,7 +77720,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 9 (60%) Area 11 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -77732,7 +77732,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -77744,7 +77744,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -77756,7 +77756,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4",
         "players": "1",
-        "quest": "活动任务 8★ 称号・豪杰之心 Area 12 (100%) (100%)",
+        "quest": "活动任务 8★ 称号・豪杰之心 Area 12 (100%) [大金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -77768,7 +77768,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 9 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -77780,7 +77780,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 12 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -77792,7 +77792,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 加深情谊的团体战 Area 9 (60%) Area 11 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 加深情谊的团体战 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -77804,7 +77804,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查暗夜沙漠中的凶暴者 Area 9 (60%) Area 11 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查暗夜沙漠中的凶暴者 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -77816,7 +77816,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查沙原的异常活动 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查沙原的异常活动 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -77828,7 +77828,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -77840,7 +77840,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 如飞毛腿般疾驰吧！ Area 9 (60%) Area 11 (30%) Area 10 (10%) (100%)",
+        "quest": "4★ 如飞毛腿般疾驰吧！ Area 9 (60%) Area 11 (30%) Area 10 (10%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -77852,7 +77852,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 沙中出现的角 Area 9 (60%) Area 11 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "4★ 沙中出现的角 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -77864,7 +77864,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -77876,7 +77876,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 泥翁与流行文化 Area 9 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 泥翁与流行文化 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -77888,7 +77888,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 9 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -77900,7 +77900,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 异常震区 Area 9 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 异常震区 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -77912,7 +77912,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：轰龙 Area 9 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：轰龙 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -77924,7 +77924,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 大地激昂 Area 9 (60%) Area 11 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "活动任务 7★ 大地激昂 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -77936,7 +77936,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 9 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -77948,7 +77948,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 9 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：天彗龙（赫耀） Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -77960,7 +77960,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 9 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       }
@@ -79164,7 +79164,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查适应沙原者 Area 8 (60%) Area 9 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查适应沙原者 Area 8 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -79176,7 +79176,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 5 (60%) Area 12 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：赤甲兽 Area 5 (60%) Area 12 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -79188,7 +79188,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 无惧粉盔碎甲 Area 5 (60%) Area 12 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "活动任务 6★ 无惧粉盔碎甲 Area 5 (60%) Area 12 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -79200,7 +79200,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 狂热粉丝 Area 5 (60%) Area 12 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "活动任务 7★ 狂热粉丝 Area 5 (60%) Area 12 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -79248,7 +79248,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 沙原中滚动的赤甲兽 Area 8 (60%) Area 9 (30%) Area 12 (10%) (1%)",
+        "quest": "集会所 2★ 沙原中滚动的赤甲兽 Area 8 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -79284,7 +79284,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 击穿吧！重弩之型 Area 11 (100%) (3%) (3%)",
+        "quest": "集会所 5★ 击穿吧！重弩之型 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -79308,7 +79308,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 滚动逼近的红球 Area 8 (60%) Area 9 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 滚动逼近的红球 Area 8 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -79320,7 +79320,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 沙丘后的潜伏者 Area 8 (60%) Area 9 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 沙丘后的潜伏者 Area 8 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -79332,7 +79332,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查沙原的危险生物 Area 8 (60%) Area 9 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查沙原的危险生物 Area 8 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -79392,7 +79392,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 滴水穿岩 Area 9 (100%) (1%)",
+        "quest": "集会所 5★ 滴水穿岩 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -79404,7 +79404,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 沙尘藏毒 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 沙尘藏毒 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -79416,7 +79416,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：青熊兽 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：青熊兽 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79428,7 +79428,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 8 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -79452,7 +79452,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 9 (100%) (1%)",
+        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -79464,7 +79464,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 最近成为话题的坚硬家伙 Area 9 (100%) (1%)",
+        "quest": "集会所 5★ 最近成为话题的坚硬家伙 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -79476,7 +79476,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 邀往冥府的歌声 Area 5 (100%) (1%)",
+        "quest": "集会所 6★ 邀往冥府的歌声 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -79488,7 +79488,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -79500,7 +79500,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 发狂的怪力化身 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 发狂的怪力化身 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -79512,7 +79512,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 发狂的巨力怪物 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 发狂的巨力怪物 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -79524,7 +79524,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 柔顺好？斑点好？ Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 柔顺好？斑点好？ Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -79536,7 +79536,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 饥饿导致能力降低的研究 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -79548,7 +79548,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 千刃来袭 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 千刃来袭 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -79560,7 +79560,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 雪上加蛛 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 雪上加蛛 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -79572,7 +79572,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 领会吧！长枪之型 Area 9 (100%) (1%)",
+        "quest": "集会所 5★ 领会吧！长枪之型 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -79584,7 +79584,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 9 (100%) (1%)",
+        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -79596,7 +79596,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -79608,7 +79608,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查绯天狗兽 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查绯天狗兽 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -79620,7 +79620,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -79632,7 +79632,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 大哥的请求 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 大哥的请求 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -79644,7 +79644,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒狗龙王 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79656,7 +79656,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：搔鸟 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：搔鸟 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79668,7 +79668,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79680,7 +79680,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "1★ 欢迎踏上新手猎人之路！ Area 12 (100%) (100%)",
+        "quest": "1★ 欢迎踏上新手猎人之路！ Area 12 (100%) [小金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -79692,7 +79692,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：土砂龙 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：土砂龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79704,7 +79704,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：角龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：角龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79716,7 +79716,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79728,7 +79728,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 侍奉白衣歌女的巨体 Area 4 (100%) (1%) (1%)",
+        "quest": "3★ 侍奉白衣歌女的巨体 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -79740,7 +79740,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -79752,7 +79752,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 9 (60%) Area 12 (40%) (1%)",
+        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 9 (60%) Area 12 (40%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -79764,7 +79764,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 轰隆隆的咆哮 Area 9 (60%) Area 12 (40%) (1%)",
+        "quest": "集会所 7★ 轰隆隆的咆哮 Area 9 (60%) Area 12 (40%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -79776,7 +79776,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 妖魔鬼怪 Area 5 (50%) Area 11 (50%) (1%)",
+        "quest": "集会所 7★ 妖魔鬼怪 Area 5 (50%) Area 11 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -79788,7 +79788,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 8 (60%) Area 9 (30%) Area 12 (10%) (1%)",
+        "quest": "集会所 7★ 激战・激烈・激励之乱 Area 8 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -79800,7 +79800,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 9 (60%) Area 12 (40%) (1%) (1%)",
+        "quest": "大师等级 1★ 满身的泥泞就是王牌 Area 9 (60%) Area 12 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -79812,7 +79812,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查雌火龙 Area 9 (60%) Area 12 (40%) (1%) (1%)",
+        "quest": "盟友 2★ 调查雌火龙 Area 9 (60%) Area 12 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -79824,7 +79824,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 阴森的石壁 Area 9 (60%) Area 12 (40%) (1%) (1%)",
+        "quest": "大师等级 2★ 阴森的石壁 Area 9 (60%) Area 12 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -79836,7 +79836,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 9 (60%) Area 12 (40%) (1%) (1%)",
+        "quest": "大师等级 3★ 巡游沙原的蜘蛛网 Area 9 (60%) Area 12 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -79848,7 +79848,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 5 (50%) Area 11 (50%) (1%) (1%)",
+        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 5 (50%) Area 11 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -79860,7 +79860,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绝对强者 Area 4 (60%) Area 12 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 绝对强者 Area 4 (60%) Area 12 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -79872,7 +79872,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 4 (60%) Area 12 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 4 (60%) Area 12 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -79884,7 +79884,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查热源的居住者 Area 5 (50%) Area 11 (50%) (1%) (1%)",
+        "quest": "盟友 5★ 调查热源的居住者 Area 5 (50%) Area 11 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79896,7 +79896,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 夺回那份光辉 Area 5 (50%) Area 11 (50%) (1%) (1%)",
+        "quest": "大师等级 6★ 夺回那份光辉 Area 5 (50%) Area 11 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79908,7 +79908,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：岩龙 Area 5 (50%) Area 11 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：岩龙 Area 5 (50%) Area 11 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79920,7 +79920,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 5 (50%) Area 11 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 5 (50%) Area 11 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79932,7 +79932,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 9 (60%) Area 12 (40%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：炎王龙 Area 9 (60%) Area 12 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79944,7 +79944,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 5 (50%) Area 11 (50%) (1%)",
+        "quest": "活动任务 6★ 熔岩洞的巨蛙 Area 5 (50%) Area 11 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -79956,7 +79956,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 泥翁与流行文化 Area 9 (60%) Area 12 (40%) (1%) (1%)",
+        "quest": "活动任务 8★ 泥翁与流行文化 Area 9 (60%) Area 12 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -79968,7 +79968,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 上镜♪最可爱★穿搭！ Area 4 (60%) Area 12 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "6★ 上镜♪最可爱★穿搭！ Area 4 (60%) Area 12 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79980,7 +79980,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 沙尘中的黑影 Area 9 (60%) Area 12 (40%) (1%) (1%)",
+        "quest": "6★ 沙尘中的黑影 Area 9 (60%) Area 12 (40%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -79992,7 +79992,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 5 (60%) Area 12 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 5 (60%) Area 12 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -80004,7 +80004,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 5 (50%) Area 11 (50%) (1%) (1%)",
+        "quest": "大师等级 6★ 炽热的爆鳞龙 Area 5 (50%) Area 11 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -80016,7 +80016,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 5 (50%) Area 11 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 5 (50%) Area 11 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -80028,7 +80028,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 守住食材运输路！ Area 5 (50%) Area 11 (50%) (1%) (1%)",
+        "quest": "6★ 守住食材运输路！ Area 5 (50%) Area 11 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -80040,7 +80040,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 5 (50%) Area 11 (50%) (1%)",
+        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 5 (50%) Area 11 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -80052,7 +80052,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 泥翁龙的考验 Area 8 (60%) Area 9 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 泥翁龙的考验 Area 8 (60%) Area 9 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -80064,7 +80064,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 4 (60%) Area 12 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 4 (60%) Area 12 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -80076,7 +80076,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 4 (60%) Area 12 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 碎尸万段，碾为微尘 Area 4 (60%) Area 12 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -80088,7 +80088,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 5 (50%) Area 11 (50%) (1%) (1%)",
+        "quest": "大师等级 4★ 喷烟乱舞的贵妃 Area 5 (50%) Area 11 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       }
@@ -81173,7 +81173,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 冲向伙伴的咆哮 Area 11 (60%) Area 3 (30%) Area 14 (10%) (1%)",
+        "quest": "集会所 3★ 冲向伙伴的咆哮 Area 11 (60%) Area 3 (30%) Area 14 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -81185,7 +81185,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 狂暴者 Area 9 (60%) Area 8 (30%) Area 3 (10%) (1%)",
+        "quest": "集会所 3★ 狂暴者 Area 9 (60%) Area 8 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -81197,7 +81197,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 轰隆隆的咆哮 Area 10 (60%) Area 6 (30%) Area 12 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 轰隆隆的咆哮 Area 10 (60%) Area 6 (30%) Area 12 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -81209,7 +81209,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.75",
         "players": "1",
-        "quest": "集会所 8★ 倪泰教官的挑战书・其四 Area 10 (70%) Area 12 (30%) (3%) (3%)",
+        "quest": "集会所 8★ 倪泰教官的挑战书・其四 Area 10 (70%) Area 12 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81221,7 +81221,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绝对强者 Area 10 (60%) Area 8 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 绝对强者 Area 10 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -81233,7 +81233,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 9 (60%) Area 8 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 9 (60%) Area 8 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -81245,7 +81245,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 破坏城塞的暴君 Area 10 (60%) Area 8 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 破坏城塞的暴君 Area 10 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -81257,7 +81257,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查轰龙 Area 10 (60%) Area 8 (30%) Area 4 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查轰龙 Area 10 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -81269,7 +81269,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 异常震区 Area 10 (60%) Area 6 (30%) Area 12 (10%) (100%)",
+        "quest": "大师等级 5★ 异常震区 Area 10 (60%) Area 6 (30%) Area 12 (10%) [大金冠] (100%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -81281,7 +81281,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查沙原的异常活动 Area 10 (60%) Area 6 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查沙原的异常活动 Area 10 (60%) Area 6 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81293,7 +81293,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 无法抑制的狂想曲 Area 11 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 无法抑制的狂想曲 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81305,7 +81305,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：轰龙 Area 10 (60%) Area 6 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：轰龙 Area 10 (60%) Area 6 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -81317,7 +81317,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4",
         "players": "1",
-        "quest": "活动任务 8★ 称号・豪杰之心 Area 11 (100%) (100%)",
+        "quest": "活动任务 8★ 称号・豪杰之心 Area 11 (100%) [小金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81329,7 +81329,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81341,7 +81341,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81353,7 +81353,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 如飞毛腿般疾驰吧！ Area 10 (60%) Area 6 (30%) Area 12 (10%) (100%)",
+        "quest": "4★ 如飞毛腿般疾驰吧！ Area 10 (60%) Area 6 (30%) Area 12 (10%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -81389,7 +81389,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 雪鬼兽来了 Area 8 (100%) (1%)",
+        "quest": "集会所 7★ 雪鬼兽来了 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -81401,7 +81401,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 烈焰与阔步横行的强者们 Area 11 (60%) Area 10 (30%) Area 14 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 烈焰与阔步横行的强者们 Area 11 (60%) Area 10 (30%) Area 14 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81413,7 +81413,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 6 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 倾泻而下的爆鳞箭矢 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81425,7 +81425,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 11 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81437,7 +81437,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：龙兽戏画 Area 9 (70%) Area 8 (30%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：龙兽戏画 Area 9 (70%) Area 8 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -81449,7 +81449,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 大哥的请求 Area 11 (60%) Area 3 (30%) Area 14 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 大哥的请求 Area 11 (60%) Area 3 (30%) Area 14 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -81461,7 +81461,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 我等荒野三凶龙 Area 10 (60%) Area 6 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 我等荒野三凶龙 Area 10 (60%) Area 6 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -81473,7 +81473,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 14 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查炽妃蜘蛛 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -81485,7 +81485,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 异常震区 Area 8 (60%) Area 11 (30%) Area 7 (10%) (100%)",
+        "quest": "大师等级 5★ 异常震区 Area 8 (60%) Area 11 (30%) Area 7 (10%) [小金冠] (100%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -81497,7 +81497,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 充斥天地的火焰与轰鸣 Area 11 (60%) Area 3 (30%) Area 14 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 充斥天地的火焰与轰鸣 Area 11 (60%) Area 3 (30%) Area 14 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -81509,7 +81509,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查喷火大地 Area 11 (60%) Area 3 (30%) Area 14 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查喷火大地 Area 11 (60%) Area 3 (30%) Area 14 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -81545,7 +81545,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 疾风怒涛的大舞台 Area 11 (100%) (3%) (3%)",
+        "quest": "集会所 7★ 疾风怒涛的大舞台 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -81557,7 +81557,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 风暴之黑影 Area 9 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 风暴之黑影 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81569,7 +81569,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 8 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81581,7 +81581,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 6 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81593,7 +81593,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 11 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81605,7 +81605,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 爆鳞预警 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 爆鳞预警 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81617,7 +81617,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81629,7 +81629,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81641,7 +81641,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 寒风肆虐 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 寒风肆虐 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81653,7 +81653,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查钢龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查钢龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81665,7 +81665,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查冰封群岛剧变 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查冰封群岛剧变 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81677,7 +81677,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81689,7 +81689,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81701,7 +81701,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查银火龙 Area 10 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查银火龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81713,7 +81713,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81725,7 +81725,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 6 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81737,7 +81737,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 爆鳞爆碎 Area 8 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 爆鳞爆碎 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81749,7 +81749,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 10 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81761,7 +81761,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 熔岩洞过冷却 Area 14 (100%) (1%) (1%)",
+        "quest": "6★ 熔岩洞过冷却 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81773,7 +81773,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 大小暴君 Area 7 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 大小暴君 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81785,7 +81785,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 3 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81797,7 +81797,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 闪闪★亮亮？ Area 3 (100%) (1%) (1%)",
+        "quest": "6★ 闪闪★亮亮？ Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81809,7 +81809,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红之回归 Area 10 (100%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：红之回归 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -81821,7 +81821,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 8★ 雪中暴牙 Area 8 (100%) (1%)",
+        "quest": "活动任务 8★ 雪中暴牙 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -81833,7 +81833,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 妖魔鬼怪 Area 3 (100%) (1%)",
+        "quest": "集会所 7★ 妖魔鬼怪 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -81845,7 +81845,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 3 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -81857,211 +81857,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 12 (100%) (1%) (1%)",
-        "stamina": "1.8",
-        "stun": "1.4"
-      },
-      {
-        "ailment": "2.4/2.4",
-        "attack": "9.75",
-        "defense": "1",
-        "hp": "30,600 HP",
-        "mount": "1",
-        "parts": "7.6",
-        "players": "1",
-        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 3 (100%) (1%) (1%)",
-        "stamina": "2.05",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "10.9",
-        "defense": "1",
-        "hp": "34,200 HP",
-        "mount": "1",
-        "parts": "8.8",
-        "players": "1",
-        "quest": "大师等级 5★ 关爱随从之人的求助 Area 11 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "10.9",
-        "defense": "1",
-        "hp": "34,200 HP",
-        "mount": "1",
-        "parts": "8.8",
-        "players": "1",
-        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 6 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "45,450 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 3 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "45,450 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "大师等级 6★ 冰冠的交战 Area 3 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "10.9",
-        "defense": "1",
-        "hp": "34,200 HP",
-        "mount": "1",
-        "parts": "8.8",
-        "players": "1",
-        "quest": "盟友 5★ 周身龙炎的炎王 Area 4 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "10.9",
-        "defense": "1",
-        "hp": "34,200 HP",
-        "mount": "1",
-        "parts": "8.8",
-        "players": "1",
-        "quest": "盟友 5★ 调查炎王龙 Area 4 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "41,400 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 8 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "41,400 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 14 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "45,450 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 8 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "45,450 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 8 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "45,450 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 14 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "45,450 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 3 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "11.2",
-        "defense": "1",
-        "hp": "45,450 HP",
-        "mount": "1",
-        "parts": "11.6",
-        "players": "1",
-        "quest": "大师等级 6★ 复活之传说 Area 10 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "2.6/2.6",
-        "attack": "10.9",
-        "defense": "1",
-        "hp": "34,200 HP",
-        "mount": "1",
-        "parts": "8.8",
-        "players": "1",
-        "quest": "大师等级 5★ 黑中之白 Area 10 (100%) (1%) (1%)",
-        "stamina": "2.15",
-        "stun": "1.6"
-      },
-      {
-        "ailment": "1.9/1.9",
-        "attack": "6.1",
-        "defense": "1",
-        "hp": "17,100 HP",
-        "mount": "1",
-        "parts": "3.45",
-        "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 10 (70%) Area 3 (30%) (1%) (1%)",
-        "stamina": "1.8",
-        "stun": "1.4"
-      },
-      {
-        "ailment": "1.9/1.9",
-        "attack": "6.1",
-        "defense": "1",
-        "hp": "17,100 HP",
-        "mount": "1",
-        "parts": "3.45",
-        "players": "1",
-        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 9 (60%) Area 8 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -82073,7 +81869,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查棘龙 Area 10 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 沸腾的后宫权力之争 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -82085,7 +81881,67 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查夜里的威胁者 Area 10 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 关爱随从之人的求助 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "10.9",
+        "defense": "1",
+        "hp": "34,200 HP",
+        "mount": "1",
+        "parts": "8.8",
+        "players": "1",
+        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "45,450 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "怪异 6★ 怪异调查：妃蜘蛛 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "45,450 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "大师等级 6★ 冰冠的交战 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "10.9",
+        "defense": "1",
+        "hp": "34,200 HP",
+        "mount": "1",
+        "parts": "8.8",
+        "players": "1",
+        "quest": "盟友 5★ 周身龙炎的炎王 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "10.9",
+        "defense": "1",
+        "hp": "34,200 HP",
+        "mount": "1",
+        "parts": "8.8",
+        "players": "1",
+        "quest": "盟友 5★ 调查炎王龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82097,7 +81953,91 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 别打扰我的演出！ Area 10 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "41,400 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "大师等级 6★ 神秘光辉 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "45,450 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "45,450 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "45,450 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 14 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "45,450 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "怪异 6★ 怪异调查：炽妃蜘蛛 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "45,450 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "大师等级 6★ 复活之传说 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "10.9",
+        "defense": "1",
+        "hp": "34,200 HP",
+        "mount": "1",
+        "parts": "8.8",
+        "players": "1",
+        "quest": "大师等级 5★ 黑中之白 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82109,7 +82049,67 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 10 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 10 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "1.8",
+        "stun": "1.4"
+      },
+      {
+        "ailment": "1.9/1.9",
+        "attack": "6.1",
+        "defense": "1",
+        "hp": "17,100 HP",
+        "mount": "1",
+        "parts": "3.45",
+        "players": "1",
+        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 9 (60%) Area 8 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "1.8",
+        "stun": "1.4"
+      },
+      {
+        "ailment": "2.4/2.4",
+        "attack": "9.75",
+        "defense": "1",
+        "hp": "30,600 HP",
+        "mount": "1",
+        "parts": "7.6",
+        "players": "1",
+        "quest": "盟友 4★ 调查棘龙 Area 10 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.05",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "10.9",
+        "defense": "1",
+        "hp": "34,200 HP",
+        "mount": "1",
+        "parts": "8.8",
+        "players": "1",
+        "quest": "盟友 5★ 调查夜里的威胁者 Area 10 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "2.6/2.6",
+        "attack": "11.2",
+        "defense": "1",
+        "hp": "41,400 HP",
+        "mount": "1",
+        "parts": "11.6",
+        "players": "1",
+        "quest": "6★ 别打扰我的演出！ Area 10 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
+        "stamina": "2.15",
+        "stun": "1.6"
+      },
+      {
+        "ailment": "1.9/1.9",
+        "attack": "6.1",
+        "defense": "1",
+        "hp": "17,100 HP",
+        "mount": "1",
+        "parts": "3.45",
+        "players": "1",
+        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 10 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -82121,7 +82121,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 狂热粉丝 Area 11 (60%) Area 3 (30%) Area 14 (10%) (3%) (3%)",
+        "quest": "活动任务 7★ 狂热粉丝 Area 11 (60%) Area 3 (30%) Area 14 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -82133,7 +82133,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 10 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 10 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82145,7 +82145,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 10 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 10 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82157,7 +82157,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：角龙 Area 10 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：角龙 Area 10 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82169,7 +82169,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：火龙 Area 11 (60%) Area 3 (30%) Area 14 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：火龙 Area 11 (60%) Area 3 (30%) Area 14 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82181,7 +82181,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查棘茶龙 Area 10 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查棘茶龙 Area 10 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82193,7 +82193,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 10 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 10 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82205,7 +82205,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天廻龙 Area 10 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：天廻龙 Area 10 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82217,7 +82217,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 冰点下的统治者 Area 10 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 5★ 冰点下的统治者 Area 10 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82229,7 +82229,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 11 (60%) Area 3 (30%) Area 14 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 11 (60%) Area 3 (30%) Area 14 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82241,7 +82241,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 刚与柔的极致 Area 10 (70%) Area 3 (30%) (1%) (1%)",
+        "quest": "大师等级 5★ 刚与柔的极致 Area 10 (70%) Area 3 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82253,7 +82253,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查2头怨虎龙 Area 11 (60%) Area 3 (30%) Area 14 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查2头怨虎龙 Area 11 (60%) Area 3 (30%) Area 14 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82265,7 +82265,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 10 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查千之刃与巡回之狂龙 Area 10 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82277,7 +82277,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 积怨的怒吼 Area 10 (60%) Area 8 (30%) Area 4 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 积怨的怒吼 Area 10 (60%) Area 8 (30%) Area 4 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -82289,7 +82289,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 10 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "活动任务 8★ 炎帝，俯瞰热沙之地 Area 10 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -82301,7 +82301,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “刺穿兔团子的四根角！”之卷 Area 10 (60%) Area 6 (30%) Area 12 (10%) (1%)",
+        "quest": "集会所 7★ “刺穿兔团子的四根角！”之卷 Area 10 (60%) Area 6 (30%) Area 12 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -82313,7 +82313,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 11 (60%) Area 3 (30%) Area 14 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 11 (60%) Area 3 (30%) Area 14 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -82325,7 +82325,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 10 (70%) Area 6 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 10 (70%) Area 6 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -82337,7 +82337,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 11 (60%) Area 3 (30%) Area 14 (10%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：红莲尽染的天空 Area 11 (60%) Area 3 (30%) Area 14 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -83582,7 +83582,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：驱除灾厄的烈焰 Area 3 (60%) Area 9 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：驱除灾厄的烈焰 Area 3 (60%) Area 9 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -83594,7 +83594,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：迅龙 Area 2 (60%) Area 8 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：迅龙 Area 2 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -83606,7 +83606,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 影之迅龙 Area 3 (60%) Area 9 (30%) Area 8 (10%) (3%) (3%)",
+        "quest": "活动任务 7★ 影之迅龙 Area 3 (60%) Area 9 (30%) Area 8 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -83618,7 +83618,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 别无二致的音速之影 Area 13 (60%) Area 11 (30%) Area 10 (10%) (14%)",
+        "quest": "活动任务 8★ 别无二致的音速之影 Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (14%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -83630,7 +83630,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "6★ 如划破黑夜一般 Area 1 (100%) (100%)",
+        "quest": "6★ 如划破黑夜一般 Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -83654,7 +83654,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 暗夜中疾驰的双星 Area 3 (60%) Area 9 (30%) Area 8 (10%) (1%)",
+        "quest": "集会所 3★ 暗夜中疾驰的双星 Area 3 (60%) Area 9 (30%) Area 8 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -83666,7 +83666,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 13 (60%) Area 11 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -83678,7 +83678,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 2 (60%) Area 8 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 2 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -83690,7 +83690,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 刹那双影 Area 13 (60%) Area 11 (30%) Area 10 (10%) (100%)",
+        "quest": "大师等级 3★ 刹那双影 Area 13 (60%) Area 11 (30%) Area 10 (10%) [大金冠] (100%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -83702,7 +83702,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 给烈焰的考验 Area 3 (60%) Area 9 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 给烈焰的考验 Area 3 (60%) Area 9 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -83714,7 +83714,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 潜伏于岩洞的黑影 Area 2 (60%) Area 8 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 潜伏于岩洞的黑影 Area 2 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -83726,7 +83726,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查迅龙 Area 2 (60%) Area 8 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查迅龙 Area 2 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -83738,7 +83738,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 废神社三狂徒 Area 3 (60%) Area 9 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 废神社三狂徒 Area 3 (60%) Area 9 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -83750,7 +83750,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 13 (60%) Area 11 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -83762,7 +83762,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 疾风怒涛的大舞台 Area 12 (100%) (3%) (3%)",
+        "quest": "集会所 7★ 疾风怒涛的大舞台 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -83786,7 +83786,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.75",
         "players": "1",
-        "quest": "集会所 8★ 倪泰教官的挑战书・其三 Area 3 (70%) Area 8 (30%) (3%) (3%)",
+        "quest": "集会所 8★ 倪泰教官的挑战书・其三 Area 3 (70%) Area 8 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -83798,7 +83798,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 刹那双影 Area 9 (60%) Area 12 (30%) Area 8 (10%) (100%)",
+        "quest": "大师等级 3★ 刹那双影 Area 9 (60%) Area 12 (30%) Area 8 (10%) [小金冠] (100%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -83810,7 +83810,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -83822,7 +83822,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 摇曳的草叶与樱尾 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 摇曳的草叶与樱尾 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -83834,7 +83834,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查泡狐龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查泡狐龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -83846,7 +83846,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 水没林的师徒共斗 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 水没林的师徒共斗 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -83858,7 +83858,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查雷狼龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查雷狼龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -83870,7 +83870,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -83882,7 +83882,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -83894,7 +83894,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：电龙 Area 13 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：电龙 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -83906,7 +83906,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 11 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -83930,7 +83930,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -83942,7 +83942,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雌火龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雌火龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -83954,7 +83954,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：棘龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -83966,7 +83966,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 称号・忍者之心 Area 11 (100%) (3%) (3%)",
+        "quest": "活动任务 7★ 称号・忍者之心 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -83978,7 +83978,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 13 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -83990,7 +83990,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 3 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -84002,7 +84002,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 烈祸袭来：超速电导 Area 11 (100%) (1%) (1%)",
+        "quest": "6★ 烈祸袭来：超速电导 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84062,7 +84062,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 来自泥海的邀请 Area 13 (100%) (1%)",
+        "quest": "集会所 7★ 来自泥海的邀请 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -84074,7 +84074,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 岿然不动的刚缠兽 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 岿然不动的刚缠兽 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -84086,7 +84086,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查刚缠兽 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查刚缠兽 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -84098,7 +84098,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 3 (100%) (1%)",
+        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -84110,7 +84110,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 废神社大骚动 Area 3 (100%) (1%)",
+        "quest": "集会所 7★ 废神社大骚动 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -84122,7 +84122,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 请小心暴徒 Area 13 (100%) (1%)",
+        "quest": "集会所 7★ 请小心暴徒 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -84134,7 +84134,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 远古幻影 Area 3 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 远古幻影 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -84146,7 +84146,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 11 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -84158,7 +84158,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 3 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -84170,7 +84170,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 1 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -84182,7 +84182,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 怨念翻涌的神社 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 怨念翻涌的神社 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -84194,7 +84194,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查怨虎龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查怨虎龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -84206,7 +84206,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -84218,7 +84218,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -84230,7 +84230,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 危险的森林浴 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 危险的森林浴 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84242,7 +84242,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终极大干架爆发？ Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 终极大干架爆发？ Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84254,7 +84254,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84266,7 +84266,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84278,7 +84278,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 称号・劲敌之心 Area 13 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 称号・劲敌之心 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -84290,7 +84290,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ SF：最强流升段考试 Area 3 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ SF：最强流升段考试 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -84302,7 +84302,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 清官难断火龙事 Area 3 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 清官难断火龙事 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -84314,7 +84314,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 骑士需秉持优雅 Area 12 (100%) (1%) (1%)",
+        "quest": "6★ 骑士需秉持优雅 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84326,7 +84326,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 无声无息 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 无声无息 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84338,7 +84338,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查霞龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查霞龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84350,7 +84350,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84362,7 +84362,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84374,7 +84374,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84386,7 +84386,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：钢龙 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：钢龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84398,7 +84398,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -84410,7 +84410,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 13 (60%) Area 11 (30%) Area 10 (10%) (1%)",
+        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -84422,7 +84422,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 13 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -84434,7 +84434,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 3 (50%) Area 9 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 3 (50%) Area 9 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -84446,7 +84446,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查将军镰蟹 Area 13 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查将军镰蟹 Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -84458,7 +84458,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 寂静深处 Area 13 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 寂静深处 Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84470,7 +84470,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 2 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 2 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84482,7 +84482,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金火龙 Area 13 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：金火龙 Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84494,7 +84494,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 3 (50%) Area 9 (50%) (1%) (1%)",
+        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 3 (50%) Area 9 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84506,7 +84506,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 13 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84518,7 +84518,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：霞龙 Area 13 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：霞龙 Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -84530,7 +84530,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 锻炼吧！弓之型 Area 3 (50%) Area 9 (50%) (1%)",
+        "quest": "集会所 6★ 锻炼吧！弓之型 Area 3 (50%) Area 9 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -84542,7 +84542,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 13 (60%) Area 11 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 歌女与壮汉的爱情故事！？ Area 13 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -84554,7 +84554,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 双雷照夜 Area 2 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 双雷照夜 Area 2 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -84566,7 +84566,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查电龙 Area 2 (60%) Area 8 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查电龙 Area 2 (60%) Area 8 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       }
@@ -85525,7 +85525,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 一缕月光 Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 一缕月光 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -85537,7 +85537,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "6★ 稀少种星河！ Area 1 (100%) (100%)",
+        "quest": "6★ 稀少种星河！ Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -85549,7 +85549,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "盟友 6★ 调查金火龙 Area 2 (60%) Area 4 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查金火龙 Area 2 (60%) Area 4 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -85561,7 +85561,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "6★ 骑士需秉持优雅 Area 11 (100%) (100%)",
+        "quest": "6★ 骑士需秉持优雅 Area 11 (100%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -85573,7 +85573,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：金色冲击 Area 2 (60%) Area 4 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：金色冲击 Area 2 (60%) Area 4 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -85585,7 +85585,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：金与银之圆舞 Area 1 (100%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：金与银之圆舞 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -85597,7 +85597,7 @@ var monster_data = {
         "mount": "1",
         "parts": "23",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金火龙 Area 3 (60%) Area 12 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：金火龙 Area 3 (60%) Area 12 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3",
         "stun": "3"
       },
@@ -85609,7 +85609,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：以毒攻毒 Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：以毒攻毒 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -85621,7 +85621,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 2 (60%) Area 4 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 2 (60%) Area 4 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -85633,7 +85633,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 3 (60%) Area 12 (30%) Area 8 (10%) (3%) (3%)",
+        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 3 (60%) Area 12 (30%) Area 8 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -86410,7 +86410,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "6★ 烈祸袭来：狮子迷人的肉体 Area 1 (100%) (100%)",
+        "quest": "6★ 烈祸袭来：狮子迷人的肉体 Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.2",
         "stun": "1.7"
       },
@@ -86422,7 +86422,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3",
         "players": "1",
-        "quest": "村庄 6★ 高难度：挑战霸者的队列 Area 11 (100%) (3%) (3%)",
+        "quest": "村庄 6★ 高难度：挑战霸者的队列 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -86434,7 +86434,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 妖魔鬼怪 Area 12 (60%) Area 7 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 妖魔鬼怪 Area 12 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -86446,7 +86446,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 9 (60%) Area 6 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 9 (60%) Area 6 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -86458,7 +86458,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 请小心暴徒 Area 6 (70%) Area 12 (30%) (3%) (3%)",
+        "quest": "集会所 7★ 请小心暴徒 Area 6 (70%) Area 12 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -86482,7 +86482,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 关爱随从之人的求助 Area 12 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 关爱随从之人的求助 Area 12 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -86494,7 +86494,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 横扫树荫的金狮子 Area 4 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 横扫树荫的金狮子 Area 4 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -86506,7 +86506,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查金狮子 Area 4 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查金狮子 Area 4 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -86518,7 +86518,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 刚与柔的极致 Area 9 (60%) Area 6 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 刚与柔的极致 Area 9 (60%) Area 6 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -86530,7 +86530,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终极大干架爆发？ Area 9 (60%) Area 6 (30%) Area 12 (10%) (100%)",
+        "quest": "大师等级 6★ 终极大干架爆发？ Area 9 (60%) Area 6 (30%) Area 12 (10%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86542,7 +86542,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金狮子 Area 12 (60%) Area 5 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：金狮子 Area 12 (60%) Area 5 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -86566,7 +86566,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "5★ 猿蟹大战 Area 11 (100%) (6%) (10%)",
+        "quest": "5★ 猿蟹大战 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -86578,7 +86578,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 一夜暴富！金狮子战斗！ Area 11 (100%) (100%)",
+        "quest": "5★ 一夜暴富！金狮子战斗！ Area 11 (100%) [小金冠] (100%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -86590,7 +86590,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 寒风肆虐 Area 9 (100%) (1%)",
+        "quest": "盟友 5★ 寒风肆虐 Area 9 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86602,7 +86602,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查钢龙 Area 9 (100%) (1%)",
+        "quest": "盟友 5★ 调查钢龙 Area 9 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86614,7 +86614,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终极大干架爆发？ Area 8 (60%) Area 7 (30%) Area 13 (10%) (100%)",
+        "quest": "大师等级 6★ 终极大干架爆发？ Area 8 (60%) Area 7 (30%) Area 13 (10%) [小金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86626,7 +86626,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 热情与冷静的考验 Area 7 (60%) Area 6 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 热情与冷静的考验 Area 7 (60%) Area 6 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86638,7 +86638,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 9 (60%) Area 6 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 9 (60%) Area 6 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86650,7 +86650,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查冰封群岛剧变 Area 9 (60%) Area 6 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查冰封群岛剧变 Area 9 (60%) Area 6 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86662,7 +86662,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查银火龙 Area 12 (100%) (3%) (3%)",
+        "quest": "盟友 6★ 调查银火龙 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86674,7 +86674,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 7 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86686,7 +86686,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查棘茶龙 Area 12 (100%) (3%) (3%)",
+        "quest": "盟友 6★ 调查棘茶龙 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86698,7 +86698,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：钢龙 Area 5 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 怪异克服：钢龙 Area 5 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86710,7 +86710,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 冰冠的交战 Area 9 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 冰冠的交战 Area 9 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86722,7 +86722,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：目中无人的一刀 Area 12 (60%) Area 5 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：目中无人的一刀 Area 12 (60%) Area 5 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86734,7 +86734,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 11 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：神秘红光天彗龙 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86746,7 +86746,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.7",
         "players": "1",
-        "quest": "活动任务 8★ SF：最强流升段考试 Area 5 (100%) (100%)",
+        "quest": "活动任务 8★ SF：最强流升段考试 Area 5 (100%) [大金冠] (100%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -86758,7 +86758,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 守住食材运输路！ Area 12 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "6★ 守住食材运输路！ Area 12 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86770,7 +86770,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 来自泥海的邀请 Area 3 (100%) (21%)",
+        "quest": "集会所 7★ 来自泥海的邀请 Area 3 (100%) [小金冠] (21%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -86782,7 +86782,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 7 (100%) (1%)",
+        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -86794,7 +86794,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 9 (70%) Area 6 (30%) (12%) (3%)",
+        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 9 (70%) Area 6 (30%) [小金冠] (12%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -86806,7 +86806,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.75",
         "players": "1",
-        "quest": "集会所 8★ 倪泰教官的挑战书・其二 Area 6 (70%) Area 5 (30%) (3%) (3%)",
+        "quest": "集会所 8★ 倪泰教官的挑战书・其二 Area 6 (70%) Area 5 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -86818,7 +86818,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 12 (100%) (1%)",
+        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 12 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86830,7 +86830,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 12 (100%) (1%)",
+        "quest": "大师等级 5★ 炼狱之主，愤怒的炎帝 Area 12 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86842,7 +86842,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 4 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 4 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -86854,7 +86854,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 12 (60%) Area 5 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ “化牵绊为力量的兔团子”之卷 Area 12 (60%) Area 5 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -86866,7 +86866,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 炎国之王 Area 7 (100%) (11%) (1%)",
+        "quest": "集会所 8★ 炎国之王 Area 7 (100%) [小金冠] (11%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -86878,7 +86878,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 6 (100%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -86890,7 +86890,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查夜里的威胁者 Area 12 (100%) (1%)",
+        "quest": "盟友 5★ 调查夜里的威胁者 Area 12 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86902,7 +86902,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 周身龙炎的炎王 Area 12 (100%) (1%)",
+        "quest": "盟友 5★ 周身龙炎的炎王 Area 12 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86914,7 +86914,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查炎王龙 Area 12 (100%) (1%)",
+        "quest": "盟友 5★ 调查炎王龙 Area 12 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86926,7 +86926,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 积怨的怒吼 Area 5 (100%) (1%)",
+        "quest": "大师等级 6★ 积怨的怒吼 Area 5 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86938,7 +86938,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：追寻真相 Area 12 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：追寻真相 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86950,7 +86950,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 6 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 6 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86962,7 +86962,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：银火龙 Area 7 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：银火龙 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86974,7 +86974,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：钢龙 Area 9 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：钢龙 Area 9 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86986,7 +86986,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 7 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 高难度：爆炎肆虐的熔岩洞 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -86998,7 +86998,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 金狮子派对夜！ Area 11 (100%) (3%) (3%)",
+        "quest": "活动任务 8★ 金狮子派对夜！ Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -87010,7 +87010,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 5 (100%) (1%)",
+        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 5 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87022,7 +87022,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：轰龙 Area 9 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：轰龙 Area 9 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87034,7 +87034,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 12 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：红莲爆鳞龙 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87046,7 +87046,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 11 (100%) (1%)",
+        "quest": "活动任务 8★ 绽放于沙漠的丝之花 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -87058,7 +87058,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 7 (100%) (1%)",
+        "quest": "活动任务 8★ 如火焰般，坚强生存 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -87070,7 +87070,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 7 (100%) (1%)",
+        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -87082,7 +87082,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 6 (100%) (1%)",
+        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -87094,7 +87094,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 6 (100%) (1%)",
+        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -87106,7 +87106,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 12 (100%) (1%)",
+        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -87118,7 +87118,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 7 (100%) (1%)",
+        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -87130,7 +87130,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 熊熊燃烧的狩猎之魂 Area 8 (100%) (1%)",
+        "quest": "盟友 5★ 熊熊燃烧的狩猎之魂 Area 8 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87142,7 +87142,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 8 (100%) (1%)",
+        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 8 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87154,7 +87154,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查热源的居住者 Area 7 (100%) (1%)",
+        "quest": "盟友 5★ 调查热源的居住者 Area 7 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87166,7 +87166,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 与水共存之物 Area 3 (100%) (1%)",
+        "quest": "集会所 5★ 与水共存之物 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87178,7 +87178,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 4 (100%) (1%)",
+        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87190,7 +87190,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 请小心沙原的魔球 Area 4 (100%) (1%)",
+        "quest": "集会所 5★ 请小心沙原的魔球 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87202,7 +87202,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 一柿入魂 Area 3 (100%) (1%)",
+        "quest": "集会所 5★ 一柿入魂 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87214,7 +87214,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 5 (100%) (1%)",
+        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87226,7 +87226,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 滴水穿岩 Area 4 (100%) (1%)",
+        "quest": "集会所 5★ 滴水穿岩 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87238,7 +87238,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 为女王所吸引 Area 5 (100%) (1%)",
+        "quest": "集会所 5★ 为女王所吸引 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87250,7 +87250,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 看清吧！大剑之型 Area 5 (100%) (1%)",
+        "quest": "集会所 5★ 看清吧！大剑之型 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87262,7 +87262,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 4 (100%) (1%)",
+        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87274,7 +87274,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 领会吧！长枪之型 Area 4 (100%) (1%)",
+        "quest": "集会所 5★ 领会吧！长枪之型 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87286,7 +87286,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 5 (100%) (1%)",
+        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87298,7 +87298,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 邀往冥府的歌声 Area 10 (100%) (1%)",
+        "quest": "集会所 6★ 邀往冥府的歌声 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87310,7 +87310,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 打磨琥珀色的牙 Area 9 (100%) (1%)",
+        "quest": "集会所 6★ 打磨琥珀色的牙 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87322,7 +87322,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 飞跃头顶的威胁 Area 3 (100%) (1%)",
+        "quest": "集会所 6★ 飞跃头顶的威胁 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87334,7 +87334,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 10 (100%) (1%)",
+        "quest": "集会所 6★ 穷追猛打蛮颚龙 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87346,7 +87346,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 3 (100%) (1%)",
+        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87358,7 +87358,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 绽放于天际的红莲 Area 10 (100%) (1%)",
+        "quest": "集会所 6★ 绽放于天际的红莲 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87370,7 +87370,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 3 (100%) (1%)",
+        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87382,7 +87382,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 3 (100%) (1%)",
+        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87394,7 +87394,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 4 (100%) (1%)",
+        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87406,7 +87406,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 9 (100%) (1%)",
+        "quest": "集会所 6★ 磨炼吧！铳枪之型 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87418,7 +87418,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 9 (100%) (1%)",
+        "quest": "集会所 6★ 修炼吧！操虫棍之型 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87430,7 +87430,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 锻炼吧！弓之型 Area 5 (100%) (1%)",
+        "quest": "集会所 6★ 锻炼吧！弓之型 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87442,7 +87442,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查2头刚缠兽 Area 6 (100%) (1%)",
+        "quest": "盟友 5★ 调查2头刚缠兽 Area 6 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87454,7 +87454,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 以毒攻风 Area 4 (100%) (1%)",
+        "quest": "大师等级 6★ 以毒攻风 Area 4 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87466,7 +87466,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 12 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87478,7 +87478,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 12 (100%) (1%)",
+        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 12 (100%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87490,7 +87490,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查金火龙 Area 7 (100%) (3%) (3%)",
+        "quest": "盟友 6★ 调查金火龙 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87502,7 +87502,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：霞龙 Area 11 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 怪异克服：霞龙 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87514,7 +87514,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天廻龙 Area 12 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：天廻龙 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87526,7 +87526,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 5 (100%) (1%)",
+        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -87538,7 +87538,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 称号・劲敌之心 Area 6 (100%) (1%)",
+        "quest": "活动任务 8★ 称号・劲敌之心 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -87550,7 +87550,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 12 (100%) (3%) (3%)",
+        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87562,7 +87562,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 闪闪★亮亮？ Area 7 (100%) (3%) (3%)",
+        "quest": "6★ 闪闪★亮亮？ Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87574,7 +87574,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：高贵盛宴 Area 12 (60%) Area 5 (30%) Area 8 (10%) (3%) (3%)",
+        "quest": "6★ 双凶来袭：高贵盛宴 Area 12 (60%) Area 5 (30%) Area 8 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87586,7 +87586,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 如云雾般消散之人 Area 4 (60%) Area 7 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 5★ 如云雾般消散之人 Area 4 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87598,7 +87598,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 冰点下的统治者 Area 9 (60%) Area 6 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 5★ 冰点下的统治者 Area 9 (60%) Area 6 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87610,7 +87610,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 10 (60%) Area 6 (30%) Area 9 (10%) (1%)",
+        "quest": "大师等级 5★ 上面和下面都好可怕喵 Area 10 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87622,7 +87622,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 9 (60%) Area 6 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 9 (60%) Area 6 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87634,7 +87634,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 9 (60%) Area 6 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 9 (60%) Area 6 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87646,7 +87646,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 4 (60%) Area 7 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 4 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87658,7 +87658,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炎王龙 Area 12 (60%) Area 7 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：炎王龙 Area 12 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87670,7 +87670,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查沙原的异常活动 Area 10 (60%) Area 6 (30%) Area 9 (10%) (1%)",
+        "quest": "盟友 6★ 调查沙原的异常活动 Area 10 (60%) Area 6 (30%) Area 9 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87682,7 +87682,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 12 (60%) Area 7 (30%) Area 5 (10%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 12 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87694,7 +87694,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 4 (60%) Area 7 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 4 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87706,7 +87706,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 12 (60%) Area 7 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "大师等级 6★ 高难度：优雅的爵银 Area 12 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -87718,7 +87718,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 12 (60%) Area 5 (30%) Area 8 (10%) (3%) (3%)",
+        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 12 (60%) Area 5 (30%) Area 8 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -88436,7 +88436,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 沙尘中的黑影 Area 7 (50%) Area 10 (40%) Area 5 (10%) (6%) (10%)",
+        "quest": "6★ 沙尘中的黑影 Area 7 (50%) Area 10 (40%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -88448,7 +88448,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 以毒攻风 Area 3 (60%) Area 5 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 以毒攻风 Area 3 (60%) Area 5 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -88460,7 +88460,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查钢龙 Area 7 (60%) Area 6 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查钢龙 Area 7 (60%) Area 6 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -88472,7 +88472,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 寒风肆虐 Area 7 (60%) Area 6 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 寒风肆虐 Area 7 (60%) Area 6 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -88484,7 +88484,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 8 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 钢龙，风暴中起舞 Area 8 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -88496,7 +88496,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 风暴之黑影 Area 7 (60%) Area 6 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 风暴之黑影 Area 7 (60%) Area 6 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -88508,7 +88508,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 冰点下的统治者 Area 7 (60%) Area 6 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 冰点下的统治者 Area 7 (60%) Area 6 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -88520,7 +88520,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 3 (60%) Area 5 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 3 (60%) Area 5 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -88532,7 +88532,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 7 (50%) Area 10 (40%) Area 5 (10%) (3%) (3%)",
+        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 7 (50%) Area 10 (40%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -88544,7 +88544,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 7 (50%) Area 10 (40%) Area 5 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：司掌暴风与火焰者 Area 7 (50%) Area 10 (40%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -88556,7 +88556,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.7",
         "players": "1",
-        "quest": "活动任务 8★ 称号・强者之心 Area 1 (100%) (3%) (3%)",
+        "quest": "活动任务 8★ 称号・强者之心 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -88568,7 +88568,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 高难度：怪物猎人 Area 8 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 高难度：怪物猎人 Area 8 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -88580,7 +88580,7 @@ var monster_data = {
         "mount": "1",
         "parts": "12.8",
         "players": "1",
-        "quest": "6★ 蠢蠢欲动的三龙 Area 8 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "6★ 蠢蠢欲动的三龙 Area 8 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -88592,7 +88592,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 战栗的神雷【重现】 Area 2 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 战栗的神雷【重现】 Area 2 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -88604,7 +88604,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 祈祷招来甘霖之后 …… Area 3 (60%) Area 5 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "5★ 祈祷招来甘霖之后 …… Area 3 (60%) Area 5 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -88616,7 +88616,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 呼唤古龙的冰雷 Area 3 (60%) Area 5 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "5★ 呼唤古龙的冰雷 Area 3 (60%) Area 5 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -88628,7 +88628,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：高贵盛宴 Area 5 (100%) (3%) (3%)",
+        "quest": "6★ 双凶来袭：高贵盛宴 Area 5 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -88640,7 +88640,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘龙 Area 3 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：棘龙 Area 3 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -88652,7 +88652,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 百龙渊源 Area 2 (100%) (1%)",
+        "quest": "集会所 8★ 百龙渊源 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -88664,7 +88664,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 5 (100%) (1%)",
+        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -88676,7 +88676,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 高难度：吾等乐土之父母 Area 2 (100%) (1%)",
+        "quest": "活动任务 8★ 高难度：吾等乐土之父母 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       }
@@ -89296,7 +89296,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 挑战秘境 Area 1 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 挑战秘境 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -89308,7 +89308,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "盟友 6★ 调查银火龙 Area 14 (60%) Area 13 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查银火龙 Area 14 (60%) Area 13 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -89320,7 +89320,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "6★ 闪闪★亮亮？ Area 10 (60%) Area 13 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "6★ 闪闪★亮亮？ Area 10 (60%) Area 13 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -89332,7 +89332,7 @@ var monster_data = {
         "mount": "1",
         "parts": "23",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：银火龙 Area 9 (60%) Area 13 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：银火龙 Area 9 (60%) Area 13 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3",
         "stun": "3"
       },
@@ -89344,7 +89344,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "6★ 稀少种星河！ Area 1 (100%) (100%)",
+        "quest": "6★ 稀少种星河！ Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -89356,7 +89356,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：金与银之圆舞 Area 1 (100%) (6%) (10%)",
+        "quest": "6★ 双凶来袭：金与银之圆舞 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -89368,7 +89368,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14",
         "players": "1",
-        "quest": "6★ 秘境真美 Area 1 (100%) (6%) (10%)",
+        "quest": "6★ 秘境真美 Area 1 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -89380,7 +89380,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：谁是真正的天空王者？ Area 9 (60%) Area 13 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：谁是真正的天空王者？ Area 9 (60%) Area 13 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -90679,7 +90679,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "1★ 欢迎踏上新手猎人之路！ Area 11 (100%) (100%)",
+        "quest": "1★ 欢迎踏上新手猎人之路！ Area 11 (100%) [小金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -90739,7 +90739,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.51",
         "players": "1",
-        "quest": "集会所 1★ 冰封群岛的镰鼬 Area 4 (60%) Area 2 (30%) Area 9 (10%) (1%)",
+        "quest": "集会所 1★ 冰封群岛的镰鼬 Area 4 (60%) Area 2 (30%) Area 9 (10%) [小金冠] (1%)",
         "stamina": "1.15",
         "stun": "1.1"
       },
@@ -90751,7 +90751,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 包围而来的旋风 Area 8 (60%) Area 4 (30%) Area 9 (10%) (3%) (3%)",
+        "quest": "集会所 4★ 包围而来的旋风 Area 8 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -90763,7 +90763,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 理解吧！狩猎笛之型 Area 8 (60%) Area 4 (30%) Area 9 (10%) (3%) (3%)",
+        "quest": "集会所 4★ 理解吧！狩猎笛之型 Area 8 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -90775,7 +90775,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 1★ 向镰鼬龙王学习 Area 8 (60%) Area 4 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 1★ 向镰鼬龙王学习 Area 8 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -90787,7 +90787,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 废神社大战 Area 8 (60%) Area 4 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 废神社大战 Area 8 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -90799,7 +90799,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 鸟龙三连星 Area 11 (100%) (6%) (10%)",
+        "quest": "大师等级 2★ 鸟龙三连星 Area 11 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -90811,7 +90811,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：镰鼬龙王 Area 8 (60%) Area 4 (30%) Area 9 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：镰鼬龙王 Area 8 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -90823,7 +90823,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 往日的回忆 Area 8 (60%) Area 4 (30%) Area 9 (10%) (3%) (3%)",
+        "quest": "活动任务 7★ 往日的回忆 Area 8 (60%) Area 4 (30%) Area 9 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -90883,7 +90883,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 4 (100%) (1%)",
+        "quest": "集会所 4★ 可爱的东西也有尖牙 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -90895,7 +90895,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ “守护通往兔团子的道路”之卷 Area 4 (100%) (1%)",
+        "quest": "集会所 4★ “守护通往兔团子的道路”之卷 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -90907,7 +90907,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 酣然入梦人鱼龙枕 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 酣然入梦人鱼龙枕 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -90919,7 +90919,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 胸中烈火融化冻土 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 胸中烈火融化冻土 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -90931,7 +90931,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰人鱼龙 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查冰人鱼龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -90943,7 +90943,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.51",
         "players": "1",
-        "quest": "活动任务 1★ 毁灭之鸟龙？ Area 11 (100%) (1%)",
+        "quest": "活动任务 1★ 毁灭之鸟龙？ Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.15",
         "stun": "1.1"
       },
@@ -90979,7 +90979,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 2 (100%) (1%)",
+        "quest": "集会所 4★ 相扑大赛・冰封群岛 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -90991,7 +90991,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "大师等级 1★ 撕裂寂静者 Area 8 (100%) (1%)",
+        "quest": "大师等级 1★ 撕裂寂静者 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -91003,7 +91003,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：眠狗龙王 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：眠狗龙王 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -91015,7 +91015,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：奇怪龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -91027,7 +91027,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 2 (100%) (1%)",
+        "quest": "活动任务 4★ 风雪中舞动的朱红唐伞 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91063,7 +91063,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 身披剧毒锦缎 Area 4 (100%) (1%)",
+        "quest": "集会所 4★ 身披剧毒锦缎 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91075,7 +91075,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 4 (100%) (1%)",
+        "quest": "集会所 4★ 变幻吧！剑斧之型 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91087,7 +91087,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 白兔兽，白又白 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 白兔兽，白又白 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -91099,7 +91099,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 蜿蜿蜒蜒or弯弯曲曲？ Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 蜿蜿蜒蜒or弯弯曲曲？ Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -91111,7 +91111,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 划开夜幕的雷光 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 划开夜幕的雷光 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -91123,7 +91123,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查飞雷龙 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查飞雷龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -91135,7 +91135,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 伞鸟圆舞 Area 4 (100%) (1%)",
+        "quest": "集会所 4★ 伞鸟圆舞 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91147,7 +91147,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 4 (100%) (1%)",
+        "quest": "集会所 4★ 某夜，狩猎奇怪龙 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91159,7 +91159,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 慎重派与冲锋派 Area 4 (100%) (1%)",
+        "quest": "集会所 4★ 慎重派与冲锋派 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91171,7 +91171,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 4 (100%) (1%)",
+        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91183,7 +91183,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 怪物美食家 Area 4 (50%) Area 9 (50%) (1%)",
+        "quest": "集会所 4★ 怪物美食家 Area 4 (50%) Area 9 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91195,7 +91195,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 4 (70%) Area 9 (30%) (1%)",
+        "quest": "集会所 4★ 掌握吧！单手剑之型 Area 4 (70%) Area 9 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91207,7 +91207,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 吞噬寒地之影 Area 4 (70%) Area 9 (30%) (1%)",
+        "quest": "集会所 5★ 吞噬寒地之影 Area 4 (70%) Area 9 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -91219,7 +91219,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 抖抖抖困困困 Area 4 (70%) Area 9 (30%) (1%) (1%)",
+        "quest": "大师等级 1★ 抖抖抖困困困 Area 4 (70%) Area 9 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -91231,7 +91231,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 4 (50%) Area 9 (50%) (1%) (1%)",
+        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 4 (50%) Area 9 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -91243,7 +91243,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查奇怪龙 Area 4 (70%) Area 9 (30%) (1%) (1%)",
+        "quest": "盟友 2★ 调查奇怪龙 Area 4 (70%) Area 9 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -91255,7 +91255,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 冰天雪地打瞌睡 Area 4 (70%) Area 9 (30%) (1%)",
+        "quest": "集会所 4★ 冰天雪地打瞌睡 Area 4 (70%) Area 9 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91267,7 +91267,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 9 (100%) (1%)",
+        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -91279,7 +91279,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：白兔兽 Area 4 (70%) Area 9 (30%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：白兔兽 Area 4 (70%) Area 9 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -91291,7 +91291,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：伞鸟 Area 4 (50%) Area 9 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：伞鸟 Area 4 (50%) Area 9 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -92684,7 +92684,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 红绿圆舞曲 Area 11 (100%) (100%)",
+        "quest": "4★ 红绿圆舞曲 Area 11 (100%) [小金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -92696,7 +92696,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 公主们的盛宴 Area 1 (100%) (3%) (3%)",
+        "quest": "活动任务 8★ 公主们的盛宴 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -92720,7 +92720,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 成为女王的方法 Area 11 (60%) Area 9 (30%) Area 13 (10%) (1%)",
+        "quest": "集会所 2★ 成为女王的方法 Area 11 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -92732,7 +92732,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 为女王所吸引 Area 7 (60%) Area 4 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 为女王所吸引 Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -92744,7 +92744,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 领会吧！长枪之型 Area 6 (60%) Area 10 (30%) Area 3 (10%) (3%) (3%)",
+        "quest": "集会所 5★ 领会吧！长枪之型 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -92756,7 +92756,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 烈焰与阔步横行的强者们 Area 5 (60%) Area 14 (30%) Area 12 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 烈焰与阔步横行的强者们 Area 5 (60%) Area 14 (30%) Area 12 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -92768,7 +92768,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 3 (60%) Area 6 (30%) Area 1 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 女王陛下伫立的庭园 Area 3 (60%) Area 6 (30%) Area 1 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -92780,7 +92780,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 参见陆地女王 Area 6 (60%) Area 10 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 2★ 参见陆地女王 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -92792,7 +92792,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查雌火龙 Area 6 (60%) Area 10 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 2★ 调查雌火龙 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -92804,7 +92804,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 刺激的试胆♪ Area 7 (60%) Area 4 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 刺激的试胆♪ Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -92816,7 +92816,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15.5",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雌火龙 Area 3 (60%) Area 6 (30%) Area 1 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：雌火龙 Area 3 (60%) Area 6 (30%) Area 1 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -92828,7 +92828,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 猎人前辈的魅力背影 Area 7 (60%) Area 4 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 猎人前辈的魅力背影 Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -92840,7 +92840,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 给烈焰的考验 Area 7 (60%) Area 4 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 给烈焰的考验 Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -92852,7 +92852,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 5 (60%) Area 14 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 镰刀与火焰的危险程度问题 Area 5 (60%) Area 14 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -92864,7 +92864,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查热源的居住者 Area 5 (60%) Area 14 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查热源的居住者 Area 5 (60%) Area 14 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -92876,7 +92876,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：河童蛙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：河童蛙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -92888,7 +92888,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：土砂龙 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：土砂龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -92900,7 +92900,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 3 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 舞于沙尘的风暴支配者 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -92912,7 +92912,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 影之迅龙 Area 7 (100%) (1%)",
+        "quest": "活动任务 7★ 影之迅龙 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -92924,7 +92924,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 沙尘中的黑影 Area 3 (100%) (1%) (1%)",
+        "quest": "6★ 沙尘中的黑影 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -92936,7 +92936,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 大地激昂 Area 10 (60%) Area 3 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "活动任务 7★ 大地激昂 Area 10 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -92948,7 +92948,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 烈祸袭来：超速电导 Area 2 (100%) (1%) (1%)",
+        "quest": "6★ 烈祸袭来：超速电导 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93008,7 +93008,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.69",
         "players": "1",
-        "quest": "集会所 2★ 水之兽与火之龙 Area 11 (60%) Area 9 (30%) Area 13 (10%) (1%)",
+        "quest": "集会所 2★ 水之兽与火之龙 Area 11 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%)",
         "stamina": "1.2",
         "stun": "1.1"
       },
@@ -93044,7 +93044,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 10 (60%) Area 3 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 撕裂吧！双剑之型 Area 10 (60%) Area 3 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93056,7 +93056,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 妖魔鬼怪 Area 14 (100%) (1%)",
+        "quest": "集会所 7★ 妖魔鬼怪 Area 14 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93068,7 +93068,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 饥肠辘辘天狗风波 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93080,7 +93080,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 交错的柿子与枪火 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 交错的柿子与枪火 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93092,7 +93092,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查天狗兽 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查天狗兽 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93104,7 +93104,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 自投蛮颚龙 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 自投蛮颚龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93116,7 +93116,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 废神社大战 Area 7 (60%) Area 4 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 废神社大战 Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93152,7 +93152,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 一柿入魂 Area 9 (100%) (1%)",
+        "quest": "集会所 5★ 一柿入魂 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -93164,7 +93164,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 看清吧！大剑之型 Area 11 (100%) (1%)",
+        "quest": "集会所 5★ 看清吧！大剑之型 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -93176,7 +93176,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 飞跃头顶的威胁 Area 12 (100%) (1%)",
+        "quest": "集会所 6★ 飞跃头顶的威胁 Area 12 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93188,7 +93188,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 5 (100%) (1%)",
+        "quest": "集会所 7★ “注意火候！紫炎与火球”之卷 Area 5 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93200,7 +93200,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 欢迎来到鸟龙晚会 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93212,7 +93212,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查蛮颚龙 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查蛮颚龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93224,7 +93224,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 翼镰毒毒 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 翼镰毒毒 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -93236,7 +93236,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 发现神药！？ Area 3 (60%) Area 6 (30%) Area 1 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 发现神药！？ Area 3 (60%) Area 6 (30%) Area 1 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -93248,7 +93248,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 刹那双影 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 刹那双影 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -93260,7 +93260,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 藏身沙尘的暴君 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93272,7 +93272,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 摇曳的草叶与樱尾 Area 1 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 摇曳的草叶与樱尾 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93284,7 +93284,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查泡狐龙 Area 1 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查泡狐龙 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93296,7 +93296,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：水兽 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：水兽 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93308,7 +93308,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93320,7 +93320,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 1 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 飘荡的泡狐龙鳍 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93332,7 +93332,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查紫焰摇曳的火龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93344,7 +93344,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 泥还是泥，却是热泥 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93356,7 +93356,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 双雷照夜 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 双雷照夜 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93368,7 +93368,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 水没林的师徒共斗 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 水没林的师徒共斗 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93380,7 +93380,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查雷狼龙 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查雷狼龙 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93392,7 +93392,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 异常震区 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 异常震区 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93404,7 +93404,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：岩龙 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：岩龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93416,7 +93416,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 3 (100%) (1%)",
+        "quest": "集会所 5★ 在泥沼中跌倒也要爬起来 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -93428,7 +93428,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 请小心沙原的魔球 Area 3 (100%) (1%)",
+        "quest": "集会所 5★ 请小心沙原的魔球 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -93440,7 +93440,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 4 (100%) (1%)",
+        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -93452,7 +93452,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 邀往冥府的歌声 Area 4 (100%) (1%)",
+        "quest": "集会所 6★ 邀往冥府的歌声 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93464,7 +93464,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 妖艳之舞 Area 4 (100%) (1%)",
+        "quest": "集会所 6★ 妖艳之舞 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93476,7 +93476,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 轰隆隆的咆哮 Area 3 (100%) (1%)",
+        "quest": "集会所 7★ 轰隆隆的咆哮 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93488,7 +93488,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ “刺穿兔团子的四根角！”之卷 Area 3 (100%) (1%)",
+        "quest": "集会所 7★ “刺穿兔团子的四根角！”之卷 Area 3 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93500,7 +93500,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 沙尘藏毒 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 沙尘藏毒 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93512,7 +93512,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 迅雷无止 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 迅雷无止 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93524,7 +93524,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 泥翁龙的考验 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 泥翁龙的考验 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -93536,7 +93536,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 千刃来袭 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 千刃来袭 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93548,7 +93548,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 7 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93560,7 +93560,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 骑士需秉持优雅 Area 12 (100%) (1%) (1%)",
+        "quest": "6★ 骑士需秉持优雅 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93572,7 +93572,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：轰龙 Area 3 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：轰龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93584,7 +93584,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 渴望疾翔 Area 9 (100%) (1%)",
+        "quest": "活动任务 5★ 渴望疾翔 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -93596,7 +93596,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：激昂金狮子 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93608,7 +93608,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 往日的回忆 Area 7 (60%) Area 4 (30%) Area 11 (10%) (1%)",
+        "quest": "活动任务 7★ 往日的回忆 Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93620,7 +93620,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 滴水穿岩 Area 6 (60%) Area 10 (30%) Area 3 (10%) (1%)",
+        "quest": "集会所 5★ 滴水穿岩 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -93632,7 +93632,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 6 (60%) Area 10 (30%) Area 3 (10%) (1%)",
+        "quest": "集会所 5★ 用身体记住吧！大锤之型 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -93644,7 +93644,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 7 (50%) Area 4 (50%) (1%)",
+        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 7 (50%) Area 4 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93656,7 +93656,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 四处逼近的威胁 Area 5 (50%) Area 14 (50%) (1%)",
+        "quest": "集会所 7★ 四处逼近的威胁 Area 5 (50%) Area 14 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93668,7 +93668,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 5 (50%) Area 14 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：凶星，降临业火之地 Area 5 (50%) Area 14 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -93680,7 +93680,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 绯色天狗来袭 Area 7 (60%) Area 4 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 绯色天狗来袭 Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93692,7 +93692,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查2头岩龙 Area 6 (60%) Area 10 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查2头岩龙 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -93704,7 +93704,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 11 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 11 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93716,7 +93716,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 3 (60%) Area 6 (30%) Area 1 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 3 (60%) Area 6 (30%) Area 1 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93728,7 +93728,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 3 (60%) Area 6 (30%) Area 1 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 3 (60%) Area 6 (30%) Area 1 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93740,7 +93740,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 11 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：人鱼龙 Area 11 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93752,7 +93752,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查刚缠兽 Area 11 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "盟友 3★ 调查刚缠兽 Area 11 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -93764,7 +93764,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 7 (60%) Area 4 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -93776,7 +93776,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 3 (60%) Area 6 (30%) Area 1 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 3 (60%) Area 6 (30%) Area 1 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93788,7 +93788,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查黑蚀龙 Area 7 (60%) Area 4 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查黑蚀龙 Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93800,7 +93800,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 3 (60%) Area 6 (30%) Area 1 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 3 (60%) Area 6 (30%) Area 1 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93812,7 +93812,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查废神社的支配者 Area 7 (60%) Area 4 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "盟友 6★ 调查废神社的支配者 Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93824,7 +93824,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：搔鸟 Area 6 (60%) Area 10 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：搔鸟 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93836,7 +93836,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 6 (60%) Area 10 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：毒妖鸟 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93848,7 +93848,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 欲速则不达 Area 11 (60%) Area 9 (30%) Area 13 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 欲速则不达 Area 11 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -93860,7 +93860,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：炎王龙 Area 5 (60%) Area 14 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：炎王龙 Area 5 (60%) Area 14 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93872,7 +93872,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 用拳头粉碎一切…… Area 7 (60%) Area 4 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "4★ 用拳头粉碎一切…… Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -93884,7 +93884,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 5 (60%) Area 14 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：熔翁龙 Area 5 (60%) Area 14 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -93896,7 +93896,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 来自泥海的邀请 Area 11 (60%) Area 9 (30%) Area 13 (10%) (1%)",
+        "quest": "集会所 7★ 来自泥海的邀请 Area 11 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -93908,7 +93908,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 6 (60%) Area 10 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ “用松果强身健体？”之卷 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93920,7 +93920,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查绯天狗兽 Area 6 (60%) Area 10 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "盟友 2★ 调查绯天狗兽 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -93932,7 +93932,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 阴森的石壁 Area 6 (60%) Area 10 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 2★ 阴森的石壁 Area 6 (60%) Area 10 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       }
@@ -95542,7 +95542,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 9 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：雪鬼兽 Area 9 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -95554,7 +95554,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "活动任务 3★ 称号・武士之心 Area 11 (100%) (1%)",
+        "quest": "活动任务 3★ 称号・武士之心 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -95566,7 +95566,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 冰刃闪耀 Area 9 (60%) Area 7 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "活动任务 8★ 冰刃闪耀 Area 9 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -95578,7 +95578,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "4★ 吾辈是名侦探喵！ Area 9 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "4★ 吾辈是名侦探喵！ Area 9 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95590,7 +95590,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "6★ 高难度：雪鬼兽与狂欢节！ Area 1 (100%) (100%)",
+        "quest": "6★ 高难度：雪鬼兽与狂欢节！ Area 1 (100%) [大金冠] (100%)",
         "stamina": "2.2",
         "stun": "1.7"
       },
@@ -95614,7 +95614,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 冰雪斗士 Area 9 (60%) Area 7 (30%) Area 5 (10%) (1%)",
+        "quest": "集会所 3★ 冰雪斗士 Area 9 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -95626,7 +95626,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 雪鬼兽来了 Area 9 (60%) Area 7 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "集会所 7★ 雪鬼兽来了 Area 9 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -95638,7 +95638,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 勇猛之力宛如大地 Area 9 (70%) Area 7 (30%) (3%) (3%)",
+        "quest": "集会所 7★ 勇猛之力宛如大地 Area 9 (70%) Area 7 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -95650,7 +95650,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：龙兽戏画 Area 7 (70%) Area 5 (30%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：龙兽戏画 Area 7 (70%) Area 5 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -95662,7 +95662,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.75",
         "players": "1",
-        "quest": "集会所 8★ 倪泰教官的挑战书・其二 Area 9 (70%) Area 7 (30%) (3%) (3%)",
+        "quest": "集会所 8★ 倪泰教官的挑战书・其二 Area 9 (70%) Area 7 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -95674,7 +95674,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 8 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 8 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95686,7 +95686,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 8 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 别扔冷的热的过来喵！ Area 8 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95698,7 +95698,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查夜里的威胁者 Area 8 (60%) Area 5 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查夜里的威胁者 Area 8 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -95722,7 +95722,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 狂暴者 Area 10 (70%) Area 4 (30%) (1%)",
+        "quest": "集会所 3★ 狂暴者 Area 10 (70%) Area 4 (30%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -95734,7 +95734,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 7 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 烈焰啊，平息怒发吧 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -95746,7 +95746,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 才不要又湿又冷地睡着！ Area 9 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 才不要又湿又冷地睡着！ Area 9 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95758,7 +95758,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 白骑士与新手骑士 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 白骑士与新手骑士 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95770,7 +95770,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰牙龙 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查冰牙龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95782,7 +95782,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 来自冰海的邀请 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 来自冰海的邀请 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95794,7 +95794,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 祈福需怨念 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 祈福需怨念 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95806,7 +95806,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 罗刹激昂，气势冲天 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -95818,7 +95818,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰狼龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -95842,7 +95842,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天廻龙 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：天廻龙 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -95866,7 +95866,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 7 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -95878,7 +95878,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 王国骑士姐妹出战 Area 9 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 王国骑士姐妹出战 Area 9 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95890,7 +95890,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 胸中烈火融化冻土 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 胸中烈火融化冻土 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95902,7 +95902,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰封群岛的地盘 Area 9 (60%) Area 7 (30%) Area 5 (10%) (6%) (10%)",
+        "quest": "盟友 3★ 调查冰封群岛的地盘 Area 9 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95914,7 +95914,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查冰人鱼龙 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查冰人鱼龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -95926,7 +95926,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于古城的王者 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 沉睡于古城的王者 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -95938,7 +95938,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 飞天龙影 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 飞天龙影 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -95950,7 +95950,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查火龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查火龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -95962,7 +95962,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 我要毛茸茸，现在就要！ Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -95974,7 +95974,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 风暴之黑影 Area 5 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 风暴之黑影 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -95986,7 +95986,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 5 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -95998,7 +95998,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 5 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -96010,7 +96010,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 冰上的白骑士 Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 冰上的白骑士 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -96022,7 +96022,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 寒风肆虐 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 寒风肆虐 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96034,7 +96034,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 周身龙炎的炎王 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 周身龙炎的炎王 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96046,7 +96046,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查钢龙 Area 5 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查钢龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96058,7 +96058,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查炎王龙 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查炎王龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96070,7 +96070,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查冰封群岛剧变 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查冰封群岛剧变 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96082,7 +96082,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查红莲爆鳞龙 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96094,7 +96094,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 5 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96106,7 +96106,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：钢龙 Area 5 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：钢龙 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96118,7 +96118,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：侵蚀导致的侵略 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96130,7 +96130,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 9 (100%) (1%)",
+        "quest": "活动任务 7★ 人鱼龙妖艳起舞 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -96142,7 +96142,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 爆鳞爆碎 Area 5 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 爆鳞爆碎 Area 5 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -96154,7 +96154,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 别打扰我的演出！ Area 4 (100%) (1%) (1%)",
+        "quest": "6★ 别打扰我的演出！ Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96166,7 +96166,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 卑鄙无耻！爆鳞龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96178,7 +96178,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96190,7 +96190,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96202,7 +96202,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金狮子 Area 10 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：金狮子 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96214,7 +96214,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 8 (60%) Area 5 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：绯天狗兽 Area 8 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96226,7 +96226,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 9 (60%) Area 7 (30%) Area 5 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：冰人鱼龙 Area 9 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96238,7 +96238,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 8 (60%) Area 5 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 8 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96250,7 +96250,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 8★ 雪中暴牙 Area 9 (60%) Area 7 (30%) Area 5 (10%) (3%) (3%)",
+        "quest": "活动任务 8★ 雪中暴牙 Area 9 (60%) Area 7 (30%) Area 5 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -96262,7 +96262,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 10 (70%) Area 4 (30%) (1%) (1%)",
+        "quest": "大师等级 4★ “无法逃脱酷寒”之卷 Area 10 (70%) Area 4 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -96274,7 +96274,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 爆鳞预警 Area 10 (70%) Area 4 (30%) (1%) (1%)",
+        "quest": "大师等级 5★ 爆鳞预警 Area 10 (70%) Area 4 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96286,7 +96286,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 5 (70%) Area 4 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 5 (70%) Area 4 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -96298,7 +96298,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 10 (70%) Area 4 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 10 (70%) Area 4 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -96310,7 +96310,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 5 (70%) Area 4 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 5 (70%) Area 4 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -96322,7 +96322,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 冰狼，不回首望月 Area 8 (60%) Area 5 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 冰狼，不回首望月 Area 8 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -96334,7 +96334,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的护卫 Area 8 (60%) Area 5 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 城塞高地的护卫 Area 8 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -96346,7 +96346,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 身披黑衣的龙 Area 8 (60%) Area 5 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 身披黑衣的龙 Area 8 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -96358,7 +96358,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 10 (70%) Area 4 (30%) (1%) (1%)",
+        "quest": "盟友 5★ 调查梦幻人鱼传说 Area 10 (70%) Area 4 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96370,7 +96370,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 10 (70%) Area 4 (30%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 10 (70%) Area 4 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96382,7 +96382,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 10 (70%) Area 4 (30%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：爆鳞龙 Area 10 (70%) Area 4 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96394,7 +96394,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 冰冠的交战 Area 10 (70%) Area 4 (30%) (1%) (1%)",
+        "quest": "大师等级 6★ 冰冠的交战 Area 10 (70%) Area 4 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -96406,7 +96406,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "3★ 侍奉白衣歌女的巨体 Area 8 (60%) Area 5 (30%) Area 10 (10%) (1%) (1%)",
+        "quest": "3★ 侍奉白衣歌女的巨体 Area 8 (60%) Area 5 (30%) Area 10 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       }
@@ -98095,7 +98095,7 @@ var monster_data = {
         "mount": "1",
         "parts": "22",
         "players": "1",
-        "quest": "6★ 烈祸袭来：超速电导 Area 9 (60%) Area 10 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "6★ 烈祸袭来：超速电导 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "3.1",
         "stun": "3.1"
       },
@@ -98119,7 +98119,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 水月雷鸣 Area 9 (60%) Area 10 (30%) Area 12 (10%) (1%)",
+        "quest": "集会所 3★ 水月雷鸣 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -98131,7 +98131,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 9 (60%) Area 4 (30%) Area 8 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 9 (60%) Area 4 (30%) Area 8 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -98143,7 +98143,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 9 (60%) Area 10 (30%) Area 12 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -98155,7 +98155,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 9 (60%) Area 4 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 9 (60%) Area 4 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98167,7 +98167,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 双雷照夜 Area 9 (60%) Area 6 (30%) Area 2 (10%) (100%)",
+        "quest": "大师等级 4★ 双雷照夜 Area 9 (60%) Area 6 (30%) Area 2 (10%) [大金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98179,7 +98179,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 水没林的师徒共斗 Area 9 (60%) Area 10 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 水没林的师徒共斗 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98191,7 +98191,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查雷狼龙 Area 9 (60%) Area 10 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查雷狼龙 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98203,7 +98203,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 熊熊燃烧的狩猎之魂 Area 12 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 熊熊燃烧的狩猎之魂 Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -98215,7 +98215,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 12 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -98227,7 +98227,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：雷狼龙 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -98239,7 +98239,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "活动任务 6★ 蓝色英雄的最佳搭档！ Area 11 (100%) (100%)",
+        "quest": "活动任务 6★ 蓝色英雄的最佳搭档！ Area 11 (100%) [小金冠] (100%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -98251,7 +98251,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 雷电阴阳 Area 11 (100%) (3%) (3%)",
+        "quest": "活动任务 7★ 雷电阴阳 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -98275,7 +98275,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 用拳头粉碎一切…… Area 9 (60%) Area 4 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "4★ 用拳头粉碎一切…… Area 9 (60%) Area 4 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98287,7 +98287,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查缠雷者 Area 9 (60%) Area 4 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查缠雷者 Area 9 (60%) Area 4 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -98299,7 +98299,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 9 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98311,7 +98311,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：棘龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98323,7 +98323,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 9 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -98335,7 +98335,7 @@ var monster_data = {
         "mount": "1",
         "parts": "13.2",
         "players": "1",
-        "quest": "6★ 还我安眠！ Area 9 (60%) Area 4 (30%) Area 8 (10%) (6%) (10%)",
+        "quest": "6★ 还我安眠！ Area 9 (60%) Area 4 (30%) Area 8 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98383,7 +98383,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 飞跃头顶的威胁 Area 10 (100%) (1%)",
+        "quest": "集会所 6★ 飞跃头顶的威胁 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -98395,7 +98395,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 请小心暴徒 Area 9 (70%) Area 10 (30%) (3%) (3%)",
+        "quest": "集会所 7★ 请小心暴徒 Area 9 (70%) Area 10 (30%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -98407,7 +98407,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.75",
         "players": "1",
-        "quest": "集会所 8★ 倪泰教官的挑战书・其一 Area 9 (60%) Area 10 (30%) Area 12 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 倪泰教官的挑战书・其一 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -98419,7 +98419,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 双雷照夜 Area 3 (60%) Area 5 (30%) Area 7 (10%) (100%)",
+        "quest": "大师等级 4★ 双雷照夜 Area 3 (60%) Area 5 (30%) Area 7 (10%) [小金冠] (100%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98431,7 +98431,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 冻冻电电爆爆 Area 12 (60%) Area 5 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 冻冻电电爆爆 Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98443,7 +98443,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 月夜假寐的沉睡之龙 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 月夜假寐的沉睡之龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98455,7 +98455,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 迎战冰狼 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 迎战冰狼 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98467,7 +98467,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查棘龙 Area 12 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查棘龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98479,7 +98479,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查冰狼龙 Area 4 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查冰狼龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98491,7 +98491,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 危险的森林浴 Area 9 (60%) Area 6 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 危险的森林浴 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -98515,7 +98515,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 英雄豪杰 Area 11 (100%) (3%) (3%)",
+        "quest": "集会所 6★ 英雄豪杰 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -98527,7 +98527,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 废神社大骚动 Area 4 (100%) (1%)",
+        "quest": "集会所 7★ 废神社大骚动 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -98539,7 +98539,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 神秘红光 Area 9 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 神秘红光 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -98551,7 +98551,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 9 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -98563,7 +98563,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 8 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -98575,7 +98575,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 雷电摧群木 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 雷电摧群木 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98587,7 +98587,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查电龙 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查电龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98599,7 +98599,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 横扫树荫的金狮子 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 横扫树荫的金狮子 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98611,7 +98611,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查金狮子 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查金狮子 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98623,7 +98623,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终极大干架爆发？ Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 终极大干架爆发？ Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98635,7 +98635,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98647,7 +98647,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泡狐龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98659,7 +98659,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：混沌黑蚀龙 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98671,7 +98671,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：霞龙 Area 12 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：霞龙 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98683,7 +98683,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 欲速则不达 Area 10 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 欲速则不达 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -98695,7 +98695,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 10 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -98707,7 +98707,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 如云雾般消散之人 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 如云雾般消散之人 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98719,7 +98719,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 无声无息 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 无声无息 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98731,7 +98731,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查霞龙 Area 6 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查霞龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98743,7 +98743,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查猿猴与螃蟹的地盘 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98755,7 +98755,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：迅龙 Area 6 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：迅龙 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98767,7 +98767,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查银火龙 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查银火龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98779,7 +98779,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98791,7 +98791,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 复活之传说 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 复活之传说 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98815,7 +98815,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 9 (100%) (1%)",
+        "quest": "集会所 6★ “赛跑泥巴大骚动！”之卷 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -98827,7 +98827,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 11 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -98839,7 +98839,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 12 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 12 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98851,7 +98851,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 4 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ “优美剧烈的移动术？”之卷 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -98863,7 +98863,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 8 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98875,7 +98875,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 大凶星 Area 8 (100%) (1%) (1%)",
+        "quest": "6★ 大凶星 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98887,7 +98887,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：怨虎龙 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98899,7 +98899,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：别扰龙清梦！ Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98911,7 +98911,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ SF：最强流升段考试 Area 8 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ SF：最强流升段考试 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -98923,7 +98923,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 清官难断火龙事 Area 9 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 清官难断火龙事 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -98935,7 +98935,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 黑中之白 Area 12 (60%) Area 5 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 黑中之白 Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98947,7 +98947,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查炎王龙 Area 12 (60%) Area 5 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "盟友 5★ 调查炎王龙 Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98959,7 +98959,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 以毒攻风 Area 9 (60%) Area 6 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 以毒攻风 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98971,7 +98971,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 12 (60%) Area 5 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：刚缠兽 Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98983,7 +98983,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：金色冲击 Area 9 (60%) Area 6 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：金色冲击 Area 9 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -98995,7 +98995,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 影之迅龙 Area 9 (50%) Area 4 (50%) (1%)",
+        "quest": "活动任务 7★ 影之迅龙 Area 9 (50%) Area 4 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -99007,7 +99007,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 别无二致的音速之影 Area 9 (60%) Area 10 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "活动任务 8★ 别无二致的音速之影 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -99019,7 +99019,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 9 (60%) Area 10 (30%) Area 12 (10%) (1%)",
+        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -99031,7 +99031,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 来自彼方的凶星 Area 9 (70%) Area 10 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 来自彼方的凶星 Area 9 (70%) Area 10 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -99043,7 +99043,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 身披黑衣的龙 Area 12 (60%) Area 5 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 身披黑衣的龙 Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -99055,7 +99055,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查水没林大战 Area 9 (60%) Area 10 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "盟友 4★ 调查水没林大战 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -99067,7 +99067,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 身缠鬼火者 Area 9 (50%) Area 4 (50%) (1%)",
+        "quest": "集会所 7★ 身缠鬼火者 Area 9 (50%) Area 4 (50%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -99079,7 +99079,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 9 (50%) Area 4 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 9 (50%) Area 4 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -99091,7 +99091,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 12 (60%) Area 5 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 城塞高地的恶灵传闻！？ Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -99103,7 +99103,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 血红的月光 Area 12 (60%) Area 5 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 血红的月光 Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -99115,7 +99115,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 寂静深处 Area 9 (60%) Area 10 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "大师等级 5★ 寂静深处 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -99127,7 +99127,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 9 (50%) Area 4 (50%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 9 (50%) Area 4 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -99139,7 +99139,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 9 (60%) Area 10 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥翁龙 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -99151,7 +99151,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：电龙 Area 9 (60%) Area 10 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：电龙 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -99163,7 +99163,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：千刃龙 Area 12 (60%) Area 5 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：千刃龙 Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -99175,7 +99175,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天廻龙 Area 12 (60%) Area 5 (30%) Area 3 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：天廻龙 Area 12 (60%) Area 5 (30%) Area 3 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -99187,7 +99187,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 9 (60%) Area 10 (30%) Area 12 (10%) (1%) (1%)",
+        "quest": "6★ 双凶来袭：呻吟与滚沸之恐怖 Area 9 (60%) Area 10 (30%) Area 12 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -100758,7 +100758,7 @@ var monster_data = {
         "mount": "1",
         "parts": "12.8",
         "players": "1",
-        "quest": "6★ 蠢蠢欲动的三龙 Area 13 (60%) Area 11 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "6★ 蠢蠢欲动的三龙 Area 13 (60%) Area 11 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -100770,7 +100770,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.7",
         "players": "1",
-        "quest": "活动任务 8★ 称号・强者之心 Area 1 (100%) (3%) (3%)",
+        "quest": "活动任务 8★ 称号・强者之心 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -100782,7 +100782,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 研究成果烟消云散 Area 12 (60%) Area 7 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 研究成果烟消云散 Area 12 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -100794,7 +100794,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 无声无息 Area 2 (60%) Area 9 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 无声无息 Area 2 (60%) Area 9 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -100806,7 +100806,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 寂静深处 Area 12 (50%) Area 10 (30%) Area 3 (20%) (6%) (10%)",
+        "quest": "大师等级 5★ 寂静深处 Area 12 (50%) Area 10 (30%) Area 3 (20%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -100818,7 +100818,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 12 (50%) Area 10 (30%) Area 3 (20%) (3%) (3%)",
+        "quest": "活动任务 8★ 夜晚湿地的尔虞我诈 Area 12 (50%) Area 10 (30%) Area 3 (20%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -100830,7 +100830,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查霞龙 Area 2 (60%) Area 9 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查霞龙 Area 2 (60%) Area 9 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -100842,7 +100842,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 如云雾般消散之人 Area 2 (60%) Area 9 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 如云雾般消散之人 Area 2 (60%) Area 9 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -100854,7 +100854,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 远古幻影 Area 12 (60%) Area 7 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 远古幻影 Area 12 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -100866,7 +100866,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 12 (50%) Area 10 (30%) Area 3 (20%) (3%) (3%)",
+        "quest": "集会所 8★ 高难度：敢问鬼在何方 Area 12 (50%) Area 10 (30%) Area 3 (20%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -100878,7 +100878,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 高难度：怪物猎人 Area 13 (60%) Area 11 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 高难度：怪物猎人 Area 13 (60%) Area 11 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -100890,7 +100890,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 为随从献上可爱服装！ Area 12 (60%) Area 7 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "5★ 为随从献上可爱服装！ Area 12 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -100902,7 +100902,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 2 (60%) Area 9 (30%) Area 7 (10%) (6%) (10%)",
+        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 2 (60%) Area 9 (30%) Area 7 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -100914,7 +100914,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ “坚韧不拔的秘诀”之卷 Area 13 (60%) Area 11 (30%) Area 12 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ “坚韧不拔的秘诀”之卷 Area 13 (60%) Area 11 (30%) Area 12 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -100926,7 +100926,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 双凶来袭：高贵盛宴 Area 12 (100%) (3%) (3%)",
+        "quest": "6★ 双凶来袭：高贵盛宴 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -102205,7 +102205,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：得霸主之名者 Area 1 (100%) (10%) (22%)",
+        "quest": "集会所 8★ 高难度：得霸主之名者 Area 1 (100%) [小金冠] (10%) [大金冠] (22%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -102217,7 +102217,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.8",
         "players": "1",
-        "quest": "活动任务 8★ 称号・劲敌之心 Area 7 (60%) Area 4 (30%) Area 2 (10%) (100%)",
+        "quest": "活动任务 8★ 称号・劲敌之心 Area 7 (60%) Area 4 (30%) Area 2 (10%) [大金冠] (100%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -102229,7 +102229,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 10 (60%) Area 5 (30%) Area 12 (10%) (4%) (4%)",
+        "quest": "集会所 8★ 万紫千红，霸主・泡狐龙 Area 10 (60%) Area 5 (30%) Area 12 (10%) [小金冠] (4%) [大金冠] (4%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -102241,7 +102241,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 6 (60%) Area 13 (30%) Area 10 (10%) (100%)",
+        "quest": "活动任务 8★ 霸主・泡狐龙大动乱 Area 6 (60%) Area 13 (30%) Area 10 (10%) [大金冠] (100%)",
         "stamina": "5",
         "stun": "8"
       },
@@ -103113,7 +103113,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 12 (60%) Area 11 (30%) Area 9 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 如虎添翼，霸主・火龙 Area 12 (60%) Area 11 (30%) Area 9 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -103125,7 +103125,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 清官难断火龙事 Area 11 (60%) Area 13 (30%) Area 8 (10%) (3%) (3%)",
+        "quest": "活动任务 8★ 清官难断火龙事 Area 11 (60%) Area 13 (30%) Area 8 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -103137,7 +103137,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 11 (60%) Area 13 (30%) Area 8 (10%) (100%)",
+        "quest": "活动任务 8★ 霸主・火龙大动乱 Area 11 (60%) Area 13 (30%) Area 8 (10%) [大金冠] (100%)",
         "stamina": "5",
         "stun": "8"
       },
@@ -103149,7 +103149,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：得霸主之名者 Area 1 (100%) (12%) (3%)",
+        "quest": "集会所 8★ 高难度：得霸主之名者 Area 1 (100%) [小金冠] (12%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       }
@@ -103917,7 +103917,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 9 (60%) Area 11 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 暴虐无比，霸主・角龙 Area 9 (60%) Area 11 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -103929,7 +103929,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 大小暴君 Area 9 (60%) Area 11 (30%) Area 10 (10%) (100%)",
+        "quest": "活动任务 8★ 大小暴君 Area 9 (60%) Area 11 (30%) Area 10 (10%) [大金冠] (100%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -103941,7 +103941,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 9 (60%) Area 11 (30%) Area 10 (10%) (100%)",
+        "quest": "活动任务 8★ 霸主・角龙大动乱 Area 9 (60%) Area 11 (30%) Area 10 (10%) [大金冠] (100%)",
         "stamina": "5",
         "stun": "8"
       },
@@ -103953,7 +103953,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 大小暴君 Area 6 (60%) Area 12 (30%) Area 8 (10%) (100%)",
+        "quest": "活动任务 8★ 大小暴君 Area 6 (60%) Area 12 (30%) Area 8 (10%) [小金冠] (100%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -103977,7 +103977,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 称号・霸主之心 Area 1 (100%) (3%) (3%)",
+        "quest": "活动任务 8★ 称号・霸主之心 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       }
@@ -104830,7 +104830,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 11 (60%) Area 9 (30%) Area 13 (10%) (4%) (4%)",
+        "quest": "集会所 8★ 优美高妙，霸主・雌火龙 Area 11 (60%) Area 9 (30%) Area 13 (10%) [小金冠] (4%) [大金冠] (4%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -104842,7 +104842,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 5 (60%) Area 14 (30%) Area 12 (10%) (100%)",
+        "quest": "活动任务 8★ 霸主・雌火龙大动乱 Area 5 (60%) Area 14 (30%) Area 12 (10%) [大金冠] (100%)",
         "stamina": "5",
         "stun": "8"
       },
@@ -104854,7 +104854,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 清官难断火龙事 Area 7 (60%) Area 4 (30%) Area 11 (10%) (4%) (4%)",
+        "quest": "活动任务 8★ 清官难断火龙事 Area 7 (60%) Area 4 (30%) Area 11 (10%) [小金冠] (4%) [大金冠] (4%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -104866,7 +104866,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "活动任务 8★ 称号・霸主之心 Area 1 (100%) (4%) (4%)",
+        "quest": "活动任务 8★ 称号・霸主之心 Area 1 (100%) [小金冠] (4%) [大金冠] (4%)",
         "stamina": "1.85",
         "stun": "1.4"
       }
@@ -105856,7 +105856,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 9 (60%) Area 10 (30%) Area 12 (10%) (100%)",
+        "quest": "活动任务 8★ 霸主・雷狼龙大动乱 Area 9 (60%) Area 10 (30%) Area 12 (10%) [大金冠] (100%)",
         "stamina": "5",
         "stun": "8"
       },
@@ -105868,7 +105868,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 9 (60%) Area 4 (30%) Area 8 (10%) (3%) (3%)",
+        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 9 (60%) Area 4 (30%) Area 8 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -105892,7 +105892,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "活动任务 8★ 称号・劲敌之心 Area 9 (60%) Area 10 (30%) Area 12 (10%) (100%)",
+        "quest": "活动任务 8★ 称号・劲敌之心 Area 9 (60%) Area 10 (30%) Area 12 (10%) [大金冠] (100%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -105904,7 +105904,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 故土朝日复东升 Area 1 (100%) (3%) (3%)",
+        "quest": "盟友 6★ 故土朝日复东升 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -105916,7 +105916,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 毁灭龙神 Area 1 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 毁灭龙神 Area 1 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -105928,7 +105928,7 @@ var monster_data = {
         "mount": "1",
         "parts": "4.3",
         "players": "1",
-        "quest": "集会所 8★ 高难度：得霸主之名者 Area 1 (100%) (12%) (3%)",
+        "quest": "集会所 8★ 高难度：得霸主之名者 Area 1 (100%) [小金冠] (12%) [大金冠] (3%)",
         "stamina": "1.85",
         "stun": "1.4"
       }
@@ -106467,7 +106467,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 6 (60%) Area 7 (30%) Area 2 (10%) (7%) (5%)",
+        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 6 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (7%) [大金冠] (5%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -106479,7 +106479,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 欲速则不达 Area 13 (60%) Area 9 (30%) Area 5 (10%) (7%) (5%)",
+        "quest": "活动任务 8★ 欲速则不达 Area 13 (60%) Area 9 (30%) Area 5 (10%) [小金冠] (7%) [大金冠] (5%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -106491,7 +106491,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "活动任务 8★ 称号・霸主之心 Area 1 (100%) (7%) (5%)",
+        "quest": "活动任务 8★ 称号・霸主之心 Area 1 (100%) [小金冠] (7%) [大金冠] (5%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -106503,7 +106503,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 13 (60%) Area 9 (30%) Area 5 (10%) (100%)",
+        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 13 (60%) Area 9 (30%) Area 5 (10%) [大金冠] (100%)",
         "stamina": "5",
         "stun": "8"
       }
@@ -107427,7 +107427,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.51",
         "players": "1",
-        "quest": "集会所 1★ 蜂蜜争夺战！ Area 7 (60%) Area 6 (30%) Area 2 (10%) (1%)",
+        "quest": "集会所 1★ 蜂蜜争夺战！ Area 7 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (1%)",
         "stamina": "1.15",
         "stun": "1.1"
       },
@@ -107439,7 +107439,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 怪物美食家 Area 7 (60%) Area 6 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 4★ 怪物美食家 Area 7 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -107451,7 +107451,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 慎重派与冲锋派 Area 7 (100%) (1%)",
+        "quest": "集会所 4★ 慎重派与冲锋派 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -107463,7 +107463,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 7 (60%) Area 6 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "集会所 4★ 圆滚滚的可爱青熊兽 Area 7 (60%) Area 6 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -107475,7 +107475,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 7 (60%) Area 6 (30%) Area 2 (10%) (100%)",
+        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 7 (60%) Area 6 (30%) Area 2 (10%) [大金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -107487,7 +107487,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 柔顺好？斑点好？ Area 13 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 柔顺好？斑点好？ Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -107499,7 +107499,7 @@ var monster_data = {
         "mount": "1",
         "parts": "16",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：青熊兽 Area 13 (60%) Area 11 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：青熊兽 Area 13 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -107523,7 +107523,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 熊与河童的踏地表演 Area 1 (100%) (100%)",
+        "quest": "活动任务 5★ 熊与河童的踏地表演 Area 1 (100%) [大金冠] (100%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -107607,7 +107607,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 伞鸟圆舞 Area 6 (100%) (1%)",
+        "quest": "集会所 4★ 伞鸟圆舞 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -107619,7 +107619,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 沼中危影 Area 9 (100%) (1%)",
+        "quest": "集会所 5★ 沼中危影 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -107631,7 +107631,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "大师等级 1★ 撕裂寂静者 Area 7 (100%) (1%)",
+        "quest": "大师等级 1★ 撕裂寂静者 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -107643,7 +107643,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 4 (60%) Area 3 (30%) Area 1 (10%) (100%)",
+        "quest": "大师等级 1★ 废神社的相扑大赛？ Area 4 (60%) Area 3 (30%) Area 1 (10%) [小金冠] (100%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -107655,7 +107655,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5",
         "players": "1",
-        "quest": "大师等级 1★ 向镰鼬龙王学习 Area 6 (100%) (1%) (1%)",
+        "quest": "大师等级 1★ 向镰鼬龙王学习 Area 6 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -107667,7 +107667,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：蛮颚龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -107679,7 +107679,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 往日的回忆 Area 7 (100%) (1%)",
+        "quest": "活动任务 7★ 往日的回忆 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -107727,7 +107727,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 包围而来的旋风 Area 7 (100%) (1%)",
+        "quest": "集会所 4★ 包围而来的旋风 Area 7 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -107739,7 +107739,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 10 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 10 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -107751,7 +107751,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 划开夜幕的雷光 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 划开夜幕的雷光 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -107763,7 +107763,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查飞雷龙 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 2★ 调查飞雷龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -107775,7 +107775,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "活动任务 5★ 渴望疾翔 Area 10 (100%) (1%)",
+        "quest": "活动任务 5★ 渴望疾翔 Area 10 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -107823,7 +107823,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ “蛋团子争夺战！”之卷 Area 2 (100%) (1%)",
+        "quest": "集会所 4★ “蛋团子争夺战！”之卷 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -107835,7 +107835,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.75",
         "players": "1",
-        "quest": "集会所 5★ 为女王所吸引 Area 6 (100%) (1%)",
+        "quest": "集会所 5★ 为女王所吸引 Area 6 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -107847,7 +107847,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：镰鼬龙王 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：镰鼬龙王 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -107859,7 +107859,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 身披剧毒锦缎 Area 2 (100%) (1%)",
+        "quest": "集会所 4★ 身披剧毒锦缎 Area 2 (100%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -107871,7 +107871,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 6 (50%) Area 2 (50%) (1%)",
+        "quest": "集会所 5★ 其能成为营养亦可化作剧毒 Area 6 (50%) Area 2 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -107883,7 +107883,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 包围而来的旋风 Area 6 (50%) Area 2 (50%) (1%)",
+        "quest": "集会所 4★ 包围而来的旋风 Area 6 (50%) Area 2 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -107895,7 +107895,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.7",
         "players": "1",
-        "quest": "集会所 4★ 伞鸟圆舞 Area 2 (50%) Area 1 (50%) (1%)",
+        "quest": "集会所 4★ 伞鸟圆舞 Area 2 (50%) Area 1 (50%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.25"
       },
@@ -107907,7 +107907,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 5★ 与水共存之物 Area 10 (70%) Area 2 (30%) (1%)",
+        "quest": "集会所 5★ 与水共存之物 Area 10 (70%) Area 2 (30%) [小金冠] (1%)",
         "stamina": "1.5",
         "stun": "1.3"
       },
@@ -107919,7 +107919,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 刺激的试胆♪ Area 6 (50%) Area 2 (50%) (1%) (1%)",
+        "quest": "大师等级 2★ 刺激的试胆♪ Area 6 (50%) Area 2 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -107931,7 +107931,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 13 (60%) Area 11 (30%) Area 2 (10%) (1%) (1%)",
+        "quest": "大师等级 3★ 想要雪鬼兽的衣服 Area 13 (60%) Area 11 (30%) Area 2 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -107943,7 +107943,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：河童蛙 Area 6 (50%) Area 2 (50%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：河童蛙 Area 6 (50%) Area 2 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
@@ -110118,7 +110118,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查缠雷者 Area 4 (60%) Area 8 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查缠雷者 Area 4 (60%) Area 8 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -110130,7 +110130,7 @@ var monster_data = {
         "mount": "1",
         "parts": "15.5",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 2 (60%) Area 7 (30%) Area 1 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：飞雷龙 Area 2 (60%) Area 7 (30%) Area 1 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "2"
       },
@@ -110142,7 +110142,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 称号・忍者之心 Area 11 (100%) (3%) (3%)",
+        "quest": "活动任务 7★ 称号・忍者之心 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -110166,7 +110166,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 飞龙，跃动于地面 Area 4 (60%) Area 8 (30%) Area 3 (10%) (1%)",
+        "quest": "集会所 3★ 飞龙，跃动于地面 Area 4 (60%) Area 8 (30%) Area 3 (10%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -110178,7 +110178,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 飞跃头顶的威胁 Area 13 (60%) Area 9 (30%) Area 11 (10%) (3%) (3%)",
+        "quest": "集会所 6★ 飞跃头顶的威胁 Area 13 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -110202,7 +110202,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 疾风怒涛的大舞台 Area 11 (100%) (3%) (3%)",
+        "quest": "集会所 7★ 疾风怒涛的大舞台 Area 11 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -110214,7 +110214,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 迅雷无止 Area 2 (60%) Area 7 (30%) Area 1 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 迅雷无止 Area 2 (60%) Area 7 (30%) Area 1 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -110226,7 +110226,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 赠君勿忘花 Area 2 (60%) Area 7 (30%) Area 1 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 赠君勿忘花 Area 2 (60%) Area 7 (30%) Area 1 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -110238,7 +110238,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 划开夜幕的雷光 Area 4 (60%) Area 8 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 2★ 划开夜幕的雷光 Area 4 (60%) Area 8 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -110250,7 +110250,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "盟友 2★ 调查飞雷龙 Area 4 (60%) Area 8 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "盟友 2★ 调查飞雷龙 Area 4 (60%) Area 8 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -110262,7 +110262,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 发现神药！？ Area 2 (60%) Area 7 (30%) Area 1 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 发现神药！？ Area 2 (60%) Area 7 (30%) Area 1 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110274,7 +110274,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 4 (60%) Area 8 (30%) Area 3 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 调查目光锐利的牙龙 Area 4 (60%) Area 8 (30%) Area 3 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110322,7 +110322,7 @@ var monster_data = {
         "mount": "1",
         "parts": "1.87",
         "players": "1",
-        "quest": "集会所 3★ 灾祸中也要保持美丽 Area 11 (100%) (1%)",
+        "quest": "集会所 3★ 灾祸中也要保持美丽 Area 11 (100%) [小金冠] (1%)",
         "stamina": "1.25",
         "stun": "1.2"
       },
@@ -110334,7 +110334,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 9 (100%) (1%)",
+        "quest": "集会所 6★ 赤红双眸，斩断暗夜 Area 9 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -110358,7 +110358,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 13 (60%) Area 9 (30%) Area 11 (10%) (6%) (10%)",
+        "quest": "大师等级 2★ 泥与雷的波状攻击 Area 13 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -110370,7 +110370,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 为害一方的密林恶棍 Area 2 (60%) Area 7 (30%) Area 1 (10%) (6%) (10%)",
+        "quest": "大师等级 3★ 为害一方的密林恶棍 Area 2 (60%) Area 7 (30%) Area 1 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110382,7 +110382,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 7 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 藏身密林的暗杀者 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110394,7 +110394,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 无声无息 Area 1 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 无声无息 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110406,7 +110406,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查霞龙 Area 1 (100%) (1%) (1%)",
+        "quest": "盟友 6★ 调查霞龙 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110418,7 +110418,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 2 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110430,7 +110430,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：水兽 Area 9 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：水兽 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110442,7 +110442,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：大名盾蟹 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110454,7 +110454,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：天狗兽 Area 8 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：天狗兽 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110466,7 +110466,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 11 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 霸主・青熊兽大动乱 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -110478,7 +110478,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 别无二致的音速之影 Area 9 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 别无二致的音速之影 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -110490,7 +110490,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "活动任务 7★ 影之迅龙 Area 4 (100%) (1%)",
+        "quest": "活动任务 7★ 影之迅龙 Area 4 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -110502,7 +110502,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 称号・劲敌之心 Area 11 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 称号・劲敌之心 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -110538,7 +110538,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 8 (100%) (1%)",
+        "quest": "集会所 6★ 山河一闪，雷鸣响彻 Area 8 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -110550,7 +110550,7 @@ var monster_data = {
         "mount": "1",
         "parts": "2.95",
         "players": "1",
-        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 13 (100%) (1%)",
+        "quest": "集会所 6★ 磨砺吧！太刀之型 Area 13 (100%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -110562,7 +110562,7 @@ var monster_data = {
         "mount": "1",
         "parts": "5.8",
         "players": "1",
-        "quest": "大师等级 2★ 废神社大战 Area 3 (100%) (1%) (1%)",
+        "quest": "大师等级 2★ 废神社大战 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.85",
         "stun": "1.4"
       },
@@ -110574,7 +110574,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 潜伏于岩洞的黑影 Area 1 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 潜伏于岩洞的黑影 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110586,7 +110586,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查迅龙 Area 7 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查迅龙 Area 7 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110598,7 +110598,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 1 (100%) (1%) (1%)",
+        "quest": "大师等级 4★ 寻找医术高超的游方医 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -110610,7 +110610,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 神秘红光 Area 4 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 神秘红光 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -110622,7 +110622,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 8 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -110634,7 +110634,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 3 (100%) (1%) (1%)",
+        "quest": "集会所 8★ 高难度：身缠灾祸者 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -110646,7 +110646,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 绝音利镰 Area 11 (100%) (1%) (1%)",
+        "quest": "大师等级 3★ 绝音利镰 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110658,7 +110658,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 刃风破泥 Area 9 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 刃风破泥 Area 9 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110670,7 +110670,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查泥翁龙 Area 13 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查泥翁龙 Area 13 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110682,7 +110682,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 摇曳的草叶与樱尾 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 摇曳的草叶与樱尾 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -110694,7 +110694,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查泡狐龙 Area 2 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查泡狐龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -110706,7 +110706,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 以毒攻风 Area 1 (100%) (1%) (1%)",
+        "quest": "大师等级 6★ 以毒攻风 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110718,7 +110718,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：雌火龙 Area 2 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：雌火龙 Area 2 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110730,7 +110730,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 11 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：将军镰蟹 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110742,7 +110742,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 欲速则不达 Area 11 (100%) (1%) (1%)",
+        "quest": "活动任务 8★ 欲速则不达 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -110754,7 +110754,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 来自未知的侵蚀 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 来自未知的侵蚀 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -110766,7 +110766,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 爪音回响的试胆 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 爪音回响的试胆 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -110778,7 +110778,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查黑蚀龙 Area 3 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查黑蚀龙 Area 3 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -110790,7 +110790,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查水没林大战 Area 8 (100%) (1%) (1%)",
+        "quest": "盟友 4★ 调查水没林大战 Area 8 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -110802,7 +110802,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 如云雾般消散之人 Area 1 (100%) (1%) (1%)",
+        "quest": "大师等级 5★ 如云雾般消散之人 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110814,7 +110814,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 爆鳞龙飞翔 Area 1 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 爆鳞龙飞翔 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110826,7 +110826,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查爆鳞龙 Area 1 (100%) (1%) (1%)",
+        "quest": "盟友 5★ 调查爆鳞龙 Area 1 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110838,7 +110838,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：伞鸟 Area 4 (100%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：伞鸟 Area 4 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110850,7 +110850,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查将军镰蟹 Area 11 (100%) (1%) (1%)",
+        "quest": "盟友 3★ 调查将军镰蟹 Area 11 (100%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110862,7 +110862,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.15",
         "players": "1",
-        "quest": "集会所 7★ 请小心暴徒 Area 13 (70%) Area 9 (30%) (1%)",
+        "quest": "集会所 7★ 请小心暴徒 Area 13 (70%) Area 9 (30%) [小金冠] (1%)",
         "stamina": "1.6",
         "stun": "1.3"
       },
@@ -110874,7 +110874,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 4 (50%) Area 3 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 暴饮暴食，霸主・青熊兽 Area 4 (50%) Area 3 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -110886,7 +110886,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 4 (50%) Area 3 (50%) (1%) (1%)",
+        "quest": "集会所 8★ 电光雷鸣，霸主・雷狼龙 Area 4 (50%) Area 3 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -110898,7 +110898,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "大师等级 3★ 刹那双影 Area 13 (70%) Area 9 (30%) (1%) (1%)",
+        "quest": "大师等级 3★ 刹那双影 Area 13 (70%) Area 9 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110910,7 +110910,7 @@ var monster_data = {
         "mount": "1",
         "parts": "6.6",
         "players": "1",
-        "quest": "盟友 3★ 调查怨虎龙 Area 4 (50%) Area 3 (50%) (1%) (1%)",
+        "quest": "盟友 3★ 调查怨虎龙 Area 4 (50%) Area 3 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.9",
         "stun": "1.5"
       },
@@ -110922,7 +110922,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 4 (50%) Area 3 (50%) (1%) (1%)",
+        "quest": "大师等级 4★ 无神神社的雷狼龙 Area 4 (50%) Area 3 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -110934,7 +110934,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 2 (60%) Area 7 (30%) Area 1 (10%) (1%) (1%)",
+        "quest": "大师等级 4★ 沉睡于密林的棘龙 Area 2 (60%) Area 7 (30%) Area 1 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -110946,7 +110946,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 4 (50%) Area 3 (50%) (1%) (1%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 4 (50%) Area 3 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110958,7 +110958,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 13 (60%) Area 9 (30%) Area 11 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：泥鱼龙 Area 13 (60%) Area 9 (30%) Area 11 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110970,7 +110970,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：迅龙 Area 2 (60%) Area 7 (30%) Area 1 (10%) (1%) (1%)",
+        "quest": "怪异 6★ 怪异调查：迅龙 Area 2 (60%) Area 7 (30%) Area 1 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110982,7 +110982,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 2 (60%) Area 7 (30%) Area 1 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 2 (60%) Area 7 (30%) Area 1 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -110994,7 +110994,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 2 (60%) Area 7 (30%) Area 1 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 2 (60%) Area 7 (30%) Area 1 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111006,7 +111006,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：霞龙 Area 4 (50%) Area 3 (50%) (1%) (1%)",
+        "quest": "大师等级 6★ 怪异克服：霞龙 Area 4 (50%) Area 3 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111018,7 +111018,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 4 (50%) Area 3 (50%) (1%) (1%)",
+        "quest": "大师等级 6★ 轮回天界，坠入冥府 Area 4 (50%) Area 3 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111030,7 +111030,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 2 (60%) Area 7 (30%) Area 1 (10%) (1%) (1%)",
+        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 2 (60%) Area 7 (30%) Area 1 (10%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111042,7 +111042,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ SF：最强流升段考试 Area 4 (50%) Area 3 (50%) (1%) (1%)",
+        "quest": "活动任务 8★ SF：最强流升段考试 Area 4 (50%) Area 3 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -111054,7 +111054,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "活动任务 8★ 清官难断火龙事 Area 4 (50%) Area 3 (50%) (1%) (1%)",
+        "quest": "活动任务 8★ 清官难断火龙事 Area 4 (50%) Area 3 (50%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -111066,7 +111066,7 @@ var monster_data = {
         "mount": "1",
         "parts": "3.45",
         "players": "1",
-        "quest": "集会所 8★ 爆鳞龙，再现 Area 13 (70%) Area 9 (30%) (1%) (1%)",
+        "quest": "集会所 8★ 爆鳞龙，再现 Area 13 (70%) Area 9 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "1.8",
         "stun": "1.4"
       },
@@ -111078,7 +111078,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 13 (70%) Area 9 (30%) (1%) (1%)",
+        "quest": "大师等级 4★ 绿宝石电膜，蓝宝石镰爪 Area 13 (70%) Area 9 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -111090,7 +111090,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查雷狼龙 Area 13 (70%) Area 9 (30%) (1%) (1%)",
+        "quest": "盟友 4★ 调查雷狼龙 Area 13 (70%) Area 9 (30%) [小金冠] (1%) [大金冠] (1%)",
         "stamina": "2.05",
         "stun": "1.6"
       }
@@ -111605,7 +111605,7 @@ var monster_data = {
         "mount": "1",
         "parts": "14.5",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：目中无人的一刀 Area 3 (60%) Area 7 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 高难度：目中无人的一刀 Area 3 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111617,7 +111617,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 黑蚀的咆哮 Area 11 (100%) (12%)",
+        "quest": "5★ 黑蚀的咆哮 Area 11 (100%) [大金冠] (12%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -111629,7 +111629,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "大师等级 4★ 身披黑衣的龙 Area 3 (60%) Area 7 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 4★ 身披黑衣的龙 Area 3 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -111641,7 +111641,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 来自未知的侵蚀 Area 12 (60%) Area 6 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 来自未知的侵蚀 Area 12 (60%) Area 6 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -111653,7 +111653,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查黑蚀龙 Area 12 (60%) Area 6 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 4★ 调查黑蚀龙 Area 12 (60%) Area 6 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -111665,7 +111665,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 12 (60%) Area 6 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 通体暗黑的凶刃 Area 12 (60%) Area 6 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -111677,7 +111677,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ “坚韧不拔的秘诀”之卷 Area 3 (60%) Area 7 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ “坚韧不拔的秘诀”之卷 Area 3 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111689,7 +111689,7 @@ var monster_data = {
         "mount": "1",
         "parts": "20",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 12 (60%) Area 6 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "怪异 6★ 怪异调查：黑蚀龙 Area 12 (60%) Area 6 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.65",
         "stun": "2.5"
       },
@@ -111701,7 +111701,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 横扫树荫的金狮子 Area 10 (100%) (3%) (3%)",
+        "quest": "盟友 5★ 横扫树荫的金狮子 Area 10 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111713,7 +111713,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 熊熊燃烧的狩猎之魂 Area 3 (60%) Area 7 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 熊熊燃烧的狩猎之魂 Area 3 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -111725,7 +111725,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查金狮子 Area 10 (100%) (3%) (3%)",
+        "quest": "盟友 5★ 调查金狮子 Area 10 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111737,7 +111737,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 3 (60%) Area 7 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "盟友 5★ 调查雷之王者与侵略者 Area 3 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -111749,7 +111749,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 寂静深处 Area 13 (100%) (3%) (3%)",
+        "quest": "大师等级 5★ 寂静深处 Area 13 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111761,7 +111761,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 研究成果烟消云散 Area 12 (60%) Area 6 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "大师等级 6★ 研究成果烟消云散 Area 12 (60%) Area 6 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111773,7 +111773,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 12 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111785,7 +111785,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 无法抑制的狂想曲 Area 12 (100%) (6%) (10%)",
+        "quest": "大师等级 6★ 无法抑制的狂想曲 Area 12 (100%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111797,7 +111797,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金狮子 Area 7 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：金狮子 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111809,7 +111809,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 上镜♪最可爱★穿搭！ Area 3 (60%) Area 7 (30%) Area 10 (10%) (6%) (10%)",
+        "quest": "6★ 上镜♪最可爱★穿搭！ Area 3 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111821,7 +111821,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 复活之传说 Area 7 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 复活之传说 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111833,7 +111833,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 状态异常造成影响的研究 Area 10 (60%) Area 7 (30%) Area 2 (10%) (6%) (10%)",
+        "quest": "大师等级 5★ 状态异常造成影响的研究 Area 10 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (6%) [大金冠] (10%)",
         "stamina": "2.1",
         "stun": "1.6"
       },
@@ -111845,7 +111845,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 10 (100%) (3%) (3%)",
+        "quest": "盟友 6★ 调查毒雾弥漫的密林 Area 10 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111857,7 +111857,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 13 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 怒涛般的蛮不讲理 Area 13 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111869,7 +111869,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 神秘光辉 Area 10 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 神秘光辉 Area 10 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111881,7 +111881,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：金色冲击 Area 10 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 高难度：金色冲击 Area 10 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111893,7 +111893,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：千刃龙 Area 7 (100%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：千刃龙 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111905,7 +111905,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：霞龙 Area 10 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 怪异克服：霞龙 Area 10 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111917,7 +111917,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 爪音回响的试胆 Area 7 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 爪音回响的试胆 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -111929,7 +111929,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查水没林大战 Area 7 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 调查水没林大战 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -111941,7 +111941,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 调查2头刚缠兽 Area 7 (100%) (3%) (3%)",
+        "quest": "盟友 5★ 调查2头刚缠兽 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111953,7 +111953,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 10 (100%) (3%) (3%)",
+        "quest": "大师等级 5★ 陆地与天空的超危险生物 Area 10 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111965,7 +111965,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 10 (100%) (3%) (3%)",
+        "quest": "大师等级 6★ 终焉之天，彗星燃灼 Area 10 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -111977,7 +111977,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查雷狼龙 Area 7 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 调查雷狼龙 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -111989,7 +111989,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 月夜假寐的沉睡之龙 Area 7 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 月夜假寐的沉睡之龙 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -112001,7 +112001,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 迎战冰狼 Area 12 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 迎战冰狼 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -112013,7 +112013,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 破坏城塞的暴君 Area 7 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 破坏城塞的暴君 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -112025,7 +112025,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查棘龙 Area 7 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 调查棘龙 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -112037,7 +112037,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查冰狼龙 Area 12 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 调查冰狼龙 Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -112049,7 +112049,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "盟友 4★ 调查轰龙 Area 7 (100%) (3%) (3%)",
+        "quest": "盟友 4★ 调查轰龙 Area 7 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -112061,7 +112061,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "盟友 5★ 月光之下 Area 3 (100%) (3%) (3%)",
+        "quest": "盟友 5★ 月光之下 Area 3 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112073,7 +112073,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 危险的森林浴 Area 10 (100%) (3%) (3%)",
+        "quest": "大师等级 5★ 危险的森林浴 Area 10 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112085,7 +112085,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "大师等级 5★ 血红的月光 Area 3 (100%) (3%) (3%)",
+        "quest": "大师等级 5★ 血红的月光 Area 3 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112097,7 +112097,7 @@ var monster_data = {
         "mount": "1",
         "parts": "8.8",
         "players": "1",
-        "quest": "5★ 为随从献上可爱服装！ Area 6 (100%) (3%) (3%)",
+        "quest": "5★ 为随从献上可爱服装！ Area 6 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112109,7 +112109,7 @@ var monster_data = {
         "mount": "1",
         "parts": "7.6",
         "players": "1",
-        "quest": "4★ 用拳头粉碎一切…… Area 12 (100%) (3%) (3%)",
+        "quest": "4★ 用拳头粉碎一切…… Area 12 (100%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.05",
         "stun": "1.6"
       },
@@ -112121,7 +112121,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 10 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "大师等级 6★ 高难度：妨碍恋情的双影 Area 10 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112133,7 +112133,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 3 (60%) Area 7 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：嗟怨震天怨虎龙 Area 3 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112145,7 +112145,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：霞龙 Area 9 (60%) Area 13 (30%) Area 7 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：霞龙 Area 9 (60%) Area 13 (30%) Area 7 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112157,7 +112157,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：银火龙 Area 12 (60%) Area 6 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：银火龙 Area 12 (60%) Area 6 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112169,7 +112169,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 积怨的怒吼 Area 3 (60%) Area 7 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "大师等级 6★ 积怨的怒吼 Area 3 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112181,7 +112181,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：棘龙 Area 10 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：棘龙 Area 10 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112193,7 +112193,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 终极大干架爆发？ Area 9 (60%) Area 13 (30%) Area 7 (10%) (3%) (3%)",
+        "quest": "大师等级 6★ 终极大干架爆发？ Area 9 (60%) Area 13 (30%) Area 7 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112205,7 +112205,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查霞龙 Area 10 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "盟友 6★ 调查霞龙 Area 10 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112217,7 +112217,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查金火龙 Area 10 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "盟友 6★ 调查金火龙 Area 10 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112229,7 +112229,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "盟友 6★ 调查棘茶龙 Area 3 (60%) Area 7 (30%) Area 10 (10%) (3%) (3%)",
+        "quest": "盟友 6★ 调查棘茶龙 Area 3 (60%) Area 7 (30%) Area 10 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112241,7 +112241,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "6★ 大凶星 Area 10 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "6★ 大凶星 Area 10 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112253,7 +112253,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "怪异 6★ 怪异调查：金火龙 Area 9 (60%) Area 13 (30%) Area 7 (10%) (3%) (3%)",
+        "quest": "怪异 6★ 怪异调查：金火龙 Area 9 (60%) Area 13 (30%) Area 7 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112265,7 +112265,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 10 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "大师等级 6★ 高难度：冰冻的双龙斗 Area 10 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       },
@@ -112277,7 +112277,7 @@ var monster_data = {
         "mount": "1",
         "parts": "11.6",
         "players": "1",
-        "quest": "大师等级 6★ 怪异克服：钢龙 Area 10 (60%) Area 7 (30%) Area 2 (10%) (3%) (3%)",
+        "quest": "大师等级 6★ 怪异克服：钢龙 Area 10 (60%) Area 7 (30%) Area 2 (10%) [小金冠] (3%) [大金冠] (3%)",
         "stamina": "2.15",
         "stun": "1.6"
       }
