@@ -55,6 +55,8 @@ INCLUDE = [
     "item_categories.js",
     "monsters.js",
     "monster_icons.js",
+    "quests.js",
+    "scrape_quests.py",
     "monster-icons",
     "sw.js",
     "icon-192.png",
