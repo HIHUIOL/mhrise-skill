@@ -954,6 +954,174 @@
       text-align: center;
     }
 
+    /* ========== 怪异材料：表格式布局 ========== */
+    .anom-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 0.28rem;
+      width: 100%;
+      min-width: 0;
+      overflow-x: auto;          /* 窄屏可横向滑 */
+      -webkit-overflow-scrolling: touch;
+    }
+    /* 表格四列：三档材料（1fr 均分）+ 怪物列（宽度由 JS 按最多怪物数算，见 --anom-mon-w）
+       给一个最小宽度，内容超出视口时整体横向滚动，保证列宽不被压缩 */
+    .anom-head, .anom-row { min-width: calc(9rem + var(--anom-mon-w, 9rem)); }
+    .anom-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr var(--anom-mon-w, 9rem);
+      gap: 0.25rem;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: #10171f;
+      padding: 0.3rem 0.1rem;
+      border-radius: 6px;
+    }
+    .anom-head-cell {
+      font-size: 0.7rem;
+      color: #8fa6bb;
+      text-align: center;
+      font-weight: 600;
+    }
+    .anom-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr var(--anom-mon-w, 9rem);
+      gap: 0.25rem;
+      align-items: center;
+      padding: 0.3rem 0.1rem;
+      border-radius: 6px;
+      border-bottom: 1px solid #1c2530;
+    }
+    /* 星级分隔行：与表格同 grid，Lv 三列对齐、★ 放怪物列 */
+    .anom-star-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr var(--anom-mon-w, 9rem);
+      gap: 0.25rem;
+      align-items: center;
+      padding: 0.3rem 0.1rem;
+      margin-top: 0.35rem;
+      background: linear-gradient(90deg, rgba(240, 201, 122, 0.12), transparent 70%);
+      border-top: 1px solid rgba(240, 201, 122, 0.25);
+      border-radius: 6px;
+    }
+    .anom-star-badge {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #f0c97a;
+      white-space: nowrap;
+      text-align: center;
+    }
+    .anom-star-lv {
+      font-size: 0.68rem;
+      color: #cbb98a;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    /* 星级分组：奇偶星级交替换底（1/3/5/7/9 有底色） */
+    .anom-star-1, .anom-star-3, .anom-star-5, .anom-star-7, .anom-star-9 {
+      background: rgba(255, 255, 255, 0.015);
+    }
+    .anom-cell {
+      min-width: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    /* 表头格子保持单行省略 */
+    .anom-head-cell { white-space: nowrap; }
+    .anom-mat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.1rem;
+      font-size: 0.7rem;
+      color: #d5e0ea;
+      background: #1d2836;
+      border: 1px solid #2c3a4a;
+      border-radius: 5px;
+      padding: 0.3rem 0.2rem;
+      text-align: center;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: background 0.15s, border-color 0.15s;
+      min-width: 0;
+      white-space: normal;       /* 允许名字换行 */
+    }
+    .anom-mat-icon {
+      width: 28px;
+      height: 28px;
+      flex: 0 0 auto;
+      object-fit: contain;
+      image-rendering: -webkit-optimize-contrast;
+    }
+    .anom-mat-name {
+      max-width: 100%;
+      text-align: center;
+      line-height: 1.15;
+      word-break: break-all;
+    }
+    .anom-mat:active {
+      background: #2b3a4c;
+      border-color: #4a5f75;
+    }
+    .anom-mat.tier-low  { border-left: 3px solid #4b7fb5; }
+    .anom-mat.tier-mid  { border-left: 3px solid #3fa392; }
+    .anom-mat.tier-high { border-left: 3px solid #c9922f; }
+
+    /* 怪物图标列 */
+    .anom-mon-col {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 0.2rem;
+      align-items: flex-start;
+      justify-content: flex-start;      /* 靠左紧凑排列，间距恒定 */
+      min-width: 0;
+      padding-bottom: 0.1rem;
+    }
+    .anom-mon {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.1rem;
+      background: transparent;
+      border: none;
+      padding: 0.05rem;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      flex: 0 0 auto;
+      width: 2.4rem;
+    }
+    .anom-mon img {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: #1a2430;
+      border: 1px solid #35465a;
+      object-fit: contain;
+    }
+    .anom-mon:active img {
+      border-color: #6fa8d8;
+      background: #24313f;
+    }
+    .anom-mon-name {
+      font-size: 0.56rem;
+      color: #9fb0c0;
+      width: 2.4rem;
+      text-align: center;
+      line-height: 1.05;
+      /* 最多两行，超出省略 */
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      word-break: break-all;
+    }
+
     /* 任务里面的可点怪物行 / 补给 chip */
     .mon-quest-clickable {
       cursor: pointer;
@@ -2689,6 +2857,8 @@
   <script src="rampage_decorations.js"></script>
   <script src="items.js"></script>
   <script src="item_categories.js"></script>
+  <script src="anomaly_materials.js"></script>
+  <script src="anomaly_icons.js"></script>
   <script src="monsters.js"></script>
   <script src="monster_icons.js"></script>
   <script src="quests.js"></script>

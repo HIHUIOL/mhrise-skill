@@ -2118,6 +2118,140 @@
     // --------------------------------------------------------
     // 素材：按分类「切页式」（点分类只显示该类）
     // --------------------------------------------------------
+    // --------------------------------------------------------
+    // 怪异材料：表格式渲染
+    //   每行 = 一个系列（三档材料横排） + 怪物图标
+    //   同星级只在首行显示星级标签
+    // --------------------------------------------------------
+    function renderAnomalyTable(parent, kw) {
+      const ANOM = window.ANOMALY_MATERIALS;
+      if (!ANOM) return;
+      kw = (kw || '').toLowerCase();
+
+      // 外层表格容器
+      const wrap = document.createElement('div');
+      wrap.className = 'anom-wrap';
+
+      // 预扫描：找最多怪物的一行（用来统一怪物列宽度）
+      let maxMon = 0;
+      ANOM.rows.forEach((r) => { if (r.mons.length > maxMon) maxMon = r.mons.length; });
+      // 每个怪物单元 ≈ 2.4rem(图标 + 名字两行) + 0.2rem(gap) → 统一怪物列宽
+      wrap.style.setProperty('--anom-mon-w', (maxMon * 2.6 + 0.3).toFixed(2) + 'rem');
+
+      // 第一行：表头（低 / 中 / 高 / 出现怪物）
+      const head = document.createElement('div');
+      head.className = 'anom-head';
+      head.innerHTML =
+        '<span class="anom-cell anom-head-cell">低</span>' +
+        '<span class="anom-cell anom-head-cell">中</span>' +
+        '<span class="anom-cell anom-head-cell">高</span>' +
+        '<span class="anom-mon-col anom-head-cell">出现怪物</span>';
+      wrap.appendChild(head);
+
+      // 逐系列渲染（同星级先插一行「★N + Lv区间」）
+      let lastStar = null;
+      let anyHit = false;
+      ANOM.rows.forEach((row) => {
+        // 搜索过滤：系列名 / 三档名 / 怪物名 命中任一
+        const hay = [row.series]
+          .concat(row.tiers.map((t) => t.name))
+          .concat(row.mons)
+          .join(' ').toLowerCase();
+        if (kw && hay.indexOf(kw) < 0) return;
+        anyHit = true;
+
+        // —— 星级分隔行（该星级首行时插入）——
+        //   三档 Lv（不含「Lv」前缀）分别对齐「低/中/高」三列；
+        //   ★ 用重复符号表示星级（如 ★★★ = 3 星），放第 4 列
+        if (row.star !== lastStar) {
+          lastStar = row.star;
+          const stars = '★'.repeat(row.star);
+          const sep = document.createElement('div');
+          sep.className = 'anom-star-row anom-star-row-' + row.star;
+          sep.innerHTML =
+            '<span class="anom-star-lv">' + row.tiers[0].lv + '</span>' +
+            '<span class="anom-star-lv">' + row.tiers[1].lv + '</span>' +
+            '<span class="anom-star-lv">' + row.tiers[2].lv + '</span>' +
+            '<span class="anom-star-badge">' + stars + '</span>';
+          wrap.appendChild(sep);
+        }
+
+        const line = document.createElement('div');
+        line.className = 'anom-row anom-star-' + row.star;
+
+        // 三档材料名（可点）—— 图标 + 简称
+        row.tiers.forEach((t, ti) => {
+          const cell = document.createElement('button');
+          cell.type = 'button';
+          cell.className = 'anom-cell anom-mat ' +
+            ['tier-low', 'tier-mid', 'tier-high'][ti];
+          cell.title = t.name + '（适用 Lv ' + t.lv + '）';
+
+          // 图标
+          const iconFile = (window.ANOMALY_ICONS || {})[t.name];
+          if (iconFile) {
+            const img = document.createElement('img');
+            img.className = 'anom-mat-icon';
+            img.src = 'anomaly-icons/' + iconFile;
+            img.alt = t.name;
+            img.loading = 'lazy';
+            cell.appendChild(img);
+          }
+          // 简称：去掉「怪异化的」前缀
+          //   「破怪的」保留（★8/★9，避免和 ★2 龙骨系重名）
+          const short = t.name.replace(/^怪异化的/, '');
+          const span = document.createElement('span');
+          span.className = 'anom-mat-name';
+          span.textContent = short;
+          cell.appendChild(span);
+
+          cell.addEventListener('click', () => {
+            if (_openItemModal && ITEMS[t.name]) _openItemModal(t.name);
+          });
+          line.appendChild(cell);
+        });
+
+        // 怪物图标列
+        const monCol = document.createElement('span');
+        monCol.className = 'anom-mon-col';
+        row.mons.forEach((mn) => {
+          const mb = document.createElement('button');
+          mb.type = 'button';
+          mb.className = 'anom-mon';
+          const iconFile = (window.MONSTER_ICONS || {})[mn];
+          if (iconFile) {
+            const img = document.createElement('img');
+            img.src = 'monster-icons/' + iconFile;
+            img.alt = mn;
+            img.loading = 'lazy';
+            mb.appendChild(img);
+          }
+          const nm = document.createElement('span');
+          nm.className = 'anom-mon-name';
+          nm.textContent = mn;
+          mb.appendChild(nm);
+          mb.title = '查看怪物：' + mn;
+          mb.addEventListener('click', () => {
+            if (_openMonsterModal && MONSTERS[mn]) _openMonsterModal(mn);
+          });
+          monCol.appendChild(mb);
+        });
+        line.appendChild(monCol);
+
+        wrap.appendChild(line);
+      });
+
+      if (!anyHit) {
+        const tip = document.createElement('div');
+        tip.className = 'mcat-empty';
+        tip.textContent = '该分类无匹配素材';
+        wrap.appendChild(tip);
+      }
+
+      parent.appendChild(wrap);
+      parent._count = anyHit ? 1 : 0;
+    }
+
     function buildMaterialSection() {
       const container = document.getElementById('materialContainer');
       if (!container) return;
@@ -2125,13 +2259,20 @@
       // 按 Kiranico 网站分类（item_categories.js）
       //   回复/辅助 / 素材 / 余料 / 弹药·瓶 / 交纳委托 / 变更房屋的设计
       const CATS = (typeof window !== 'undefined' && window.ITEM_CATEGORIES) || {};
-      const ORDER = ['回复/辅助', '素材', '余料', '弹药/瓶', '交纳委托', '变更房屋的设计'];
+      const ORDER = ['怪异材料', '回复/辅助', '素材', '余料', '弹药/瓶', '交纳委托', '变更房屋的设计'];
       const groups = {};
       matNames.forEach((nm) => {
         const c = CATS[nm] || '其他';
         if (!groups[c]) groups[c] = [];
         groups[c].push(nm);
       });
+      // 「怪异材料」特殊处理：从 ANOMALY_MATERIALS 取名字（不在 ITEM_CATEGORIES 里）
+      const ANOM = (typeof window !== 'undefined' && window.ANOMALY_MATERIALS) || null;
+      if (ANOM) {
+        const anomNames = [];
+        ANOM.rows.forEach((r) => r.tiers.forEach((t) => anomNames.push(t.name)));
+        groups['怪异材料'] = anomNames;
+      }
       const order = ORDER.filter((c) => groups[c])
         .concat(Object.keys(groups).filter((c) => ORDER.indexOf(c) < 0));
 
@@ -2151,6 +2292,11 @@
       function renderCatItems(cat) {
         const itemsEl = document.createElement('div');
         itemsEl.className = 'mcat-items';
+        // 「怪异材料」→ 用表格式渲染
+        if (cat === '怪异材料' && ANOM) {
+          renderAnomalyTable(itemsEl, curKw);
+          return itemsEl;
+        }
         let n = 0;
         groups[cat].slice().sort().forEach((nm) => {
           const nameLo = nm.toLowerCase();
