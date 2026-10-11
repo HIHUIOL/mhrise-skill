@@ -146,13 +146,21 @@ def parse_quest(qid, name):
     out["star"] = int(sm.group(1)) if sm else 0
 
     # 主要目标 / 失败条件
-    out["goal"] = body[body.index("主要目标") + 1] if "主要目标" in body else ""
+    goal_raw = body[body.index("主要目标") + 1] if "主要目标" in body else ""
+    # 清洗：Kiranico 把「主要目标」和「HRP/MRP」放在一起，
+    #       抓下来的字符串尾部会带 "(HRP: 5,760点数" 这种未闭合脏数据，去掉它
+    goal_raw = re.sub(r"\s*\(?HRP[:\s：].*$", "", goal_raw, flags=re.I)
+    goal_raw = re.sub(r"\s*\(?MRP[:\s：].*$", "", goal_raw, flags=re.I)
+    out["goal"] = goal_raw.strip()
     blob = " ".join(body[:120])
     m = re.search(r"HRP[:\s]*([\d,]+)", blob)
     out["hrp"] = m.group(1).replace(",", "") if m else ""
     m = re.search(r"MRP[:\s]*([\d,]+)", blob)
     out["mrp"] = m.group(1).replace(",", "") if m else ""
-    out["fail"] = body[body.index("失败条件") + 1] if "失败条件" in body else ""
+    fail_raw = body[body.index("失败条件") + 1] if "失败条件" in body else ""
+    fail_raw = re.sub(r"\s*\(?HRP[:\s：].*$", "", fail_raw, flags=re.I)
+    fail_raw = re.sub(r"\s*\(?MRP[:\s：].*$", "", fail_raw, flags=re.I)
+    out["fail"] = fail_raw.strip()
 
     # ---- 怪物表：按 <tr> 精确解析，再按怪物名合并 ----
     _mons_raw = []

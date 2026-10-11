@@ -90,6 +90,9 @@
   let _pushHist = null;
   // 顶层桥接：按百龙技能名打开弹窗（供顶层 buildRamDecoSection 用）
   let _openRampageById = null;
+  // 当前打开的「怪物弹窗」上下文（返回时用来精准重开同一页）
+  //   { monName, focusItem }
+  let _curMonCtx = null;
 
   // ========================================================
   // items.js:     { "道具名": { desc, obtain:[{quest,type,count,rate}] } }
@@ -1190,6 +1193,79 @@
     return { groups: groups, order: order };
   }
 
+  // --------------------------------------------------------
+  // 清洗任务文本：去掉爬虫混进来的 "(HRP: 5,760点数" / "(MRP: ..." 尾巴
+  // （数据层已清理，这里做兜底，防止旧缓存/其它来源仍有脏数据）
+  function cleanQuestText(s) {
+    if (!s) return '';
+    return String(s)
+      .replace(/\s*\(?\s*(HRP|MRP)[:：\s][^)）]*([)）]|$)/gi, '')
+      .replace(/\s*\(?\s*(HRP|MRP)[:：\s].*$/gi, '')
+      .trim();
+  }
+
+  // 任务「主要目标怪」分析（多处共用：任务卡片 / 任务弹窗 / 怪物弹窗任务列表）
+  //
+  // 规则：
+  //   ① goal 里有具体怪名（如「讨伐1头伞鸟」「狩猎1头雌火龙和1头天狗兽」）
+  //      → 这些怪视为目标，排到最前（按 goal 中出现顺序）
+  //   ② goal 为「狩猎所有目标 / 讨伐所有目标」→ 全部视为目标
+  //   ③ 边界判定避免子串误伤（「天狗兽」≠「绯天狗兽」）
+  //
+  // 返回：{ list: [{ name, isTarget, m }], targetCount, hasOthers, allTarget }
+  //   list 已按「目标怪在前 + goal 出现顺序」排好；m 为原始怪物对象（含 players 等）
+  // --------------------------------------------------------
+  var _QT_BOUNDARY = /[头只个和、与及或，,。（(0-9\s的了]/;
+
+  function analyzeQuestTargets(goalRaw, mons) {
+    mons = mons || [];
+    var goal = cleanQuestText(goalRaw);
+    var allTarget = /所有目标|全部目标/.test(goal);
+
+    function appears(nm) {
+      if (!nm) return -1;
+      var from = 0;
+      while (true) {
+        var i = goal.indexOf(nm, from);
+        if (i < 0) return -1;
+        var before = i > 0 ? goal[i - 1] : '';
+        if (!before || _QT_BOUNDARY.test(before)) return i;   // 命中位置
+        from = i + 1;
+      }
+    }
+
+    var hitAt = {};
+    mons.forEach(function (m) {
+      var nm = m && m.name;
+      if (!nm) return;
+      if (hitAt[nm] == null) {
+        var pos = appears(nm);
+        if (pos >= 0) hitAt[nm] = pos;
+      }
+    });
+
+    var targets = [], others = [];
+    mons.forEach(function (m) {
+      var isTarget = allTarget || (m && m.name && hitAt[m.name] != null);
+      var item = { name: (m && m.name) || '', isTarget: !!isTarget, m: m };
+      if (isTarget) targets.push(item); else others.push(item);
+    });
+    if (!allTarget && targets.length > 1) {
+      targets.sort(function (a, b) {
+        return (hitAt[a.name] == null ? 9999 : hitAt[a.name]) -
+               (hitAt[b.name] == null ? 9999 : hitAt[b.name]);
+      });
+    }
+    var list = targets.concat(others);
+    var targetCount = targets.length;
+    return {
+      list: list,
+      targetCount: targetCount,
+      hasOthers: targetCount > 0 && targetCount < list.length,
+      allTarget: allTarget,
+    };
+  }
+
   // 渲染任务卡片
   function renderQuestCard(qid) {
     const q = QUESTS[qid];
@@ -1218,22 +1294,27 @@
     catEl.textContent = q.cat || '';
     card.appendChild(catEl);
 
-    // 怪物（全部显示，换行排）
+    // 怪物（全部显示，换行排；目标怪排前面并加标记）
     const mons = q.mons || [];
     if (mons.length) {
       const mEl = document.createElement('div');
       mEl.className = 'quest-card-mons';
       const icons = (typeof window !== 'undefined' && window.MONSTER_ICONS) || {};
-      mons.forEach(function (m) {
+      const ordered = analyzeQuestTargets(q.goal, mons).list;
+      const multi = ordered.length > 1;
+      const anyTarget = ordered.some(function (x) { return x.isTarget; });
+      ordered.forEach(function (entry) {
+        const m = entry.m;
         const f = icons[m.name];
         const cell = document.createElement('span');
         cell.className = 'qmon';
+        if (multi && entry.isTarget && anyTarget) cell.classList.add('qmon-target');
         if (f) {
           const im = document.createElement('img');
           im.loading = 'lazy';
           im.decoding = 'async';
           im.alt = m.name;
-          im.title = m.name;
+          im.title = m.name + (entry.isTarget && multi && anyTarget ? '（目标）' : '');
           im.src = 'monster-icons/' + f;
           cell.appendChild(im);
         } else {
@@ -2675,12 +2756,106 @@
     }
 
     // 记录一次弹窗跳转（在打开新弹窗前调用）
-    function pushModalHistory(fn) {
-      _modalStack.push(fn);
+    // restoreFn: 可选。若不传，会「自动快照」当前弹窗的可恢复状态，
+    //            返回时先重开上一页、再恢复折叠状态与滚动位置。
+    function pushModalHistory(fn, restoreFn) {
+      var state = restoreFn;
+      if (!state) {
+        try { state = captureModalState(); } catch (e) { state = null; }
+      }
+      _modalStack.push({ fn: fn, state: state });
       updateModalBack();
     }
     // 桥接给顶层函数（openDecoModal 等在顶层）
     _pushHist = pushModalHistory;
+
+    // ---- 弹窗状态快照（用于「返回」时还原展开状态 + 滚动位置）----
+    function captureModalState() {
+      const bodyEl = document.getElementById('modalBody');
+      const titleEl = document.getElementById('modalTitle');
+      const st = {
+        title: titleEl ? titleEl.textContent.trim() : '',
+        scrollTop: bodyEl ? bodyEl.scrollTop : 0,
+        // 记录每个「可折叠块」的展开态（按它们在 body 中的序号定位）
+        collapsibles: [],
+        hitzones: [],
+      };
+      if (!bodyEl) return st;
+      // 任务列表（怪物弹窗）
+      const qList = bodyEl.querySelector('.mon-quest-list');
+      if (qList) st.questListOpen = !qList.classList.contains('collapsed');
+      // 任务列表的分类筛选（哪个分类被选中）
+      const mqfActive = bodyEl.querySelector('.mon-quest-filter .mqf-btn.active');
+      if (mqfActive) st.mqfCat = mqfActive.getAttribute('data-cat') || '';
+      // 其他获得途径（素材弹窗）
+      const obList = bodyEl.querySelector('.mon-obtain-list');
+      if (obList) st.obtainOpen = !obList.classList.contains('collapsed');
+      // 出现怪物块（任务弹窗）：记录哪些展开
+      st.questMonOpen = [];
+      bodyEl.querySelectorAll('.quest-mon-block').forEach(function (b, i) {
+        st.questMonOpen.push(!b.classList.contains('qm-collapsed'));
+      });
+      // 肉质表状态标签
+      bodyEl.querySelectorAll('.mon-hit-tab-btn.active').forEach(function (b) {
+        st.hitzones.push((b.getAttribute('data-tab') || '') + ':' + (b.getAttribute('data-idx') || ''));
+      });
+      return st;
+    }
+
+    function applyModalState(st) {
+      if (!st) return;
+      const bodyEl = document.getElementById('modalBody');
+      if (!bodyEl) return;
+      // 任务列表展开态
+      if (st.questListOpen) {
+        const qHead = bodyEl.querySelector('.mon-quest-toggle');
+        const qList = bodyEl.querySelector('.mon-quest-list');
+        if (qList && qList.classList.contains('collapsed')) {
+          qList.classList.remove('collapsed');
+          const a = qHead && qHead.querySelector('.mon-quest-arrow');
+          if (a) a.textContent = '▲';
+        }
+      }
+      // 任务列表分类筛选：恢复选中项 + 按该分类过滤行
+      if (typeof st.mqfCat === 'string' && st.mqfCat) {
+        const btn = bodyEl.querySelector('.mon-quest-filter .mqf-btn[data-cat="' + st.mqfCat + '"]');
+        if (btn) {
+          bodyEl.querySelectorAll('.mon-quest-filter .mqf-btn').forEach(function (x) {
+            x.classList.toggle('active', x === btn);
+          });
+          bodyEl.querySelectorAll('.mon-quest-list .mon-quest-row').forEach(function (r) {
+            const cat = r.querySelector('.mq-cat');
+            const catTxt = cat ? cat.textContent : '';
+            r.style.display = (!st.mqfCat || catTxt === st.mqfCat) ? '' : 'none';
+          });
+        }
+      }
+      // 其他获得途径展开态
+      if (st.obtainOpen) {
+        const obHead = bodyEl.querySelector('.mon-obtain-toggle');
+        const obList = bodyEl.querySelector('.mon-obtain-list');
+        if (obList && obList.classList.contains('collapsed')) {
+          obList.classList.remove('collapsed');
+          const a = obHead && obHead.querySelector('.mon-obtain-arrow');
+          if (a) a.textContent = '▲';
+        }
+      }
+      // 出现怪物块展开态
+      if (st.questMonOpen && st.questMonOpen.length) {
+        bodyEl.querySelectorAll('.quest-mon-block').forEach(function (b, i) {
+          const open = !!st.questMonOpen[i];
+          b.classList.toggle('qm-collapsed', !open);
+          const ar = b.querySelector('.qm-arrow');
+          if (ar) ar.textContent = open ? '▼' : '▶';
+        });
+      }
+      // 滚动位置
+      if (st.scrollTop) {
+        bodyEl.scrollTop = st.scrollTop;
+        // 内容渲染后可能还没到目标高度 → 下一帧再补一次
+        requestAnimationFrame(function () { bodyEl.scrollTop = st.scrollTop; });
+      }
+    }
 
     // 桥接：按百龙技能「名称」找 id 并打开弹窗
     _openRampageById = function (skillName) {
@@ -2696,9 +2871,15 @@
     // 返回上一级
     function modalGoBack() {
       if (!_modalStack.length) return;
-      const fn = _modalStack.pop();
+      const item = _modalStack.pop();
       updateModalBack();
+      const fn = (item && item.fn) || item;   // 兼容旧格式
+      const state = item && item.state;
       try { fn(); } catch (e) { /* ignore */ }
+      // 恢复上一页的展开状态 + 滚动位置
+      if (state) {
+        try { applyModalState(state); } catch (e) { /* ignore */ }
+      }
     }
 
     // 打开百龙珠详情弹窗
@@ -2765,9 +2946,12 @@
     //   monName  怪物名
     //   focusItem 可选：高亮的素材名（从素材点进来时）
     // ========================================================
-    function openMonsterModal(monName, focusItem) {
+    function openMonsterModal(monName, focusItem, restoreState) {
       const mon = MONSTERS[monName];
       if (!mon) return;
+
+      // 记录当前上下文，供「返回」时精准重开
+      _curMonCtx = { monName: monName, focusItem: focusItem || null };
 
       const overlay = document.getElementById('skillModal');
       const titleEl = document.getElementById('modalTitle');
@@ -2837,10 +3021,15 @@
       }
 
       // 滚动回顶部（切换素材时）
-      if (focusItem) bodyEl.scrollTop = 0;
+      if (focusItem && !restoreState) bodyEl.scrollTop = 0;
 
       overlay.classList.add('open');
       document.body.style.overflow = 'hidden';
+
+      // 从「返回」进来 → 恢复展开状态与滚动位置
+      if (restoreState) {
+        try { applyModalState(restoreState); } catch (e) { /* ignore */ }
+      }
     }
 
     // 素材详情弹窗（无怪物掉落时用）
@@ -2953,7 +3142,17 @@
         '</span>';
       bodyEl.appendChild(metaLine);
 
-      // ② 委托内容
+      // ② 主要目标（置顶高亮，最先看到）
+      if (q.goal) {
+        const goalBox = document.createElement('div');
+        goalBox.className = 'quest-goal-box';
+        goalBox.innerHTML =
+          '<span class="qgb-tag">主要目标</span>' +
+          '<span class="qgb-txt">' + escapeHtml(cleanQuestText(q.goal)) + '</span>';
+        bodyEl.appendChild(goalBox);
+      }
+
+      // ③ 委托内容
       if (q.desc) {
         const head = document.createElement('div');
         head.className = 'mon-section-head';
@@ -2965,7 +3164,7 @@
         bodyEl.appendChild(d);
       }
 
-      // ③ 主要目标 / 失败条件
+      // ④ 失败条件 / 报酬
       const kvHead = document.createElement('div');
       kvHead.className = 'mon-section-head';
       kvHead.textContent = '任务信息';
@@ -2979,11 +3178,10 @@
           '<span class="q-v">' + escapeHtml(String(v)) + '</span>';
         bodyEl.appendChild(row);
       }
-      kv('主要目标', q.goal);
       kv('失败条件', q.fail);
       kv('报酬金额', q.money);
 
-      // ④ 怪物（可折叠，含各人数 HP 表；怪物名可点开怪物弹窗）
+      // ⑤ 怪物（可折叠，含各人数 HP 表；怪物名可点开怪物弹窗）
       const mons = q.mons || [];
       if (mons.length) {
         const mHead = document.createElement('div');
@@ -2993,9 +3191,26 @@
 
         const icons = (typeof window !== 'undefined' && window.MONSTER_ICONS) || {};
 
-        mons.forEach(function (m) {
+        // ---- 让「任务主要目标怪」排在前面并标记（共用 analyzeQuestTargets）----
+        const orderedMons = analyzeQuestTargets(q.goal, mons).list;
+
+        // 若存在非目标怪 → 说明有乱入怪，加一行说明
+        const targetCount = orderedMons.filter(function (x) { return x.isTarget; }).length;
+        const hasOthers = targetCount < orderedMons.length && targetCount > 0;
+        if (targetCount > 0 && orderedMons.length > 1) {
+          const tip = document.createElement('div');
+          tip.className = 'quest-mon-tip';
+          tip.textContent = hasOthers
+            ? '🎯 目标怪已排到前面（含乱入怪 ' + (orderedMons.length - targetCount) + ' 只）'
+            : '🎯 以下均为任务目标怪';
+          bodyEl.appendChild(tip);
+        }
+
+        orderedMons.forEach(function (entry, mi) {
+          const m = entry.m;
           const block = document.createElement('div');
           block.className = 'quest-mon-block qm-collapsed';   // 默认折叠
+          if (entry.isTarget) block.classList.add('qm-target');
 
           const pls = m.players || [];
           // 标题右侧显示「1人档 HP」概要，不展开也能看到关键信息
@@ -3005,8 +3220,10 @@
           hd.className = 'quest-mon-head';
           const f = icons[m.name];
           hd.innerHTML =
+            (orderedMons.length > 1 ? '<span class="qm-idx">' + (mi + 1) + '</span>' : '') +
             (f ? '<img src="monster-icons/' + f + '" alt="">' : '<span class="qm-emoji">👹</span>') +
             '<span class="qm-name-txt">' + escapeHtml(m.name) + '</span>' +
+            (entry.isTarget ? '<span class="qm-target-tag">目标</span>' : '') +
             (hp0 ? '<span class="qm-hp">' + escapeHtml(hp0.replace(/\s*HP$/, '')) + ' HP</span>' : '') +
             '<span class="qm-arrow">▶</span>';
           block.appendChild(hd);
@@ -3128,7 +3345,7 @@
       const FIELD_ORDER = ['players', 'hp', 'attack', 'parts', 'defense',
         'ailment', 'stun', 'stamina', 'mount'];
 
-      // 先解析每行（顺带识别分类），便于建筛选条
+      // 先解析每行（顺带识别分类 + 判断「本怪是否为该任务目标」）
       const parsed = quests.map(function (q) {
         let questName, fields;
         if (Array.isArray(q)) {
@@ -3145,13 +3362,38 @@
         }
         const qid = findQuestIdByLabel(questName);
         const qd = qid ? QUESTS[qid] : null;
+
+        // 本怪是否是该任务的「主要目标怪」？
+        // 注意：任务弹窗里怪物名可能是「怪异化」等带括号形式，做宽松匹配
+        let isTarget = false;
+        if (qd && monName) {
+          const info = analyzeQuestTargets(qd.goal, qd.mons || []);
+          isTarget = info.list.some(function (x) {
+            if (!x.isTarget || !x.name) return false;
+            const a = x.name.replace(/[（(].*?[)）]/g, '').trim();
+            const b = String(monName).replace(/[（(].*?[)）]/g, '').trim();
+            return x.name === monName || a === b || a === monName || x.name === b;
+          });
+        }
+
         return {
           name: questName,
           fields: fields,
           qid: qid,
           cat: (qd && qd.cat) || '其他',
           star: (qd && qd.star) || 0,
+          isTarget: isTarget,
         };
+      });
+
+      // 排序：① 本怪是「主要目标」的任务 → 靠前
+      //       ② 其余按 分类顺序 → 星级降序
+      parsed.sort(function (a, b) {
+        if (a.isTarget !== b.isTarget) return a.isTarget ? -1 : 1;
+        const ca = QUEST_CAT_ORDER.indexOf(a.cat);
+        const cb = QUEST_CAT_ORDER.indexOf(b.cat);
+        if (ca !== cb) return (ca < 0 ? 99 : ca) - (cb < 0 ? 99 : cb);
+        return (b.star || 0) - (a.star || 0);
       });
 
       // ---- 分类筛选条（≥2 类才显示）----
@@ -3194,11 +3436,25 @@
       parsed.forEach(function (it) {
         const row = document.createElement('div');
         row.className = 'mon-quest-row';
+        if (it.isTarget) row.classList.add('mon-quest-target');
 
+        // 任务名行：指标记 + 名字
         const nm = document.createElement('div');
         nm.className = 'mon-quest-name';
-        nm.textContent = it.name;
+        nm.innerHTML =
+          (it.isTarget ? '<span class="mq-target-badge">主要目标</span>' : '') +
+          '<span class="mq-name-txt">' + escapeHtml(it.name) + '</span>';
         row.appendChild(nm);
+
+        // 分类 / 星级：小标签，增加层次
+        if (it.cat && it.cat !== '其他') {
+          const tag = document.createElement('div');
+          tag.className = 'mon-quest-tags';
+          tag.innerHTML =
+            '<span class="mq-cat">' + escapeHtml(it.cat) + '</span>' +
+            (it.star ? '<span class="mq-star">★' + it.star + '</span>' : '');
+          row.appendChild(tag);
+        }
 
         const meta = document.createElement('div');
         meta.className = 'mon-quest-meta';
@@ -3218,7 +3474,12 @@
           row.addEventListener('click', function (ev) {
             ev.stopPropagation();
             if (typeof _pushHist === 'function') {
-              _pushHist(function () { openMonsterModal(monName); });
+              // 记住当前怪物弹窗的完整上下文（怪名 + 高亮素材），返回时精准还原
+              const ctx = _curMonCtx;
+              _pushHist(function () {
+                if (ctx && ctx.monName) openMonsterModal(ctx.monName, ctx.focusItem);
+                else openMonsterModal(monName);
+              });
             }
             _openQuestModal(it.qid);
           });
