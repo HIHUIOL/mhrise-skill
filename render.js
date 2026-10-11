@@ -1694,7 +1694,8 @@
   // 珠子相关：搜索文本 + 弹窗
   // ========================================================
 
-  // 某技能可用的珠子 → 搜索文本（珠子名 + 素材名 + 孔位/等级）
+  // 某技能可用的珠子 → 搜索文本（珠子名 + 孔位/等级）
+  // 注意：不含珠子所需素材名（避免「搜素材」时命中珠子）
   function buildDecoSearchText(decId) {
     const list = decosForSkill(decId);
     const parts = [];
@@ -1702,7 +1703,6 @@
       parts.push(d.dname);
       parts.push(String(d.slot) + '孔');
       parts.push('Lv' + d.lv);
-      (d.material || []).forEach((m) => parts.push(m.item));
     });
     return parts.join(' ').toLowerCase();
   }
@@ -1710,7 +1710,6 @@
   // 单颗珠子的搜索文本
   function buildSingleDecoSearchText(d) {
     const parts = [String(d.id), d.dname, String(d.slot) + '孔', 'Lv' + d.lv];
-    (d.material || []).forEach((m) => parts.push(m.item));
     // 补上「提供技能名」（否则搜技能名找不到珠子）
     const sn = decoSkillName(d);
     if (sn) parts.push(sn);
