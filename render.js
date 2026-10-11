@@ -1702,6 +1702,25 @@
     const _questCardById = {};      // qid → { id, el, search }
     const _questGroupEls = {};      // 分类 → { groupEl, itemsEl, qids, rendered }
 
+    // 任务区块：分类「单选切换」（点一个只显示一个，再点收起）
+    // —— 与任务一览目录的折叠逻辑互不影响
+    let _activeQuestCat = null;   // 当前展开的分类名
+
+    function setQuestCatActive(cat) {
+      _qGroup.order.forEach(function (c) {
+        const st = _questGroupEls[c];
+        if (!st) return;
+        const on = (c === cat);
+        st.collapsed = !on;
+        st.groupEl.classList.toggle('cat-collapsed', !on);
+        const arrow = st.groupEl.querySelector('.catalog-cat-arrow');
+        if (arrow) arrow.textContent = on ? '▼' : '▶';
+        // 需要显示时确保卡片已渲染
+        if (on) renderQuestGroupCards(st);
+      });
+      _activeQuestCat = cat;
+    }
+
     function buildQuestGroupEl(cat, qids) {
       const groupEl = document.createElement('div');
       groupEl.className = 'quest-group';
@@ -1709,7 +1728,6 @@
 
       const head = document.createElement('div');
       head.className = 'catalog-cat catalog-cat-toggle quest-group-head';
-      // 初始为「折叠」状态（箭头 ▶），第一次点击即展开并渲染卡片
       head.innerHTML =
         '<span class="catalog-cat-arrow">▶</span>' +
         '<span class="qg-name">' + escapeHtml(cat) + '</span>' +
@@ -1720,19 +1738,14 @@
       itemsEl.className = 'quest-grid quest-group-items';
       groupEl.appendChild(itemsEl);
 
-      // 初始折叠：与箭头 ▶ 保持一致，避免"看起来展开其实没渲染"
+      // 初始全部收起（与箭头 ▶ 一致）
       groupEl.classList.add('cat-collapsed');
 
       const state = { groupEl: groupEl, itemsEl: itemsEl, qids: qids, rendered: false, collapsed: true };
 
       head.addEventListener('click', function () {
-        state.collapsed = !state.collapsed;
-        groupEl.classList.toggle('cat-collapsed', state.collapsed);
-        head.querySelector('.catalog-cat-arrow').textContent = state.collapsed ? '▶' : '▼';
-        // 首次展开才渲染卡片
-        if (!state.collapsed && !state.rendered) {
-          renderQuestGroupCards(state);
-        }
+        // 单选切换：点已展开的 → 收起；点别的 → 切到那个
+        setQuestCatActive(_activeQuestCat === cat ? null : cat);
       });
 
       return state;
@@ -2381,12 +2394,18 @@
       (function filterQuests() {
         const questOn = inScope('quest');
         if (!questOn) return;
-        // 无关键词：只需保证任务区块自身由「展开时才渲染」逻辑处理，这里不动
+        // 无关键词：恢复「单选切换」状态（清掉搜索时临时展开的分类）
         if (!kw) {
-          // 已渲染过的卡片全部显示
           questCards.forEach(function (item) { item.el.style.display = ''; });
-          Object.keys(_questGroupEls).forEach(function (cat) {
-            _questGroupEls[cat].groupEl.style.display = '';
+          _qGroup.order.forEach(function (c) {
+            const st = _questGroupEls[c];
+            if (!st) return;
+            st.groupEl.style.display = '';
+            const on = (c === _activeQuestCat);
+            st.collapsed = !on;
+            st.groupEl.classList.toggle('cat-collapsed', !on);
+            const arrow = st.groupEl.querySelector('.catalog-cat-arrow');
+            if (arrow) arrow.textContent = on ? '▼' : '▶';
           });
           return;
         }
