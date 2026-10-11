@@ -1578,23 +1578,30 @@
       gap: 0.4rem;
       margin: 0.6rem 0 1rem;
     }
-    /* 让 8 个按钮在窄屏也能比较均匀地铺满（最后一行不会孤零零一个） */
-    @media (max-width: 480px) {
-      .cat-filter .cat-btn {
-        flex: 1 1 calc(25% - 0.4rem);
-        min-width: 4.2rem;
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
-        text-align: center;
-        white-space: nowrap;
+    /* 手机上固定「每行 4 个」→ 8 个按钮刚好 4+4，两行都整齐 */
+    @media (max-width: 620px) {
+      .cat-filter {
+        gap: 0.35rem;
       }
-      /* 长名字按钮略缩字，保证一行放得下且字号一致 */
-      .cat-filter .cat-btn[data-cat="ram"],
-      .cat-filter .cat-btn[data-cat="ramdeco"],
-      .cat-filter .cat-btn[data-cat="material"],
-      .cat-filter .cat-btn[data-cat="monster"],
-      .cat-filter .cat-btn[data-cat="quest"] {
-        font-size: 0.76rem;
+      .cat-filter .cat-btn {
+        flex: 0 0 auto;
+        width: calc((100% - 0.35rem * 3) / 4);
+        font-size: 0.78rem;
+        padding: 0.42rem 0.08rem;
+        text-align: center;
+        /* 允许两行：4 字的「百龙技能」自动折成「百龙/技能」 */
+        white-space: normal;
+        line-height: 1.15;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 2.1rem;
+        word-break: break-all;
+      }
+      /* 4 字按钮字号再小一档，尽量一行放下 */
+      .cat-filter .cat-btn[data-cat="ram"] {
+        font-size: 0.72rem;
+        letter-spacing: -0.02em;
       }
     }
 
