@@ -3606,6 +3606,127 @@
 
     // 其他获得途径（来自 items.js 的 obtain 列表）
     // backFn: 点怪物后，按「返回」时回到哪里（默认回素材详情）
+    // 获得途径类型归一化 → {group, label, icon}
+    // 原始 type 有 ~29 种，归成 6 个大组
+    function obtainTypeInfo(t) {
+      t = String(t || '').trim();
+      if (!t) return { group: 'zzz', label: '其他', icon: '•' };
+      if (/^部位破坏/.test(t) || /^broken$/.test(t))
+        return { group: 'part', label: '部位破坏', icon: '🦴' };
+      if (/^剥取/.test(t) || /^carve$/.test(t))
+        return { group: 'carve', label: '剥取', icon: '🎣' };
+      if (/^掉落物/.test(t) || /^drop$/.test(t))
+        return { group: 'drop', label: '掉落物', icon: '💧' };
+      if (/^随从/.test(t))
+        return { group: 'palico', label: '随从收集', icon: '🐱' };
+      if (/^(大师等级|上位|下位)$/.test(t))
+        return { group: 'rank', label: '等级报酬', icon: '⚔' };
+      if (/^捕获/.test(t) || /^capture$/.test(t))
+        return { group: 'quest', label: '任务报酬', icon: '📋' };
+      if (/^(目标报酬|追加报酬|任务报酬|任务奖励|追加|additional|reward|add_target|quest|common|gather)$/.test(t))
+        return { group: 'quest', label: '任务报酬', icon: '📋' };
+      return { group: 'other', label: '其他', icon: '•' };
+    }
+
+    // 渲染「其他获得途径」单行（带概率条）
+    // r: {quest, rank, type, count, rate, _g, _glabel, _gicon}
+    function renderObtainRow(r, parent, itemName, backFn) {
+      const line = document.createElement('div');
+      line.className = 'mon-obtain-row' + (r._g ? ' og-' + r._g : '');
+
+      // 左：来源名（怪物名/任务名/地名）
+      const qspan = document.createElement('span');
+      qspan.className = 'obtain-quest';
+      const _qid = (typeof findQuestIdByLabel === 'function')
+        ? findQuestIdByLabel(r.quest) : null;
+      if (MONSTERS[r.quest]) {
+        const mb = document.createElement('button');
+        mb.type = 'button';
+        mb.className = 'obtain-mon-link';
+        mb.textContent = r.quest;
+        mb.title = '查看怪物：' + r.quest;
+        mb.addEventListener('click', function (e) {
+          e.stopPropagation();
+          if (typeof pushModalHistory === 'function') {
+            if (typeof backFn === 'function') {
+              pushModalHistory(backFn);
+            } else {
+              pushModalHistory(function () {
+                if (itemName && ITEMS[itemName]) openItemModal(itemName);
+              });
+            }
+          }
+          openMonsterModal(r.quest, itemName);
+        });
+        qspan.appendChild(mb);
+      } else if (_qid && typeof _openQuestModal === 'function') {
+        const qb = document.createElement('button');
+        qb.type = 'button';
+        qb.className = 'obtain-quest-link';
+        qb.textContent = r.quest;
+        qb.title = '查看任务详情';
+        qb.addEventListener('click', function (e) {
+          e.stopPropagation();
+          if (typeof pushModalHistory === 'function') {
+            if (typeof backFn === 'function') {
+              pushModalHistory(backFn);
+            } else {
+              pushModalHistory(function () {
+                if (itemName && ITEMS[itemName]) openItemModal(itemName);
+              });
+            }
+          }
+          _openQuestModal(_qid);
+        });
+        qspan.appendChild(qb);
+      } else {
+        qspan.textContent = r.quest;
+      }
+      line.appendChild(qspan);
+
+      // 右：难度 + 数量 + 概率
+      const meta = document.createElement('span');
+      meta.className = 'obtain-meta';
+      if (r.rank) {
+        const ks = document.createElement('span');
+        ks.className = 'obtain-rank mat-rank-tag rank-' + rankKey(r.rank);
+        ks.textContent = r.rank;
+        meta.appendChild(ks);
+      }
+      if (r.count) {
+        const cs = document.createElement('span');
+        cs.className = 'obtain-count';
+        cs.textContent = r.count;
+        meta.appendChild(cs);
+      }
+      // 概率数字 + 条
+      const pct = parseInt(String(r.rate || '').replace(/[^\d]/g, ''), 10);
+      if (!isNaN(pct)) {
+        const rs = document.createElement('span');
+        rs.className = 'obtain-rate';
+        rs.textContent = r.rate;
+        meta.appendChild(rs);
+      }
+      line.appendChild(meta);
+
+      // 概率条（第二行，铺满）
+      if (!isNaN(pct)) {
+        const barWrap = document.createElement('span');
+        barWrap.className = 'obtain-bar';
+        const bar = document.createElement('span');
+        bar.className = 'obtain-bar-fill';
+        // 概率→颜色：低(蓝) → 中(青绿) → 高(金)
+        let cls = 'lv-low';
+        if (pct >= 60) cls = 'lv-high';
+        else if (pct >= 30) cls = 'lv-mid';
+        bar.classList.add(cls);
+        bar.style.width = Math.max(2, Math.min(100, pct)) + '%';
+        barWrap.appendChild(bar);
+        line.appendChild(barWrap);
+      }
+      parent.appendChild(line);
+    }
+
     function buildObtainBlock(itemName, expanded, backFn) {
       const wrap = document.createElement('div');
       wrap.className = 'mon-obtain';
@@ -3632,84 +3753,45 @@
         });
       });
       if (!rows.length) return wrap;
-
-      // 类型英文 → 中文
-      const TYPE_MAP = {
-        additional: '追加报酬', reward: '任务报酬', broken: '部位破坏',
-        drop: '掉落物', carve: '剥取', capture: '捕获',
-        gather: '采集', quest: '任务',
-        common: '任务报酬', add_target: '任务奖励',
-      };
-
+      // ---- 按类型分组（组内保持原顺序，组按固定次序）----
+      const GROUP_ORDER = ['quest', 'carve', 'drop', 'part', 'palico', 'rank', 'other', 'zzz'];
+      const groups = {};
+      rows.forEach(function (r) {
+        const ti = obtainTypeInfo(r.type);
+        r._g = ti.group;
+        r._glabel = ti.label;
+        r._gicon = ti.icon;
+        if (!groups[ti.group]) groups[ti.group] = { label: ti.label, icon: ti.icon, rows: [] };
+        groups[ti.group].rows.push(r);
+      });
+      const groupList = GROUP_ORDER.filter(function (g) { return groups[g]; })
+        .map(function (g) { return groups[g]; });
       const h = document.createElement('div');
       h.className = 'mon-obtain-head';
       h.textContent = '其他获得途径（' + rows.length + '）';
       wrap.appendChild(h);
-
       const list = document.createElement('div');
       list.className = 'mon-obtain-list';
       if (!expanded) list.classList.add('collapsed');   // 非素材弹窗时默认折叠
 
-      rows.forEach(function (r) {
-        const line = document.createElement('div');
-        line.className = 'mon-obtain-row';
-
-        // quest 恰好是怪物名 → 可点跳转；否则（任务名/地名）纯文本
-        const qspan = document.createElement('span');
-        qspan.className = 'obtain-quest';
-        if (MONSTERS[r.quest]) {
-          const mb = document.createElement('button');
-          mb.type = 'button';
-          mb.className = 'obtain-mon-link';
-          mb.textContent = r.quest;
-          mb.addEventListener('click', function (e) {
-            e.stopPropagation();
-            // 返回目标：优先用调用方指定的（如"当前怪物页"），否则回素材详情
-            if (typeof pushModalHistory === 'function') {
-              if (typeof backFn === 'function') {
-                pushModalHistory(backFn);
-              } else {
-                pushModalHistory(function () {
-                  if (itemName && ITEMS[itemName]) openItemModal(itemName);
-                });
-              }
-            }
-            openMonsterModal(r.quest, itemName);
-          });
-          qspan.appendChild(mb);
-        } else {
-          qspan.textContent = r.quest;
-        }
-        line.appendChild(qspan);
-
-        // 难度标签（下位/上位/大师等级）
-        if (r.rank) {
-          const ks = document.createElement('span');
-          ks.className = 'obtain-rank mat-rank-tag rank-' + rankKey(r.rank);
-          ks.textContent = r.rank;
-          line.appendChild(ks);
-        }
-        if (r.type) {
-          const ts = document.createElement('span');
-          ts.className = 'obtain-type';
-          ts.textContent = TYPE_MAP[r.type] || r.type;
-          line.appendChild(ts);
-        }
-        if (r.count) {
-          const cs = document.createElement('span');
-          cs.className = 'obtain-count';
-          cs.textContent = r.count;
-          line.appendChild(cs);
-        }
-        if (r.rate) {
-          const rs = document.createElement('span');
-          rs.className = 'obtain-rate';
-          rs.textContent = r.rate;
-          line.appendChild(rs);
-        }
-        list.appendChild(line);
+      // ---- 逐组渲染 ----
+      groupList.forEach(function (grp, gi) {
+        const gBox = document.createElement('div');
+        gBox.className = 'obtain-group obtain-group-' + (gi % 2 ? 'odd' : 'even');
+        const gHead = document.createElement('div');
+        gHead.className = 'obtain-group-head';
+        gHead.innerHTML = '<span class="obtain-group-icon">' + grp.icon + '</span>' +
+          '<span class="obtain-group-name">' + escapeHtml(grp.label) + '</span>' +
+          '<span class="obtain-group-count">' + grp.rows.length + '</span>';
+        gBox.appendChild(gHead);
+        const gBody = document.createElement('div');
+        gBody.className = 'obtain-group-body';
+        grp.rows.forEach(function (r) {
+          renderObtainRow(r, gBody, itemName, backFn);
+        });
+        gBox.appendChild(gBody);
+        list.appendChild(gBox);
       });
-
       wrap.appendChild(list);
 
       // 点标题展开/收起
