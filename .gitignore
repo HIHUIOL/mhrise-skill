@@ -18,6 +18,12 @@ More Detailed Skill Descriptions*/
 mods/
 *.lua
 
+# 本地资料 / 笔记 / 原始数据（不上传）
+docs/
+
+# 爬虫缓存 / 索引（不上传）
+.cache/
+
 # 本地备份
 .backup/
 

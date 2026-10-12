@@ -1978,6 +1978,31 @@
       line-height: 1.5;
     }
 
+    /* 道具使用效果（item_effects.js） */
+    .mon-mat-effect {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      line-height: 1.55;
+      color: #cfe3c8;
+      background: rgba(78, 107, 60, 0.18);
+      border-left: 3px solid #6f9a55;
+      border-radius: 5px;
+      padding: 0.4rem 0.55rem;
+      margin-bottom: 0.5rem;
+    }
+    .mon-mat-effect .mat-fx-label {
+      font-weight: 600;
+      color: #9fd07f;
+      white-space: nowrap;
+    }
+    .mon-mat-effect .mat-fx-text b {
+      color: #ffd76e;
+      font-weight: 700;
+    }
+
     .mon-rank-group {
       margin-top: 0.45rem;
     }
@@ -3193,19 +3218,20 @@
 
 
 
-  <script src="skillData.js"></script>
-  <script src="skill_data.js"></script>
-  <script src="decoration.js"></script>
-  <script src="rampage_decorations.js"></script>
-  <script src="items.js"></script>
-  <script src="item_categories.js"></script>
-  <script src="anomaly_materials.js"></script>
-  <script src="anomaly_icons.js"></script>
-  <script src="monsters.js"></script>
-  <script src="monster_icons.js"></script>
-  <script src="quests.js"></script>
-  <script src="quest_maps.js"></script>
-  <script src="render.js"></script>
+  <script src="js/skillData.js"></script>
+  <script src="js/skill_data.js"></script>
+  <script src="js/decoration.js"></script>
+  <script src="js/rampage_decorations.js"></script>
+  <script src="js/items.js"></script>
+  <script src="js/item_effects.js"></script>
+  <script src="js/item_categories.js"></script>
+  <script src="js/anomaly_materials.js"></script>
+  <script src="js/anomaly_icons.js"></script>
+  <script src="js/monsters.js"></script>
+  <script src="js/monster_icons.js"></script>
+  <script src="js/quests.js"></script>
+  <script src="js/quest_maps.js"></script>
+  <script src="js/render.js"></script>
   <script>
     // ========================================================
     // 应用版本号（修改此值即可让"点击版本号"提示有新版本）

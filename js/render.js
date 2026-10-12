@@ -151,6 +151,29 @@
     return monsterByMaterial[itemName] || [];
   }
 
+  // 构建「使用效果」DOM（item_effects.js）
+  // 无效果数据时返回 null
+  function buildItemEffectEl(itemName) {
+    const fx = (typeof window !== 'undefined' && window.item_effects) || {};
+    const info = fx[itemName];
+    if (!info || !info.text) return null;
+
+    const el = document.createElement('div');
+    el.className = 'mon-mat-effect';
+
+    const lab = document.createElement('span');
+    lab.className = 'mat-fx-label';
+    lab.textContent = '✨ 使用效果';
+    el.appendChild(lab);
+
+    const txt = document.createElement('span');
+    txt.className = 'mat-fx-text';
+    txt.innerHTML = info.text; // 数值用 <b> 高亮，来源为本地静态数据
+    el.appendChild(txt);
+
+    return el;
+  }
+
   // 查某素材（全局）可在哪些等级获得（合并所有怪物）
   function ranksForMaterial(itemName) {
     const per = ranksByMaterial[itemName];
@@ -3493,6 +3516,10 @@
         box.appendChild(d);
       }
 
+      // 使用效果（item_effects.js）
+      const fxEl = buildItemEffectEl(itemName);
+      if (fxEl) box.appendChild(fxEl);
+
       // 来源怪物（若有）——列出所有能获得的怪物
       const mons = monstersForMaterial(itemName);
       if (mons.length) {
@@ -4154,6 +4181,10 @@
         d.textContent = info.desc;
         wrap.appendChild(d);
       }
+
+      // 使用效果（item_effects.js）
+      const fxEl = buildItemEffectEl(itemName);
+      if (fxEl) wrap.appendChild(fxEl);
 
       // 按等级分组
       const order = RANK_ORDER;

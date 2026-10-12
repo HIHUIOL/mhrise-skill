@@ -4,7 +4,7 @@
 
 涵盖 **技能 / 百龙技能 / 珠子 / 百龙珠 / 怪物肉质 / 素材掉落 / 任务数据** 七大板块，支持关键词搜索、分类浏览、双向跳转（怪物 ↔ 素材 ↔ 任务 ↔ 技能），可离线使用，也可添加到手机/桌面主屏幕。
 
-> 当前版本：**v1.06**
+> 当前版本：**v1.07**
 
 ---
 
@@ -48,6 +48,7 @@
 - 🔮 **珠子 / 百龙珠**：244 + 34 条，可点「提供技能」跳转到对应技能
 - 👹 **怪物**：图标网格（大型 78 / 小型 34 分组），点开看肉质表、素材、任务
 - 📦 **素材**：按网站 6 类分类，可折叠，点开看来源怪物与获得途径
+- ✨ **道具效果**：回复药 / 鬼人药 / 怪力种子等 25 种道具，展示解包数值（回复量、攻防提升、持续时间）
 - 🏹 **任务**：698 条按 9 类分组，卡片显示星级与出现怪物；弹窗含委托描述、人数档血量表、补给箱
 - 🔗 **双向跳转**：怪物 ↔ 素材 ↔ 任务 ↔ 技能，全链路可点，「返回」保留历史栈
 - 🔍 **实时搜索**：跨所有板块搜索，显示各板块命中数量
@@ -60,16 +61,16 @@
 
 ## 🏷️ 版本号
 
-页面标题旁有版本号徽标（如 `🏷️ v1.06`），**点击它会检查并更新**：
+页面标题旁有版本号徽标（如 `🏷️ v1.07`），**点击它会检查并更新**：
 
 1. 清除旧缓存
 2. 通知 Service Worker 拉取最新资源
 3. 自动刷新页面
 
 > 发布新版本时，需同步修改以下四处：
-> - `index.html` 中的 `<span id="versionText">v1.06</span>`
-> - `index.html` 中的 `window.APP_VERSION = 'v1.06';`
-> - `manifest.json` 中的 `"version": "1.06"`
+> - `index.html` 中的 `<span id="versionText">v1.07</span>`
+> - `index.html` 中的 `window.APP_VERSION = 'v1.07';`
+> - `manifest.json` 中的 `"version": "1.07"`
 > - `sw.js` 中的 `CACHE_NAME = 'mhrise-skill-vN';`（N 递增，用于强制刷新缓存）
 
 ---
@@ -104,7 +105,7 @@ npx serve .
 
 ## 📱 安卓一键推送（Termux）
 
-仓库内置了 `push.sh` 脚本，配合 **Termux** 即可在手机上一条命令完成 `add → commit → push`。
+仓库内置了 `tools/push.sh` 脚本，配合 **Termux** 即可在手机上一条命令完成 `add → commit → push`。
 
 ### 首次配置（只做一次）
 
@@ -143,30 +144,30 @@ GitHub 已不支持账号密码推送，需用 **PAT（个人访问令牌）**�
 
 ```bash
 cd /sdcard/000/PWA/mhrise-skill
-./push.sh "本次改动说明"      # 说明可省略，默认用时间戳
+./tools/push.sh "本次改动说明"      # 说明可省略，默认用时间戳
 ```
 
 脚本会自动：检查仓库状态 → `git add -A` → 提交（无改动则跳过）→ 推送（首次自动设置上游分支）。
 
 > ## 🐍 备用方案：纯 Python 推送（不需要 git）
 >
-> 若不想用 git，仓库内附带 `push.py`，走 GitHub API 直接上传：
+> 若不想用 git，仓库内附带 `tools/push.py`，走 GitHub API 直接上传：
 >
 > ```bash
 > pkg install python
 > pip install requests
-> echo '你的PAT' > token.txt     # 只此一行
-> python push.py "改动说明"
+> echo '你的PAT' > tools/token.txt     # 只此一行
+> python tools/push.py "改动说明"
 > ```
 >
 > - 自动建仓、增量上传、自动同步删除
-> - token 从 `token.txt` 或环境变量 `GH_TOKEN` 读取，**不会写进代码**
+> - token 从 `tools/token.txt` 或环境变量 `GH_TOKEN` 读取，**不会写进代码**
 > - 已加入 `.gitignore`，不会被误传
 
 > 💡 **省事技巧**：在 Termux 里建个别名，
 > 编辑 `~/.bashrc` 加入：
 > ```bash
-> alias mpush='cd /sdcard/000/PWA/mhrise-skill && ./push.sh'
+> alias mpush='cd /sdcard/000/PWA/mhrise-skill && ./tools/push.sh'
 > ```
 > 之后任意目录输入 `mpush "说明"` 即可一键推送。
 
@@ -185,21 +186,61 @@ cd /sdcard/000/PWA/mhrise-skill
 
 ```
 mhrise-skill/
-├── index.html          # 主页面（含 PWA 配置、数据来源说明、数据源切换）
-├── render.js           # 渲染 + 搜索 + 武器差分 + 双数据源切换逻辑
-├── skillData.js        # 模组详述数据（整理自 Nexus Mods 模组）
-├── skill_data.js       # 游戏原文数据（游戏内技能说明原始文本）
-├── manifest.json       # PWA 清单文件
-├── sw.js               # Service Worker（离线缓存）
-├── 404.html            # GitHub Pages 404 页面
-├── icon.svg            # 图标源文件
-├── icon-192.png        # PWA 图标 192×192
-├── icon-512.png        # PWA 图标 512×512
-├── push.sh             # 安卓 Termux 一键推送脚本
-├── .nojekyll           # 跳过 GitHub Pages 的 Jekyll 构建
+├── index.html              # 主页面（含 PWA 配置、内联 CSS、数据来源说明）
+├── manifest.json           # PWA 清单文件
+├── sw.js                   # Service Worker（离线缓存）
+├── 404.html                # GitHub Pages 404 页面
+├── .nojekyll               # 跳过 GitHub Pages 的 Jekyll 构建
 ├── .gitignore
-└── README.md
+├── README.md
+├── icon.svg                # 图标源文件
+├── icon-192.png            # PWA 图标 192×192
+├── icon-512.png            # PWA 图标 512×512
+│
+├── js/                     # 📜 网站脚本（全部前端 JS）
+│   ├── render.js           #   渲染 + 搜索 + 弹窗 + 武器差分 + 细节逻辑
+│   ├── skillData.js        #   模组详述数据（SKILL_DATA，整理自 Nexus Mods 模组）
+│   ├── skill_data.js       #   游戏原文数据（游戏内技能说明原始文本）
+│   ├── decoration.js       #   珠子数据
+│   ├── rampage_decorations.js  # 百龙珠数据
+│   ├── items.js            #   素材数据（1764 条）
+│   ├── item_effects.js     #   道具使用效果（解包数值）
+│   ├── item_categories.js  #   素材分类
+│   ├── anomaly_materials.js    # 怪异材料
+│   ├── anomaly_icons.js    #   怪异材料图标映射
+│   ├── monsters.js         #   怪物数据（112 只，含肉质/掉落）
+│   ├── monster_icons.js    #   怪物图标映射
+│   ├── quests.js           #   任务数据（698 条）
+│   └── quest_maps.js       #   任务地图
+│
+├── monster-icons/          # 🖼 怪物图标（176 张 PNG）
+├── anomaly-icons/          # 🖼 怪异材料图标
+├── hit-icons/              # 🖼 肉质表图标（斩击/打击/弹/属性…）
+├── ui-icons/               # 🖼 界面小图标
+│
+├── tools/                  # 🔧 开发工具（不参与网站运行）
+│   ├── push.py             #   GitHub API 推送脚本（纯 Python，无需 git）
+│   ├── push.sh             #   Termux git 一键推送脚本
+│   ├── token.txt           #   ⚠️ 你的 PAT（已 gitignore）
+│   ├── scrape/             #   数据抓取脚本（Kiranico → js/）
+│   │   ├── scrape_items.py         # 素材
+│   │   ├── scrape_monsters.py      # 怪物
+│   │   ├── scrape_quests.py        # 任务
+│   │   ├── scrape_quest_details.py # 任务详情
+│   │   ├── scrape_decorations.py   # 珠子素材
+│   │   ├── scrape_ramdeco.py       # 百龙珠
+│   │   ├── scrape_item_cats.py     # 素材分类
+│   │   ├── scrape_monster_icons.py # 怪物图标
+│   │   ├── scrape_anomaly_icons.py # 怪异材料图标
+│   │   └── *.sh                    # 便捷启动脚本
+│   └── fix/                #   一次性数据修复脚本
+│
+├── .cache/                 # 💾 爬虫断点缓存（gitignore）
+└── docs/                   # 📚 本地资料 / 笔记 / 原始数据（gitignore）
 ```
+
+> 💡 **路径约定**：所有爬虫脚本位于 `tools/scrape/`，会自动将输出写入项目根的 `js/`，
+> 缓存写入 `.cache/`，图标写入根目录的 `*-icons/`（以脚本上两级为项目根）。
 
 ---
 
@@ -217,6 +258,15 @@ mhrise-skill/
 | `ranged` / `ranged_by_index` | 远程武器（轻弩/重弩/弓）差分 |
 
 > 文本中的 `<COLOR FFC000>…</COLOR>` 会在渲染时高亮显示。
+
+`js/item_effects.js` 导出的 `item_effects` 对象（道具使用效果，来自游戏解包数值）：
+
+| 字段 | 说明 |
+| --- | --- |
+| `type` | 分类（回复 / 斩味 / 攻击 / 防御 / 耐力） |
+| `text` | 效果说明文本，数值用 `<b>…</b>` 高亮；时长单位为**秒** |
+
+> 共收录 25 种道具（回复药 / 生命粉尘 / 砥石 / 鬼人药系列 / 怪力种子 / 硬化药系列 / 忍耐种子 / 力量之护符 / 守护之护符 / 全熟肉 / 强走药 等）。
 
 ---
 
