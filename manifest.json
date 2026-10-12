@@ -1,12 +1,15 @@
 {
+  "id": "./",
   "name": "曙光技能图鉴 · mhrise-skill",
   "short_name": "曙光技能图鉴",
   "version": "1.07",
   "description": "怪物猎人崛起：曙光 技能、百龙技能、珠子、怪物肉质、素材掉落与任务数据一览。技能文本源自 Nexus Mods 模组《Skill Descriptions》，怪物/素材/任务数据源自 Kiranico。",
   "lang": "zh-CN",
-  "start_url": ".",
-  "scope": ".",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
   "orientation": "any",
   "background_color": "#1a1e24",
   "theme_color": "#1a1e24",
@@ -23,6 +26,12 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
