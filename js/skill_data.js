@@ -1,3 +1,17 @@
+// ============================================================
+// skill_data.js —— 技能「游戏原文」数据
+//
+// 包含三部分：
+//   Attr        —— 属性分组 short → 中文
+//   skill_data  —— 技能基础信息（tag/hex/sname/cost/max/lvType…）
+//   skill_desc  —— 技能名称 + 描述 + 各等级效果
+//
+// 导出：window.GAME_SKILL_ATTR / GAME_SKILL_DATA / GAME_SKILL_DESC
+//       （统一入口见 js/data.js → MHRS.skill.attr / data / desc）
+// ============================================================
+(function (root) {
+'use strict';
+
 var Attr = {
     "atk": "攻击",//
     "def": "防御",//
@@ -1360,7 +1374,9 @@ var skill_desc = {
     },
 
 }
-// ---- 挂载到 window，供 render.js 使用 ----
-window.GAME_SKILL_ATTR = Attr;
-window.GAME_SKILL_DATA = skill_data;
-window.GAME_SKILL_DESC = skill_desc;
+// ---- 挂载到 window（唯一导出，供 data.js / render.js 使用）----
+root.GAME_SKILL_ATTR = Attr;
+root.GAME_SKILL_DATA = skill_data;
+root.GAME_SKILL_DESC = skill_desc;
+
+})(typeof window !== 'undefined' ? window : this);
