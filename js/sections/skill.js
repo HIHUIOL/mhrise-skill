@@ -23,7 +23,10 @@
   var fmt = dom.formatText;
 
   function modSkills() { return (M.skill && M.skill.mod && M.skill.mod.skills) || {}; }
-  function gameData() { return (M.skill && M.skill.data) || {}; }
+  // 游戏原文（sname/desc/effect）—— 用于弹窗「原文版」与原文卡片
+  function gameDesc() { return (M.skill && M.skill.desc) || {}; }
+  // 技能元数据（tag/cost/max/lvType…）—— 用于分类分组
+  function gameMeta() { return (M.skill && M.skill.data) || {}; }
   function game() { return M.game || {}; }
 
   // ---------------- 工具 ----------------
@@ -414,7 +417,7 @@
   function openModal(id) {
     var sk = modSkills()[id];
     var hex = decToHex(id);
-    var gd = gameData();
+    var gd = gameDesc();
     var gameEntry = (hex && gd[hex]) ? gd[hex] : null;
 
     var name;
@@ -464,7 +467,7 @@
   // ---------------- 列表 / 分组 ----------------
   function list() {
     var mod = modSkills();
-    var gd = gameData();
+    var gd = gameDesc();
     var out = [];
     // 详述版技能
     Object.keys(mod).forEach(function (id) {
@@ -487,7 +490,7 @@
 
   function groupBy(item) {
     var hex = decToHex(item.id);
-    var meta = hex ? gameData()[hex] : null;
+    var meta = hex ? gameMeta()[hex] : null;
     var tags = (meta && Array.isArray(meta.tag)) ? meta.tag : [];
     var UNTAGGED = game().SKILL_CAT_UNTAGGED || '其他';
     return tags.length ? tags[0] : UNTAGGED;

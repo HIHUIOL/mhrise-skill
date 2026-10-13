@@ -8,6 +8,8 @@
 
 (function () {
   'use strict';
+  // escapeHtml 统一用 core/dom.js 的实现（多转义引号，更安全）
+  var escapeHtml = MHRS.dom.escapeHtml;
 
   // ========================================================
   // 武器 ID → 名称映射（对照 lua WEAPON_NAMES，勿随意修改）
@@ -205,24 +207,6 @@
   // 武器标签高亮色（对照 lua WEAPON_LABEL_COLOR）
   const WEAPON_LABEL_COLOR = 'FFC000';
 
-
-
-  // ========================================================
-  // 通用工具
-  // ========================================================
-
-  // 颜色替换：<COLOR FFC000>…</COLOR> → <span class="color-highlight">…</span>
-  // 使用通用十六进制颜色匹配，避免写死单一颜色值
-  function formatText(text) {
-    if (text == null) return '';
-    if (typeof text !== 'string') text = String(text);
-    return text
-      .replace(/\\n/g, '\n')
-      .replace(/<COLOR\s+[0-9a-fA-F]+>/gi, '<span class="color-highlight">')
-      .replace(/<\/COLOR>/gi, '</span>')
-      .replace(/\n/g, '<br>');
-  }
-
   // 从「字符串」或「对象 {text:...}」中取文本（对照 lua 取 .text 的逻辑）
   function getLineText(item) {
     if (item == null) return null;
@@ -231,261 +215,12 @@
     return null;
   }
 
-
-  // 模板替换 {key}（对照 lua expand_template_text）
-  function expandTemplateText(text, values) {
-    if (typeof text !== 'string') return text;
-    if (!values || typeof values !== 'object') return text;
-    return text.replace(/\{([\w_]+)\}/g, (m, key) =>
-      values[key] !== undefined ? String(values[key]) : '{' + key + '}'
-    );
-  }
-
-
-
-  // 判断一个对象是否是「按索引存放的行表」（对照 lua is_indexed_line_table）
-  // 关键：数组（数组形式）不算 indexed 表，对象（数字/字符串索引键）才算
-  function isIndexedLineTable(lines) {
-    if (!lines || typeof lines !== 'object' || Array.isArray(lines)) return false;
-    for (const key of Object.keys(lines)) {
-      if (/^\d+$/.test(key)) return true;
-      if (/^[Ll]v\s*\d+$/.test(key) || /^[Ll]evel\s*\d+$/.test(key)) return true;
-    }
-    return false;
-  }
-
-  // 从 indexed 行表里按等级索引取行（对照 lua indexed_line）
-  function indexedLine(lines, levelIndex) {
-    if (!lines || typeof lines !== 'object' || levelIndex == null) return null;
-    const cands = [
-      lines[levelIndex],
-      lines[String(levelIndex)],
-      lines['Lv' + levelIndex],
-      lines['lv' + levelIndex],
-      lines['level' + levelIndex]
-    ];
-    for (const c of cands) if (c !== undefined) return c;
-    return null;
-  }
-
-
-  // 两个值是否相同（对照 lua same_value，按字符串比较）
-  function sameValue(a, b) {
-    if (a == null) a = '';
-    if (b == null) b = '';
-    return String(a) === String(b);
-  }
-
-  // ========================================================
-  // 默认等级文本收集（处理 levels/default/levels_by_index/template）
-  // 重要：levels_by_index / default_by_index 是「覆盖式」——
-  //       只写被覆盖的等级，其余等级由游戏原文（此处以 null 表示）保留。
-  // 返回 { textAt: {1-based idx: text}, maxIdx }
-  // ========================================================
-  function collectDefaultLevelTexts(entry) {
-    const textAt = {};
-    let maxIdx = 0;
-
-    // 数组形式 levels
-    if (Array.isArray(entry.levels)) {
-      entry.levels.forEach((item, i) => {
-        const t = getLineText(item);
-        if (t != null) textAt[i + 1] = t;
-        maxIdx = Math.max(maxIdx, i + 1);
-      });
-      return { textAt, maxIdx };
-    }
-
-    // 模板形式 template + values
-    if (Array.isArray(entry.template)) {
-      const values = entry.values || entry.default_values;
-      if (values && typeof values === 'object') {
-        entry.template.forEach((tpl, i) => {
-          const t = expandTemplateText(tpl, values);
-          if (t != null) textAt[i + 1] = t;
-          maxIdx = Math.max(maxIdx, i + 1);
-        });
-        return { textAt, maxIdx };
-      }
-      if (Array.isArray(entry.default)) {
-        entry.default.forEach((item, i) => {
-          const t = getLineText(item);
-          if (t != null) textAt[i + 1] = t;
-          maxIdx = Math.max(maxIdx, i + 1);
-        });
-        return { textAt, maxIdx };
-      }
-    }
-
-    // 数组形式 default
-    if (Array.isArray(entry.default)) {
-      entry.default.forEach((item, i) => {
-        const t = getLineText(item);
-        if (t != null) textAt[i + 1] = t;
-        maxIdx = Math.max(maxIdx, i + 1);
-      });
-      return { textAt, maxIdx };
-    }
-
-    // 覆盖式：levels_by_index / default_by_index
-    const byIndex = entry.default_by_index || entry.levels_by_index;
-    if (byIndex && typeof byIndex === 'object' && !Array.isArray(byIndex)) {
-      for (const key of Object.keys(byIndex)) {
-        const idx = Number(key);
-        if (isNaN(idx)) continue;
-        const t = getLineText(byIndex[key]);
-        if (t != null) textAt[idx] = t;
-        maxIdx = Math.max(maxIdx, idx);
-      }
-    }
-
-    return { textAt, maxIdx };
-  }
-
-  // ========================================================
-  // 武器差分收集：对每种武器，算出「该武器独有的等级文本」
-  // 返回 {
-  //   diffs: { [1-based levelIdx]: Map<text, [weaponIds]> },   // 差异文本
-  //   defaultWeapons: { [1-based levelIdx]: Set<weaponId> }    // 与默认文本相同（含未列出）的武器
-  // }
-  // 与原版一致：只有当武器文本与该等级「默认文本」不同时才算差分。
-  // ========================================================
-  function collectWeaponDiffs(entry, defaultTextAt) {
-    const diffs = {};
-    // 记录「模板技能」中，每个等级下，数值与默认一致的武器（用于给主文本补注武器名）
-    const defaultWeapons = {};
-
-    function pushDiff(levelIdx, text, weaponId) {
-      if (text == null || isNaN(levelIdx)) return;
-      const baseText = defaultTextAt[levelIdx];
-      // 与默认文本相同 → 不算差分
-      if (baseText != null && sameValue(text, baseText)) return;
-      if (!diffs[levelIdx]) diffs[levelIdx] = new Map();
-      const map = diffs[levelIdx];
-      if (!map.has(text)) map.set(text, []);
-      if (weaponId != null && !map.get(text).includes(weaponId)) {
-        map.get(text).push(weaponId);
-      }
-    }
-
-    // 专用于「template + weapon_values」技能：记录某等级下与默认值一致的武器
-    function recordDefaultWeapon(levelIdx, text, weaponId) {
-      if (text == null || isNaN(levelIdx) || weaponId == null) return;
-      const baseText = defaultTextAt[levelIdx];
-      if (baseText != null && sameValue(text, baseText)) {
-        if (!defaultWeapons[levelIdx]) defaultWeapons[levelIdx] = new Set();
-        defaultWeapons[levelIdx].add(weaponId);
-      }
-    }
-
-    // ---- weapons_by_index: { weaponId: { levelIdx: text|{text} } }（1-based）----
-    if (entry.weapons_by_index && typeof entry.weapons_by_index === 'object') {
-      for (const widStr of Object.keys(entry.weapons_by_index)) {
-        const wid = Number(widStr);
-        const levelMap = entry.weapons_by_index[widStr];
-        if (!levelMap || typeof levelMap !== 'object') continue;
-        for (const idxStr of Object.keys(levelMap)) {
-          const idx = Number(idxStr); // 1-based（对照 lua，武器 indexed 行按 1-based 索引）
-          if (isNaN(idx)) continue;
-          pushDiff(idx, getLineText(levelMap[idxStr]), wid);
-        }
-      }
-    }
-
-    // ---- weapons: { weaponId: [level1, level2, ...] }（数组，1-based）----
-    if (entry.weapons && typeof entry.weapons === 'object') {
-      for (const widStr of Object.keys(entry.weapons)) {
-        const wid = Number(widStr);
-        const arr = entry.weapons[widStr];
-        if (Array.isArray(arr)) {
-          arr.forEach((item, i) => pushDiff(i + 1, getLineText(item), wid));
-        } else if (isIndexedLineTable(arr)) {
-          for (const idxStr of Object.keys(arr)) {
-            const idx = Number(idxStr);
-            if (isNaN(idx)) continue;
-            pushDiff(idx, getLineText(arr[idxStr]), wid);
-          }
-        }
-      }
-    }
-
-    // ---- weapon_values: { weaponId: { key: value } }（配合 template）----
-    if (Array.isArray(entry.template) && entry.weapon_values && typeof entry.weapon_values === 'object') {
-      const values = entry.values || entry.default_values || {};
-      for (const widStr of Object.keys(entry.weapon_values)) {
-        const wid = Number(widStr);
-        const wv = entry.weapon_values[widStr];
-        if (!wv || typeof wv !== 'object') continue;
-        entry.template.forEach((tpl, i) => {
-          const text = expandTemplateText(tpl, Object.assign({}, values, wv));
-          pushDiff(i + 1, text, wid);
-          recordDefaultWeapon(i + 1, text, wid); // 记录"与默认值一致"的武器
-        });
-      }
-    }
-
-    // ---- ranged_by_index: { levelIdx: text|{text} }（按远程武器展开）----
-    if (entry.ranged_by_index && typeof entry.ranged_by_index === 'object') {
-      for (const idxStr of Object.keys(entry.ranged_by_index)) {
-        const idx = Number(idxStr); // 1-based
-        if (isNaN(idx)) continue;
-        const text = getLineText(entry.ranged_by_index[idxStr]);
-        if (text != null) {
-          Object.keys(RANGED_WEAPONS).forEach((w) => pushDiff(idx, text, Number(w)));
-        }
-      }
-    }
-
-    // ---- ranged: [level1, level2, ...]（整数组对应远程）----
-    if (Array.isArray(entry.ranged)) {
-      entry.ranged.forEach((item, i) => {
-        const text = getLineText(item);
-        if (text != null) {
-          Object.keys(RANGED_WEAPONS).forEach((w) => pushDiff(i + 1, text, Number(w)));
-        }
-      });
-    }
-
-    // ---- ranged_values: { key: value }（配合 template，按远程展开）----
-    if (Array.isArray(entry.template) && entry.ranged_values && typeof entry.ranged_values === 'object') {
-      const values = entry.values || entry.default_values || {};
-      entry.template.forEach((tpl, i) => {
-        const text = expandTemplateText(tpl, Object.assign({}, values, entry.ranged_values));
-        if (text != null) {
-          Object.keys(RANGED_WEAPONS).forEach((w) => pushDiff(i + 1, text, Number(w)));
-        }
-      });
-    }
-
-    // ---- 补齐「模板技能」中未列出的武器（它们使用默认值）----
-    // 对于 template + weapon_values 技能，未被列出的武器 = 使用默认值，
-    // 也应算作「默认文本对应的武器」，以便主文本补注武器名。
-    if (Array.isArray(entry.template) && entry.weapon_values && typeof entry.weapon_values === 'object') {
-      const listed = new Set(Object.keys(entry.weapon_values).map(Number));
-      entry.template.forEach((tpl, i) => {
-        const idx = i + 1;
-        if (!defaultWeapons[idx]) defaultWeapons[idx] = new Set();
-        for (let w = 0; w < 14; w++) {
-          if (!listed.has(w)) defaultWeapons[idx].add(w);
-        }
-      });
-    }
-
-    return { diffs, defaultWeapons };
-  }
-
   // 把武器 ID 数组转成「轻弩炮、重弩炮、弓」形式
   function weaponLabel(ids) {
     return ids.map((id) => WEAPON_NAMES[id] || `武器${id}`).join('、');
   }
 
   // 简单 HTML 转义
-  function escapeHtml(s) {
-    return String(s)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;');
-  }
 
   // ========================================================
   // 构建「详细版」内容（模组数据）
@@ -1124,66 +859,11 @@
       // ---- 滚动吸顶兜底 ----
       // body 是 display:flex，部分浏览器下 sticky 会失效，
       // 所以用 JS 兜底：滚过按钮条时给它固定定位。
-      (function stickyFallback() {
-        let placeholder = null;
-
-        function ensurePlaceholder() {
-          if (!placeholder) {
-            placeholder = document.createElement('div');
-            // 高度随时同步
-            placeholder.style.display = 'none';
-            bar.parentNode.insertBefore(placeholder, bar);
-          }
-          return placeholder;
-        }
-
-        function onScroll() {
-          // 区块不可见 / 折叠时不处理
-          if (questContainer.classList.contains('collapsed') ||
-              questContainer.offsetParent === null) {
-            reset();
-            return;
-          }
-          const rect = bar.getBoundingClientRect();
-          const ph = ensurePlaceholder();
-          const phRect = ph.getBoundingClientRect();
-
-          if (phRect.top < 0 && rect.top <= 0) {
-            // 按钮条已经滚到屏幕上方 → 固定
-            if (bar.style.position !== 'fixed') {
-              ph.style.display = 'block';
-              ph.style.height = bar.offsetHeight + 'px';
-              bar.style.position = 'fixed';
-              bar.style.top = '0';
-              bar.style.left = phRect.left + 'px';
-              bar.style.width = phRect.width + 'px';
-              bar.style.zIndex = '50';
-              bar.classList.add('qcat-tabs-fixed');
-            } else {
-              // 跟随宽度变化
-              bar.style.left = phRect.left + 'px';
-              bar.style.width = phRect.width + 'px';
-            }
-          } else {
-            reset();
-          }
-        }
-
-        function reset() {
-          if (bar.style.position === 'fixed') {
-            bar.style.position = '';
-            bar.style.top = '';
-            bar.style.left = '';
-            bar.style.width = '';
-            bar.style.zIndex = '';
-            bar.classList.remove('qcat-tabs-fixed');
-            if (placeholder) placeholder.style.display = 'none';
-          }
-        }
-
-        window.addEventListener('scroll', onScroll, { passive: true });
-        window.addEventListener('resize', function () { reset(); onScroll(); }, { passive: true });
-      })();
+      MHRS.sticky.attach(bar, {
+        disabledBy: questContainer,
+        fixedClass: 'qcat-tabs-fixed',
+        zIndex: 50,
+      });
     }
     buildQuestSection();
 
@@ -1342,14 +1022,12 @@
       const catalog = document.getElementById('catalog');
       if (!body || !head || !catalog) return;
 
-      // 分类顺序（数据见 js/game_data.js）
       const CAT_ORDER = MHRS.game.SKILL_CAT_ORDER;
       const UNTAGGED = MHRS.game.SKILL_CAT_UNTAGGED;
-
       const gameMeta = MHRS.skill.data || {};
-      // 建立 decId -> { name, cats } 的映射
+
+      // 建立 decId -> { name, cats }
       const infoById = {};
-      // 先放详述版技能名（优先详细版名称）
       allSkillCards.forEach((it) => {
         const id = Number(it.id);
         const sk = skills[it.id];
@@ -1359,16 +1037,11 @@
           const hex = decToHex(id);
           name = (hex && gameMeta[hex] && gameMeta[hex].sname) || ('技能 ' + id);
         }
-        infoById[id] = { name: name, cats: [] };
-      });
-      // 补上分类（从 GAME_SKILL_DATA 的 tag 取）
-      allSkillCards.forEach((it) => {
-        const id = Number(it.id);
         const hex = decToHex(id);
         const meta = hex ? gameMeta[hex] : null;
         let cats = (meta && Array.isArray(meta.tag)) ? meta.tag.slice() : [];
         if (!cats.length) cats = [UNTAGGED];
-        infoById[id].cats = cats;
+        infoById[id] = { name: name, cats: cats };
       });
 
       // 按分类聚合
@@ -1381,43 +1054,15 @@
           groups[c].push({ id: id, name: info.name });
         });
       });
-      // 组内按 ID 排序
-      Object.keys(groups).forEach((c) => groups[c].sort((a, b) => a.id - b.id));
 
-      // 输出顺序：先按预设顺序，再补剩余的
-      const finalOrder = CAT_ORDER.filter((c) => groups[c])
-        .concat(Object.keys(groups).filter((c) => !CAT_ORDER.includes(c)));
-
-      finalOrder.forEach((cat) => {
-        const list = groups[cat];
-        const groupEl = document.createElement('div');
-        groupEl.className = 'catalog-group';
-
-        const catEl = document.createElement('div');
-        catEl.className = 'catalog-cat';
-        catEl.innerHTML = `${escapeHtml(cat)} <span class="cat-count">${list.length}</span>`;
-        groupEl.appendChild(catEl);
-
-        const itemsEl = document.createElement('div');
-        itemsEl.className = 'catalog-items';
-        list.forEach((item) => {
-          const b = document.createElement('button');
-          b.className = 'catalog-item';
-          b.textContent = item.name;
-          b.setAttribute('data-target', String(item.id));
-          b.addEventListener('click', () => jumpToSkill(item.id));
-          itemsEl.appendChild(b);
-        });
-        groupEl.appendChild(itemsEl);
-        body.appendChild(groupEl);
+      MHRS.catalog.render({
+        catalogId: 'catalog', bodyId: 'catalogBody', headId: 'catalogHead',
+        order: MHRS.catalog.orderOf(CAT_ORDER, groups),
+        groups: groups,
+        sortItems: (list) => list.sort((a, b) => a.id - b.id),
+        dataAttr: 'target',
+        onItemClick: (item) => jumpToSkill(item.id),
       });
-
-      // 折叠/展开
-      head.addEventListener('click', () => {
-        catalog.classList.toggle('collapsed');
-      });
-      // 默认展开，小屏（手机）默认折叠
-      if (window.innerWidth < 600) catalog.classList.add('collapsed');
     })();
 
     // --------------------------------------------------------
@@ -1715,11 +1360,6 @@
     }
 
     (function buildRamCatalog() {
-      const body = document.getElementById('ramCatalogBody');
-      const head = document.getElementById('ramCatalogHead');
-      const catalog = document.getElementById('ramCatalog');
-      if (!body || !head || !catalog) return;
-
       // 根据技能名归类
       function catOf(name) {
         if (/之魂$/.test(name)) return '龙之魂';
@@ -1729,7 +1369,7 @@
         }
         return '其他';
       }
-      const CAT_ORDER = MHRS.game.RAMPAGE_CAT_ORDER;   // 数据见 js/game_data.js
+      const CAT_ORDER = MHRS.game.RAMPAGE_CAT_ORDER;
 
       const groups = {};
       rampageIds.forEach((id) => {
@@ -1740,50 +1380,20 @@
         groups[c].push({ id: id, name: name });
       });
 
-      const finalOrder = CAT_ORDER.filter((c) => groups[c])
-        .concat(Object.keys(groups).filter((c) => !CAT_ORDER.includes(c)));
-
-      finalOrder.forEach((cat) => {
-        const list = groups[cat];
-        const groupEl = document.createElement('div');
-        groupEl.className = 'catalog-group';
-
-        const catEl = document.createElement('div');
-        catEl.className = 'catalog-cat';
-        catEl.innerHTML = `${escapeHtml(cat)} <span class="cat-count">${list.length}</span>`;
-        groupEl.appendChild(catEl);
-
-        const itemsEl = document.createElement('div');
-        itemsEl.className = 'catalog-items';
-        list.forEach((item) => {
-          const b = document.createElement('button');
-          b.className = 'catalog-item';
-          b.textContent = item.name;
-          b.setAttribute('data-rampage-target', String(item.id));
-          b.addEventListener('click', () => openRampageModal(item.id));
-          itemsEl.appendChild(b);
-        });
-        groupEl.appendChild(itemsEl);
-        body.appendChild(groupEl);
+      MHRS.catalog.render({
+        catalogId: 'ramCatalog', bodyId: 'ramCatalogBody', headId: 'ramCatalogHead',
+        order: MHRS.catalog.orderOf(CAT_ORDER, groups),
+        groups: groups,
+        dataAttr: 'rampage-target',
+        onItemClick: (item) => openRampageModal(item.id),
       });
-
-      head.addEventListener('click', () => {
-        catalog.classList.toggle('collapsed');
-      });
-      // 默认展开，小屏（手机）默认折叠
-      if (window.innerWidth < 600) catalog.classList.add('collapsed');
     })();
 
     // --------------------------------------------------------
     // 珠子一览（按孔位分组的目录）
     // --------------------------------------------------------
     (function buildDecoCatalog() {
-      const body = document.getElementById('decoCatalogBody');
-      const head = document.getElementById('decoCatalogHead');
-      const catalog = document.getElementById('decoCatalog');
-      if (!body || !head || !catalog) return;
-
-      const SLOT_ORDER = MHRS.game.DECO_SLOT_ORDER;   // 数据见 js/game_data.js
+      const SLOT_ORDER = MHRS.game.DECO_SLOT_ORDER;
       const groups = {};
       decoCards.forEach((it) => {
         const d = decoByName[DECO[it.id] && DECO[it.id].dname];
@@ -1793,87 +1403,30 @@
         groups[c].push({ id: d.id, name: d.dname, lv: d.lv });
       });
 
-      SLOT_ORDER.forEach((slot) => {
-        const key = slot + '孔';
-        const list = groups[key];
-        if (!list) return;
-        list.sort((a, b) => (a.lv - b.lv) || (a.id - b.id));
-
-        const groupEl = document.createElement('div');
-        groupEl.className = 'catalog-group';
-
-        const catEl = document.createElement('div');
-        catEl.className = 'catalog-cat';
-        catEl.innerHTML = `${escapeHtml(key)} <span class="cat-count">${list.length}</span>`;
-        groupEl.appendChild(catEl);
-
-        const itemsEl = document.createElement('div');
-        itemsEl.className = 'catalog-items';
-        list.forEach((item) => {
-          const b = document.createElement('button');
-          b.className = 'catalog-item';
-          b.textContent = item.name;
-          b.setAttribute('data-deco-target', String(item.id));
-          b.addEventListener('click', () => openDecoModal(item.id));
-          itemsEl.appendChild(b);
-        });
-        groupEl.appendChild(itemsEl);
-        body.appendChild(groupEl);
+      MHRS.catalog.render({
+        catalogId: 'decoCatalog', bodyId: 'decoCatalogBody', headId: 'decoCatalogHead',
+        order: SLOT_ORDER.map((s) => s + '孔'),
+        groups: groups,
+        sortItems: (list) => list.sort((a, b) => (a.lv - b.lv) || (a.id - b.id)),
+        dataAttr: 'deco-target',
+        onItemClick: (item) => openDecoModal(item.id),
       });
-
-      head.addEventListener('click', () => {
-        catalog.classList.toggle('collapsed');
-      });
-      if (window.innerWidth < 600) catalog.classList.add('collapsed');
     })();
 
     // --------------------------------------------------------
     // 百龙珠一览（按孔位分组的目录）
     // --------------------------------------------------------
     (function buildRamDecoCatalog() {
-      const body = document.getElementById('ramDecoCatalogBody');
-      const head = document.getElementById('ramDecoCatalogHead');
-      const catalog = document.getElementById('ramDecoCatalog');
-      if (!body || !head || !catalog) return;
+      const SLOT_ORDER = MHRS.game.RAM_DECO_SLOT_ORDER;
+      const groups = MHRS.catalog.groupBy(RAM_DECO, (d) => d.slot + '孔');
 
-      const SLOT_ORDER = MHRS.game.RAM_DECO_SLOT_ORDER;   // 数据见 js/game_data.js
-      const groups = {};
-      RAM_DECO.forEach((d) => {
-        const key = d.slot + '孔';
-        if (!groups[key]) groups[key] = [];
-        groups[key].push(d);
+      MHRS.catalog.render({
+        catalogId: 'ramDecoCatalog', bodyId: 'ramDecoCatalogBody', headId: 'ramDecoCatalogHead',
+        order: SLOT_ORDER.map((s) => s + '孔'),
+        groups: groups,
+        itemClass: 'ram-deco-cat-item',
+        onItemClick: (item) => openRamDecoModal(item.name),
       });
-
-      SLOT_ORDER.forEach((slot) => {
-        const key = slot + '孔';
-        const list = groups[key];
-        if (!list) return;
-
-        const groupEl = document.createElement('div');
-        groupEl.className = 'catalog-group';
-
-        const catEl = document.createElement('div');
-        catEl.className = 'catalog-cat';
-        catEl.innerHTML = `${escapeHtml(key)} <span class="cat-count">${list.length}</span>`;
-        groupEl.appendChild(catEl);
-
-        const itemsEl = document.createElement('div');
-        itemsEl.className = 'catalog-items';
-        list.forEach((d) => {
-          const b = document.createElement('button');
-          b.className = 'catalog-item ram-deco-cat-item';
-          b.textContent = d.name;
-          b.addEventListener('click', () => openRamDecoModal(d.name));
-          itemsEl.appendChild(b);
-        });
-        groupEl.appendChild(itemsEl);
-        body.appendChild(groupEl);
-      });
-
-      head.addEventListener('click', () => {
-        catalog.classList.toggle('collapsed');
-      });
-      if (window.innerWidth < 600) catalog.classList.add('collapsed');
     })();
 
     // --------------------------------------------------------
@@ -2110,87 +1663,13 @@
     }
 
     // 点击技能一览里的技能 → 弹窗显示效果
+    // [C] 已迁移到 js/sections/skill.js（转发）
     function jumpToSkill(id) {
-      openSkillModal(id);
+      return MHRS.skillSection.openModal(id);
     }
-
-    // 打开技能详情弹窗：显示该技能的「详细版 / 原文版」内容
     function openSkillModal(id) {
-      const overlay = document.getElementById('skillModal');
-      const titleEl = document.getElementById('modalTitle');
-      const bodyEl = document.getElementById('modalBody');
-      if (!overlay || !titleEl || !bodyEl) return;
-
-      const sk = skills[id];
-      const hex = decToHex(id);
-      const gameEntry = (hasGame && hex && gameDesc[hex]) ? gameDesc[hex] : null;
-
-      // 标题（名称 + ID）
-      let name;
-      if (sk) {
-        name = sk.name_override || sk.title || sk.display_name || sk.name || ('技能 ' + id);
-      } else {
-        name = (gameEntry && gameEntry.sname) || ('技能 ' + id);
-      }
-      titleEl.innerHTML = `${escapeHtml(name)}<span class="skill-id">#${escapeHtml(String(id))}</span>`;
-
-      // 内容
-      bodyEl.innerHTML = '';
-      const hasMod = !!sk;
-      const hasGameEntry = !!gameEntry;
-
-      if (hasMod && hasGameEntry) {
-        // 两版都有：加切换按钮
-        const switchRow = document.createElement('div');
-        switchRow.className = 'modal-switch';
-        const btnMod = document.createElement('button');
-        btnMod.textContent = '📘 详细版';
-        btnMod.className = 'active';
-        const btnGame = document.createElement('button');
-        btnGame.textContent = '🎮 原文版';
-        switchRow.appendChild(btnMod);
-        switchRow.appendChild(btnGame);
-        bodyEl.appendChild(switchRow);
-
-        const modEl = buildModContent(id, sk);
-        const gameEl = buildGameContent(gameEntry);
-        gameEl.style.display = 'none';
-        bodyEl.appendChild(modEl);
-        bodyEl.appendChild(gameEl);
-
-        btnMod.addEventListener('click', () => {
-          modEl.style.display = '';
-          gameEl.style.display = 'none';
-          btnMod.classList.add('active');
-          btnGame.classList.remove('active');
-        });
-        btnGame.addEventListener('click', () => {
-          modEl.style.display = 'none';
-          gameEl.style.display = '';
-          btnGame.classList.add('active');
-          btnMod.classList.remove('active');
-        });
-      } else if (hasMod) {
-        bodyEl.appendChild(buildModContent(id, sk));
-      } else if (hasGameEntry) {
-        bodyEl.appendChild(buildGameContent(gameEntry));
-      } else {
-        const empty = document.createElement('div');
-        empty.className = 'level-item';
-        empty.textContent = '（暂无说明）';
-        bodyEl.appendChild(empty);
-      }
-
-      // 可用珠子（弹窗底部，独立于详细版/原文版内容）
-      const decoSec = buildDecoSection(id);
-      if (decoSec) bodyEl.appendChild(decoSec);
-
-      overlay.classList.add('open');
-      if (_updateModalBack) _updateModalBack();
-      document.body.style.overflow = 'hidden'; // 防止背景滚动
+      return MHRS.skillSection.openModal(id);
     }
-
-    // 桥接给顶层 openDecoModal 使用（珠子→技能跳转）
     _openSkillModal = openSkillModal;
 
     function closeSkillModal() {
