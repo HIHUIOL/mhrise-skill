@@ -213,42 +213,52 @@
   }
 
   // ---------------- 详细版内容 ----------------
-  function buildModContent(id, skill) {
+  // 构建「详细版」内容
+  // gameEntry 可选：游戏原文条目。若模组某等级缺失，用原文补齐（标记来源）。
+  function buildModContent(id, skill, gameEntry) {
     var wrap = dom.el('div', { class: 'card-body' });
     var description = skill.description || skill.explain || '';
     var dl = collectDefaultLevelTexts(skill);
     var wd = collectWeaponDiffs(skill, dl.textAt);
-
     if (description) wrap.appendChild(dom.el('div', { class: 'skill-desc', html: fmt(description) }));
 
-    var diffMax = Object.keys(wd.diffs).reduce(function (m, k) { return Math.max(m, Number(k)); }, 0);
-    var maxIdx = Math.max(dl.maxIdx, diffMax);
+    // 原文等级（用于补齐模组缺失的等级）
+    var gameLevels = {};
+    if (gameEntry && gameEntry.effect) {
+      gameLevels = parseGameEffect(gameEntry.effect).levels || {};
+    }
+    var gameMax = Object.keys(gameLevels).reduce(function (m, k) { return Math.max(m, Number(k)); }, 0);
 
+    var diffMax = Object.keys(wd.diffs).reduce(function (m, k) { return Math.max(m, Number(k)); }, 0);
+    var maxIdx = Math.max(dl.maxIdx, diffMax, gameMax);
     if (maxIdx === 0) {
       wrap.appendChild(dom.el('div', { class: 'level-item', text: '（暂无等级说明）' }));
       return wrap;
     }
-
     var listEl = dom.el('ul', { class: 'levels-list' });
     for (var i = 1; i <= maxIdx; i++) {
       var mainText = dl.textAt[i];
       var levelDiff = wd.diffs[i];
-      if (mainText == null && !levelDiff) continue;
-
+      var gameText = gameLevels[i];
+      // 模组和原文都没有 → 跳过
+      if (mainText == null && !levelDiff && gameText == null) continue;
       var li = dom.el('li', { class: 'level-item' });
       var html = '<span class="level-tag">Lv' + i + '</span>';
       if (mainText != null) {
+        // ① 模组有此等级 → 用模组文字
         html += fmt(mainText);
         var dw = wd.defaultWeapons[i];
         if (dw && dw.size && dw.size <= 7) {
           var names = weaponLabel(Array.from(dw).sort(function (a, b) { return a - b; }));
           html += ' <span class="default-weapon-note">（' + dom.escapeHtml(names) + '）</span>';
         }
-      } else if (!levelDiff) {
+      } else if (gameText != null) {
+        // ② 模组缺此等级，但游戏原文有 → 用原文补齐（与模组等级外观一致）
+        html += fmt(gameText);
+      } else {
         html += '<span style="color:#7d8f9f;">（该等级沿用游戏原文）</span>';
       }
       li.innerHTML = html;
-
       if (levelDiff && levelDiff.size) {
         var diffWrap = dom.el('div', { class: 'weapon-diffs' });
         levelDiff.forEach(function (weaponIds, text) {
@@ -260,7 +270,6 @@
       }
       listEl.appendChild(li);
     }
-
     if (!listEl.children.length) {
       wrap.appendChild(dom.el('div', { class: 'level-item', text: '（暂无等级说明）' }));
     } else {
@@ -377,7 +386,7 @@
     }
 
     // 有详细版
-    var mc = buildModContent(id, skill);
+    var mc = buildModContent(id, skill, hasGame ? gameEntry : null);
     mc.classList.add('src-mod');
     card.appendChild(mc);
 
@@ -435,7 +444,7 @@
       switchRow.appendChild(btnGame);
       body.appendChild(switchRow);
 
-      var modEl = buildModContent(id, sk);
+      var modEl = buildModContent(id, sk, gameEntry);
       var gameEl = buildGameContent(gameEntry);
       gameEl.style.display = 'none';
       body.appendChild(modEl);
@@ -449,7 +458,7 @@
         btnGame.classList.add('active'); btnMod.classList.remove('active');
       });
     } else if (hasMod) {
-      body.appendChild(buildModContent(id, sk));
+      body.appendChild(buildModContent(id, sk, gameEntry));
     } else if (hasGameEntry) {
       body.appendChild(buildGameContent(gameEntry));
     } else {

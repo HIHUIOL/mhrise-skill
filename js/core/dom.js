@@ -104,6 +104,8 @@
     });
     s = s.replace(/&lt;\/COLOR&gt;/g, '</span>');
     // 其他残留标签（<ul>/<li> 等）保留为文本
+    // 换行处理：字面 "\n"（反斜杠+n）与真实换行 → <br>
+    s = s.replace(/\\n/g, '\n').replace(/\n/g, '<br>');
     return s;
   }
 
