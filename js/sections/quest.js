@@ -730,7 +730,7 @@
           "data-cat": val, text: label + (count != null ? " " + count : "") });
         b.addEventListener("click", function (ev) {
           ev.stopPropagation();
-          dom.$(".mqf-btn", filterBar).forEach(function (x) { x.classList.toggle("active", x === b); });
+          dom.$$(".mqf-btn", filterBar).forEach(function (x) { x.classList.toggle("active", x === b); });
           rows.forEach(function (r) { r.el.style.display = (!val || r.cat === val) ? "" : "none"; });
         });
         return b;

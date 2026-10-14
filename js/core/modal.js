@@ -121,7 +121,9 @@
   function updateBackBtn() {
     var btn = backBtn();
     if (!btn) return;
-    btn.style.display = isOpen() ? '' : 'none';
+    // ⚠️ 必须用 class 控制：CSS 是 .modal-back{display:none} + .modal-back.show{display:flex}
+    //    设 style.display='' 会回退到 CSS 的 none，等于没显示。
+    btn.classList.toggle('show', isOpen());
   }
 
   /** 当前栈深（调试用） */

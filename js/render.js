@@ -644,6 +644,31 @@
       return;
     }
 
+
+    // ---- [B3] 把「跨板块能力」注册到 bridge ----
+    // ⚠️ 必须【最先】执行：珠子/怪物等卡片渲染时就会用到这些能力
+// ---- [B3] 把「跨板块能力」注册到 bridge ----
+    (function provideToBridge() {
+      var BR = MHRS.bridge;
+      if (!BR) return;
+      BR.provide(BR.NAMES.PUSH_HISTORY, function (fn) { pushModalHistory(fn); });
+      BR.provide(BR.NAMES.OPEN_SKILL, function (id) { openSkillModal(id); });
+      BR.provide(BR.NAMES.MONSTERS_FOR_MATERIAL, function (n) { return monstersForMaterial(n); });
+      BR.provide(BR.NAMES.RANKS_FOR_MATERIAL, function (n) { return ranksForMaterial(n); });
+      BR.provide(BR.NAMES.RANK_KEY, function (r) { return rankKey(r); });
+      BR.provide(BR.NAMES.OPEN_ITEM, function (n) { if (_openItemModal) _openItemModal(n); });
+      BR.provide(BR.NAMES.OPEN_MONSTER, function (n) { if (_openMonsterModal) _openMonsterModal(n); });
+      BR.provide(BR.NAMES.OPEN_RAM_SKILL, function (n) { if (typeof _openRampageById === 'function') _openRampageById(n); });
+      BR.provide(BR.NAMES.OBTAIN_BUILD, function (n, ex, bf) { return buildObtainBlock(n, ex, bf); });
+      BR.provide(BR.NAMES.MAT_DETAIL_BUILD, function (mn, it, rows, hl) { return buildMatDetail(mn, it, rows, hl); });
+      BR.provide(BR.NAMES.QUEST_BY_NAME, function (nm) { return findQuestIdByName(nm); });
+      BR.provide(BR.NAMES.QUEST_BY_MON, function (n, mn, oi) { return findQuestIdForMonster(n, mn, oi); });
+      BR.provide(BR.NAMES.QUEST_PARSE_AREA, function (q) { return parseQuestArea(q); });
+      BR.provide(BR.NAMES.CUR_MON_CTX, function () { return _curMonCtx; });
+      BR.provide(BR.NAMES.SET_MON_CTX, function (mn, fi) { _curMonCtx = { monName: mn, focusItem: fi || null }; });
+      BR.provide(BR.NAMES.QUEST_BLOCK_BUILD, function (qs, mn) { return MHRS.questSection.buildBlock(qs, mn); });
+    })();
+
     const data = MHRS.skill.mod;
     const skills = data.skills || {};
     const rampage = data.rampage_skills || {};
@@ -1682,11 +1707,9 @@
     }
 
     // 更新「返回」按钮显隐：弹窗打开时始终显示（在最底层时点击 = 关闭弹窗）
+    // ⚠️ 统一委托给 core/modal.js，避免「两套控制」（class 与 style.display 打架）
     function updateModalBack() {
-      const b = document.getElementById('modalBack');
-      const overlay = document.getElementById('skillModal');
-      const isOpen = !!(overlay && overlay.classList.contains('open'));
-      if (b) b.classList.toggle('show', isOpen);
+      if (MHRS.modal && MHRS.modal.updateBackBtn) MHRS.modal.updateBackBtn();
     }
 
     // 记录一次弹窗跳转（在打开新弹窗前调用）
@@ -1704,27 +1727,6 @@
     _pushHist = pushModalHistory;
     _updateModalBack = updateModalBack;
 
-    // ---- [B3] 把「跨板块能力」注册到 bridge ----
-    (function provideToBridge() {
-      var BR = MHRS.bridge;
-      if (!BR) return;
-      BR.provide(BR.NAMES.PUSH_HISTORY, function (fn) { pushModalHistory(fn); });
-      BR.provide(BR.NAMES.OPEN_SKILL, function (id) { openSkillModal(id); });
-      BR.provide(BR.NAMES.MONSTERS_FOR_MATERIAL, function (n) { return monstersForMaterial(n); });
-      BR.provide(BR.NAMES.RANKS_FOR_MATERIAL, function (n) { return ranksForMaterial(n); });
-      BR.provide(BR.NAMES.RANK_KEY, function (r) { return rankKey(r); });
-      BR.provide(BR.NAMES.OPEN_ITEM, function (n) { if (_openItemModal) _openItemModal(n); });
-      BR.provide(BR.NAMES.OPEN_MONSTER, function (n) { if (_openMonsterModal) _openMonsterModal(n); });
-      BR.provide(BR.NAMES.OPEN_RAM_SKILL, function (n) { if (typeof _openRampageById === 'function') _openRampageById(n); });
-      BR.provide(BR.NAMES.OBTAIN_BUILD, function (n, ex, bf) { return buildObtainBlock(n, ex, bf); });
-      BR.provide(BR.NAMES.MAT_DETAIL_BUILD, function (mn, it, rows, hl) { return buildMatDetail(mn, it, rows, hl); });
-      BR.provide(BR.NAMES.QUEST_BY_NAME, function (nm) { return findQuestIdByName(nm); });
-      BR.provide(BR.NAMES.QUEST_BY_MON, function (n, mn, oi) { return findQuestIdForMonster(n, mn, oi); });
-      BR.provide(BR.NAMES.QUEST_PARSE_AREA, function (q) { return parseQuestArea(q); });
-      BR.provide(BR.NAMES.CUR_MON_CTX, function () { return _curMonCtx; });
-      BR.provide(BR.NAMES.SET_MON_CTX, function (mn, fi) { _curMonCtx = { monName: mn, focusItem: fi || null }; });
-      BR.provide(BR.NAMES.QUEST_BLOCK_BUILD, function (qs, mn) { return MHRS.questSection.buildBlock(qs, mn); });
-    })();
 
     // ---- 弹窗状态快照（用于「返回」时还原展开状态 + 滚动位置）----
     function captureModalState() {
