@@ -2903,15 +2903,19 @@
 
     /* 部位名那一格的内部滚动容器（只有这里能左右滑） */
     .hit-part-scroll {
-      overflow-x: auto;
-      overflow-y: hidden;
+      overflow: hidden;
       white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
       display: block;
     }
-    .hit-part-scroll::-webkit-scrollbar { display: none; }
     .hit-part-scroll > * { display: inline-block; }
+    /* 部位名过长时：自动左右微动（露出全称） */
+    .hit-part-scroll.hp-run > * {
+      animation: hp-swing var(--hp-dur, 3.6s) ease-in-out infinite alternate;
+    }
+    @keyframes hp-swing {
+      0%, 25%   { transform: translateX(0); }
+      75%, 100% { transform: translateX(var(--hp-shift, 0px)); }
+    }
     /* 「按状态」模式下同一格里有 状态名 + 部位名，水平排列 */
     .hit-part-scroll-state .hit-part-name { margin-bottom: 0; }
     .hit-part-scroll-state .hit-part-name + .hit-state { margin-left: 0.25rem; }
@@ -2958,11 +2962,84 @@
       border-radius: 4px;
       background: #1b242e;
     }
-
-    .hit-legend .hit-min { color: #93a2b1; }
+.hit-legend .hit-min { color: #93a2b1; }
     .hit-legend .hit-lo  { color: #6fbf73; }
     .hit-legend .hit-mid { color: #e0c060; }
     .hit-legend .hit-hi  { color: #ff8a5c; }
+
+    /* ========================================================
+       异常耐性表（怪物弹窗 ⑤）
+       ======================================================== */
+    .mon-ail-head {
+      cursor: pointer;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .mon-ail-head:hover { color: #b8c4d0; }
+    .mon-ail-hint {
+      font-size: 0.72rem;
+      color: #6f8296;
+      margin-left: auto;
+    }
+    .mon-ail-body.collapsed { display: none; }
+
+    .mon-ail-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.72rem;
+      table-layout: fixed;
+    }
+    .mon-ail-table th,
+    .mon-ail-table td {
+      text-align: center;
+      padding: 0.22rem 0.15rem;
+      border-bottom: 1px solid #253240;
+      color: #b8c4d0;
+      white-space: nowrap;
+    }
+    /* 数据格：超长时左右微动（不再用省略号） */
+    .mon-ail-table td.mq-cell {
+      overflow: hidden;
+      position: relative;
+      vertical-align: middle;
+    }
+    .mon-ail-table td.mq-cell .mq-inner {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    /* 需要摆动的格子：来回平移，露出完整内容 */
+    .mon-ail-table td.mq-run .mq-inner {
+      animation: mq-swing var(--mq-dur, 3.6s) ease-in-out infinite alternate;
+    }
+    @keyframes mq-swing {
+      0%, 25%   { transform: translateX(0); }
+      75%, 100% { transform: translateX(var(--mq-shift, 0px)); }
+    }
+    .mon-ail-table th {
+      font-weight: 600;
+      font-size: 0.7rem;
+      background: #1b242e;
+      color: #9fb4c8;
+      position: sticky;
+      top: 0;
+    }
+    /* 列宽：异常名 / 积蓄 / 衰减 / 上限 / 持续 / 备注 */
+    .mon-ail-table th:nth-child(1) { width: 15%; }
+    .mon-ail-table th:nth-child(2) { width: 21%; }
+    .mon-ail-table th:nth-child(3) { width: 17%; }
+    .mon-ail-table th:nth-child(4) { width: 13%; }
+    .mon-ail-table th:nth-child(5) { width: 15%; }
+    .mon-ail-table th:nth-child(6) { width: 19%; }
+
+    .mon-ail-table td.mon-ail-name {
+      color: #e9eef2;
+      font-weight: 600;
+    }
+    .mon-ail-table td.mon-ail-note {
+      color: #c9a8f0;
+      font-size: 0.68rem;
+    }
+
 
     /* 特殊状态肉质：切换按钮 */
     .hit-mode-switch {

@@ -223,12 +223,15 @@
     function makePartName(name) {
       return dom.el("span", { class: "hit-part-name", text: name || "" });
     }
+    // 需要「左右微动」的部位名容器（挂载后测宽决定）
+    var partScrolls = [];
     function makePartCell(name, stateText, stateCls) {
       var scroll = dom.el("div", { class: "hit-part-scroll" });
       scroll.appendChild(makePartName(name));
       if (stateText !== null && stateText !== undefined) {
         scroll.appendChild(dom.el("span", { class: "hit-state" + (stateCls || ""), text: stateText }));
       }
+      partScrolls.push(scroll);
       return scroll;
     }
     function fillValueCells(tr, r) {
@@ -240,6 +243,7 @@
 
     function renderTable() {
       dom.clear(tblWrap);
+      partScrolls = []; // 重建表格 → 重置收集列表（旧元素已移除）
       var tbl = dom.el("table", { class: "mon-hit-table" });
       tbl.appendChild(buildHitHead(COLS, mode === "part" ? "部位 · 状态" : "状态 · 部位"));
       var tbody = dom.el("tbody");
@@ -285,6 +289,31 @@
       }
       tbl.appendChild(tbody);
       tblWrap.appendChild(tbl);
+      requestAnimationFrame(setupPartMarquee);
+    }
+
+    /**
+     * 部位名「左右微动」：仅对溢出的部位名启用
+     * （长的部位名如「胴_肉質(操竜受付用)」自动摆动露出全称）
+     */
+    function setupPartMarquee() {
+      partScrolls.forEach(function (sc) {
+        if (sc.classList.contains("hp-run")) return; // 已处理
+        if (!sc.clientWidth) return;
+        var cs = window.getComputedStyle(sc);
+        var padL = parseFloat(cs.paddingLeft) || 0;
+        var padR = parseFloat(cs.paddingRight) || 0;
+        // 用 scrollWidth 量真实内容宽（子元素是 block，rect 会被父压缩）
+        var contentW = sc.scrollWidth;
+        var avail = sc.clientWidth; // scrollWidth/clientWidth 都含 padding，直接相减
+        var overflow = Math.ceil(contentW - avail);
+        if (overflow <= 3) return; // 不明显溢出就不动
+        var shift = overflow + 2;
+        sc.classList.add("hp-run");
+        sc.style.setProperty("--hp-shift", (-shift) + "px");
+        var dur = Math.max(2.6, (shift * 2) / 25);
+        sc.style.setProperty("--hp-dur", dur.toFixed(2) + "s");
+      });
     }
 
     // 切换按钮
@@ -312,6 +341,129 @@
       "<span class=\"hl-hit hit-lo\">中</span>" +
       "<span class=\"hl-hit hit-mid\">高</span>" +
       "<span class=\"hl-hit hit-hi\">很高</span>" }));
+
+    return wrap;
+  }
+
+  /**
+   * 异常耐性表（A+B+C）
+   * 行结构: [异常名, 积蓄值, 衰减, 上限, 持续时间, 备注]
+   *   · 可折叠（默认收起，避免怪物弹窗过长）
+   *   · 备注列（BlastDamage/SubStamina）翻译成中文
+   */
+  function buildAilment(ail) {
+    var wrap = dom.el("div", { class: "mon-ail" });
+
+    // ---- 标题（点击折叠） ----
+    var head = dom.el("div", { class: "mon-section-head mon-ail-head" });
+    head.appendChild(dom.el("span", { text: "异常耐性" }));
+    var hint = dom.el("span", { class: "mon-ail-hint", text: "（点击展开 ▼）" });
+    head.appendChild(hint);
+    wrap.appendChild(head);
+
+    // ---- 内容容器（折叠开关 = .collapsed） ----
+    var body = dom.el("div", { class: "mon-ail-body collapsed" });
+    wrap.appendChild(body);
+
+    // 备注翻译
+    function transNote(note) {
+      if (!note) return "";
+      var s = String(note).trim();
+      var m1 = s.match(/^BlastDamage:\s*(-?\d+)$/i);
+      if (m1) return "爆破伤害 " + m1[1];
+      var m2 = s.match(/^SubStamina:\s*(-?\d+)$/i);
+      if (m2) return "减气值 " + m2[1];
+      return s;
+    }
+
+    var tbl = dom.el("table", { class: "mon-ail-table" });
+    var thead = dom.el("thead");
+    var htr = dom.el("tr");
+    ["异常状态", "积蓄值", "衰减", "上限", "持续时间", "备注"].forEach(function (t) {
+      htr.appendChild(dom.el("th", { text: t }));
+    });
+    thead.appendChild(htr);
+    tbl.appendChild(thead);
+
+    var tbody = dom.el("tbody");
+    // 需要滚动的格子（等挂到 DOM 后再测宽度决定是否加动画）
+    var mqCells = [];
+    function cell(text, cls) {
+      var td = dom.el("td", { class: (cls ? cls + " " : "") + "mq-cell" });
+      var sp = dom.el("span", { class: "mq-inner", text: text });
+      td.appendChild(sp);
+      mqCells.push(td);
+      return td;
+    }
+    ail.forEach(function (r) {
+      var tr = dom.el("tr");
+      tr.appendChild(cell(String(r[0] || ""), "mon-ail-name"));
+      tr.appendChild(cell(String(r[1] || "")));
+      tr.appendChild(cell(String(r[2] || "")));
+      tr.appendChild(cell(String(r[3] || "")));
+      tr.appendChild(cell(String(r[4] || "")));
+      tr.appendChild(cell(transNote(r[5]), "mon-ail-note"));
+      tbody.appendChild(tr);
+    });
+    tbl.appendChild(tbody);
+    body.appendChild(tbl);
+
+    // ---- 微动：挂到 DOM 后测宽，仅溢出者左右摆动 ----
+    function setupMarquee() {
+      mqCells.forEach(function (td) {
+        if (td.classList.contains("mq-run")) return; // 已处理
+        var inner = td.querySelector(".mq-inner");
+        if (!inner) return;
+        // 展开时才有布局尺寸；折叠中则跳过（下次展开再处理）
+        var cellW = td.clientWidth;
+        if (!cellW) return;
+        // 精确计算：文字实宽 - 格子「内容区」宽（去掉左右 padding）
+        //   不能用 scrollWidth-clientWidth（clientWidth 已含 padding，会少算）
+        var cs = window.getComputedStyle(td);
+        var padL = parseFloat(cs.paddingLeft) || 0;
+        var padR = parseFloat(cs.paddingRight) || 0;
+        var innerW = inner.getBoundingClientRect().width;
+        var avail = cellW - padL - padR;
+        var overflow = Math.ceil(innerW - avail);
+        if (overflow <= 3) return; // 不明显溢出（≤3px）就不动，避免无意义微抖
+        // 摆动距离 = 溢出量 + 一点点余量（避免边缘贴字）
+        var shift = overflow + 2;
+        td.classList.add("mq-run");
+        td.style.setProperty("--mq-shift", (-shift) + "px");
+        // 时长随距离变化，约 25px/s 往返
+        var dur = Math.max(2.6, (shift * 2) / 25);
+        td.style.setProperty("--mq-dur", dur.toFixed(2) + "s");
+      });
+    }
+
+    // ---- 折叠绑定（用公共工具） ----
+    var collapse = (M.ui && M.ui.sectionCollapse)
+      ? M.ui.sectionCollapse({
+          title: head,
+          container: body,
+          hint: hint,
+          collapsed: true,
+          expandText: "（点击展开 ▼）",
+          collapseText: "（点击收起 ▲）",
+        })
+      : null;
+    if (!collapse) {
+      // 兜底：手写点击
+      head.addEventListener("click", function () {
+        var c = body.classList.toggle("collapsed");
+        hint.textContent = c ? "（点击展开 ▼）" : "（点击收起 ▲）";
+      });
+    }
+    // 展开时启动跑马灯（折叠状态量不到宽度）
+    head.addEventListener("click", function () {
+      if (!body.classList.contains("collapsed")) {
+        requestAnimationFrame(function () { setupMarquee(); });
+      }
+    });
+    // 若初始就是展开（防其它路径直接展开）
+    if (!body.classList.contains("collapsed")) {
+      requestAnimationFrame(function () { setupMarquee(); });
+    }
 
     return wrap;
   }
@@ -362,6 +514,10 @@
     // ④ 部位肉质
     if (mon.hitzones && mon.hitzones.length) {
       body.appendChild(buildHitzone(mon.hitzones));
+    }
+    // ⑤ 异常耐性（可折叠）
+    if (mon.ailments && mon.ailments.length) {
+      body.appendChild(buildAilment(mon.ailments));
     }
 
     // 标题
